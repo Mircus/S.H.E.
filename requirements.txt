@@ -1,0 +1,9 @@
+# Core dependencies
+xgi
+topox
+giotto-tda
+torch
+numpy
+pandas
+plotly
+streamlit
