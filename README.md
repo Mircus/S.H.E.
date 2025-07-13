@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="she_logo.png" alt="SHE Logo" width="200"/>
+</p>
+
 # SHE: Simplicial Hyperstructure Engine
 
 **SHE** is a modular platform for ingesting data and modeling it as weighted, attributed simplicial sets, enabling analysis and prediction with Simplicial Neural Networks (SNNs), persistent homology, finite Morse theory, and algebraic invariants.
