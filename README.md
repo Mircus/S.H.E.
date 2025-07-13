@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="she_logo.png" alt="SHE Logo" width="200"/>
+  <img src="she_logo.png" alt="SHE Logo" width="400"/>
 </p>
 
 # SHE: Simplicial Hyperstructure Engine
