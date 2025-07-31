@@ -410,11 +410,431 @@ For additional support:
 2. Review the scientific literature on discrete Hodge theory
 3. Examine the TopoX documentation for simplicial complex operations
 
+## Neural Network Components
+
+SHE includes advanced neural network architectures specifically designed for learning on simplicial complexes and higher-order topological structures.
+
+### Available Architectures
+
+#### Simplicial Convolutional Networks (SCN)
+
+SCNs extend graph convolutional networks to operate on both nodes and edges simultaneously, using the topological structure encoded in incidence matrices.
+
+```python
+from she_neural import SHESimplicialConvolutionalNetwork
+
+# Create SCN model
+model = SHESimplicialConvolutionalNetwork(
+    in_channels_0=16,      # Node feature dimensions
+    in_channels_1=8,       # Edge feature dimensions
+    hidden_channels=64,    # Hidden layer size
+    out_channels=10,       # Output classes
+    num_layers=3,          # Number of SCN layers
+    dropout=0.5,           # Dropout rate
+    task="node_classification"  # Task type
+)
+```
+
+#### Higher-Order Simplicial Networks (HSN)
+
+HSNs operate on simplicial complexes of arbitrary dimension, enabling learning from triangles, tetrahedra, and higher-dimensional structures.
+
+```python
+from she_neural import SHEHigherOrderNetwork
+
+# Define input channels for each dimension
+in_channels = {
+    0: 16,  # Node features
+    1: 8,   # Edge features
+    2: 4    # Triangle features
+}
+
+model = SHEHigherOrderNetwork(
+    in_channels=in_channels,
+    hidden_channels=64,
+    out_channels=10,
+    max_rank=2,           # Maximum simplex dimension
+    num_layers=2
+)
+```
+
+### Data Preparation
+
+#### SimplicialDataset
+
+Specialized dataset class for handling simplicial complex data:
+
+```python
+from she_neural import SimplicialDataset
+
+# Prepare your data
+complexes = [complex1, complex2, ...]  # List of SHESimplicialComplex
+labels = [0, 1, 0, ...]               # Classification labels
+node_features = [feat1, feat2, ...]   # Node feature tensors
+edge_features = [edge1, edge2, ...]   # Edge feature tensors
+
+# Create dataset
+dataset = SimplicialDataset(
+    complexes=complexes,
+    labels=labels,
+    node_features=node_features,
+    edge_features=edge_features
+)
+
+# Create data loader
+from torch.utils.data import DataLoader
+loader = DataLoader(dataset, batch_size=32, shuffle=True)
+```
+
+### Training Framework
+
+#### SHE Neural Engine
+
+High-level interface for managing neural network experiments:
+
+```python
+from she_neural import SHENeuralEngine
+
+engine = SHENeuralEngine(config)
+
+# Create and register models
+engine.create_scn_model(
+    name="social_scn",
+    in_channels_0=16,
+    in_channels_1=8,
+    out_channels=2,
+    task="node_classification"
+)
+
+# Train model
+engine.train_model(
+    model_name="social_scn",
+    train_loader=train_loader,
+    val_loader=val_loader,
+    epochs=100
+)
+```
+
+#### Manual Training Loop
+
+For custom training scenarios:
+
+```python
+import torch.optim as optim
+
+model = SHESimplicialConvolutionalNetwork(...)
+optimizer = optim.Adam(model.parameters(), lr=0.001)
+criterion = nn.CrossEntropyLoss()
+
+for epoch in range(num_epochs):
+    model.train()
+    total_loss = 0
+    
+    for batch in train_loader:
+        optimizer.zero_grad()
+        
+        # Forward pass
+        logits = model(
+            x_0=batch['x_0'],
+            x_1=batch['x_1'], 
+            incidence_1=batch['incidences']['B_0']
+        )
+        
+        loss = criterion(logits, batch['label'])
+        loss.backward()
+        optimizer.step()
+        
+        total_loss += loss.item()
+    
+    print(f"Epoch {epoch}: Loss = {total_loss/len(train_loader):.4f}")
+```
+
+### Task-Specific Applications
+
+#### Node Classification
+
+Classify nodes based on their topological context:
+
+```python
+# Node classification model
+node_classifier = SHESimplicialConvolutionalNetwork(
+    in_channels_0=node_dim,
+    in_channels_1=edge_dim,
+    hidden_channels=128,
+    out_channels=num_classes,
+    task="node_classification"
+)
+
+# Training for node classification
+for batch in data_loader:
+    node_logits = node_classifier(
+        batch['x_0'], 
+        batch['x_1'], 
+        batch['incidences']['B_0']
+    )
+    loss = F.cross_entropy(node_logits, batch['node_labels'])
+```
+
+#### Edge Classification
+
+Classify edges using simplicial structure:
+
+```python
+# Edge classification model
+edge_classifier = SHESimplicialConvolutionalNetwork(
+    task="edge_classification",
+    # ... other parameters
+)
+
+# Predict edge properties
+edge_predictions = edge_classifier(x_0, x_1, incidence_matrix)
+```
+
+#### Graph-Level Tasks
+
+Perform classification on entire simplicial complexes:
+
+```python
+# Graph classification model
+graph_classifier = SHESimplicialConvolutionalNetwork(
+    task="graph_classification",
+    # ... other parameters
+)
+
+# Complex-level prediction
+complex_prediction = graph_classifier(x_0, x_1, incidence_matrix)
+```
+
+### Advanced Neural Network Features
+
+#### Attention Mechanisms
+
+```python
+class SimplicialAttentionLayer(nn.Module):
+    def __init__(self, in_channels, out_channels):
+        super().__init__()
+        self.attention = nn.MultiheadAttention(in_channels, num_heads=8)
+        self.linear = nn.Linear(in_channels, out_channels)
+    
+    def forward(self, x_0, x_1, incidence_1):
+        # Apply attention to node features
+        attended_nodes, _ = self.attention(x_0, x_0, x_0)
+        
+        # Combine with edge information through incidence matrix
+        edge_aggregated = torch.sparse.mm(incidence_1.t(), attended_nodes)
+        
+        return self.linear(attended_nodes), self.linear(edge_aggregated)
+```
+
+#### Residual Connections
+
+```python
+class ResidualSCNLayer(nn.Module):
+    def __init__(self, channels):
+        super().__init__()
+        self.scn = SCN(channels, channels, channels, channels)
+        self.norm_0 = nn.LayerNorm(channels)
+        self.norm_1 = nn.LayerNorm(channels)
+    
+    def forward(self, x_0, x_1, incidence_1):
+        # Residual connections
+        x_0_out, x_1_out = self.scn(x_0, x_1, incidence_1)
+        x_0 = self.norm_0(x_0 + x_0_out)
+        x_1 = self.norm_1(x_1 + x_1_out)
+        return x_0, x_1
+```
+
+#### Multi-Scale Learning
+
+```python
+class MultiScaleSCN(nn.Module):
+    def __init__(self, in_channels, out_channels):
+        super().__init__()
+        self.local_conv = SCN(in_channels, in_channels, 64, 64)
+        self.global_conv = SCN(in_channels, in_channels, 64, 64)
+        self.fusion = nn.Linear(128, out_channels)
+    
+    def forward(self, x_0, x_1, incidence_1):
+        # Local processing
+        local_0, local_1 = self.local_conv(x_0, x_1, incidence_1)
+        
+        # Global processing (could use coarsened complex)
+        global_0, global_1 = self.global_conv(x_0, x_1, incidence_1)
+        
+        # Fuse representations
+        fused_0 = torch.cat([local_0, global_0], dim=-1)
+        return self.fusion(fused_0)
+```
+
+### Example: Social Network Analysis with Neural Networks
+
+```python
+import torch
+import torch.nn.functional as F
+from she_neural import *
+from she_core import *
+
+# Prepare social network data
+def prepare_social_data(G):
+    """Convert NetworkX graph to SHE neural network input"""
+    complex = SHEDataLoader.from_weighted_networkx(G)
+    
+    # Node features: degree, centrality, clustering
+    node_features = []
+    for node in G.nodes():
+        degree = G.degree(node)
+        centrality = nx.betweenness_centrality(G)[node]
+        clustering = nx.clustering(G)[node]
+        node_features.append([degree, centrality, clustering])
+    
+    # Edge features: weight, edge betweenness
+    edge_features = []
+    edge_centrality = nx.edge_betweenness_centrality(G)
+    for edge in G.edges():
+        weight = G[edge[0]][edge[1]].get('weight', 1.0)
+        betweenness = edge_centrality[edge]
+        edge_features.append([weight, betweenness])
+    
+    return complex, torch.tensor(node_features), torch.tensor(edge_features)
+
+# Load Karate Club dataset
+G = nx.karate_club_graph()
+complex, node_feat, edge_feat = prepare_social_data(G)
+
+# Create neural network
+model = SHESimplicialConvolutionalNetwork(
+    in_channels_0=3,  # degree, centrality, clustering
+    in_channels_1=2,  # weight, betweenness
+    hidden_channels=64,
+    out_channels=2,   # two clubs
+    task="node_classification"
+)
+
+# Get true labels (club membership)
+labels = torch.tensor([G.nodes[node]['club'] for node in G.nodes()])
+
+# Get incidence matrix
+incidence_matrices = complex.get_incidence_matrices()
+incidence_1 = torch.tensor(incidence_matrices['B_0'].toarray(), dtype=torch.float32)
+
+# Training loop
+optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+model.train()
+
+for epoch in range(200):
+    optimizer.zero_grad()
+    logits = model(node_feat, edge_feat, incidence_1)
+    loss = F.cross_entropy(logits, labels)
+    loss.backward()
+    optimizer.step()
+    
+    if epoch % 50 == 0:
+        with torch.no_grad():
+            pred = torch.argmax(logits, dim=1)
+            acc = (pred == labels).float().mean()
+            print(f"Epoch {epoch}: Loss = {loss:.4f}, Acc = {acc:.4f}")
+
+# Evaluate
+model.eval()
+with torch.no_grad():
+    logits = model(node_feat, edge_feat, incidence_1)
+    predictions = torch.argmax(logits, dim=1)
+    accuracy = (predictions == labels).float().mean()
+    print(f"Final Accuracy: {accuracy:.4f}")
+```
+
+### Example: Protein Interaction Prediction
+
+```python
+# Predict protein interactions using higher-order structure
+def predict_protein_interactions():
+    # Load protein complex data
+    proteins = load_protein_data()  # Your protein loading function
+    
+    # Create higher-order network
+    model = SHEHigherOrderNetwork(
+        in_channels={0: 128, 1: 64, 2: 32},  # Multi-scale features
+        hidden_channels=256,
+        out_channels=1,  # Binary interaction prediction
+        max_rank=2
+    )
+    
+    # Train on known interactions
+    for epoch in range(100):
+        for batch in protein_loader:
+            # Forward pass through all simplex dimensions
+            prediction = model(batch['x_dict'], batch['incidence_dict'])
+            loss = F.binary_cross_entropy_with_logits(
+                prediction, batch['interaction_labels']
+            )
+            # ... training loop
+    
+    return model
+```
+
+### Best Practices for SHE Neural Networks
+
+#### 1. Feature Engineering
+```python
+# Design features that capture topological properties
+def extract_topological_features(complex):
+    features = {}
+    
+    # Node features: local topology
+    for node in complex.complex.nodes:
+        degree = complex.complex.degree(node)
+        neighbors = list(complex.complex.neighbors(node))
+        local_clustering = compute_local_clustering(complex, node)
+        features[node] = [degree, len(neighbors), local_clustering]
+    
+    return features
+```
+
+#### 2. Model Architecture Selection
+- Use **SCN** for problems where node-edge interactions are crucial
+- Use **HSN** when higher-order structures (triangles, tetrahedra) matter
+- Consider **hybrid architectures** for complex scenarios
+
+#### 3. Training Strategies
+```python
+# Curriculum learning: start with simple structures
+def curriculum_training(model, data_loader, epochs_per_stage=50):
+    stages = [
+        {"max_dimension": 0},  # Only nodes
+        {"max_dimension": 1},  # Nodes + edges  
+        {"max_dimension": 2}   # Full complex
+    ]
+    
+    for stage in stages:
+        print(f"Training stage: max_dim = {stage['max_dimension']}")
+        for epoch in range(epochs_per_stage):
+            # Filter data by max dimension
+            filtered_data = filter_by_dimension(data_loader, stage['max_dimension'])
+            train_epoch(model, filtered_data)
+```
+
+#### 4. Regularization for Topological Models
+```python
+class TopologicalRegularizer(nn.Module):
+    def __init__(self, alpha=0.01):
+        super().__init__()
+        self.alpha = alpha
+    
+    def forward(self, model_output, incidence_matrices):
+        # Penalize solutions that don't respect topological constraints
+        boundary_consistency = compute_boundary_consistency(
+            model_output, incidence_matrices
+        )
+        return self.alpha * boundary_consistency
+```
+
 ## References
 
 - Schaub, M. T., et al. "Random walks on simplicial complexes and the normalized Hodge 1-Laplacian." SIAM Review 62.2 (2020): 353-391.
 - Barbarossa, S., & Sardellitti, S. "Topological signal processing over simplicial complexes." IEEE Transactions on Signal Processing 68 (2020): 2992-3007.
+- Bunch, E., et al. "Simplicial 2-complex convolutional neural networks." arXiv preprint arXiv:2012.06010 (2020).
+- Roddenberry, T. M., et al. "Principled simplicial neural networks for trajectory prediction." International Conference on Machine Learning (2021).
 
 ---
 
-*This manual covers the core functionality of SHE. For the latest updates and additional features, please refer to the source code and accompanying documentation.*
+*This manual covers both the core topological analysis and neural network capabilities of SHE. For the latest updates and additional features, please refer to the source code and accompanying documentation.*
