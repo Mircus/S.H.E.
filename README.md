@@ -1,3 +1,4 @@
+[![License: HNCL](https://img.shields.io/badge/license-HNCL-blue.svg)](LICENSE.txt)
 
 <p align="center">
   <img src="she_logo.png" alt="SHE Logo" width="450"/>
