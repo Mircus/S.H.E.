@@ -14,7 +14,7 @@ or educational purposes**, subject to the following conditions:
 The Software, or any derivative works, **may not be used for commercial purposes**
 without a separate, written commercial license from Holomathics.  
 
-📧 **Commercial Licensing Contact:** [contact@holomathics.com](mailto:contact@holomathics.com)
+📧 **Commercial Licensing Contact:** [info@holomathics.com](mailto:info@holomathics.com)
 
 ---
 
