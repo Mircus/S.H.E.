@@ -13,7 +13,7 @@ academic research, or educational purposes, subject to the following conditions:
    for commercial purposes without a separate, written commercial license from
    Holomathics.  
    For commercial licensing inquiries, contact:  
-   **Email:** contact@holomathics.com
+   **Email:** info@holomathics.com
 
 2. **Attribution**  
    You must retain the above copyright notice, this license text, and all
