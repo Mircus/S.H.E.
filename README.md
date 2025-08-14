@@ -79,7 +79,7 @@ SHE supports integration with:
 This project is licensed under the **Holomathics Non-Commercial License (HNCL)**.  
 You are free to use, modify, and share this software for **personal, research, or educational** purposes.  
 **Commercial use requires a separate license** from Holomathics.  
-📧 Contact: [contact@holomathics.com](mailto:contact@holomathics.com)
+📧 Contact: [info@holomathics.com](mailto:info@holomathics.com)
 
 ---
 
