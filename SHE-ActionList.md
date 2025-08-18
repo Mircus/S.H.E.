@@ -7,7 +7,7 @@ This document summarizes the cleanup and refactoring tasks for the **Simplicial 
 
 ## A. Packaging & Module Boundaries
 1. remove main from core 
-2. Add `__init__.py` in `src/`, `src/core/`, `src/morse/`, `src/stanleyreisner/`.
+
 
 ## B. Imports & Optional Dependencies
 3. Standardize optional dependencies (`toponetx`, `torch_geometric`, `gtda`, `gudhi`, `seaborn`).
@@ -57,9 +57,9 @@ This document summarizes the cleanup and refactoring tasks for the **Simplicial 
     - Key diffuser ranking monotonicity
 
 ## K. Quick Fixes
-25. Add missing `__init__.py` files.
+
 26. Rename or remove `SHESimplicialConvolutionalNetwork` file (give `.py` extension).
-27. Remove duplicate license files (keep `LICENSE` only).
+
 28. Harden seaborn import fallback in `plot_diffusion_heatmap`.
 
 ---
