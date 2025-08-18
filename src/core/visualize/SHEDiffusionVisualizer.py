@@ -1,3 +1,11 @@
+from __future__ import annotations
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+# + any types you annotate
+
+
+
 class SHEDiffusionVisualizer:
     """Visualization tools for diffusion analysis"""
     
