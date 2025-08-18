@@ -4,15 +4,7 @@
 
 **Scope:** only what blocks `pip install -r requirements.txt` + import + running the demo. File quality/style is out of scope.
 
----
 
-## ✅ What’s already correct
-- Package layout: all subpackages under `src/` include `__init__.py`.
-- `requirements.txt` has the core stack: `toponetx`, `torch-geometric`, `gudhi`, etc.
-- `examples/SHEDemo.py` includes the `sys.path` patch and no longer tries to `exec()` a non-existent file.
-- `stanley_reisner.py` is importable (no hyphen).
-
----
 
 ## 🔴 Critical blockers to fix
 
@@ -31,39 +23,7 @@ from .config.SheConfig import SHEConfig
 ### B) Missing imports/definitions inside modules
 Add the **exact headers** below so modules import cleanly at runtime.
 
-**1) `src/core/diffusion/SHEHodgeDiffusion.py`** — add at the very top:
-```python
-from __future__ import annotations
-from typing import Any, Dict, List, Optional, Tuple
-import logging
-import numpy as np
-from scipy.sparse import csr_matrix, diags
-from scipy.sparse.linalg import eigsh, spsolve
-from scipy.linalg import eigh
-from ..config.SheConfig import SHEConfig
-from ..complex.SHESimplicialComplex import SHESimplicialComplex
-from ..SHE import DiffusionResult  # safe unless SHE.py imports this module
 
-logger = logging.getLogger(__name__)
-```
-
-**2) `src/core/complex/SHESimplicialComplex.py`** — add at the very top:
-```python
-from __future__ import annotations
-from typing import Any, Dict, List, Optional, Tuple, Union
-import logging
-import numpy as np
-from scipy.sparse import csr_matrix
-from toponetx.classes.simplicial_complex import SimplicialComplex
-from ..config.SheConfig import SHEConfig
-
-logger = logging.getLogger(__name__)
-try:
-    import toponetx  # noqa: F401
-    TOPOX_AVAILABLE = True
-except Exception:
-    TOPOX_AVAILABLE = False
-```
 
 > If you later import `SHEHodgeDiffusion` from `SHE.py`, consider guarding the `DiffusionResult` import with `TYPE_CHECKING` or doing a local import inside `analyze_diffusion` to avoid circulars.
 
@@ -123,8 +83,7 @@ OK: True
 ---
 
 ## 📋 Quick checklist
-- [ ] Change `she_core` import to **relative** imports in `SHESimplicialConvolution.py`.
-- [ ] Add the header imports to `SHEHodgeDiffusion.py`.
+
 - [ ] Add the header imports + `TOPOX_AVAILABLE` to `SHESimplicialComplex.py`.
 - [ ] Standardize `np`, `nn`, `sns` aliases where used.
 - [ ] Decide **extras vs core** for `pytorch-lightning`, `sparse`, `numba`, `psutil` and document in README.
