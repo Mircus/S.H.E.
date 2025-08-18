@@ -1,3 +1,18 @@
+from __future__ import annotations
+from typing import Dict, Optional
+import logging
+import matplotlib.pyplot as plt
+import seaborn as sns
+from ..config.SheConfig import SHEConfig
+from ..complex.SHESimplicialComplex import SHESimplicialComplex
+from ..diffusion.SHEHodgeDiffusion import SHEHodgeDiffusion
+from ..visualize.SHEDiffusionVisualizer import SHEDiffusionVisualizer
+
+logger = logging.getLogger(__name__)
+
+
+
+
 class SHEEngine:
     """
     Enhanced SHE Engine with advanced diffusion analysis
