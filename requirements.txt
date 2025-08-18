@@ -1,9 +1,15 @@
 # Core dependencies
 xgi
-topox
+toponetx
 giotto-tda
 torch
+torch-geometric
+networkx
 numpy
 pandas
+scipy
+matplotlib
+seaborn
+gudhi
 plotly
 streamlit
