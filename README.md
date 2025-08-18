@@ -31,19 +31,16 @@ SHE offers a full computational framework to model and analyze these structures 
 ## 📁 Project Structure
 
 ```
-SHE/
-├── data/                    # Raw or preprocessed data
-├── src/
-│   ├── ingestion.py         # Build simplicial sets from structured data
-│   ├── model.py             # Train SNNs using TopoX
-│   ├── evolution.py         # Compute persistent homology, Morse features
-│   ├── simulator.py         # Simulate diffusion processes
-│   ├── evaluator.py         # Measure diffusion quality
-│   └── dashboard.py         # Streamlit visualization UI
-├── notebooks/
-│   └── simulation_demo.ipynb
-├── requirements.txt
-└── README.md
+src/core/              # main engine modules
+  ├── SHE.py           # central SHE engine
+  ├── diffusion/       # Hodge Laplacians and diffusion
+  ├── complex/         # simplicial complex representations
+  ├── io/              # data loaders
+  ├── visualize/       # visualization utilities
+examples/              # demo scripts and notebooks
+docs/                  # manuals and specifications
+data/                  # synthetic datasets
+
 ```
 
 ---
