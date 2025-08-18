@@ -1,4 +1,5 @@
-# Core dependencies
+# requirements.txt (core stays lean)
+# core
 xgi
 toponetx
 giotto-tda
@@ -13,3 +14,7 @@ seaborn
 gudhi
 plotly
 streamlit
+
+# extras (optional)
+# training: pytorch-lightning
+# morse: numba, psutil, sparse
