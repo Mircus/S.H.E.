@@ -119,7 +119,7 @@ data/                  # synthetic datasets
 ## 🧠 Designed for Extensibility
 
 SHE supports integration with:
-- **SIA (Social Intelligence Augmentation)** — prediction, role inference, behavioral modeling
+
 - **Giotto-TDA**, **XGI**, **PyTorch**, and symbolic tools
 - Any data type requiring higher-order modeling (biology, finance, linguistics, neuroscience)
 
