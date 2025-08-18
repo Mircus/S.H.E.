@@ -8,9 +8,8 @@ This document summarizes the cleanup and refactoring tasks for the **Simplicial 
 ## A. Packaging & Module Boundaries
 1. remove main from core 
 
-
 ## B. Imports & Optional Dependencies
-3. Standardize optional dependencies (`toponetx`, `torch_geometric`, `gtda`, `gudhi`, `seaborn`).
+
 4. Make `seaborn` optional (currently used only in `plot_diffusion_heatmap`). Provide a fallback using matplotlib.
 
 ## C. API, Types, and Config
@@ -57,8 +56,6 @@ This document summarizes the cleanup and refactoring tasks for the **Simplicial 
     - Key diffuser ranking monotonicity
 
 ## K. Quick Fixes
-
-26. Rename or remove `SHESimplicialConvolutionalNetwork` file (give `.py` extension).
 
 28. Harden seaborn import fallback in `plot_diffusion_heatmap`.
 
