@@ -100,32 +100,6 @@ data/                  # synthetic datasets
 
 ---
 
-## 📜 License
-
-This project is licensed under the [HNCL License](LICENCE.md).
-
-
-
-
-
-
-[![License: HNCL](https://img.shields.io/badge/license-HNCL-blue.svg)](/LICENSE.txt)
-
-<p align="center">
-  <img src="she_logo.png" alt="SHE Logo" width="450"/>
-</p>
-
-# SHE: Simplicial Hyperstructure Engine
-
-**SHE** is a modular platform for ingesting data and modeling it as weighted, attributed simplicial sets, enabling analysis and prediction with Simplicial Neural Networks (SNNs), persistent homology, finite Morse theory, and algebraic invariants.
-
----
-
-## 🔺 Motivation
-
-Graphs are not enough. Many systems involve **higher-order relationships**: teams, cliques, co-occurrences, pathways, triadic influence.  
-SHE offers a full computational framework to model and analyze these structures using tools from **topological data analysis**, **algebraic geometry**, and **neural learning**.
-
 ---
 
 ## 📦 Features
@@ -139,38 +113,6 @@ SHE offers a full computational framework to model and analyze these structures 
 
 ---
 
-## 📁 Project Structure
-
-```
-src/core/              # main engine modules
-  ├── SHE.py           # central SHE engine
-  ├── diffusion/       # Hodge Laplacians and diffusion
-  ├── complex/         # simplicial complex representations
-  ├── io/              # data loaders
-  ├── visualize/       # visualization utilities
-examples/              # demo scripts and notebooks
-docs/                  # manuals and specifications
-data/                  # synthetic datasets
-
-```
-
----
-
-## 🚀 Quickstart
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the dashboard:
-
-```bash
-streamlit run src/dashboard.py
-```
-
-Run the simulation demo notebook for a full example.
 
 ---
 
