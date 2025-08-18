@@ -1,3 +1,30 @@
+from __future__ import annotations
+
+# stdlib
+from typing import Any, Dict, List, Optional, Tuple, Union
+import logging
+
+# third-party
+import numpy as np
+from scipy.sparse import csr_matrix
+import toponetx as tnx
+from toponetx.classes.simplicial_complex import SimplicialComplex
+
+# local
+from ..config.SheConfig import SHEConfig
+
+# availability + logger
+logger = logging.getLogger(__name__)
+try:
+    import toponetx  # noqa: F401
+    TOPOX_AVAILABLE = True
+except Exception:
+    TOPOX_AVAILABLE = False
+
+
+
+
+
 class SHESimplicialComplex:
     """
     Enhanced wrapper around TopoX SimplicialComplex with diffusion capabilities
