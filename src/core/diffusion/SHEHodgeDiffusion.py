@@ -1,3 +1,24 @@
+
+from __future__ import annotations
+
+# stdlib
+from typing import Any, Dict, List, Optional, Tuple
+import logging
+
+# third-party
+import numpy as np
+from scipy.sparse import csr_matrix, diags
+from scipy.sparse.linalg import eigsh, spsolve
+from scipy.linalg import eigh
+
+# local
+from ..config.SheConfig import SHEConfig
+from ..complex.SHESimplicialComplex import SHESimplicialComplex
+from ..SHE import DiffusionResult  # this is safe as long as SHE.py does NOT import this module
+
+logger = logging.getLogger(__name__)
+
+
 class SHEHodgeDiffusion:
     """
     Advanced diffusion analysis using Hodge Laplacians
