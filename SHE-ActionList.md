@@ -6,13 +6,7 @@ This document summarizes the cleanup and refactoring tasks for the **Simplicial 
 ---
 
 ## A. Packaging & Module Boundaries
-1. Split the monolithic `SHE.py` into separate modules:
-   - `she/config.py` → `SHEConfig`
-   - `she/complex.py` → `SHESimplicialComplex` (+ incidence/boundary utilities)
-   - `she/diffusion.py` → `SHEHodgeDiffusion`, `DiffusionResult`
-   - `she/visualize.py` → `SHEDiffusionVisualizer`
-   - `she/engine.py` → `SHEEngine`
-   - `she/io.py` → `SHEDataLoader`
+1. remove main from core 
 2. Add `__init__.py` in `src/`, `src/core/`, `src/morse/`, `src/stanleyreisner/`.
 
 ## B. Imports & Optional Dependencies
@@ -70,5 +64,5 @@ This document summarizes the cleanup and refactoring tasks for the **Simplicial 
 
 ---
 
-**Assignee:** Anthony  
+**Assignee:**Mirco 
 **Priority:** Start with Section K (quick fixes), then A/B (packaging and imports), and finally work through C–J in order.
