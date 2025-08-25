@@ -8,19 +8,9 @@
 
 ## 🔴 Critical blockers to fix
 
-### A) Wrong absolute import (must be relative)
-**File:** `src/core/SHESimplicialConvolution.py`  
-**Fix:**
-```python
-# BEFORE (bad)
-from she_core import SHESimplicialComplex, SHEConfig
-
-# AFTER (good)
-from .complex.SHESimplicialComplex import SHESimplicialComplex
-from .config.SheConfig import SHEConfig
 ```
 
-### B) Missing imports/definitions inside modules
+###  Missing imports/definitions inside modules
 Add the **exact headers** below so modules import cleanly at runtime.
 
 
@@ -84,7 +74,6 @@ OK: True
 
 ## 📋 Quick checklist
 
-- [ ] Add the header imports + `TOPOX_AVAILABLE` to `SHESimplicialComplex.py`.
 - [ ] Standardize `np`, `nn`, `sns` aliases where used.
 - [ ] Decide **extras vs core** for `pytorch-lightning`, `sparse`, `numba`, `psutil` and document in README.
 - [ ] Run `quick_smoke.py`.
