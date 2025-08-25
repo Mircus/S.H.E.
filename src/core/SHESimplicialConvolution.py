@@ -1,3 +1,8 @@
+from .complex.SHESimplicialComplex import SHESimplicialComplex
+from .config.SheConfig import SHEConfig
+
+
+
 from __future__ import annotations
 import logging
 import torch
