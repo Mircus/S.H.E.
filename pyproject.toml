@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "she"
+version = "0.1.0"
+description = "Simplicial Hyperstructure Engine (SHE)"
+authors = [{name="SHE Team"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3.0",
+  "scipy>=1.10,<2.0",
+  "pandas>=2.0,<3.0",
+  "networkx>=3.0,<4.0",
+  "gudhi>=3.8.0",
+  "toponetx>=0.7.0",
+  "matplotlib>=3.7,<4.0",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = ["she", "core", "core.config", "core.engine", "core.complex", "core.diffusion", "core.io", "core.visualize"]
+
+[project.optional-dependencies]
+tda = ["giotto-tda>=0.6.0"]
+viz = ["seaborn>=0.12.2"]
+dev = ["pytest>=7.4", "ruff>=0.5.0"]
