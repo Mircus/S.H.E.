@@ -21,8 +21,15 @@ dependencies = [
 
 [tool.setuptools]
 package-dir = { "" = "src" }
-packages = ["she", "core", "core.config", "core.engine", "core.complex", "core.diffusion", "core.io", "core.visualize"]
-
+packages = [
+  "core",
+  "core.config",
+  "core.engine",
+  "core.complex",
+  "core.diffusion",
+  "core.io",
+  "core.visualize"
+]
 [project.optional-dependencies]
 tda = ["giotto-tda>=0.6.0"]
 viz = ["seaborn>=0.12.2"]
