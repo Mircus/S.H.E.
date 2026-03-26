@@ -15,6 +15,13 @@ def test_import_public_symbols():
         SHEHodgeDiffusion,
         SHEDiffusionVisualizer,
         SHEEngine,
+        decay_window,
+        ranked_items_to_csv,
+        ranked_items_to_json,
+        bridges_to_csv,
+        bridges_to_json,
+        cohesion_to_csv,
+        cohesion_to_json,
     )
     # basic sanity — classes are callable
     assert callable(SHEConfig)
@@ -23,3 +30,5 @@ def test_import_public_symbols():
     assert callable(SHEHodgeDiffusion)
     assert callable(SHEDiffusionVisualizer)
     assert callable(SHEEngine)
+    assert callable(decay_window)
+    assert callable(ranked_items_to_csv)

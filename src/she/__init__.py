@@ -37,7 +37,17 @@ from .social import (
 )
 
 # -- temporal layer -------------------------------------------------------
-from .temporal import window, rolling_windows
+from .temporal import window, rolling_windows, decay_window
+
+# -- export layer ---------------------------------------------------------
+from .export import (
+    ranked_items_to_csv,
+    ranked_items_to_json,
+    bridges_to_csv,
+    bridges_to_json,
+    cohesion_to_csv,
+    cohesion_to_json,
+)
 
 __version__ = "0.1.2"
 
@@ -65,4 +75,12 @@ __all__ = [
     # temporal
     "window",
     "rolling_windows",
+    "decay_window",
+    # export
+    "ranked_items_to_csv",
+    "ranked_items_to_json",
+    "bridges_to_csv",
+    "bridges_to_json",
+    "cohesion_to_csv",
+    "cohesion_to_json",
 ]
