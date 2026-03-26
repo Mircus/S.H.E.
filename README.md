@@ -3,7 +3,7 @@
 [![License: HNCL](https://img.shields.io/badge/license-HNCL-blue.svg)](/LICENCE.md)
 
 <p align="center">
-  <img src="she_logo.png" alt="SHE logo" width="280">
+  <img src="she_logo.png" alt="SHE logo" width="500">
 </p>
 
 SHE is a source-available research library for modeling and analyzing
