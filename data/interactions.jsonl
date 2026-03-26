@@ -1,0 +1,22 @@
+{"users": ["anna", "ben"], "weight": 1.0, "kind": "reply", "topic": "energy", "time": 1}
+{"users": ["anna", "carol"], "weight": 0.8, "kind": "reply", "topic": "energy", "time": 1}
+{"users": ["ben", "carol"], "weight": 0.6, "kind": "like", "topic": "energy", "time": 1}
+{"users": ["anna", "ben", "carol"], "weight": 2.0, "kind": "co_retweet", "topic": "energy", "time": 1}
+{"users": ["dave", "elena"], "weight": 1.2, "kind": "reply", "topic": "housing", "time": 1}
+{"users": ["dave", "frank"], "weight": 0.9, "kind": "reply", "topic": "housing", "time": 1}
+{"users": ["elena", "frank"], "weight": 1.0, "kind": "like", "topic": "housing", "time": 1}
+{"users": ["dave", "elena", "frank"], "weight": 1.8, "kind": "co_retweet", "topic": "housing", "time": 1}
+{"users": ["carol", "dave"], "weight": 0.3, "kind": "mention", "topic": "energy", "time": 1}
+{"users": ["anna", "ben"], "weight": 1.2, "kind": "reply", "topic": "energy", "time": 2}
+{"users": ["anna", "carol"], "weight": 1.0, "kind": "reply", "topic": "energy", "time": 2}
+{"users": ["ben", "carol"], "weight": 0.8, "kind": "reply", "topic": "energy", "time": 2}
+{"users": ["anna", "ben", "carol"], "weight": 2.5, "kind": "co_retweet", "topic": "energy", "time": 2}
+{"users": ["dave", "elena"], "weight": 0.5, "kind": "like", "topic": "housing", "time": 2}
+{"users": ["carol", "dave"], "weight": 1.5, "kind": "reply", "topic": "energy", "time": 2}
+{"users": ["carol", "dave", "elena"], "weight": 2.8, "kind": "co_retweet", "topic": "energy", "time": 2}
+{"users": ["anna", "ben"], "weight": 0.6, "kind": "like", "topic": "energy", "time": 3}
+{"users": ["carol", "dave"], "weight": 2.0, "kind": "reply", "topic": "energy", "time": 3}
+{"users": ["carol", "dave", "elena"], "weight": 3.2, "kind": "co_retweet", "topic": "energy", "time": 3}
+{"users": ["carol", "elena"], "weight": 1.5, "kind": "reply", "topic": "energy", "time": 3}
+{"users": ["dave", "elena", "frank"], "weight": 1.0, "kind": "co_retweet", "topic": "housing", "time": 3}
+{"users": ["ben", "frank"], "weight": 0.4, "kind": "mention", "topic": "housing", "time": 3}

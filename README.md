@@ -6,34 +6,59 @@
   <img src="she_logo.png" alt="SHE logo" width="280">
 </p>
 
-SHE is a source-available Python toolkit for building **weighted simplicial
-complexes** from relational data, computing **Hodge Laplacians**, and running
-**diffusion / spectral analysis** on higher-order structures.
+SHE is a source-available research library for modeling and analyzing
+**decorated higher-order relational structures**, with a current computational
+focus on weighted simplicial representations and **social / group-level
+diffusion analysis**.
 
-This is a **v0.1 Research Preview** — useful for exploration, not yet hardened
-for production.  Released under the non-commercial
+This is a **Research Preview** released under the non-commercial
 [HNCL v1.0](LICENCE.md) license (not OSI open-source).
+
+## Why SHE?
+
+Standard graph analysis collapses every interaction to a pairwise edge.
+When the signal you care about lives in **small-group structure** — triads,
+co-engagement cliques, collaborative clusters — graph methods wash it out.
+
+Use SHE when:
+
+- **Triads and higher simplices matter.** A co-amplification group of three
+  accounts is a different object from three pairwise edges.
+- **Group-level diffusion matters.** The question is not "who is central?"
+  but "which small group is the diffusion bottleneck?"
+- **Bridge groups matter.** You want to find the cross-community triad, not
+  just the cross-community edge.
+- **Decorations matter.** Relations carry weight, type, topic, and metadata
+  that you want to query and analyze — not just adjacency.
+
+SHE does not replace graph libraries.  It adds a layer for the cases where
+graphs are not enough.
 
 ## What v0.1 includes
 
+**Modeling layer**
+- `SHEHyperstructure` — decorated, weighted higher-order relational object
+  with entity attributes, typed relations, and bulk record ingestion
+
+**Social analysis**
+- `rank_diffusers` / `rank_entity_diffusers` / `rank_simplex_diffusers`
+- `find_bridge_simplices` — cross-community higher-order bridges
+- `group_cohesion` — structural cohesion scoring for candidate groups
+- `rank_influencers` — graph centrality vs. simplex diffusion comparison
+
+**Core simplicial engine**
 - Simplicial-complex construction (wraps [TopoNetX](https://github.com/pyt-team/TopoNetX))
 - Graph-to-simplicial lifting via clique detection
-- Hodge-Laplacian computation, spectral analysis, and harmonic-form extraction
+- Hodge-Laplacian spectral analysis and harmonic-form extraction
 - Diffusion centrality ranking
 - Minimal matplotlib visualisation
-- Three runnable examples and a small test suite
 
 ## Installation
 
 ```bash
-# core only
-pip install -e .
-
-# with test tooling
-pip install -e ".[dev]"
-
-# with optional TDA support (gudhi, giotto-tda)
-pip install -e ".[tda]"
+pip install -e .            # core only
+pip install -e ".[dev]"     # with pytest / ruff
+pip install -e ".[tda]"     # with gudhi / giotto-tda
 ```
 
 Requires **Python >= 3.10**.
@@ -41,42 +66,56 @@ Requires **Python >= 3.10**.
 ## Quickstart
 
 ```python
-import networkx as nx
-from she import SHEDataLoader, SHEHodgeDiffusion, SHEConfig
+from she import SHEHyperstructure, rank_diffusers, find_bridge_simplices
 
-# 1. Start from a NetworkX graph
-G = nx.karate_club_graph()
+# Build a decorated hyperstructure from interaction records
+hs = SHEHyperstructure("demo")
+hs.add_entity("alice", community="A")
+hs.add_entity("bob",   community="A")
+hs.add_entity("carol", community="B")
 
-# 2. Lift to a simplicial complex (cliques become higher-order simplices)
-sc = SHEDataLoader.from_weighted_networkx(G)
+hs.add_relation(["alice", "bob"],          weight=1.0, kind="reply")
+hs.add_relation(["alice", "bob", "carol"], weight=2.5, kind="co_amplification")
 
-# 3. Run diffusion analysis
-config = SHEConfig(max_dimension=2, spectral_k=5)
-analyzer = SHEHodgeDiffusion(config)
-result = analyzer.analyze_diffusion(sc)
+# Who are the key diffusers?
+for r in rank_diffusers(hs, top_k=3):
+    print(f"dim={r.dimension}  {r.target}  score={r.score:.3f}")
 
-# 4. Inspect top diffusers
-for dim, diffusers in result.key_diffusers.items():
-    print(f"Dimension {dim}: top diffuser = {diffusers[0]}")
+# Which simplices bridge communities?
+for b in find_bridge_simplices(hs):
+    print(f"{sorted(b.members)}  communities={b.communities_spanned}")
 ```
+
+## Worked use case: social-media diffusers
+
+`examples/social_media_diffusers.py` builds a two-community social scenario
+where a high-degree hub dominates graph centrality, but a cross-community
+triad is the actual diffusion engine.  The example compares graph-only
+ranking with simplex-level analysis and shows where they disagree.
+
+```bash
+python examples/social_media_diffusers.py
+```
+
+Output highlights:
+- **Graph centrality** ranks the hub (u0) first.
+- **Bridge detection** surfaces the {u3, u5, u7} triad as the top
+  cross-community structure.
+- **Group cohesion** scores the triad as structurally tight despite
+  containing no individually prominent member.
 
 ## Examples
 
 | Script | Description |
 |--------|-------------|
+| `examples/social_media_diffusers.py` | Graph vs. simplex ranking on a two-community scenario |
 | `examples/toy_triangle.py` | Smallest nontrivial complex — Hodge Laplacian printout |
 | `examples/social_group_lift.py` | Lift a small social graph to simplices via cliques |
-| `examples/group_diffusion_demo.py` | Weighted Karate Club diffusion analysis with plot |
-
-Run any example with:
-
-```bash
-python examples/toy_triangle.py
-```
+| `examples/group_diffusion_demo.py` | Weighted Karate Club diffusion analysis |
 
 ## Experimental modules
 
-The following are **not** part of the stable v0.1 API and require extra
+The following are **not** part of the stable API and require extra
 dependencies:
 
 | Module | Requires | Install extra |
@@ -87,10 +126,12 @@ dependencies:
 ## Limitations
 
 This is a **Research Preview**.  The API may change between releases.
-It has not been optimised or audited for production use.
 
-- Hodge analysis currently computes the **harmonic component** only; exact and
-  coexact parts of the decomposition are not yet implemented.
+- Hodge analysis computes the **harmonic component** only; exact/coexact
+  decomposition is not yet implemented.
+- Bridge detection uses a heuristic (community-span weighted by relation
+  weight), not a topological invariant.
+- Group cohesion is a simple composite score, not a formal measure.
 - Tested with TopoNetX 0.2.x on Python 3.11.
 - Not OSI open-source — see License section below.
 

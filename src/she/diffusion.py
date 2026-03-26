@@ -54,22 +54,33 @@ class SHEHodgeDiffusion:
         weights: Dict[Any, float],
         simplex_list: List[Any],
     ) -> Dict[Any, float]:
-        """Diffusion centrality scores for simplices."""
+        """Diffusion centrality scores for simplices.
+
+        Uses a stronger diffusion coupling (lambda=1.0) so the Laplacian
+        structure actually influences the result, and rank-percentile
+        normalisation so scores spread across [0, 1] instead of clustering
+        near 1.0.
+        """
         if laplacian.shape[0] == 0:
             return {}
 
         weight_vector = np.array([weights.get(s, 1.0) for s in simplex_list])
 
         try:
-            lambda_diff = 0.1
+            lambda_diff = 1.0
             A = diags([1.0], shape=laplacian.shape) + lambda_diff * laplacian
-            result = spsolve(A, weight_vector)
+            raw = spsolve(A, weight_vector)
 
-            max_abs = np.max(np.abs(result))
-            if max_abs > 0:
-                scores = np.abs(result) / max_abs
+            # rank-percentile normalisation: spreads scores across [0, 1]
+            n = len(raw)
+            if n <= 1:
+                scores = np.ones(n)
             else:
-                scores = np.ones_like(result)
+                order = np.argsort(np.abs(raw))
+                ranks = np.empty_like(order, dtype=float)
+                ranks[order] = np.linspace(0.0, 1.0, n)
+                scores = ranks
+
             return dict(zip(simplex_list, scores))
         except Exception as exc:
             logger.warning("Diffusion centrality computation failed: %s", exc)
@@ -146,7 +157,7 @@ class SHEHodgeDiffusion:
             if weights and simplex_list:
                 centrality = self.compute_diffusion_centrality(lap, weights, simplex_list)
                 sorted_d = sorted(centrality.items(), key=lambda x: x[1], reverse=True)
-                key_diffusers[dim] = sorted_d[: min(10, len(sorted_d))]
+                key_diffusers[dim] = sorted_d
 
             hodge_decomps[f"dim_{dim}"] = self.hodge_decomposition(sc, dim)
 
