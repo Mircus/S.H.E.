@@ -5,32 +5,35 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "she"
 version = "0.1.0"
-description = "Simplicial Hyperstructure Engine (SHE)"
-authors = [{name="SHE Team"}]
+description = "Simplicial Hyperstructure Engine -- weighted simplicial-complex toolkit for higher-order relational modelling and Hodge diffusion analysis."
+authors = [{name = "Holomathics"}]
 readme = "README.md"
 requires-python = ">=3.10"
+license = {file = "LICENCE.md"}
+
 dependencies = [
-  "numpy>=1.24,<3.0",
-  "scipy>=1.10,<2.0",
-  "pandas>=2.0,<3.0",
-  "networkx>=3.0,<4.0",
-  "gudhi>=3.8.0",
-  "toponetx>=0.7.0",
-  "matplotlib>=3.7,<4.0",
+    "numpy>=1.24,<3.0",
+    "scipy>=1.10,<2.0",
+    "pandas>=2.0,<3.0",
+    "networkx>=3.0,<4.0",
+    "toponetx>=0.2.0,<1.0",  # tested with 0.2.x
+    "matplotlib>=3.7,<4.0",
 ]
 
-[tool.setuptools]
-package-dir = { "" = "src" }
-packages = [
-  "core",
-  "core.config",
-  "core.engine",
-  "core.complex",
-  "core.diffusion",
-  "core.io",
-  "core.visualize"
-]
 [project.optional-dependencies]
-tda = ["giotto-tda>=0.6.0"]
-viz = ["seaborn>=0.12.2"]
-dev = ["pytest>=7.4", "ruff>=0.5.0"]
+tda   = ["gudhi>=3.8.0", "giotto-tda>=0.6.0"]
+ml    = ["torch>=2.0", "torch-geometric>=2.3"]
+morse = ["sparse>=0.14", "numba>=0.58", "psutil>=5.9"]
+app   = ["streamlit>=1.28", "plotly>=5.18"]
+viz   = ["seaborn>=0.12.2"]
+dev   = ["pytest>=7.4", "ruff>=0.5.0"]
+
+[project.urls]
+Homepage = "https://github.com/Mircus/S.H.E."
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["she*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

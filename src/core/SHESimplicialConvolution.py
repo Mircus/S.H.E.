@@ -1,6 +1,12 @@
 """
-SHESimplicialConvolution
-========================
+SHESimplicialConvolution (EXPERIMENTAL)
+=======================================
+
+.. warning::
+    This module is **experimental** and not part of the stable v0.1 API.
+    It requires PyTorch and is not covered by the public import path.
+    Optional dependency: ``pip install she[ml]``
+
 
 A minimal, self-contained implementation of **simplicial convolution blocks**
 focused on the 1-skeleton (edge features) with optional coupling to nodes (0-simplices)

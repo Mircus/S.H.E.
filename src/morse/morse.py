@@ -1,6 +1,9 @@
 """
-SHE - Finite Morse Theory Extension
-Discrete Morse theory implementation for simplicial complexes
+SHE - Finite Morse Theory Extension (EXPERIMENTAL)
+
+.. warning::
+    This module is **experimental** and not part of the stable v0.1 API.
+    It requires PyTorch. Optional dependency: ``pip install she[morse]``
 """
 
 import torch

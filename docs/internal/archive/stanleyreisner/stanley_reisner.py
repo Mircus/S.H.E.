@@ -1,6 +1,9 @@
 """
-SHE Morse Theory - Scalability Analysis and Optimized Implementation
-Identifying bottlenecks and providing scalable solutions
+SHE Stanley-Reisner module (EXPERIMENTAL / PLACEHOLDER)
+
+.. warning::
+    This module is **experimental** and not part of the stable v0.1 API.
+    Requires: torch, numba, sparse, psutil.
 """
 
 import torch

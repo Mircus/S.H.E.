@@ -1,6 +1,10 @@
 """
-SHE - Simplicial Hyperstructure Engine
-Enhanced with Hodge Laplacian diffusion analysis and key diffuser identification
+SHE - Simplicial Hyperstructure Engine (LEGACY MONOLITH)
+
+.. warning::
+    This module is **not** part of the stable v0.1 public API.
+    Use ``import she`` instead.  This file is retained for internal
+    reference only and may be removed in a future release.
 """
 
 import torch
