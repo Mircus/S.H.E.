@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "she"
-version = "0.1.0"
+version = "0.1.2"
 description = "Simplicial Hyperstructure Engine -- weighted simplicial-complex toolkit for higher-order relational modelling and Hodge diffusion analysis."
 authors = [{name = "Holomathics"}]
 readme = "README.md"

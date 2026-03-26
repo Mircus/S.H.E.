@@ -14,6 +14,17 @@ diffusion analysis**.
 This is a **Research Preview** released under the non-commercial
 [HNCL v1.0](LICENCE.md) license (not OSI open-source).
 
+## Repo status
+
+| | |
+|---|---|
+| **Version** | 0.1.2 |
+| **Canonical package** | `src/she/` — install with `pip install -e .`, import as `import she` |
+| **Maturity** | Research preview — API may change between releases |
+| **Stable surface** | `SHEHyperstructure`, social analysis functions, temporal windowing, export |
+| **Experimental** | `src/core/` (legacy monolith, convolution), `src/morse/` (discrete Morse) — not part of the public API |
+| **Tests** | 41 passing (CI on Python 3.10–3.12) |
+
 ## Why SHE?
 
 Standard graph analysis collapses every interaction to a pairwise edge.
@@ -34,11 +45,11 @@ Use SHE when:
 SHE does not replace graph libraries.  It adds a layer for the cases where
 graphs are not enough.
 
-## What v0.1 includes
+## What v0.1.x includes
 
 **Modeling layer**
 - `SHEHyperstructure` — decorated, weighted higher-order relational object
-  with entity attributes, typed relations, and bulk record ingestion
+  with entity attributes, typed relations, and bulk ingestion (`from_csv`, `from_jsonl`)
 
 **Social analysis**
 - `rank_diffusers` / `rank_entity_diffusers` / `rank_simplex_diffusers`
@@ -46,11 +57,18 @@ graphs are not enough.
 - `group_cohesion` — structural cohesion scoring for candidate groups
 - `rank_influencers` — graph centrality vs. simplex diffusion comparison
 
+**Temporal**
+- `window` / `rolling_windows` — hard time-range slicing
+- `decay_window` — exponential decay with configurable half-life
+
+**Export**
+- `ranked_items_to_csv/json`, `bridges_to_csv/json`, `cohesion_to_csv/json`
+
 **Core simplicial engine**
 - Simplicial-complex construction (wraps [TopoNetX](https://github.com/pyt-team/TopoNetX))
 - Graph-to-simplicial lifting via clique detection
 - Hodge-Laplacian spectral analysis and harmonic-form extraction
-- Diffusion centrality ranking
+- Diffusion centrality ranking (rank-percentile normalisation)
 - Minimal matplotlib visualisation
 
 ## Installation
@@ -88,27 +106,35 @@ for b in find_bridge_simplices(hs):
 
 ## Worked use case: social-media diffusers
 
-`examples/social_media_diffusers.py` builds a two-community social scenario
+`examples/social_media_diffusers.py` builds a synthetic two-community scenario
 where a high-degree hub dominates graph centrality, but a cross-community
-triad is the actual diffusion engine.  The example compares graph-only
-ranking with simplex-level analysis and shows where they disagree.
+triad carries more weight as a higher-order structure.
 
 ```bash
 python examples/social_media_diffusers.py
 ```
 
 Output highlights:
-- **Graph centrality** ranks the hub (u0) first.
-- **Bridge detection** surfaces the {u3, u5, u7} triad as the top
-  cross-community structure.
-- **Group cohesion** scores the triad as structurally tight despite
+- **Graph centrality** (eigenvector on the 1-skeleton) ranks the hub (u0) first —
+  it has the most and heaviest pairwise edges.
+- **Bridge detection** (heuristic: community-span x relation weight) surfaces the
+  {u3, u5, u7} triad as the top cross-community structure — it spans both
+  communities and carries high group weight.
+- **Group cohesion** (geometric mean of internal weight, pair density, and
+  higher-order support) scores the triad as structurally tight despite
   containing no individually prominent member.
+
+These are heuristic scores, not topological invariants. The point is that
+graph-only centrality never even sees group-level structures, while SHE makes
+them queryable.
 
 ## Examples
 
 | Script | Description |
 |--------|-------------|
 | `examples/social_media_diffusers.py` | Graph vs. simplex ranking on a two-community scenario |
+| `examples/eu_email_analysis.ipynb` | Real-data notebook: SNAP EU Email network, temporal bridge/cohesion plots |
+| `examples/temporal_diffusion_analysis.ipynb` | Synthetic temporal scenario: bridge formation over three periods |
 | `examples/toy_triangle.py` | Smallest nontrivial complex — Hodge Laplacian printout |
 | `examples/social_group_lift.py` | Lift a small social graph to simplices via cliques |
 | `examples/group_diffusion_demo.py` | Weighted Karate Club diffusion analysis |
