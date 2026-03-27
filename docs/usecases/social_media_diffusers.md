@@ -46,10 +46,15 @@ Given this structure, SHE computes:
 
 In a scenario with two communities and one cross-community triad:
 
-- **Graph centrality** highlights a high-degree hub node.
-- **Simplex diffusion** highlights the cross-community triad as the actual
-  diffusion bottleneck, because information must pass through that group
-  structure to bridge the communities.
+- **Graph centrality** (eigenvector on the 1-skeleton) highlights a high-degree
+  hub node — the member with the most and heaviest pairwise edges.
+- **Bridge detection** (heuristic: community-span x relation weight) highlights
+  the cross-community triad as the top bridge structure, because it spans both
+  communities with high group weight.
+- **Group cohesion** (geometric mean of internal weight, pair density, and
+  higher-order support) scores the triad as structurally tight despite
+  containing no individually prominent member.
 
-The triad may contain no individually prominent member, yet it dominates the
-diffusion pathway.  SHE makes this visible.
+These are heuristic scores, not topological invariants.  The point is that
+graph-only centrality never sees group-level structures; SHE makes them
+queryable and trackable over time.

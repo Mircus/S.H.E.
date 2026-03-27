@@ -35,8 +35,8 @@ Use SHE when:
 
 - **Triads and higher simplices matter.** A co-amplification group of three
   accounts is a different object from three pairwise edges.
-- **Group-level diffusion matters.** The question is not "who is central?"
-  but "which small group is the diffusion bottleneck?"
+- **Group-level diffusion matters.** The question is not just "who is central?"
+  but "which small group carries the most structural weight in diffusion?"
 - **Bridge groups matter.** You want to find the cross-community triad, not
   just the cross-community edge.
 - **Decorations matter.** Relations carry weight, type, topic, and metadata
@@ -95,11 +95,11 @@ hs.add_entity("carol", community="B")
 hs.add_relation(["alice", "bob"],          weight=1.0, kind="reply")
 hs.add_relation(["alice", "bob", "carol"], weight=2.5, kind="co_amplification")
 
-# Who are the key diffusers?
+# Rank simplices by diffusion centrality (Hodge Laplacian, rank-percentile)
 for r in rank_diffusers(hs, top_k=3):
     print(f"dim={r.dimension}  {r.target}  score={r.score:.3f}")
 
-# Which simplices bridge communities?
+# Find simplices that span multiple communities (heuristic bridge score)
 for b in find_bridge_simplices(hs):
     print(f"{sorted(b.members)}  communities={b.communities_spanned}")
 ```
