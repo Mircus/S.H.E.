@@ -33,7 +33,7 @@
 - **Bulk ingestion** — `from_records`, `from_csv`, `from_jsonl`
 - **Temporal windowing** — `window()` and `rolling_windows()` for time-sliced analysis
 - Worked use case: `examples/social_media_diffusers.py`
-- Temporal notebook: `examples/temporal_diffusion_analysis.ipynb`
+- Temporal notebook: `notebooks/temporal_diffusion_analysis.ipynb`
 
 ### Fixed
 
