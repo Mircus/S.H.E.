@@ -81,9 +81,9 @@ ones still contribute.
 
 - **Script:** `examples/social_media_diffusers.py` — synthetic scenario,
   graph vs simplex comparison
-- **Notebook:** `examples/eu_email_analysis.ipynb` — real email data,
+- **Notebook:** `notebooks/eu_email_analysis.ipynb` — real email data,
   temporal bridge/cohesion plots
-- **Notebook:** `examples/temporal_diffusion_analysis.ipynb` — synthetic
+- **Notebook:** `notebooks/temporal_diffusion_analysis.ipynb` — synthetic
   temporal scenario showing bridge formation over three periods
 
 ## Caveats

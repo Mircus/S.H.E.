@@ -28,7 +28,6 @@ docs/
     overview.md          ← public API map
   usecases/
     social_media_diffusers.md
-  archive/               ← historical materials (not current)
 ```
 
 ## What is stable

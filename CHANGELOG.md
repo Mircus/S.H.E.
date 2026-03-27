@@ -9,7 +9,7 @@
 - **Decay-weighted temporal accumulation** — `decay_window()` applies exponential
   decay (configurable half-life) so older interactions fade rather than vanish at
   a hard boundary
-- **Real public dataset notebook** — `examples/eu_email_analysis.ipynb` analyses the
+- **Real public dataset notebook** — `notebooks/eu_email_analysis.ipynb` analyses the
   SNAP EU Email Dept3 network (20 most-active members, 812 interactions, 27 months)
   with Louvain community detection, temporal bridge/cohesion tracking, and matplotlib
   plots

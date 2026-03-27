@@ -58,7 +58,7 @@ group-level structures, while SHE makes them queryable.
 
 ## Third: real-data notebook
 
-Open `examples/eu_email_analysis.ipynb` — it analyses the SNAP EU Email
+Open `notebooks/eu_email_analysis.ipynb` — it analyses the SNAP EU Email
 network (20 researchers, 812 interactions, 27 months) with:
 
 - Louvain community detection

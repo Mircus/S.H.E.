@@ -110,7 +110,7 @@ python examples/social_media_diffusers.py
 **4.** Open the real-data notebook:
 
 ```
-examples/eu_email_analysis.ipynb
+notebooks/eu_email_analysis.ipynb
 ```
 
 For a full walkthrough, see [Getting Started](docs/tutorials/getting_started.md).
@@ -146,8 +146,8 @@ for b in find_bridge_simplices(hs):
 | `examples/social_group_lift.py` | Script | Graph-to-simplicial lifting via cliques |
 | `examples/social_media_diffusers.py` | Script | Graph centrality vs simplex diffusion on two communities |
 | `examples/group_diffusion_demo.py` | Script | Weighted Karate Club diffusion |
-| `examples/temporal_diffusion_analysis.ipynb` | Notebook | Bridge formation over three time periods (synthetic) |
-| `examples/eu_email_analysis.ipynb` | Notebook | Real SNAP email data, temporal bridge/cohesion plots |
+| `notebooks/temporal_diffusion_analysis.ipynb` | Notebook | Bridge formation over three time periods (synthetic) |
+| `notebooks/eu_email_analysis.ipynb` | Notebook | Real SNAP email data, temporal bridge/cohesion plots |
 
 ## Experimental modules
 
