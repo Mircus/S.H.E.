@@ -1,6 +1,9 @@
 # S.H.E. — Simplicial Hyperstructure Engine
 
+[![CI](https://github.com/Mircus/S.H.E./actions/workflows/ci.yml/badge.svg)](https://github.com/Mircus/S.H.E./actions/workflows/ci.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: HNCL](https://img.shields.io/badge/license-HNCL-blue.svg)](/LICENCE.md)
+[![Status: Research Preview](https://img.shields.io/badge/status-research%20preview-orange.svg)](#repo-status)
 
 <p align="center">
   <img src="she_logo.png" alt="SHE logo" width="500">
@@ -53,8 +56,8 @@ graphs are not enough.
 
 **Social analysis**
 - `rank_diffusers` / `rank_entity_diffusers` / `rank_simplex_diffusers`
-- `find_bridge_simplices` — cross-community higher-order bridges
-- `group_cohesion` — structural cohesion scoring for candidate groups
+- `find_bridge_simplices` — cross-community higher-order bridges (heuristic)
+- `group_cohesion` — structural cohesion scoring for candidate groups (composite)
 - `rank_influencers` — graph centrality vs. simplex diffusion comparison
 
 **Temporal**
@@ -74,12 +77,43 @@ graphs are not enough.
 ## Installation
 
 ```bash
+git clone https://github.com/Mircus/S.H.E.
+cd S.H.E
 pip install -e .            # core only
 pip install -e ".[dev]"     # with pytest / ruff
 pip install -e ".[tda]"     # with gudhi / giotto-tda
 ```
 
 Requires **Python >= 3.10**.
+
+## Start here
+
+**1.** Check your install:
+
+```python
+import she
+print(she.__version__)  # 0.1.2
+```
+
+**2.** Run the smallest example:
+
+```bash
+python examples/toy_triangle.py
+```
+
+**3.** Run the main worked example (graph centrality vs simplex diffusion):
+
+```bash
+python examples/social_media_diffusers.py
+```
+
+**4.** Open the real-data notebook:
+
+```
+examples/eu_email_analysis.ipynb
+```
+
+For a full walkthrough, see [Getting Started](docs/tutorials/getting_started.md).
 
 ## Quickstart
 
@@ -104,40 +138,16 @@ for b in find_bridge_simplices(hs):
     print(f"{sorted(b.members)}  communities={b.communities_spanned}")
 ```
 
-## Worked use case: social-media diffusers
+## Examples at a glance
 
-`examples/social_media_diffusers.py` builds a synthetic two-community scenario
-where a high-degree hub dominates graph centrality, but a cross-community
-triad carries more weight as a higher-order structure.
-
-```bash
-python examples/social_media_diffusers.py
-```
-
-Output highlights:
-- **Graph centrality** (eigenvector on the 1-skeleton) ranks the hub (u0) first —
-  it has the most and heaviest pairwise edges.
-- **Bridge detection** (heuristic: community-span x relation weight) surfaces the
-  {u3, u5, u7} triad as the top cross-community structure — it spans both
-  communities and carries high group weight.
-- **Group cohesion** (geometric mean of internal weight, pair density, and
-  higher-order support) scores the triad as structurally tight despite
-  containing no individually prominent member.
-
-These are heuristic scores, not topological invariants. The point is that
-graph-only centrality never even sees group-level structures, while SHE makes
-them queryable.
-
-## Examples
-
-| Script | Description |
-|--------|-------------|
-| `examples/social_media_diffusers.py` | Graph vs. simplex ranking on a two-community scenario |
-| `examples/eu_email_analysis.ipynb` | Real-data notebook: SNAP EU Email network, temporal bridge/cohesion plots |
-| `examples/temporal_diffusion_analysis.ipynb` | Synthetic temporal scenario: bridge formation over three periods |
-| `examples/toy_triangle.py` | Smallest nontrivial complex — Hodge Laplacian printout |
-| `examples/social_group_lift.py` | Lift a small social graph to simplices via cliques |
-| `examples/group_diffusion_demo.py` | Weighted Karate Club diffusion analysis |
+| Example | Type | What you learn |
+|---------|------|---------------|
+| `examples/toy_triangle.py` | Script | Hodge Laplacians on the smallest complex |
+| `examples/social_group_lift.py` | Script | Graph-to-simplicial lifting via cliques |
+| `examples/social_media_diffusers.py` | Script | Graph centrality vs simplex diffusion on two communities |
+| `examples/group_diffusion_demo.py` | Script | Weighted Karate Club diffusion |
+| `examples/temporal_diffusion_analysis.ipynb` | Notebook | Bridge formation over three time periods (synthetic) |
+| `examples/eu_email_analysis.ipynb` | Notebook | Real SNAP email data, temporal bridge/cohesion plots |
 
 ## Experimental modules
 
@@ -148,6 +158,15 @@ dependencies:
 |--------|----------|---------------|
 | `src/core/SHESimplicialConvolution.py` | PyTorch | `pip install she[ml]` |
 | `src/morse/` | PyTorch, numba, sparse, psutil | `pip install she[morse]` |
+
+## Documentation
+
+| Doc | Purpose |
+|-----|---------|
+| [Getting Started](docs/tutorials/getting_started.md) | Install, first examples, onboarding path |
+| [Social Diffusers Tutorial](docs/tutorials/social_diffusers.md) | Diffusers, bridges, cohesion, temporal |
+| [API Overview](docs/api/overview.md) | Public API map with stable-vs-heuristic labels |
+| [Social Media Use Case](docs/usecases/social_media_diffusers.md) | Conceptual framing |
 
 ## Limitations
 
@@ -160,6 +179,10 @@ This is a **Research Preview**.  The API may change between releases.
 - Group cohesion is a simple composite score, not a formal measure.
 - Tested with TopoNetX 0.2.x on Python 3.11.
 - Not OSI open-source — see License section below.
+
+## Contributing
+
+Issues and PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
