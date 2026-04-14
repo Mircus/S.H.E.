@@ -14,4 +14,11 @@ Thumbs.db
 *.png
 *.jpg
 !she_logo.png
+!she-geofield/out/*.png
+coupled_geometry_field.aux
+coupled_geometry_field.bbl
+coupled_geometry_field.blg
+coupled_geometry_field.log
+coupled_geometry_field.out
+coupled_geometry_field.pdf
 docs/archive/

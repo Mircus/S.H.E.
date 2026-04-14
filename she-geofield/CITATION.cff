@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: she-geofield
+message: "If you use this software, cite the companion article and this repository."
+type: software
+authors:
+  - family-names: Mannucci
+    given-names: Mirco A.
+repository-code: "https://github.com/Mircus/S.H.E."
+license: "LicenseRef-HNCL-1.0"
+abstract: >
+  Focused geometry-field extension located in the she-geofield subdirectory
+  of the S.H.E. repository, implementing curvature-driven simplex-weight
+  evolution, weighted Hodge diffusion, and the toy bridge-complex experiment
+  supporting the companion article.

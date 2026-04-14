@@ -1,0 +1,5 @@
+max|B10 @ B21| = 0.00e+00  (chain complex: should be 0)
+max|L1 - L1^T| = 0.00e+00  (symmetry: should be 0)
+L1 positive semi-definite: True
+L1 eigenvalues: [1.0, 1.6667, 2.0, 2.5, 3.0, 3.8095, 4.0, 6.0]
+Parameters: steps=10, dt=0.5, eta=0.15, lam=0.5, mu=0.5
