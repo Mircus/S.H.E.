@@ -1,7 +1,7 @@
 # seldon-lab
 
 <p align="center">
-  <img src="seldon-lab.png" alt="Seldon Lab logo" width="500">
+  <img src="seldon-lab.png" alt="Seldon Lab logo" width="700">
 </p>
 
 
