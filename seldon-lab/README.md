@@ -1,5 +1,10 @@
 # seldon-lab
 
+<p align="center">
+  <img src="seldon-lab.png" alt="Seldon Lab logo" width="500">
+</p>
+
+
 `seldon-lab` is the scientific layer on top of the broader S.H.E. ecosystem.
 Its current canonical deliverable is the geometry-first DBLP pilot and the
 accompanying paper in [`paper/`](paper/). Secondary aggregation-birth and
