@@ -1,0 +1,53 @@
+<dblp>
+  <inproceedings key="conf/test/alpha2020">
+    <author>Alice</author>
+    <author>Bob</author>
+    <title>Alpha collaboration</title>
+    <year>2020</year>
+    <booktitle>ConfA</booktitle>
+  </inproceedings>
+  <article key="journals/test/beta2020">
+    <author>Alice</author>
+    <author>Bob</author>
+    <author>Carol</author>
+    <title>Beta triangle</title>
+    <year>2020</year>
+    <journal>JournalA</journal>
+  </article>
+  <inproceedings key="conf/test/gamma2021">
+    <author>Bob</author>
+    <author>Carol</author>
+    <title>Gamma pair</title>
+    <year>2021</year>
+    <booktitle>ConfA</booktitle>
+  </inproceedings>
+  <article key="journals/test/delta2021">
+    <author>Alice</author>
+    <author>Carol</author>
+    <author>Dave</author>
+    <title>Delta bridge</title>
+    <year>2021</year>
+    <journal>JournalB</journal>
+  </article>
+  <inproceedings key="conf/test/epsilon2022">
+    <author>Carol</author>
+    <author>Dave</author>
+    <author>Eve</author>
+    <title>Epsilon triangle</title>
+    <year>2022</year>
+    <booktitle>ConfB</booktitle>
+  </inproceedings>
+  <article key="journals/test/zeta2023">
+    <author>Bob</author>
+    <author>Carol</author>
+    <author>Eve</author>
+    <title>Zeta return</title>
+    <year>2023</year>
+    <journal>JournalA</journal>
+  </article>
+  <www key="homepages/test/skip">
+    <author>Ignored Person</author>
+    <title>Should be ignored</title>
+    <year>2020</year>
+  </www>
+</dblp>

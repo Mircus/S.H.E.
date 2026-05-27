@@ -1,0 +1,547 @@
+key,year,venue,pub_type,title,authors
+conf/sdm/PelissierNT19,2019,SDM,inproceedings,Feature selection as Monte-Carlo Search in Growing Single Rooted Directed Acyclic Graph by Best Leaf Identification.,Aur|Atsuyoshi Nakamura|Koji Tabata
+conf/sdm/WangZMY21,2021,SDM,inproceedings,MT-STNets: Multi-Task Spatial-Temporal Networks for Multi-Scale Traffic Prediction.,Senzhang Wang|Meiyue Zhang|Hao Miao 0001|Philip S. Yu
+conf/sdm/YamaguchiMMU20,2020,SDM,inproceedings,LTSpAUC: Learning Time-series Shapelets for Optimizing Partial AUC.,Akihiro Yamaguchi|Shigeru Maya|Kohei Maruchi|Ken Ueno
+conf/sdm/LiGS21,2021,SDM,inproceedings,"""Misc""-Aware Weakly Supervised Aspect Classification.",Peiran Li|Fang Guo|Jingbo Shang
+conf/sdm/DengHDLM22,2022,SDM,inproceedings,IB-GAN: A Unified Approach for Multivariate Time Series Classification under Class Imbalance.,Grace Deng|Cuize Han|Tommaso Dreossi|Clarence Lee|David S. Matteson
+conf/sdm/GolshanTT19,2019,SDM,inproceedings,Recommendations for optimizing the collective user experience.,Behzad Golshan|Evimaria Terzi|Panayiotis Tsaparas
+conf/sdm/ForouzeshT24,2024,SDM,inproceedings,Differences Between Hard and Noisy-labeled Samples: An Empirical Study.,Mahsa Forouzesh|Patrick Thiran
+conf/sdm/KaltenpothV19,2019,SDM,inproceedings,We Are Not Your Real Parents: Telling Causal from Confounded using MDL.,David Kaltenpoth|Jilles Vreeken
+conf/sdm/DawTCRAK20,2020,SDM,inproceedings,Physics-Guided Architecture (PGA) of Neural Networks for Quantifying Uncertainty in Lake Temperature Modeling.,Arka Daw|R. Quinn Thomas|Cayelan C. Carey|Jordan S. Read|Alison P. Appling|Anuj Karpatne
+conf/sdm/VercruyssenMD20,2020,SDM,inproceedings,"""Now you see it, now you don't!"" Detecting Suspicious Pattern Absences in Continuous Time Series.",Vincent Vercruyssen|Wannes Meert|Jesse Davis
+conf/sdm/LiuLWT19,2019,SDM,inproceedings,Spherical Principal Component Analysis.,Kai Liu 0018|Qiuwei Li|Hua Wang 0007|Gongguo Tang
+conf/sdm/MengLZ0K23,2023,SDM,inproceedings,Meta-Learning with Motif-based Task Augmentation for Few-Shot Molecular Property Prediction.,Ziqiao Meng|Yaoman Li|Peilin Zhao|Yang Yu 0010|Irwin King
+conf/sdm/ChoudharyHS18,2018,SDM,inproceedings,Sparse Decomposition for Time Series Forecasting and Anomaly Detection.,Sunav Choudhary|Gaurush Hiranandani|Shiv Kumar Saini
+conf/sdm/LuNKL24,2024,SDM,inproceedings,HyperFLoRA: Federated Learning with Instantaneous Personalization.,Qikai Lu|Di Niu|Mohammadamin Samadi Khoshkho|Baochun Li
+conf/sdm/000300ZS024,2024,SDM,inproceedings,Robust Sparse Online Learning for Data Streams with Streaming Features.,Zhong Chen 0003|Yi He 0007|Di Wu 0056|Huixin Zhan|Victor S. Sheng|Kun Zhang 0012
+conf/sdm/LinWMC20,2020,SDM,inproceedings,Filling Missing Values on Wearable-Sensory Time Series Data.,Suwen Lin|Xian Wu 0003|Gonzalo J. Mart|Nitesh V. Chawla
+conf/sdm/MedyaSSBS18,2018,SDM,inproceedings,Group Centrality Maximization via Network Design.,Sourav Medya|Arlei Silva|Ambuj K. Singh|Prithwish Basu|Ananthram Swami
+conf/sdm/AnandCHVP24,2024,SDM,inproceedings,H,Vivek Anand|Jiaming Cui|Jack Heavey|Anil Vullikanti|B. Aditya Prakash
+conf/sdm/WangLTZX21,2021,SDM,inproceedings,Adaptive Holding for Online Bottleneck Matching with Delays.,Kaixin Wang|Cheng Long 0001|Yongxin Tong|Jie Zhang 0002|Yi Xu 0013
+conf/sdm/YamaguchiUK22,2022,SDM,inproceedings,Learning Time-series Shapelets Enhancing Discriminability.,Akihiro Yamaguchi|Ken Ueno|Hisashi Kashima
+conf/sdm/CostaO20,2020,SDM,inproceedings,Document Clustering Meets Topic Modeling with Word Embeddings.,Gianni Costa|Riccardo Ortale
+conf/sdm/PinxterenC21,2021,SDM,inproceedings,Efficient Permutation Testing for Significant Sequential Patterns.,Sam Pinxteren|Toon Calders
+conf/sdm/GuptaLCA22,2022,SDM,inproceedings,BRNet: Branched Residual Network for Fast and Accurate Predictive Modeling of Materials Properties.,Vishu Gupta|Wei-keng Liao|Alok N. Choudhary|Ankit Agrawal 0001
+conf/sdm/0001O21,2021,SDM,inproceedings,Predictive Optimization with Zero-Shot Domain Adaptation.,Tomoya Sakai 0001|Naoto Ohsaka
+conf/sdm/OettershagenM23,2023,SDM,inproceedings,An Index For Temporal Closeness Computation in Evolving Graphs.,Lutz Oettershagen|Petra Mutzel
+conf/sdm/GujralPP18,2018,SDM,inproceedings,SamBaTen: Sampling-based Batch Incremental Tensor Decomposition.,Ekta Gujral|Ravdeep Pasricha|Evangelos E. Papalexakis
+conf/sdm/JiaLKNKK19,2019,SDM,inproceedings,Spatial Context-Aware Networks for Mining Temporal Discriminative Period in Land Cover Detection.,Xiaowei Jia|Sheng Li 0001|Ankush Khandelwal|Guruprasad Nayak|Anuj Karpatne|Vipin Kumar 0001
+conf/sdm/MrabahBK23,2023,SDM,inproceedings,Beyond The Evidence Lower Bound: Dual Variational Graph Auto-Encoders For Node Clustering.,Nairouz Mrabah|Mohamed Bouguessa|Riadh Ksantini
+conf/sdm/LiIASGK20,2020,SDM,inproceedings,Dissecting Ethereum Blockchain Analytics: What We Learn from Topology and Geometry of the Ethereum Graph?,Yitao Li|Umar Islambekov|Cuneyt Gurcan Akcora|Ekaterina Smirnova|Yulia R. Gel|Murat Kantarcioglu
+conf/sdm/DonyaviSB23,2023,SDM,inproceedings,MC-SQ: A Highly Accurate Ensemble for Multi-class Quantification.,Zahra Donyavi|Adriane Serapio|Gustavo Batista
+conf/sdm/ZhangWLY22,2022,SDM,inproceedings,On Predicting and Generating a Good Break Shot in Billiards Sports.,Qianru Zhang|Zheng Wang 0046|Cheng Long 0001|Siu-Ming Yiu
+conf/sdm/JiaNKKK19,2019,SDM,inproceedings,Classifying Heterogeneous Sequential Data by Cyclic Domain Adaptation: An Application in Land Cover Detection.,Xiaowei Jia|Guruprasad Nayak|Ankush Khandelwal|Anuj Karpatne|Vipin Kumar 0001
+conf/sdm/RandelAH23,2023,SDM,inproceedings,A Lagrangian-based approach to learn distance metrics for clustering with minimal data transformation.,Rodrigo Randel|Daniel Aloise|Alain Hertz
+conf/sdm/ZhangSZ022,2022,SDM,inproceedings,Explainable Concept Graph Completion by Bridging Open-Domain Relations and Concepts.,Yue Zhang 0086|Mingming Sun 0001|Jingyuan Zhang|Ping Li 0001
+conf/sdm/MengJFLLC22,2022,SDM,inproceedings,Early Forecasting of the Impact of Traffic Accidents Using a Single Shot Observation.,Guangyu Meng|Qisheng Jiang 0001|Kaiqun Fu|Beiyu Lin|Chang-Tien Lu|Zhqian Chen
+conf/sdm/LiuWLBO024,2024,SDM,inproceedings,Time-Transformer: Integrating Local and Global Features for Better Time Series Generation.,Yuansan Liu|Sudanthi N. R. Wijewickrema|Ang Li|Christofer Bester|Stephen J. O'Leary|James Bailey 0001
+conf/sdm/ZhangB19,2019,SDM,inproceedings,DSL: Discriminative Subgraph Learning via Sparse Self-Representation.,Lin Zhang|Petko Bogdanov
+conf/sdm/KuoCC18,2018,SDM,inproceedings,Personalized Ranking on Poisson Factorization.,Li-Yen Kuo|Chung-Kuang Chou|Ming-Syan Chen
+conf/sdm/LiLCOW18,2018,SDM,inproceedings,Black-box Expectation Propagation for Bayesian Models.,Ximing Li 0002|Changchun Li|Jinjin Chi|Jihong Ouyang|Wenting Wang
+conf/sdm/LiEZ23,2023,SDM,inproceedings,Optimal Intervention on Weighted Networks via Edge Centrality.,Dongyue Li|Tina Eliassi-Rad|Hongyang R. Zhang
+conf/sdm/KuboD24,2024,SDM,inproceedings,XGExplainer: Robust Evaluation-based Explanation for Graph Neural Networks.,Ryoji Kubo|Djellel Eddine Difallah
+conf/sdm/HassenC20,2020,SDM,inproceedings,Learning a Neural-network-based Representation for Open Set Recognition.,Mehadi Hassen|Philip K. Chan
+conf/sdm/ZhaLZH22,2022,SDM,inproceedings,Towards Similarity-Aware Time-Series Classification.,Daochen Zha|Kwei-Herng Lai|Kaixiong Zhou|Xia Hu 0001
+conf/sdm/YangY0Y023,2023,SDM,inproceedings,Causal Discovery by Graph Attention Reinforcement Learning.,Dezhi Yang|Guoxian Yu|Jun Wang 0035|Zhongmin Yan|Maozu Guo 0001
+conf/sdm/ZhangZWBSY20,2020,SDM,inproceedings,Fisher Deep Domain Adaptation.,Yinghua Zhang|Yu Zhang 0006|Ying Wei 0001|Kun Bai|Yangqiu Song|Qiang Yang 0001
+conf/sdm/Grosse021,2021,SDM,inproceedings,Do winning tickets exist before DNN training?,Kathrin Grosse|Michael Backes 0001
+conf/sdm/DuXWT21,2021,SDM,inproceedings,Fairness-aware Agnostic Federated Learning.,Wei Du 0009|Depeng Xu 0001|Xintao Wu|Hanghang Tong
+conf/sdm/RenL024,2024,SDM,inproceedings,Word Embedding with Neural Probabilistic Prior.,Shaogang Ren|Dingcheng Li|Ping Li 0001
+conf/sdm/LiL19,2019,SDM,inproceedings,Linear Time Motif Discovery in Time Series.,Xiaosheng Li|Jessica Lin 0001
+conf/sdm/XuRM20,2020,SDM,inproceedings,Second-order Optimization for Non-convex Machine Learning: an Empirical Study.,Peng Xu|Fred Roosta|Michael W. Mahoney
+conf/sdm/ManiDG21,2021,SDM,inproceedings,Unsupervised Selective Manifold Regularized Matrix Factorization.,Priya Mani|Carlotta Domeniconi|Igor Griva
+conf/sdm/LiuLCWSH21,2021,SDM,inproceedings,Discrete Listwise Collaborative Filtering for Fast Recommendation.,Chenghao Liu|Tao Lu|Zhiyong Cheng 0001|Xin Wang 0019|Jianling Sun|Steven C. H. Hoi
+conf/sdm/YangZZ24,2024,SDM,inproceedings,Variational Invariant Representation Learning for Multimodal Recommendation.,Wei Yang|Haoran Zhang|Li Zhang
+conf/sdm/BaiTW0AV23,2023,SDM,inproceedings,Sign-Regularized Multi-Task Learning.,Guangji Bai|Johnny Torres|Junxiang Wang|Liang Zhao 0002|Cristina L. Abad|Carmen Vaca
+conf/sdm/YamaguchiU21,2021,SDM,inproceedings,Learning Time-series Shapelets via Supervised Feature Selection.,Akihiro Yamaguchi|Ken Ueno
+conf/sdm/0001LPT22,2022,SDM,inproceedings,Fine-grained Attributed Graph Clustering.,Zhao Kang 0001|Zhanyu Liu|Shirui Pan|Ling Tian
+conf/sdm/00010B0X24,2024,SDM,inproceedings,CaMU: Disentangling Causal Effects in Deep Model Unlearning.,Shaofei Shen 0001|Chenhao Zhang 0004|Alina Bialkowski|Weitong Chen 0001|Miao Xu 0001
+conf/sdm/StolmanL0S22,2022,SDM,inproceedings,Classic Graph Structural Features Outperform Factorization-Based Graph Embedding Methods on Community Labeling.,Andrew Stolman|Caleb C. Levy|C. Seshadhri 0001|Aneesh Sharma
+conf/sdm/Shen0KJ18,2018,SDM,inproceedings,Accelerating Time Series Searching with Large Uniform Scaling.,Yilin Shen|Yanping Chen 0005|Eamonn J. Keogh|Hongxia Jin
+conf/sdm/ThejaswiG20,2020,SDM,inproceedings,Pattern detection in large temporal graphs using algebraic fingerprints.,Suhas Thejaswi|Aristides Gionis
+conf/sdm/NayakMJK18,2018,SDM,inproceedings,Classifying Multivariate Time Series by Learning Sequence-level Discriminative Patterns.,Guruprasad Nayak|Varun Mithal|Xiaowei Jia|Vipin Kumar 0001
+conf/sdm/KalanatXLJ24,2024,SDM,inproceedings,Spatial-Temporal Augmented Adaptation via Cycle-Consistent Adversarial Network: An Application in Streamflow Prediction.,Nasrin Kalanat|Yiqun Xie|Yanhua Li|Xiaowei Jia
+conf/sdm/FarhadlooSGLMS24,2024,SDM,inproceedings,Towards Spatially-Lucid AI Classification in Non-Euclidean Space: An Application for MxIF Oncology Data.,Majid Farhadloo|Arun Sharma 0006|Jayant Gupta|Alexey A. Leontovich|Svetomir N. Markovic|Shashi Shekhar 0001
+conf/sdm/LiZ0CZ21,2021,SDM,inproceedings,Sign-aware Perturbations Regression.,Zhongnian Li|Tao Zhang 0099|Wei Shao 0005|Songcan Chen|Daoqiang Zhang
+conf/sdm/WangZLWXM23,2023,SDM,inproceedings,Knowledge-Enhanced Semi-Supervised Federated Learning for Aggregating Heterogeneous Lightweight Clients in IoT.,Jiaqi Wang 0002|Shenglai Zeng|Zewei Long|Yaqing Wang 0001|Houping Xiao|Fenglong Ma
+conf/sdm/CaiGJ19,2019,SDM,inproceedings,Multi-Stage Variational Auto-Encoders for Coarse-to-Fine Image Generation.,Lei Cai|Hongyang Gao|Shuiwang Ji
+conf/sdm/AzimW00F24,2024,SDM,inproceedings,Feature Interaction Aware Automated Data Representation Transformation.,Ehtesamul Azim|Dongjie Wang|Kunpeng Liu 0001|Wei Zhang 0076|Yanjie Fu
+conf/sdm/BhowmikCXR19,2019,SDM,inproceedings,EstImAgg: A Learning Framework for Groupwise Aggregated Data.,Avradeep Bhowmik|Minmin Chen|Zhengming Xing|Suju Rajan
+conf/sdm/EvansN18,2018,SDM,inproceedings,Exploiting Structure for Fast Kernel Learning.,Trefor W. Evans|Prasanth B. Nair
+conf/sdm/0002CPW24,2024,SDM,inproceedings,RHINE: A Regime-Switching Model with Nonlinear Representation for Discovering and Forecasting Regimes in Financial Markets.,Kunpeng Xu 0002|Lifei Chen|Jean-Marc Patenaude|Shengrui Wang
+conf/sdm/0001TG23,2023,SDM,inproceedings,Ranking with submodular functions on the fly.,Guangyi Zhang 0001|Nikolaj Tatti|Aristides Gionis
+conf/sdm/XiaoEHM023,2023,SDM,inproceedings,Taxonomy-Guided Fine-Grained Entity Set Expansion.,Jinfeng Xiao|Mohab Elkaref|Nathan Herr|Geeth De Mel|Jiawei Han 0001
+conf/sdm/Fan0LHDF21,2021,SDM,inproceedings,AutoGFS: Automated Group-based Feature Selection via Interactive Reinforcement Learning.,Wei Fan 0010|Kunpeng Liu 0001|Hao Liu 0026|Ahmad Hariri|Dejing Dou|Yanjie Fu
+conf/sdm/MayaYNU20,2020,SDM,inproceedings,Lag-Aware Multivariate Time-Series Segmentation.,Shigeru Maya|Akihiro Yamaguchi|Kaneharu Nishino|Ken Ueno
+conf/sdm/MarxF22,2022,SDM,inproceedings,Estimating Mutual Information via Geodesic,Alexander Marx 0001|Jonas Fischer
+conf/sdm/DavidsonLGWVR24,2024,SDM,inproceedings,An Exemplars-Based Approach for Explainable Clustering: Complexity and Efficient Approximation Algorithms.,Ian Davidson|Michael J. Livanos|Antoine Gourru|Peter B. Walker|Julien Velcin|S. S. Ravi
+conf/sdm/YiLGLYZ19,2019,SDM,inproceedings,Fast Unsupervised Location Category Inference from Highly Inaccurate Mobility Data.,Jinfeng Yi|Qi Lei|Wesley M. Gifford|Ji Liu|Junchi Yan|Bowen Zhou 0001
+conf/sdm/Cui0Z00M24,2024,SDM,inproceedings,Automated Fusion of Multimodal Electronic Health Records for Better Medical Predictions.,Suhan Cui|Jiaqi Wang 0002|Yuan Zhong 0002|Han Liu 0008|Ting Wang 0006|Fenglong Ma
+conf/sdm/Saxena0S23,2023,SDM,inproceedings,Missed Opportunities in Fair AI.,Nripsuta Ani Saxena|Wenbin Zhang 0002|Cyrus Shahabi
+conf/sdm/0074PL022,2022,SDM,inproceedings,Joint Time Series Chain: Detecting Unusual Evolving Trend across Time Series.,Li Zhang 0074|Nital Patel|Xiuqi Li|Jessica Lin 0001
+conf/sdm/0074DG023,2023,SDM,inproceedings,PMP: Privacy-Aware Matrix Profile against Sensitive Pattern Inference for Time Series.,Li Zhang 0074|Jiahao Ding|Yifeng Gao 0001|Jessica Lin 0001
+conf/sdm/SetoWZ21,2021,SDM,inproceedings,HALO: Learning to Prune Neural Networks with Shrinkage.,Skyler Seto|Martin T. Wells|Wenyu Zhang 0003
+conf/sdm/NingTRRSR18,2018,SDM,inproceedings,STAPLE: Spatio-Temporal Precursor Learning for Event Forecasting.,Yue Ning 0001|Rongrong Tao|Chandan K. Reddy|Huzefa Rangwala|James C. Starz|Naren Ramakrishnan
+conf/sdm/DevosMD21,2021,SDM,inproceedings,Verifying Tree Ensembles by Reasoning about Potential Instances.,Laurens Devos|Wannes Meert|Jesse Davis
+conf/sdm/PannatierPF22,2022,SDM,inproceedings,Efficient Wind Speed Nowcasting with GPU-Accelerated Nearest Neighbors Algorithm.,Arnaud Pannatier|Ricardo Picatoste|Fran
+conf/sdm/YuanSZZ024,2024,SDM,inproceedings,MultiNetAD: Multiplex Network-Based Anomaly Access Detection Featuring Semantic Hierarchies.,Ziqi Yuan|Qingyun Sun|Haoyi Zhou|Zukun Zhu|Jianxin Li 0002
+conf/sdm/BaiTW0Y022,2022,SDM,inproceedings,Collaborative Attention Mechanism for Multi-Modal Time Series Classification.,Yue Bai|Zhiqiang Tao|Lichen Wang|Sheng Li 0001|Yu Yin 0001|Yun Fu 0001
+conf/sdm/TsitsikasP20,2020,SDM,inproceedings,,Yorgos Tsitsikas|Evangelos E. Papalexakis
+conf/sdm/KlosterSP19,2019,SDM,inproceedings,Mining Maximal Induced Bicliques using Odd Cycle Transversals.,Kyle Kloster|Blair D. Sullivan|Andrew van der Poel
+conf/sdm/LiZSX23,2023,SDM,inproceedings,Debiased Imitation Learning for Modulated Temporal Point Processes.,Zhuoqun Li 0001|Zihan Zhou 0003|Mingxuan Sun 0001|Hongteng Xu
+conf/sdm/MaWGXZ20,2020,SDM,inproceedings,Rare Disease Prediction by Generating Quality-Assured Electronic Health Records.,Fenglong Ma|Yaqing Wang 0001|Jing Gao 0004|Houping Xiao|Jing Zhou
+conf/sdm/SainiZY0P24,2024,SDM,inproceedings,Analysis of Causal and Non-Causal Convolution Networks for Time Series Classification.,Uday Singh Saini|Zhongfang Zhuang|Chin-Chia Michael Yeh|Wei Zhang 0189|Evangelos E. Papalexakis
+conf/sdm/HeimannCVK21,2021,SDM,inproceedings,Refining Network Alignment to Improve Matched Neighborhood Consistency.,Mark Heimann|Xiyuan Chen|Fatemeh Vahedian|Danai Koutra
+conf/sdm/YangZS18,2018,SDM,inproceedings,ParaSketch: Parallel Tensor Factorization via Sketching.,Bo Yang 0053|Ahmed S. Zamzam|Nicholas D. Sidiropoulos
+conf/sdm/BauckhageSW20,2020,SDM,inproceedings,Adiabatic Quantum Computing for Max-Sum Diversification.,Christian Bauckhage|Rafet Sifa|Stefan Wrobel
+conf/sdm/ChuR022,2022,SDM,inproceedings,Learning Infomax and Domain-Independent Representations for Causal Effect Inference with Real-World Data.,Zhixuan Chu|Stephen L. Rathbun|Sheng Li 0001
+conf/sdm/LiWLB23,2023,SDM,inproceedings,Influence without Authority: Maximizing Information Coverage in Hypergraphs.,Peiyan Li 0002|Honglian Wang|Kai Li|Christian B
+conf/sdm/TayalJGWR022,2022,SDM,inproceedings,Invertibility aware Integration of Static and Time-series data: An application to Lake Temperature Modeling.,Kshitij Tayal|Xiaowei Jia|Rahul Ghosh|Jared Willard|Jordan S. Read|Vipin Kumar 0001
+conf/sdm/JeongNJTB024,2024,SDM,inproceedings,User Migration across Multiple Social Media Platforms.,Ujun Jeong|Ayushi Nirmal|Kritshekhar Jha|Xu Tang|H. Russell Bernard|Huan Liu 0001
+conf/sdm/StraussS24,2024,SDM,inproceedings,Spatial-Aware Deep Reinforcement Learning for the Traveling Officer Problem.,Niklas Strau|Matthias Schubert
+conf/sdm/PhanNKR24,2024,SDM,inproceedings,Multi-polytope Machine for Classification.,Dzung T. Phan|Lam M. Nguyen|Jayant Kalagnanam|Chandra Reddy
+conf/sdm/DengKLB20,2020,SDM,inproceedings,Explainable Subgraphs with Surprising Densities: A Subgroup Discovery Approach.,Junning Deng|Bo Kang|Jefrey Lijffijt|Tijl De Bie
+conf/sdm/BudhathokiBV21,2021,SDM,inproceedings,Discovering Reliable Causal Rules.,Kailash Budhathoki|Mario Boley|Jilles Vreeken
+conf/sdm/LeibrandtG18,2018,SDM,inproceedings,Making Kernel Density Estimation Robust towards Missing Values in Highly Incomplete Multivariate Data without Imputation.,Richard Leibrandt|Stephan G
+conf/sdm/TuYWDZ20,2020,SDM,inproceedings,Attention-Aware Answers of the Crowd.,Jingzheng Tu|Guoxian Yu|Jun Wang 0035|Carlotta Domeniconi|Xiangliang Zhang 0001
+conf/sdm/KosmanKS22,2022,SDM,inproceedings,Mining Logical Arithmetic Expressions From Proper Representations.,Eitan Kosman|Ilya Kolchinsky|Assaf Schuster
+conf/sdm/YanHJK18,2018,SDM,inproceedings,Fast Flow-based Random Walk with Restart in a Multi-query Setting.,Yujun Yan|Mark Heimann|Di Jin 0003|Danai Koutra
+conf/sdm/JoshiKG18,2018,SDM,inproceedings,Co-regularized Monotone Retargeting for Semi-supervised LeTOR.,Shalmali Joshi|Rajiv Khanna|Joydeep Ghosh
+conf/sdm/LandeiroTC19,2019,SDM,inproceedings,Discovering and Controlling for Latent Confounds in Text Classification Using Adversarial Domain Adaptation.,Virgile Landeiro|Tuan Tran|Aron Culotta
+conf/sdm/DongZYZWL23,2023,SDM,inproceedings,RELIANT: Fair Knowledge Distillation for Graph Neural Networks.,Yushun Dong|Binchi Zhang|Yiling Yuan|Na Zou 0001|Qi Wang|Jundong Li
+conf/sdm/TanHLCZW24,2024,SDM,inproceedings,Towards More Robust and Accurate Sequential Recommendation with Cascade-guided Adversarial Training.,Juntao Tan|Shelby Heinecke|Zhiwei Liu 0001|Yongjun Chen|Yongfeng Zhang 0003|Huan Wang 0016
+conf/sdm/YooK21,2021,SDM,inproceedings,Attention-Based Autoregression for Accurate and Efficient Multivariate Time Series Forecasting.,Jaemin Yoo|U Kang
+conf/sdm/ZhengSHZ23,2023,SDM,inproceedings,Learning to Learn Task Transformations for Improved Few-Shot Classification.,Guangtao Zheng|Qiuling Suo|Mengdi Huai|Aidong Zhang 0001
+conf/sdm/0008GTM021,2021,SDM,inproceedings,SUMDocS: Surrounding-aware Unsupervised Multi-Document Summarization.,Qi Zhu 0008|Fang Guo|Jingjing Tian|Yuning Mao|Jiawei Han 0001
+conf/sdm/RoychoudhuryZO22,2022,SDM,inproceedings,Leveraging Dependencies among Learned Temporal Subsequences.,Shoumik Roychoudhury|Fang Zhou|Zoran Obradovic
+conf/sdm/ChengGCL20,2020,SDM,inproceedings,Representation Learning for Imbalanced Cross-Domain Classification.,Lu Cheng 0001|Ruocheng Guo|K. Sel|Huan Liu 0001
+conf/sdm/Du0S022,2022,SDM,inproceedings,Interpretable Molecular Graph Generation via Monotonic Constraints.,Yuanqi Du|Xiaojie Guo 0002|Amarda Shehu|Liang Zhao 0002
+conf/sdm/JohanssonLB19,2019,SDM,inproceedings,Calibrating Probability Estimation Trees using Venn-Abers Predictors.,Ulf Johansson|Tuwe L|Henrik Bostr
+conf/sdm/XuKR024,2024,SDM,inproceedings,Message Propagation Through Time: An Algorithm for Sequence Dependency Retention in Time Series Modeling.,Shaoming Xu|Ankush Khandelwal|Arvind Renganathan|Vipin Kumar 0001
+conf/sdm/BernsB21,2021,SDM,inproceedings,Stochastic Time Series Representation for Interval Pattern Mining via Gaussian Processes.,Fabian Berns|Christian Beecks
+conf/sdm/LiHSSL21,2021,SDM,inproceedings,Sequence-aware Heterogeneous Graph Neural Collaborative Filtering.,Chen Li|Linmei Hu|Chuan Shi 0001|Guojie Song|Yuanfu Lu
+conf/sdm/MaYS24,2024,SDM,inproceedings,Pretraining Molecules with Explicit Substructure Information.,Yuting Ma|Shuo Yu 0001|Yanming Shen
+conf/sdm/TanHFWP18,2018,SDM,inproceedings,Efficient search of the best warping window for Dynamic Time Warping.,Chang Wei Tan|Matthieu Herrmann|Germain Forestier|Geoffrey I. Webb|Fran
+conf/sdm/LeeHL18,2018,SDM,inproceedings,Discovering Hidden Topical Hubs and Authorities in Online Social Networks.,Roy Ka-Wei Lee|Tuan-Anh Hoang|Ee-Peng Lim
+conf/sdm/SemwalYMN18,2018,SDM,inproceedings,A Practitioners' Guide to Transfer Learning for Text Classification using Convolutional Neural Networks.,Tushar Semwal|Promod Yenigalla|Gaurav Mathur|Shivashankar B. Nair
+conf/sdm/RajasekaranSBMD24,2024,SDM,inproceedings,COMBOOD: A Semiparametric Approach for Detecting Out-of-distribution Data for Image Classification.,Magesh Rajasekaran|Md Saiful Islam Sajol|Frej Berglind|Supratik Mukhopadhyay|Kamalika Das
+conf/sdm/XieZL023,2023,SDM,inproceedings,Multimodal Graph Learning for Cross-Modal Retrieval.,Jingyou Xie|Zishuo Zhao 0001|Zhenzhou Lin|Ying Shen 0001
+conf/sdm/HouHZ00W22,2022,SDM,inproceedings,Neural Graph Matching for Pre-training Graph Neural Networks.,Yupeng Hou|Binbin Hu|Wayne Xin Zhao|Zhiqiang Zhang 0012|Jun Zhou 0011|Ji-Rong Wen
+conf/sdm/WangLYH0S23,2023,SDM,inproceedings,Heterogeneous Graph Contrastive Multi-view Learning.,Zehong Wang|Qi Li|Donghua Yu|Xiaolong Han|Xiao-Zhi Gao 0001|Shigen Shen
+conf/sdm/ZhouSDY19,2019,SDM,inproceedings,Incremental Multi-view Support Vector Machine.,Peng Zhou 0006|Yi-Dong Shen|Liang Du 0003|Fan Ye
+conf/sdm/LaRockNSCES20,2020,SDM,inproceedings,HYPA: Efficient Detection of Path Anomalies in Time Series Data on Networks.,Timothy LaRock|Vahan Nanumyan|Ingo Scholtes|Giona Casiraghi|Tina Eliassi-Rad|Frank Schweitzer
+conf/sdm/ZhuangKR19,2019,SDM,inproceedings,AMAS: Attention Model for Attributed Sequence Classification.,Zhongfang Zhuang|Xiangnan Kong|Elke A. Rundensteiner
+conf/sdm/KhoufacheLAGB24,2024,SDM,inproceedings,Distributed Collapsed Gibbs Sampler for Dirichlet Process Mixture Models in Federated Learning.,Reda Khoufache|Mustapha Lebbah|Hanene Azzag|Djamel Bouchaffra
+conf/sdm/WangHYZ24,2024,SDM,inproceedings,On Robust Wasserstein Barycenter: The Model and Algorithm.,Xu Wang 0030|Jiawei Huang 0009|Qingyuan Yang|Jinpeng Zhang
+conf/sdm/Zhang0DY024,2024,SDM,inproceedings,Deep Efficient Private Neighbor Generation for Subgraph Federated Learning.,Ke Zhang|Lichao Sun 0001|Bolin Ding|Siu Ming Yiu|Carl Yang 0001
+conf/sdm/OkajimaS19,2019,SDM,inproceedings,Decision List Optimization based on Continuous Relaxation.,Yuzuru Okajima|Kunihiko Sadamasa
+conf/sdm/ZhangM20,2020,SDM,inproceedings,Stacked Mixed-Order Graph Convolutional Networks for Collaborative Filtering.,Hengrui Zhang|Julian J. McAuley
+conf/sdm/0006AK23,2023,SDM,inproceedings,Extrinsic-Intrinsic Representation Learning Framework for Drug Discovery.,Tian Xia 0006|Sarp Aykent|Wei-Shinn Ku
+conf/sdm/LiuWGAY20,2020,SDM,inproceedings,BasConv: Aggregating Heterogeneous Interactions for Basket Recommendation with Graph Convolutional Neural Network.,Zhiwei Liu 0001|Mengting Wan|Stephen D. Guo|Kannan Achan|Philip S. Yu
+conf/sdm/ZhengZH23,2023,SDM,inproceedings,Fairness-aware Multi-view Clustering.,Lecheng Zheng|Yada Zhu|Jingrui He
+conf/sdm/ShalabySSG18,2018,SDM,inproceedings,An LSTM Approach to Patent Classification based on Fixed Hierarchy Vectors.,Marawan Shalaby|Jan Stutzki|Matthias Schubert|Stephan G
+conf/sdm/BoleyTBW21,2021,SDM,inproceedings,Better Short than Greedy: Interpretable Models through Optimal Rule Boosting.,Mario Boley|Simon Teshuva|Pierre Le Bodic|Geoffrey I. Webb
+conf/sdm/LiZL19,2019,SDM,inproceedings,TMSA: A Mutual Learning Model for Topic Discovery and Word Embedding.,Dingcheng Li|Jingyuan Zhang|Ping Li 0001
+conf/sdm/GujralP18,2018,SDM,inproceedings,SMACD: Semi-supervised Multi-Aspect Community Detection.,Ekta Gujral|Evangelos E. Papalexakis
+conf/sdm/YaoYWWDG19,2019,SDM,inproceedings,Discovering Multiple Co-Clusterings in Subspaces.,Shixin Yao|Guoxian Yu|Xing Wang|Jun Wang 0035|Carlotta Domeniconi|Maozu Guo 0001
+conf/sdm/Zhao0CS22,2022,SDM,inproceedings,Measuring disentangled generative spatio-temporal representation.,Sichen Zhao|Wei Shao 0006|Jeffrey Chan|Flora D. Salim
+conf/sdm/EnnajariBB22,2022,SDM,inproceedings,Knowledge-enhanced Spherical Representation Learning for Text Classification.,Hafsa Ennajari|Nizar Bouguila|Jamal Bentahar
+conf/sdm/MaME024,2024,SDM,inproceedings,Training Sparse Graph Neural Networks via Pruning and Sprouting.,Xueqi Ma|Xingjun Ma|Sarah M. Erfani|James Bailey 0001
+conf/sdm/WilsonTL20,2020,SDM,inproceedings,Convolutional Methods for Predictive Modeling of Geospatial Data.,Tyler Wilson|Pang-Ning Tan|Lifeng Luo
+conf/sdm/HuaiMSLGZ18,2018,SDM,inproceedings,Uncorrelated Patient Similarity Learning.,Mengdi Huai|Chenglin Miao|Qiuling Suo|Yaliang Li|Jing Gao 0004|Aidong Zhang 0001
+conf/sdm/BuK21,2021,SDM,inproceedings,Quadratic Residual Networks: A New Class of Neural Networks for Solving Forward and Inverse Problems in Physics Involving PDEs.,Jie Bu|Anuj Karpatne
+conf/sdm/DingCYW21,2021,SDM,inproceedings,A Data-Dependent Algorithm for Querying Earth Mover's Distance with Low Doubling Dimensions.,Hu Ding 0003|Tan Chen|Fan Yang|Mingyue Wang
+conf/sdm/YanMHY20,2020,SDM,inproceedings,Heterogeneous Dual-Task Clustering with Visual-Textual Information.,Xiaoqiang Yan|Yiqiao Mao|Shizhe Hu|Yangdong Ye
+conf/sdm/0047024,2024,SDM,inproceedings,Self-Similar Graph Neural Network for Hierarchical Graph Learning.,Zheng Zhang 0047|Liang Zhao 0002
+conf/sdm/0001HZHFH21,2021,SDM,inproceedings,Multi-Armed Bandit Based Feature Selection.,Kunpeng Liu 0001|Haibo Huang|Wei Zhang 0076|Ahmad Hariri|Yanjie Fu|Kien A. Hua
+conf/sdm/AnjumAXH21,2021,SDM,inproceedings,PhraseScope: An Effective and Unsupervised Framework for Mining High Quality Phrases.,Omer Anjum|Mohammad Almasri|Jinjun Xiong|Wen-Mei W. Hwu
+conf/sdm/HeQR19,2019,SDM,inproceedings,Query-Aware Bayesian Committee Machine for Scalable Gaussian Process Regression.,Jiayuan He 0002|Jianzhong Qi 0001|Kotagiri Ramamohanarao
+conf/sdm/GaoDZ024,2024,SDM,inproceedings,Decentralized Stochastic Compositional Gradient Descent for AUPRC Maximization.,Hongchang Gao|Yubin Duan|Yihan Zhang|Jie Wu 0001
+conf/sdm/YooS22,2022,SDM,inproceedings,Transition Matrix Representation of Trees with Transposed Convolutions.,Jaemin Yoo|Lee Sael
+conf/sdm/AhmedBFZ23,2023,SDM,inproceedings,Attention-Based Multi-modal Missing Value Imputation for Time Series Data with High Missing Rate.,Khandakar Tanvir Ahmed|Sudipto Baul|Yanjie Fu|Wei Zhang 0076
+conf/sdm/BauerLBP23,2023,SDM,inproceedings,Extension of the Dip-test Repertoire - Efficient and Differentiable p-value Calculation for Clustering.,Lena G. M. Bauer|Collin Leiber|Christian B|Claudia Plant
+conf/sdm/NayakGJMK20,2020,SDM,inproceedings,Semi-supervised Classification using Attention-based Regularization on Coarse-resolution Data.,Guruprasad Nayak|Rahul Ghosh|Xiaowei Jia|Varun Mithal|Vipin Kumar 0001
+conf/sdm/Zhang0GL23,2023,SDM,inproceedings,CISum: Learning Cross-modality Interaction to Enhance Multimodal Semantic Coverage for Multimodal Summarization.,Litian Zhang|Xiaoming Zhang 0001|Ziming Guo|Zhipeng Liu
+conf/sdm/WuDSSC18,2018,SDM,inproceedings,Who will Attend This Event Together? Event Attendance Prediction via Deep LSTM Networks.,Xian Wu 0003|Yuxiao Dong|Baoxu Shi|Ananthram Swami|Nitesh V. Chawla
+conf/sdm/ZhouSW19,2019,SDM,inproceedings,Mining Rules Incrementally over Large Knowledge Bases.,Xiaofeng Zhou 0003|Ali Sadeghian|Daisy Zhe Wang
+conf/sdm/0001KC23,2023,SDM,inproceedings,On Improving Fairness of AI Models with Synthetic Minority Oversampling Techniques.,Yan Zhou 0001|Murat Kantarcioglu|Chris Clifton
+conf/sdm/LavaniaWIB21,2021,SDM,inproceedings,A Practical Online Framework for Extracting Running Video Summaries under a Fixed Memory Budget.,Chandrashekhar Lavania|Kai Wei|Rishabh K. Iyer|Jeff A. Bilmes
+conf/sdm/AshfahaniP19,2019,SDM,inproceedings,Autonomous Deep Learning: Continual Learning Approach for Dynamic Environments.,Andri Ashfahani|Mahardhika Pratama
+conf/sdm/MarufK21,2021,SDM,inproceedings,Maximizing Cohesion and Separation in Graph Representation Learning: A Distance-aware Negative Sampling Approach.,M. Maruf|Anuj Karpatne
+conf/sdm/LiuPY20,2020,SDM,inproceedings,Efficient and Effective Graph Convolution Networks.,Siwu Liu|Ji Hwan Park|Shinjae Yoo
+conf/sdm/StradiottiPD24,2024,SDM,inproceedings,Semi-Supervised Isolation Forest for Anomaly Detection.,Luca Stradiotti|Lorenzo Perini|Jesse Davis
+conf/sdm/MaMB23,2023,SDM,inproceedings,GIST: Graph Inference for Structured Time Series.,Boya Ma|Maxwell McNeil|Petko Bogdanov
+conf/sdm/JinWY21,2021,SDM,inproceedings,Inter-Series Attention Model for COVID-19 Forecasting.,Xiaoyong Jin|Yu-Xiang Wang 0003|Xifeng Yan
+conf/sdm/QinWZ23,2023,SDM,inproceedings,Learning Causal Structure on Mixed Data with Tree-Structured Functional Models.,Tian Qin|Tian-Zuo Wang|Zhi-Hua Zhou
+conf/sdm/GertheissS23,2023,SDM,inproceedings,"Penalized Non-Linear Canonical Correlation Analysis for Ordinal Data with Application to the International Classification of Functioning, Disability and Health.",Jan Gertheiss|Russell T. Shinohara
+conf/sdm/Holznigenkemper23,2023,SDM,inproceedings,Exact and Heuristic Approaches to Speeding Up the MSM Time Series Distance Computation.,Jana Holznigenkemper|Christian Komusiewicz|Bernhard Seeger
+conf/sdm/LiuTZ19,2019,SDM,inproceedings,Augmented Multi-Task Learning by Optimal Transport.,Boyang Liu|Pang-Ning Tan|Jiayu Zhou
+conf/sdm/JiaCZX0K23,2023,SDM,inproceedings,Physics-guided Graph Diffusion Network for Combining Heterogeneous Simulated Data: An Application in Predicting Stream Water Temperature.,Xiaowei Jia|Shengyu Chen|Can Zheng|Yiqun Xie|Zhe Jiang 0001|Nasrin Kalanat
+conf/sdm/LiW22,2022,SDM,inproceedings,Adaptive Principal Component Analysis.,Xiangyu Li|Hua Wang 0007
+conf/sdm/ZhangSCMRM23,2023,SDM,inproceedings,Making a Computational Attorney.,Dell Zhang|Frank Schilder|Jack G. Conrad|Masoud Makrehchi|David von Rickenbach|Isabelle Moulinier
+conf/sdm/BaiWD18,2018,SDM,inproceedings,Mixtures of Block Models for Brain Networks.,Zilong Bai|Peter B. Walker|Ian Davidson
+conf/sdm/ZhaoL0024,2024,SDM,inproceedings,HADT: Human-AI Diagnostic Team via Hierarchical Reinforcement Learning.,Xuehan Zhao|Jiaqi Liu 0002|Zhiwen Yu 0001|Bin Guo 0001
+conf/sdm/HessPM18,2018,SDM,inproceedings,The Trustworthy Pal: Controlling the False Discovery Rate in Boolean Matrix Factorization.,Sibylle Hess|Nico Piatkowski|Katharina Morik
+conf/sdm/ZhangGM19,2019,SDM,inproceedings,ABACUS: Unsupervised Multivariate Change Detection via Bayesian Source Separation.,Wenyu Zhang 0003|Daniel E. Gilbert|David S. Matteson
+conf/sdm/DaiKLLM20,2020,SDM,inproceedings,Dual-Attention Recurrent Networks for Affine Registration of Neuroimaging Data.,Xin Dai|Xiangnan Kong|Xinyue Liu 0003|John Boaz Lee|Constance M. Moore
+conf/sdm/VajjalaMPZR24,2024,SDM,inproceedings,Vietoris-Rips Complex: A New Direction for Cross-Domain Cold-Start Recommendation.,Ajay Krishna Vajjala|Dipak Falgun Meher|Shrunal Pothagoni|Ziwei Zhu 0001|David S. Rosenblum
+conf/sdm/MinatoKIMK19,2019,SDM,inproceedings,A Fast Algorithm for Combinatorial Hotspot Mining Based on Spatial Scan Statistic.,Shin-ichi Minato|Jun Kawahara|Fumio Ishioka|Masahiro Mizuta|Koji Kurihara
+conf/sdm/OktayAJ19,2019,SDM,inproceedings,Identifying When Effect Restoration Will Improve Estimates of Causal Effect.,H|Akanksha Atrey|David D. Jensen
+conf/sdm/SrinivasanZK21,2021,SDM,inproceedings,Learning over Families of Sets - Hypergraph Representation Learning for Higher Order Tasks.,Balasubramaniam Srinivasan|Da Zheng 0004|George Karypis
+conf/sdm/DingZZLT022,2022,SDM,inproceedings,Multi-class Label Noise Learning via Loss Decomposition and Centroid Estimation.,Yongliang Ding|Tao Zhou 0002|Chuang Zhang|Yijing Luo|Juan Tang|Chen Gong 0002
+conf/sdm/TaymouriRE21,2021,SDM,inproceedings,A Deep Adversarial Model for Suffix and Remaining Time Prediction of Event Sequences.,Farbod Taymouri|Marcello La Rosa|Sarah M. Erfani
+conf/sdm/WuKID20,2020,SDM,inproceedings,Deep Kernel Learning for Clustering.,Chieh Wu|Zulqarnain Khan|Stratis Ioannidis|Jennifer G. Dy
+conf/sdm/Saldias-Fuentes19,2019,SDM,inproceedings,A Full Probabilistic Model for Yes/No Type Crowdsourcing in Multi-Class Classification.,Bel|Pavlos Protopapas|Karim Pichara B.
+conf/sdm/FouldsIKP20,2020,SDM,inproceedings,Bayesian Modeling of Intersectional Fairness: The Variance of Bias.,James R. Foulds|Rashidul Islam|Kamrun Naher Keya|Shimei Pan
+conf/sdm/Lu0W024,2024,SDM,inproceedings,Towards Optimization and Model Selection for Domain Generalization: A Mixup-guided Solution.,Wang Lu|Jindong Wang 0001|Yidong Wang|Xing Xie 0001
+conf/sdm/Pham0022,2022,SDM,inproceedings,FAME: Fragment-based Conditional Molecular Generation for Phenotypic Drug Discovery.,Thai-Hoang Pham|Lei Xie 0006|Ping Zhang 0016
+conf/sdm/ItoF22,2022,SDM,inproceedings,DualCast: Friendship-Preference Co-evolution Forecasting for Attributed Networks.,Hiroyoshi Ito|Christos Faloutsos
+conf/sdm/WangDZC21,2021,SDM,inproceedings,Session-based Recommendation with Hypergraph Attention Networks.,Jianling Wang|Kaize Ding|Ziwei Zhu 0001|James Caverlee
+conf/sdm/0002QYZ22,2022,SDM,inproceedings,Adapting Distilled Knowledge for Few-shot Relation Reasoning over Knowledge Graphs.,Yiming Zhang 0002|Yiyue Qian|Yanfang Ye 0001|Chuxu Zhang
+conf/sdm/ZhouZQJWC23,2023,SDM,inproceedings,A Physics-guided NN-based Approach for Tropical Cyclone Intensity Estimation.,Ziheng Zhou|Ying Zhao|Yiyu Qing|Wenming Jiang|Yihan Wu|Wenguang Chen
+conf/sdm/WangLISG18,2018,SDM,inproceedings,Online IT Ticket Automation Recommendation Using Hierarchical Multi-armed Bandit Algorithms.,Qing Wang 0016|Tao Li 0001|S. S. Iyengar 0001|Larisa Shwartz|Genady Ya. Grabarnik
+conf/sdm/AggarwalLY21,2021,SDM,inproceedings,Signature-Based Anomaly Detection in Networks.,Charu C. Aggarwal|Yao Li|Philip S. Yu
+conf/sdm/ChenXLLJ23,2023,SDM,inproceedings,Physics-Guided Meta-Learning Method in Baseflow Prediction over Large Regions.,Shengyu Chen|Yiqun Xie|Xiang Li|Xu Liang|Xiaowei Jia
+conf/sdm/JiangH0S20,2020,SDM,inproceedings,Multiplex Memory Network for Collaborative Filtering.,Xunqiang Jiang|Binbin Hu|Yuan Fang 0001|Chuan Shi 0001
+conf/sdm/HeRWC22,2022,SDM,inproceedings,SSSNET: Semi-Supervised Signed Network Clustering.,Yixuan He 0001|Gesine Reinert|Songchao Wang|Mihai Cucuringu
+conf/sdm/FreitasWCN20,2020,SDM,inproceedings,D,Scott Freitas|Andrew Wicker|Duen Horng (Polo) Chau|Joshua Neil
+conf/sdm/XieS19,2019,SDM,inproceedings,A Nondeterministic Normalization based Scan Statistic (NN-scan) towards Robust Hotspot Detection: A Summary of Results.,Yiqun Xie|Shashi Shekhar 0001
+conf/sdm/XuPFTJZ21,2021,SDM,inproceedings,Reconstruction-based Anomaly Detection with Completely Random Forest.,Yi-Xuan Xu|Ming Pang|Ji Feng|Kai Ming Ting|Yuan Jiang 0001|Zhi-Hua Zhou
+conf/sdm/HuangGB21,2021,SDM,inproceedings,Density of States Graph Kernels.,Leo Huang|Andrew J. Graven|David Bindel
+conf/sdm/HagedornH21,2021,SDM,inproceedings,GPU-Accelerated Constraint-Based Causal Structure Learning for Discrete Data.,Christopher Hagedorn|Johannes Huegle
+conf/sdm/GuoAS18,2018,SDM,inproceedings,Strongly Hierarchical Factorization Machines and ANOVA Kernel Regression.,Ruocheng Guo|Hamidreza Alvari|Paulo Shakarian
+conf/sdm/LiangJS018,2018,SDM,inproceedings,Semi-supervised Embedding in Attributed Networks with Outliers.,Jiongqian Liang|Peter Jacobs|Jiankai Sun|Srinivasan Parthasarathy 0001
+conf/sdm/ChiangLLL18,2018,SDM,inproceedings,Limited-memory Common-directions Method for Distributed Ll-regularized Linear Classification.,Wei-Lin Chiang|Yu-Sheng Li 0001|Ching-Pei Lee|Chih-Jen Lin
+conf/sdm/ChenTCXZ18,2018,SDM,inproceedings,On2Vec: Embedding-based Relation Prediction for Ontology Population.,Muhao Chen 0001|Yingtao Tian|Xuelu Chen|Zijun Xue|Carlo Zaniolo
+conf/sdm/GhiassiBC23,2023,SDM,inproceedings,Robust Learning via Golden Symmetric Loss of (un)Trusted Labels.,Amirmasoud Ghiassi|Robert Birke|Lydia Y. Chen
+conf/sdm/VeldtKG19,2019,SDM,inproceedings,Flow-Based Local Graph Clustering with Better Seed Set Inclusion.,Nate Veldt|Christine Klymko|David F. Gleich
+conf/sdm/YangHSX24,2024,SDM,inproceedings,Refining Pre-trained Language Models for Domain Adaptation with Entity-Aware Discriminative and Contrastive Learning.,Jian Yang|Xinyu Hu|Yulong Shen|Gang Xiao
+conf/sdm/Li00024,2024,SDM,inproceedings,CausalCDR: Causal Embedding Learning for Cross-domain Recommendation.,Fengxin Li|Hongyan Liu 0002|Jun He 0008|Xiaoyong Du 0001
+conf/sdm/ChengW018,2018,SDM,inproceedings,Network Inference from Contrastive Groups Using Discriminative Structural Regularization.,Ruihua Cheng|Zhi Wei 0001|Kai Zhang 0001
+conf/sdm/00010ST24,2024,SDM,inproceedings,Feature-Engineered Random Forests.,Saket Sathe 0001|Charu Aggarwal 0001|Horst Samulowitz|Deepak S. Turaga
+conf/sdm/00120LTC22,2022,SDM,inproceedings,Unseen Anomaly Detection on Networks via Multi-Hypersphere Learning.,Shuang Zhou 0012|Xiao Huang 0001|Ninghao Liu 0001|Qiaoyu Tan|Fu-Lai Chung
+conf/sdm/Hu0WWLF24,2024,SDM,inproceedings,Dual-stage Flows-based Generative Modeling for Traceable Urban Planning.,Xuanming Hu|Wei Fan 0010|Dongjie Wang|Pengyang Wang|Yong Li 0008|Yanjie Fu
+conf/sdm/LeeKMS18,2018,SDM,inproceedings,Interpretable Categorization of Heterogeneous Time Series Data.,Ritchie Lee|Mykel J. Kochenderfer|Ole J. Mengshoel|Joshua Silbermann
+conf/sdm/0018PYWS21,2021,SDM,inproceedings,LDFeRR: A Fuel-efficient Route Recommendation Approach for Long-distance Driving Based on Historical Trajectories.,Min Liu 0018|Zhaohui Peng|Xiaohui Yu 0001|Senzhang Wang|Qiao Song
+conf/sdm/HeXLJZJ24,2024,SDM,inproceedings,"Knowledge Guided Machine Learning for Extracting, Preserving, and Adapting Physics-aware Features.",Erhu He|Yiqun Xie|Licheng Liu|Zhenong Jin|Dajun Zhang 0001|Xiaowei Jia
+conf/sdm/MojsilovicU19,2019,SDM,inproceedings,Relative distance comparisons with confidence judgements.,Stefan Mojsilovic|Antti Ukkonen
+conf/sdm/BentoI18,2018,SDM,inproceedings,A Family of Tractable Graph Distances.,Jos|Stratis Ioannidis
+conf/sdm/SilvaPF18,2018,SDM,inproceedings,A Novel Genetic Algorithm for Feature Selection in Hierarchical Feature Spaces.,Pablo Nascimento da Silva|Alexandre Plastino 0001|Alex Alves Freitas
+conf/sdm/SilvaGMH21,2021,SDM,inproceedings,UNIANO: robust and efficient anomaly consensus in time series sensitive to cross-correlated anomaly profiles.,Leonor Silva|Helena Galhardas|Vasco Manquinho|Rui Henriques
+conf/sdm/ZhuangH22,2022,SDM,inproceedings,Deperturbation of Online Social Networks via Bayesian Label Transition.,Jun Zhuang 0004|Mohammad Al Hasan
+conf/sdm/ZhaoZZX0T23,2023,SDM,inproceedings,Feature Enhanced Zero-Shot Stance Detection via Contrastive Learning.,Xuechen Zhao|Jiaying Zou|Zhong Zhang|Feng Xie 0003|Bin Zhou 0004|Lei Tian
+conf/sdm/AggarwalLY20,2020,SDM,inproceedings,On Supervised Change Detection in Graph Streams.,Charu C. Aggarwal|Yao Li|Philip S. Yu
+conf/sdm/HanCGMM022,2022,SDM,inproceedings,Leveraging Contextual Graphs for Stochastic Weight Completion in Sparse Road Networks.,Xiaolin Han 0002|Reynold Cheng|Tobias Grubenmann|Silviu Maniu|Chenhao Ma 0001|Xiaodong Li 0009
+conf/sdm/LiuY022,2022,SDM,inproceedings,Sensitivity-aware Distance Measurement for Boosting Metric Learning.,Haoliang Liu|Tan Yu|Ping Li 0001
+conf/sdm/WeiLZM22,2022,SDM,inproceedings,Flexible Image Captioning via Internal Understanding and External Reasoning.,Jiahui Wei|Zhixin Li 0001|Jianwei Zhu|Huifang Ma
+conf/sdm/VombatkereT23,2023,SDM,inproceedings,Balancing Task Coverage and Expert Workload in Team Formation.,Karan Vombatkere|Evimaria Terzi
+conf/sdm/BrillFFJNS18,2018,SDM,inproceedings,Exact Mean Computation in Dynamic Time Warping Spaces.,Markus Brill|Till Fluschnik|Vincent Froese|Brijnesh J. Jain|Rolf Niedermeier|David Schultz
+conf/sdm/MukherjeeGB22,2022,SDM,inproceedings,DeepGLSTM: Deep Graph Convolutional Network and LSTM based approach for predicting drug-target binding affinity.,Shrimon Mukherjee|Madhusudan Ghosh|Partha Basuchowdhuri
+conf/sdm/ChengPZNSY24,2024,SDM,inproceedings,An Image Dataset for Benchmarking Recommender Systems with Raw Pixels.,Yu Cheng 0011|Yunzhu Pan|Jiaqi Zhang|Yongxin Ni|Aixin Sun|Fajie Yuan
+conf/sdm/LiYZY18,2018,SDM,inproceedings,Multi-Task Learning based Survival Analysis for Predicting Alzheimer's Disease Progression with Multi-Source Block-wise Missing Data.,Yan Li 0052|Tao Yang 0016|Jiayu Zhou|Jieping Ye
+conf/sdm/RezaeiGS21,2021,SDM,inproceedings,Influencers and the Giant Component: The Fundamental Hardness in Privacy Protection for Socially Contagious Attributes.,Aria Rezaei|Jie Gao 0001|Anand D. Sarwate
+conf/sdm/TafazoliK23,2023,SDM,inproceedings,Matrix Profile XXVIII: Discovering Multi-Dimensional Time Series Anomalies with,Sadaf Tafazoli|Eamonn J. Keogh
+conf/sdm/DaiWPC18,2018,SDM,inproceedings,Brain EEG Time Series Selection: A Novel Graph-Based Approach for Classification.,Chenglong Dai|Jia Wu 0001|Dechang Pi|Lin Cui 0002
+conf/sdm/YangJEJNS23,2023,SDM,inproceedings,Data Mining Challenges and Opportunities to Achieve Net Zero Carbon Emissions: Focus on Electrified Vehicles.,Mingzhou Yang 0001|Bharat Jayaprakash|Matthew Eagon|Hyeonjung (Tari) Jung|William F. Northrop|Shashi Shekhar 0001
+conf/sdm/ChaudhariMT18,2018,SDM,inproceedings,Markov Chain Monitoring.,Harshal A. Chaudhari|Michael Mathioudakis|Evimaria Terzi
+conf/sdm/BelaidBL19,2019,SDM,inproceedings,Constraint Programming for Association Rules.,Mohamed-Bachir Belaid|Christian Bessiere|Nadjib Lazaar
+conf/sdm/KummerSRG23,2023,SDM,inproceedings,Adaptive Precision Training (AdaPT): A dynamic quantized training approach for DNNs.,Lorenz Kummer|Kevin Sidak|Tabea Reichmann|Wilfried N. Gansterer
+conf/sdm/StanojevicATCFA18,2018,SDM,inproceedings,Robust Road Map Inference through Network Alignment of Trajectories.,Rade Stanojevic|Sofiane Abbar|Saravanan Thirumuruganathan|Sanjay Chawla|Fethi Filali|Ahid Aleimat
+conf/sdm/ZhangWYZ022,2022,SDM,inproceedings,HG-Meta: Graph Meta-learning over Heterogeneous Graphs.,Qiannan Zhang|Xiaodong Wu|Qiang Yang 0015|Chuxu Zhang|Xiangliang Zhang 0001
+conf/sdm/00010H22,2022,SDM,inproceedings,Improved Knowledge Distillation via Full Kernel Matrix Transfer.,Qi Qian 0001|Hao Li 0030|Juhua Hu
+conf/sdm/LiuWZFD18,2018,SDM,inproceedings,Modeling the Interaction Coupling of Multi-View Spatiotemporal Contexts for Destination Prediction.,Kunpeng Liu 0001|Pengyang Wang|Jiawei Zhang 0001|Yanjie Fu|Sajal K. Das 0001
+conf/sdm/MalikUHKA21,2021,SDM,inproceedings,Dynamic Graph Convolutional Networks Using the Tensor M-Product.,Osman Asif Malik|Shashanka Ubaru|Lior Horesh|Misha E. Kilmer|Haim Avron
+conf/sdm/KaraevHM18,2018,SDM,inproceedings,Latitude: A Model for Mixed Linear-Tropical Matrix Factorization.,Sanjar Karaev|James L. Hook|Pauli Miettinen
+conf/sdm/YuAW18,2018,SDM,inproceedings,Modeling Co-Evolution Across Multiple Networks.,Wenchao Yu|Charu C. Aggarwal|Wei Wang 0010
+conf/sdm/CarvalhoVF023,2023,SDM,inproceedings,TEM: High Utility Metric Differential Privacy on Text.,Ricardo Silva Carvalho|Theodore Vasiloudis|Oluwaseyi Feyisetan|Ke Wang 0001
+conf/sdm/LasserreSKBVS20,2020,SDM,inproceedings,Meta-Learning for Size and Fit Recommendation in Fashion.,Julia Lasserre|Abdul-Saboor Sheikh|Evgenii Koriagin|Urs Bergmann|Roland Vollgraf|Reza Shirvany
+conf/sdm/AnYKWK21,2021,SDM,inproceedings,GraphShop: Graph-based Approach for Shop-type Recommendation.,Guoyuan An|Sung Eui Yoon|Jae Yoon Kim|Lin Wang|Myoung Ho Kim
+conf/sdm/NguyenC24,2024,SDM,inproceedings,Towards Tuning-Free Minimum-Volume Nonnegative Matrix Factorization.,Duc Toan Nguyen|Eric C. Chi
+conf/sdm/RenH24,2024,SDM,inproceedings,EsaCL: An Efficient Continual Learning Algorithm.,Weijieying Ren|Vasant G. Honavar
+conf/sdm/Christakopoulou18,2018,SDM,inproceedings,Learning to Interact with Users: A Collaborative-Bandit Approach.,Konstantina Christakopoulou|Arindam Banerjee 0001
+conf/sdm/YangSCZD23,2023,SDM,inproceedings,A Linkage-based Doubly Imbalanced Graph Learning Framework for Face Clustering.,Huafeng Yang|Qijie Shen|Xingjian Chen|Fangyi Zhang|Rong Du
+conf/sdm/WangZLFA18,2018,SDM,inproceedings,Ensemble-Spotting: Ranking Urban Vibrancy via POI Embedding with Multi-view Spatial Graphs.,Pengyang Wang|Jiawei Zhang 0001|Guannan Liu 0004|Yanjie Fu|Charu C. Aggarwal
+conf/sdm/KylasaRMG19,2019,SDM,inproceedings,GPU Accelerated Sub-Sampled Newton's Method for Convex Classification Problems.,Sudhir B. Kylasa|Fred (Farbod) Roosta|Michael W. Mahoney|Ananth Grama
+conf/sdm/SaitoSN19,2019,SDM,inproceedings,Doubly Robust Prediction and Evaluation Methods Improve Uplift Modeling for Observational Data.,Yuta Saito|Hayato Sakata|Kazuhide Nakata
+conf/sdm/MaWAYT19,2019,SDM,inproceedings,Multi-dimensional Graph Convolutional Networks.,Yao Ma 0001|Suhang Wang|Charu C. Aggarwal|Dawei Yin 0001|Jiliang Tang
+conf/sdm/OettershagenK0M20,2020,SDM,inproceedings,Temporal Graph Kernels for Classifying Dissemination Processes.,Lutz Oettershagen|Nils M. Kriege|Christopher Morris 0001|Petra Mutzel
+conf/sdm/DiochnosT21,2021,SDM,inproceedings,Learning Reliable Rules under Class Imbalance.,Dimitrios I. Diochnos|Theodore B. Trafalis
+conf/sdm/HuangCC18,2018,SDM,inproceedings,A Salient Ensemble of Trees using Cascaded Linear Classifiers with Feature-Cost Constraints.,Chien-Wen Huang|Chung-Kuang Chou|Ming-Syan Chen
+conf/sdm/DingLLJ18,2018,SDM,inproceedings,Click versus Share: A Feature-driven Study of Micro-Video Popularity and Virality in Social Media.,Jingtao Ding|Yanghao Li|Yong Li 0008|Depeng Jin
+conf/sdm/YangLDZJH20,2020,SDM,inproceedings,Deep Neural Networks with Knowledge Instillation.,Fan Yang 0023|Ninghao Liu 0001|Mengnan Du|Kaixiong Zhou|Shuiwang Ji|Xia Hu 0001
+conf/sdm/00080ZF22,2022,SDM,inproceedings,Unifying Human Mobility Forecasting and Trajectory Semantics Augmentation via Hawkes Process Based LSTM.,Pengfei Wang 0008|Kunpeng Liu 0001|Yuanchun Zhou|Yanjie Fu
+conf/sdm/SaitoSN20,2020,SDM,inproceedings,Cost-Effective and Stable Policy Optimization Algorithm for Uplift Modeling with Multiple Treatments.,Yuta Saito|Hayato Sakata|Kazuhide Nakata
+conf/sdm/CharoenphakdeeS19,2019,SDM,inproceedings,Positive-Unlabeled Classification under Class Prior Shift and Asymmetric Error.,Nontawat Charoenphakdee|Masashi Sugiyama
+conf/sdm/SmithHSK18,2018,SDM,inproceedings,Streaming Tensor Factorization for Infinite Data Sources.,Shaden Smith|Kejun Huang|Nicholas D. Sidiropoulos|George Karypis
+conf/sdm/ShiGZK018,2018,SDM,inproceedings,AspEm: Embedding Learning by Aspects in Heterogeneous Information Networks.,Yu Shi 0002|Huan Gui|Qi Zhu 0008|Lance M. Kaplan|Jiawei Han 0001
+conf/sdm/FanJZY22,2022,SDM,inproceedings,Heterogeneous Temporal Graph Neural Network.,Yujie Fan|Mingxuan Ju|Chuxu Zhang|Yanfang Ye 0001
+conf/sdm/McNeilMB22,2022,SDM,inproceedings,SAGA: Signal-Aware Graph Aggregation.,Maxwell McNeil|Boya Ma|Petko Bogdanov
+conf/sdm/HooiSPJPF18,2018,SDM,inproceedings,StreamCast: Fast and Online Mining of Power Grid Time Sequences.,Bryan Hooi|Hyun Ah Song|Amritanshu Pandey|Marko Jereminov|Larry T. Pileggi|Christos Faloutsos
+conf/sdm/WangS22,2022,SDM,inproceedings,Time-aware Multi-interest Capsule Network for Sequential Recommendation.,Zhikai Wang|Yanyan Shen
+conf/sdm/BrowneMTVB19,2019,SDM,inproceedings,"Forest Packing: Fast Parallel, Decision Forests.",James Browne|Disa Mhembere|Tyler M. Tomita|Joshua T. Vogelstein|Randal C. Burns
+conf/sdm/WangHZ19,2019,SDM,inproceedings,Towards Identifying Causal Relation Between Instances and Labels.,Tian-Zuo Wang|Sheng-Jun Huang|Zhi-Hua Zhou
+conf/sdm/WangMWTZG21,2021,SDM,inproceedings,Towards Learning Outcome Prediction via Modeling Question Explanations and Student Responses.,Tianqi Wang|Fenglong Ma|Yaqing Wang 0001|Tang Tang|Longfei Zhang|Jing Gao 0004
+conf/sdm/ChouHSCS022,2022,SDM,inproceedings,GRP-FED: Addressing Client Imbalance in Federated Learning via Global-Regularized Personalization.,Yen-hsiu Chou|Shenda Hong|Chenxi Sun|Derun Cai|Moxian Song|Hongyan Li 0002
+conf/sdm/0001XCY0W22,2022,SDM,inproceedings,Structure-Enhanced Heterogeneous Graph Contrastive Learning.,Yanqiao Zhu 0001|Yichen Xu 0008|Hejie Cui|Carl Yang 0001|Qiang Liu 0006|Shu Wu
+conf/sdm/OehmckeG22,2022,SDM,inproceedings,Input Selection for Bandwidth-Limited Neural Network Inference.,Stefan Oehmcke|Fabian Gieseke
+conf/sdm/0001MLF23,2023,SDM,inproceedings,Max-Min Diversification with Fairness Constraints: Exact and Approximation Algorithms.,Yanhao Wang 0001|Michael Mathioudakis|Jia Li|Francesco Fabbri
+conf/sdm/PengHYS18,2018,SDM,inproceedings,Global Nonlinear Metric Learning by Gluing Local Linear Metrics.,Yaxin Peng|Lingfang Hu|Shihui Ying|Chaomin Shen 0001
+conf/sdm/Guo0LWS24,2024,SDM,inproceedings,DualVAE: Dual Disentangled Variational AutoEncoder for Recommendation.,Zhiqiang Guo|Guohui Li 0001|Jianjun Li 0010|Chaoyang Wang 0002|Si Shi
+conf/sdm/0002ZP021,2021,SDM,inproceedings,Disentangled Dynamic Graph Deep Generation.,Wenbin Zhang 0002|Liming Zhang|Dieter Pfoser|Liang Zhao 0002
+conf/sdm/LuoH19,2019,SDM,inproceedings,Region-Based Active Learning with Hierarchical and Adaptive Region Construction.,Zhipeng Luo|Milos Hauskrecht
+conf/sdm/KeyaIPSF21,2021,SDM,inproceedings,Equitable Allocation of Healthcare Resources with Fair Survival Models.,Kamrun Naher Keya|Rashidul Islam|Shimei Pan|Ian Stockwell|James R. Foulds
+conf/sdm/ZhangG20,2020,SDM,inproceedings,Maximizing diversity over clustered data.,Guangyi Zhang 0001|Aristides Gionis
+conf/sdm/SchneiderV18,2018,SDM,inproceedings,Topic Modeling based on Keywords and Context.,Johannes Schneider 0002|Michail Vlachos
+conf/sdm/JackECRL23,2023,SDM,inproceedings,It's PageRank All The Way Down: Simplifying Deep Graph Networks.,Dominic Jack|Sarah M. Erfani|Jeffrey Chan|Sutharshan Rajasegarar|Christopher Leckie
+conf/sdm/RenNR18,2018,SDM,inproceedings,ALE: Additive Latent Effect Models for Grade Prediction.,Zhiyun Ren|Xia Ning|Huzefa Rangwala
+conf/sdm/OzcanMI21,2021,SDM,inproceedings,Submodular Maximization via Taylor Series Approximation.,G|Armin Moharrer|Stratis Ioannidis
+conf/sdm/GaoH21,2021,SDM,inproceedings,Faster Stochastic Second Order Method for Large-Scale Machine Learning Models.,Hongchang Gao|Heng Huang 0001
+conf/sdm/ZhouLLSSC21,2021,SDM,inproceedings,DPGS: Degree-Preserving Graph Summarization.,Houquan Zhou 0002|Shenghua Liu|Kyuhan Lee|Kijung Shin|Huawei Shen|Xueqi Cheng
+conf/sdm/YinCFP21,2021,SDM,inproceedings,TedPar: Temporally Dependent PARAFAC2 Factorization for Phenotype-based Disease Progression Modeling.,Kejing Yin|William K. Cheung 0001|Benjamin C. M. Fung|Jonathan Poon
+conf/sdm/TobinHZ23,2023,SDM,inproceedings,Reinforced EM Algorithm for Clustering with Gaussian Mixture Models.,Joshua Tobin|Chin Pang Ho|Mimi Zhang
+conf/sdm/LaishramSEPS20,2020,SDM,inproceedings,Residual Core Maximization: An Efficient Algorithm for Maximizing the Size of the,Ricky Laishram|Ahmet Erdem Sariy|Tina Eliassi-Rad|Ali Pinar|Sucheta Soundarajan
+conf/sdm/FeremansCG18,2018,SDM,inproceedings,Mining Top-,Len Feremans|Boris Cule|Bart Goethals
+conf/sdm/PiasMVD23,2023,SDM,inproceedings,A novel reject option applied to sleep stage scoring.,Dries Van der Plas|Wannes Meert|Johan Verbraecken|Jesse Davis
+conf/sdm/LiQZL20,2020,SDM,inproceedings,Knowledge guided diagnosis prediction via graph spatial-temporal network.,Yang Li 0139|Buyue Qian|Xianli Zhang|Hui Liu
+conf/sdm/ItoTSYI20,2020,SDM,inproceedings,SSNN: Sentiment Shift Neural Network.,Tomoki Ito|Kota Tsubouchi|Hiroki Sakaji|Tatsuo Yamashita|Kiyoshi Izumi
+conf/sdm/ChooS22,2022,SDM,inproceedings,On the Persistence of Higher-Order Interactions in Real-World Hypergraphs.,Hyunjin Choo|Kijung Shin
+conf/sdm/TanPW19,2019,SDM,inproceedings,Elastic bands across the path: A new framework and method to lower bound DTW.,Chang Wei Tan|Fran|Geoffrey I. Webb
+conf/sdm/Gu0022,2022,SDM,inproceedings,Entropy Weight Allocation: Positive-unlabeled Learning via Optimal Transport.,Wen Gu|Teng Zhang 0001|Hai Jin 0001
+conf/sdm/HanCSGO19,2019,SDM,inproceedings,Temporal Graph Regression via Structure-Aware Intrinsic Representation Learning.,Chao Han 0003|Xi Hang Cao|Marija Stanojevic|Mohamed F. Ghalwash|Zoran Obradovic
+conf/sdm/SyuLY23,2023,SDM,inproceedings,Anomaly Detection Networks and Fuzzy Control Modules for Energy Grid Management with Q-Learning-Based Decision Making.,Jia-Hao Syu|Jerry Chun-Wei Lin|Philip S. Yu
+conf/sdm/YangC19,2019,SDM,inproceedings,Relationship Profiling over Social Networks: Reverse Smoothness from Similarity to Closeness.,Carl Yang 0001|Kevin Chang 0001
+conf/sdm/MitraVPR20,2020,SDM,inproceedings,A Unified Non-Negative Matrix Factorization Framework for Semi Supervised Learning on Graphs.,Anasua Mitra|Priyesh Vijayan|Srinivasan Parthasarathy 0001|Balaraman Ravindran
+conf/sdm/Ng0FLC022,2022,SDM,inproceedings,Masked Gradient-Based Causal Structure Learning.,Ignavier Ng|Shengyu Zhu 0001|Zhuangyan Fang|Haoyang Li 0002|Zhitang Chen|Jun Wang 0012
+conf/sdm/FanWCHH19,2019,SDM,inproceedings,SPMM: A Soft Piecewise Mapping Model for Bilingual Lexicon Induction.,Yan Fan|Chengyu Wang 0001|Boxing Chen|Zhongkai Hu|Xiaofeng He
+conf/sdm/PoursafaeiZR22,2022,SDM,inproceedings,A Strong Node Classification Baseline for Temporal Graphs.,Farimah Poursafaei|Zeljko Zilic|Reihaneh Rabbany
+conf/sdm/YuTAEV21,2021,SDM,inproceedings,POTION : Optimizing Graph Structure for Targeted Diffusion.,Sixie Yu|Leo Torres 0003|Scott Alfeld|Tina Eliassi-Rad|Yevgeniy Vorobeychik
+conf/sdm/GrintenAPM21,2021,SDM,inproceedings,New Approximation Algorithms for Forest Closeness Centrality - for Individual Vertices and Vertex Groups.,Alexander van der Grinten|Eugenio Angriman|Maria Predari|Henning Meyerhenke
+conf/sdm/00020024,2024,SDM,inproceedings,Ada-VAD: Domain Adaptable Video Anomaly Detection.,Dongliang Guo 0002|Yun Fu 0001|Sheng Li 0001
+conf/sdm/WangMTZ022,2022,SDM,inproceedings,Textbook Enhanced Student Learning Outcome Prediction.,Tianqi Wang|Fenglong Ma|Tang Tang|Longfei Zhang|Jing Gao 0004
+conf/sdm/0002LNVP18,2018,SDM,inproceedings,Learning Graph Representation via Frequent Subgraphs.,Dang Nguyen 0002|Wei Luo 0001|Tu Dinh Nguyen|Svetha Venkatesh|Dinh Q. Phung
+conf/sdm/GuoL020,2020,SDM,inproceedings,Counterfactual Evaluation of Treatment Assignment Functions with Networked Observational Data.,Ruocheng Guo|Jundong Li|Huan Liu 0001
+conf/sdm/LeiberMPB22,2022,SDM,inproceedings,Automatic Parameter Selection for Non-Redundant Clustering.,Collin Leiber|Dominik Mautz|Claudia Plant|Christian B
+conf/sdm/Dai0JH023,2023,SDM,inproceedings,ML4C: Seeing Causality Through Latent Vicinity.,Haoyue Dai|Rui Ding 0001|Yuanyuan Jiang|Shi Han|Dongmei Zhang 0001
+conf/sdm/HeCNW020,2020,SDM,inproceedings,Deep Matrix Tri-Factorization: Mining Vertex-wise Interactions in Multi-Space Attributed Graphs.,Yi He 0007|Sheng Chen 0008|Thu Nguyen 0001|Bruce A. Wade|Xindong Wu 0001
+conf/sdm/0002L23,2023,SDM,inproceedings,Multi-Task Learning with Prior Information.,Mengyuan Zhang 0002|Kai Liu 0028
+conf/sdm/ReddyCR19,2019,SDM,inproceedings,Edge Replacement Grammars : A Formal Language Approach for Generating Graphs.,Revanth Reddy|Sarath Chandar|Balaraman Ravindran
+conf/sdm/ZhaoNHL19,2019,SDM,inproceedings,LSCP: Locally Selective Combination in Parallel Outlier Ensembles.,Yue Zhao 0016|Zain Nasrullah|Maciej K. Hryniewicki|Zheng Li
+conf/sdm/AmsalegCHKRT19,2019,SDM,inproceedings,Intrinsic Dimensionality Estimation within Tight Localities.,Laurent Amsaleg|Oussama Chelly|Michael E. Houle|Ken-ichi Kawarabayashi|Milos Radovanovic 0001|Weeris Treeratanajaru
+conf/sdm/ChangKPK20,2020,SDM,inproceedings,Content-Aware Successive Point-of-Interest Recommendation.,Buru Chang|Yookyung Koh|Donghyeon Park|Jaewoo Kang
+conf/sdm/LuFR22,2022,SDM,inproceedings,Continuously Generalized Ordinal Regression for Linear and Deep Models.,Fred Lu|Francis Ferraro|Edward Raff
+conf/sdm/GhafooriL20,2020,SDM,inproceedings,Deep Multi-sphere Support Vector Data Description.,Zahra Ghafoori|Christopher Leckie
+conf/sdm/LavaniaB19,2019,SDM,inproceedings,Auto-Summarization: A Step Towards Unsupervised Learning of a Submodular Mixture.,Chandrashekhar Lavania|Jeff A. Bilmes
+conf/sdm/MeertensDHT19,2019,SDM,inproceedings,A Bayesian Approach for Accurate Classification-Based Aggregates.,Q. A. Meertens|C. G. H. Diks|H. Jaap van den Herik|Frank W. Takes
+conf/sdm/AnVZSL22,2022,SDM,inproceedings,HintNet: Hierarchical Knowledge Transfer Networks for Traffic Accident Forecasting on Heterogeneous Spatio-Temporal Data.,Bang An 0002|Amin Vahedian|Xun Zhou 0001|W. Nick Street|Yanhua Li
+conf/sdm/YaoH24,2024,SDM,inproceedings,Dual-disentangled Deep Multiple Clustering.,Jiawei Yao|Juhua Hu
+conf/sdm/BernsB21a,2021,SDM,inproceedings,Complexity-Adaptive Gaussian Process Model Inference for Large-Scale Data.,Fabian Berns|Christian Beecks
+conf/sdm/ChiuLL20,2020,SDM,inproceedings,Two-variable Dual Coordinate Descent Methods for Linear SVM with/without the Bias Term.,Chi-Cheng Chiu|Pin-Yen Lin|Chih-Jen Lin
+conf/sdm/MaXW18,2018,SDM,inproceedings,Health-ATM: A Deep Architecture for Multifaceted Patient Health Record Representation and Risk Prediction.,Tengfei Ma 0001|Cao Xiao|Fei Wang 0001
+conf/sdm/00010X24,2024,SDM,inproceedings,Foundation Models for Spatiotemporal Tasks in the Physical World.,Zhe Jiang 0001|Yu Wang 0044|Zelin Xu 0001
+conf/sdm/0003ZZLXJ24,2024,SDM,inproceedings,Lattice Convolutional Networks for Learning Ground States of Quantum Many-Body Systems.,Cong Fu 0003|Xuan Zhang|Huixin Zhang|Hongyi Ling|Shenglong Xu|Shuiwang Ji
+conf/sdm/YangYD021,2021,SDM,inproceedings,Deep Multi-type Objects Muli-view Multi-instance Multi-label Learning.,Yuanlin Yang 0001|Guoxian Yu|Carlotta Domeniconi|Xiangliang Zhang 0001
+conf/sdm/KalofoliasWV21,2021,SDM,inproceedings,SUSAN: The Structural Similarity Random Walk Kernel.,Janis Kalofolias|Pascal Welke|Jilles Vreeken
+conf/sdm/VettoruzzoBR24,2024,SDM,inproceedings,Personalized Federated Learning with Contextual Modulation and Meta-Learning.,Anna Vettoruzzo|Mohamed-Rafik Bouguelia|Thorsteinn S. R
+conf/sdm/ChouLL20,2020,SDM,inproceedings,Dual Coordinate-Descent Methods for Linear One-Class SVM and SVDD.,Hung-Yi Chou|Pin-Yen Lin|Chih-Jen Lin
+conf/sdm/YuL23,2023,SDM,inproceedings,Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples.,Jianxiang Yu 0001|Xiang Li 0067
+conf/sdm/Zhu022,2022,SDM,inproceedings,Self-supervision based Semantic Alignment for Unsupervised Domain Adaptation.,Ronghang Zhu|Sheng Li 0001
+conf/sdm/FangCHF19,2019,SDM,inproceedings,Fast Training for Large-Scale One-versus-All Linear Classifiers using Tree-Structured Initialization.,Huang Fang|Minhao Cheng|Cho-Jui Hsieh|Michael P. Friedlander
+conf/sdm/EnglhardtTVB20,2020,SDM,inproceedings,Finding the Sweet Spot: Batch Selection for One-Class Active Learning.,Adrian Englhardt|Holger Trittenbach|Dennis Vetter|Klemens B
+conf/sdm/YaLCG21,2021,SDM,inproceedings,Heterogeneous Graph Neural Networks for Query-focused Summarization.,Jing Ya|Tingwen Liu|Jiangxia Cao|Li Guo
+conf/sdm/004800KJN23,2023,SDM,inproceedings,Optimal Smooth Approximation for Quantile Matrix Factorization.,Peng Liu 0048|Yi Liu 0062|Rui Zhu 0007|Linglong Kong|Bei Jiang|Di Niu
+conf/sdm/ZhuangTPS23,2023,SDM,inproceedings,Subgraph Centralization: A Necessary Step for Graph Anomaly Detection.,Zhong Zhuang|Kai Ming Ting|Guansong Pang|Shuaibin Song
+conf/sdm/UbaruSS19,2019,SDM,inproceedings,Find the dimension that counts: Fast dimension estimation and Krylov PCA.,Shashanka Ubaru|Abd-Krim Seghouane|Yousef Saad
+conf/sdm/AmburgVB22,2022,SDM,inproceedings,Diverse and Experienced Group Discovery via Hypergraph Clustering.,Ilya Amburg|Nate Veldt|Austin R. Benson
+conf/sdm/WangYJ19,2019,SDM,inproceedings,Spatial Variational Auto-Encoding via Matrix-Variate Normal Distributions.,Zhengyang Wang|Hao Yuan 0001|Shuiwang Ji
+conf/sdm/LivanosD24,2024,SDM,inproceedings,Identification and Uses of Deep Learning Backbones via Pattern Mining.,Michael J. Livanos|Ian Davidson
+conf/sdm/OettershagenKJM23,2023,SDM,inproceedings,A Temporal Graphlet Kernel For Classifying Dissemination in Evolving Networks.,Lutz Oettershagen|Nils M. Kriege|Claude Jordan|Petra Mutzel
+conf/sdm/Li0TL18,2018,SDM,inproceedings,Multi-Layered Network Embedding.,Jundong Li|Chen Chen 0022|Hanghang Tong|Huan Liu 0001
+conf/sdm/BudhathokiV18,2018,SDM,inproceedings,Causal Inference on Event Sequences.,Kailash Budhathoki|Jilles Vreeken
+conf/sdm/ShenWLDZY19,2019,SDM,inproceedings,Path-based Attribute-aware Representation Learning for Relation Prediction.,Ying Shen 0001|Desi Wen|Yaliang Li|Nan Du 0001|Haitao Zheng 0002|Min Yang 0007
+conf/sdm/DingGYCLH20,2020,SDM,inproceedings,BiGAN: Collaborative Filtering with Bidirectional Generative Adversarial Networks.,Rui Ding 0003|Guibing Guo|Xiaochun Yang 0001|Bowei Chen 0004|Zhirong Liu|Xiuqiang He 0001
+conf/sdm/KulkarniSME022,2022,SDM,inproceedings,CPTAM: Constituency Parse Tree Aggregation Method.,Adithya Kulkarni|Nasim Sabetpour|Alexey Markin|Oliver Eulenstein|Qi Li 0012
+conf/sdm/MaoSJZ18,2018,SDM,inproceedings,Outlier Detection over Distributed Trajectory Streams.,Jiali Mao|Pengda Sun|Cheqing Jin|Aoying Zhou
+conf/sdm/TengTYC18,2018,SDM,inproceedings,Revenue Maximization on the Multi-grade Product.,Ya-Wen Teng|Chih-Hua Tai|Philip S. Yu|Ming-Syan Chen
+conf/sdm/TatsuboriWBW18,2018,SDM,inproceedings,A Probabilistic Hough Transform for Opportunistic Crowd-sensing of Moving Traffic Obstacles.,Michiaki Tatsubori|Aisha Walcott-Bryant|Reginald E. Bryant|John Wamburu
+conf/sdm/GlantzM18,2018,SDM,inproceedings,Many-to-many Correspondences between Partitions: Introducing a Cut-based Approach.,Roland Glantz|Henning Meyerhenke
+conf/sdm/ZhaoZCM22,2022,SDM,inproceedings,A Non-sequential Approach to Deep User Interest Model for CTR Prediction.,Keke Zhao|Xing Zhao|Qi Cao|Linjian Mo
+conf/sdm/LiGZCB20,2020,SDM,inproceedings,Hessian based analysis of SGD for Deep Nets: Dynamics and Generalization.,Xinyan Li|Qilong Gu|Yingxue Zhou|Tiancong Chen|Arindam Banerjee 0001
+conf/sdm/SunLZ22,2022,SDM,inproceedings,ConLearn: Contextual-knowledge-aware Concept Prerequisite Relation Learning with Graph Neural Network.,Hao Sun 0015|Yuntao Li|Yan Zhang 0117
+conf/sdm/SarpeV21,2021,SDM,inproceedings,PRESTO: Simple and Scalable Sampling Techniques for the Rigorous Approximation of Temporal Motif Counts.,Ilie Sarpe|Fabio Vandin
+conf/sdm/ZhanDDHW024,2024,SDM,inproceedings,Meta-Adaptive Stock Movement Prediction with Two-Stage Representation Learning.,Donglin Zhan|Yusheng Dai|Yiwei Dong|Jinghai He|Zhenyi Wang 0001|James Anderson 0001
+conf/sdm/ZhangZZ022,2022,SDM,inproceedings,GANBLR++: Incorporating Capacity to Generate Numeric Attributes and Leveraging Unrestricted Bayesian Networks.,Yishuo Zhang|Nayyar Abbas Zaidi|Jiahui Zhou|Gang Li 0009
+conf/sdm/MaadiKA23,2023,SDM,inproceedings,Uncertainty in Selective Bagging: A Dynamic Bi-objective Optimization Model.,Mansoureh Maadi|Hadi Akbarzadeh Khorshidi|Uwe Aickelin
+conf/sdm/ZhangLZZ23,2023,SDM,inproceedings,Domain Disentangled Meta-Learning.,Xin Zhang 0098|Yanhua Li|Ziming Zhang|Zhi-Li Zhang
+conf/sdm/MorvanCGA18,2018,SDM,inproceedings,Graph sketching-based Space-efficient Data Clustering.,Anne Morvan|Krzysztof Choromanski|C|Jamal Atif
+conf/sdm/ShayestehfardBI23,2023,SDM,inproceedings,AlignGraph: A Group of Generative Models for Graphs.,Kimia Shayestehfard|Dana H. Brooks|Stratis Ioannidis
+conf/sdm/LiSPSW24,2024,SDM,inproceedings,Stable Synthetic Control with Anomaly Detection for Causal Inference.,Qiang Li|Yiqiao Sun|Linsey Pang|Liang Sun 0001|Qingsong Wen
+conf/sdm/YangZ23,2023,SDM,inproceedings,Estimating Latent Population Flows from Aggregated Data via Inversing Multi-Marginal Optimal Transport.,Sikun Yang|Hongyuan Zha
+conf/sdm/BoumberVQ24,2024,SDM,inproceedings,"Blue Sky: Multilingual, Multimodal Domain Independent Deception Detection.",Dainis Boumber|Rakesh M. Verma|Fatima Zahra Qachfar
+conf/sdm/WanM18,2018,SDM,inproceedings,One-Class Recommendation with Asymmetric Textual Feedback.,Mengting Wan|Julian J. McAuley
+conf/sdm/GhoshRMSD024,2024,SDM,inproceedings,Towards Entity-Aware Conditional Variational Inference for Heterogeneous Time-Series Prediction: An application to Hydrology.,Rahul Ghosh|Arvind Renganathan|Wallace McAliley|Michael S. Steinbach|Christopher J. Duffy|Vipin Kumar 0001
+conf/sdm/AltieriPPV21,2021,SDM,inproceedings,Scalable Distributed Approximation of Internal Measures for Clustering Evaluation.,Federico Altieri|Andrea Pietracaprina|Geppino Pucci|Fabio Vandin
+conf/sdm/WangLWJ18,2018,SDM,inproceedings,You Are How You Move: Linking Multiple User Identities From Massive Mobility Traces.,Huandong Wang|Yong Li 0008|Gang Wang 0011|Depeng Jin
+conf/sdm/SunJLCH19,2019,SDM,inproceedings,Bus Travel Speed Prediction using Attention Network of Heterogeneous Correlation Features.,Yidan Sun|Guiyuan Jiang|Siew-Kei Lam|Shicheng Chen|Peilan He
+conf/sdm/LiZLLH19,2019,SDM,inproceedings,GeoAttn: Localization of Social Media Messages via Attentional Memory Network.,Sha Li|Chao Zhang 0014|Dongming Lei|Ji Li|Jiawei Han 0001
+conf/sdm/GujralTP20,2020,SDM,inproceedings,SPADE: Streaming PARAFAC2 DEcomposition for Large Datasets.,Ekta Gujral|Georgios Theocharous|Evangelos E. Papalexakis
+conf/sdm/AlaeeASMGK20,2020,SDM,inproceedings,Features or Shape? Tackling the False Dichotomy of Time Series Classification.,Sara Alaee|Alireza Abdoli|Christian R. Shelton|Amy C. Murillo|Alec C. Gerry|Eamonn J. Keogh
+conf/sdm/ZhangHR24,2024,SDM,inproceedings,CoLafier: Collaborative Noisy Label Purifier With Local Intrinsic Dimensionality Guidance.,Dongyu Zhang|Ruofan Hu 0001|Elke A. Rundensteiner
+conf/sdm/JohanssonL20,2020,SDM,inproceedings,Well-calibrated and specialized probability estimation trees.,Ulf Johansson|Tuwe L
+conf/sdm/JabbariC20,2020,SDM,inproceedings,An Instance-Specific Algorithm for Learning the Structure of Causal Bayesian Networks Containing Latent Variables.,Fattaneh Jabbari|Gregory F. Cooper
+conf/sdm/ArachchiT23,2023,SDM,inproceedings,Node ranking in labeled networks.,Chamalee Wickrama Arachchi|Nikolaj Tatti
+conf/sdm/DrumondBGS20,2020,SDM,inproceedings,HIDRA: Head Initialization across Dynamic targets for Robust Architectures.,Rafael R|Lukas Brinkmeyer|Josif Grabocka|Lars Schmidt-Thieme
+conf/sdm/LiuLSL20,2020,SDM,inproceedings,An Advantage Actor-Critic Algorithm with Confidence Exploration for Open Information Extraction.,Guiliang Liu|Xu Li 0001|Mingming Sun 0001|Ping Li 0001
+conf/sdm/JalaliW0RS20,2020,SDM,inproceedings,On the Information Unfairness of Social Networks.,Zeinab S. Jalali|Weixiang Wang|Myunghwan Kim 0002|Hema Raghavan|Sucheta Soundarajan
+conf/sdm/YousefzadehOL19,2019,SDM,inproceedings,Learning Diverse Gaussian Graphical Models and Interpreting Edges.,Roozbeh Yousefzadeh|Diane Oyen|Nina Lanza
+conf/sdm/HooiSLF19,2019,SDM,inproceedings,SMF: Drift-Aware Matrix Factorization with Seasonal Patterns.,Bryan Hooi|Kijung Shin|Shenghua Liu|Christos Faloutsos
+conf/sdm/LiangWMQH19,2019,SDM,inproceedings,A Deep Spatio-Temporal Fuzzy Neural Network for Passenger Demand Prediction.,Xiaoyuan Liang|Guiling Wang 0001|Martin Renqiang Min|Yi Qi|Zhu Han 0001
+conf/sdm/RubashevskiiKP23,2023,SDM,inproceedings,Scalable Batch Acquisition for Deep Bayesian Active Learning.,Aleksandr Rubashevskii|Daria Kotova|Maxim Panov
+conf/sdm/ZhaBL0H23,2023,SDM,inproceedings,Data-centric AI: Perspectives and Challenges.,Daochen Zha|Zaid Pervaiz Bhat|Kwei-Herng Lai|Fan Yang 0023|Xia Hu 0001
+conf/sdm/YeCW0024,2024,SDM,inproceedings,UPFL: Unsupervised Personalized Federated Learning towards New Clients.,Tiandi Ye|Cen Chen 0001|Yinggui Wang|Xiang Li 0067|Ming Gao 0001
+conf/sdm/WangWFLT20,2020,SDM,inproceedings,Global-and-Local Aware Data Generation for the Class Imbalance Problem.,Wentao Wang 0006|Suhang Wang|Wenqi Fan|Zitao Liu 0001|Jiliang Tang
+conf/sdm/BhailaHWW24,2024,SDM,inproceedings,Local Differential Privacy in Graph Neural Networks: a Reconstruction Approach.,Karuna Bhaila|Wen Huang 0003|Yongkai Wu|Xintao Wu
+conf/sdm/WangJ18,2018,SDM,inproceedings,Learning Convolutional Text Representations for Visual Question Answering.,Zhengyang Wang|Shuiwang Ji
+conf/sdm/RymarczykDD23,2023,SDM,inproceedings,ProGReST: Prototypical Graph Regression Soft Trees for Molecular Property Prediction.,Dawid Rymarczyk|Daniel Dobrowolski|Tomasz Danel
+conf/sdm/WangWJDFZ23,2023,SDM,inproceedings,Hierarchical Neural Topic Model with Embedding Cluster and Neural Variational Inference.,Ningjing Wang|Deqing Wang|Ting Jiang|Chenguang Du|Chuyu Fang|Fuzhen Zhuang
+conf/sdm/ChangOL20,2020,SDM,inproceedings,GRIA: Graphical Regularization for Integrative Analysis.,Changgee Chang|Jihwan Oh|Qi Long
+conf/sdm/SchoutenDP22,2022,SDM,inproceedings,Exceptional Model Mining for Repeated Cross-Sectional Data (EMM-RCS).,Rianne Margaretha Schouten|Wouter Duivesteijn|Mykola Pechenizkiy
+conf/sdm/Li018,2018,SDM,inproceedings,Evolving Separating References for Time Series Classification.,Xiaosheng Li|Jessica Lin 0001
+conf/sdm/QinWMYW021,2021,SDM,inproceedings,Contradictory Structure Learning for Semi-supervised Domain Adaptation.,Can Qin|Lichen Wang|Qianqian Ma|Yu Yin 0001|Huan Wang 0014|Yun Fu 0001
+conf/sdm/ZhangLJ24,2024,SDM,inproceedings,Denoising Long- and Short-term Interests for Sequential Recommendation.,Xinyu Zhang|Beibei Li 0001|Beihong Jin
+conf/sdm/HossainFBKT24,2024,SDM,inproceedings,EBV: Electronic Bee-Veterinarian for Principled Mining and Forecasting of Honeybee Time Series.,Shamima Hossain|Christos Faloutsos|Boris Baer|Hyoseung Kim 0001|Vassilis J. Tsotras
+conf/sdm/CaiSSZH022,2022,SDM,inproceedings,Hypergraph Contrastive Learning for Electronic Health Records.,Derun Cai|Chenxi Sun|Moxian Song|Baofeng Zhang|Shenda Hong|Hongyan Li 0002
+conf/sdm/EfteliogluTS18,2018,SDM,inproceedings,Avoidance Region Discovery: A Summary of Results.,Emre Eftelioglu|Xun Tang|Shashi Shekhar 0001
+conf/sdm/ZhouL022,2022,SDM,inproceedings,Noisy Truncated SGD: Optimization and Generalization.,Yingxue Zhou|Xinyan Li|Arindam Banerjee 0001
+conf/sdm/EnglhardtB20,2020,SDM,inproceedings,Exploring the Unknown - Query Synthesis in One-Class Active Learning.,Adrian Englhardt|Klemens B
+conf/sdm/WangZWG21,2021,SDM,inproceedings,Fair Classification Under Strict Unawareness.,Haoyu Wang 0004|Hengtong Zhang|Yaqing Wang 0001|Jing Gao 0004
+conf/sdm/PasrichaSSF0P23,2023,SDM,inproceedings,Harvester: Principled Factorization-based Temporal Tensor Granularity Estimation.,Ravdeep S. Pasricha|Uday Singh Saini|Nicholas D. Sidiropoulos|Fei Fang 0001|Kevin Chan 0001|Evangelos E. Papalexakis
+conf/sdm/HooiF19,2019,SDM,inproceedings,Branch and Border: Partition-Based Change Detection in Multivariate Time Series.,Bryan Hooi|Christos Faloutsos
+conf/sdm/FengT23,2023,SDM,inproceedings,Concept Discovery for Fast Adaptation.,Shengyu Feng|Hanghang Tong
+conf/sdm/LuoLYDW22,2022,SDM,inproceedings,Multiperiod Corporate Default Prediction Through Neural Parametric Family Learning.,Wei-Lun Luo|Yu-Ming Lu|Jheng-Hong Yang|Jin-Chuan Duan|Chuan-Ju Wang
+conf/sdm/0002LSC24,2024,SDM,inproceedings,Graph Summarization for Preserving Spectral Characteristics.,Houquan Zhou 0002|Shenghua Liu|Huawei Shen|Xueqi Cheng
+conf/sdm/RoychoudhuryZO19,2019,SDM,inproceedings,Leveraging Subsequence-orders for Univariate and Multivariate Time-series Classification.,Shoumik Roychoudhury|Fang Zhou|Zoran Obradovic
+conf/sdm/0022W022,2022,SDM,inproceedings,Meta Adversarial Weight for Unsupervised Domain Adaptation.,Chang Liu 0022|Lichen Wang|Yun Fu 0001
+conf/sdm/YuanCTW0Z24,2024,SDM,inproceedings,Label Distribution Learning-Enhanced Dual-KNN for Text Classification.,Bo Yuan 0017|Yulin Chen|Zhen Tan 0001|Jinyan Wang|Huan Liu 0001|Yin Zhang
+conf/sdm/BohnGO19,2019,SDM,inproceedings,Optimally rotated coordinate systems for adaptive least-squares regression on sparse grids.,Bastian Bohn|Michael Griebel|Jens Oettershagen
+conf/sdm/ZhuLHK21,2021,SDM,inproceedings,Node Proximity Is All You Need: Unified Structural and Positional Node and Graph Embedding.,Jing Zhu 0005|Xingyu Lu|Mark Heimann|Danai Koutra
+conf/sdm/0007T22,2022,SDM,inproceedings,YACC: A Framework Generalizing Tur,Shweta Jain 0007|Hanghang Tong
+conf/sdm/WangELH21,2021,SDM,inproceedings,A Dimensionality-Driven Approach for Unsupervised Out-of-distribution Detection.,Qizhou Wang 0001|Sarah M. Erfani|Christopher Leckie|Michael E. Houle
+conf/sdm/0012ZJ023,2023,SDM,inproceedings,A Two-View EEG Representation for Brain Cognition by Composite Temporal-Spatial Contrastive Learning.,Zheng Chen 0012|Lingwei Zhu|Haohui Jia|Takashi Matsubara 0001
+conf/sdm/RezayiZZ023,2023,SDM,inproceedings,XDC: Adaptive Cross Domain Short Text Clustering.,Saed Rezayi|Handong Zhao|Ronghang Zhu|Sheng Li 0001
+conf/sdm/PhanLN22,2022,SDM,inproceedings,StepDIRECT - A Derivative-Free Optimization Method for Stepwise Functions.,Dzung T. Phan|Hongsheng Liu|Lam M. Nguyen
+conf/sdm/LiuZSGK19,2019,SDM,inproceedings,Coupled Clustering of Time-Series and Networks.,Yike Liu|Linhong Zhu|Pedro A. Szekely|Aram Galstyan|Danai Koutra
+conf/sdm/LuZYWYN23,2023,SDM,inproceedings,BDA: Bandit-based Transferable AutoAugment.,Shan Lu|Mingjun Zhao|Songling Yuan|Xiaoli Wang 0004|Lei Yang|Di Niu
+conf/sdm/ZhangG020,2020,SDM,inproceedings,Semantic Discord: Finding Unusual Local Patterns for Time Series.,Li Zhang 0074|Yifeng Gao 0001|Jessica Lin 0001
+conf/sdm/WangZCS24,2024,SDM,inproceedings,Laplacian Score Benefit Adaptive Filter Selection for Graph Neural Networks.,Yewen Wang|Shichang Zhang|John (Junghoo) Cho|Yizhou Sun
+conf/sdm/WangWBSSZ19,2019,SDM,inproceedings,A Novel Regularizer for Temporally Stable Learning with an Application to Twitter Topic Classification.,Yakun Wang|Ga Wu|Mohamed Reda Bouadjenek|Scott Sanner|Sen Su|Zhongbao Zhang
+conf/sdm/GhoshMSS20,2020,SDM,inproceedings,Optimal Bidding Strategy without Exploration in Real-time Bidding.,Aritra Ghosh 0001|Saayan Mitra|Somdeb Sarkhel|Viswanathan Swaminathan 0001
+conf/sdm/ScharwachterM20,2020,SDM,inproceedings,Two-Sample Testing for Event Impacts in Time Series.,Erik Scharw|Emmanuel M
+conf/sdm/LiCGLCG19,2019,SDM,inproceedings,Collaborative Filtering with Noisy Ratings.,Dongsheng Li 0002|Chao Chen 0016|Zhilin Gong|Tun Lu|Stephen M. Chu|Ning Gu 0001
+conf/sdm/ChiQW024,2024,SDM,inproceedings,Active Learning for Graphs with Noisy Structures.,Hongliang Chi|Cong Qi|Suhang Wang|Yao Ma 0001
+conf/sdm/WiegandKV21,2021,SDM,inproceedings,Mining Easily Understandable Models from Complex Event Logs.,Boris Wiegand|Dietrich Klakow|Jilles Vreeken
+conf/sdm/HeS0021,2021,SDM,inproceedings,Deep Neural Network for 3D Surface Segmentation based on Contour Tree Hierarchy.,Wenchong He|Arpan Man Sainju|Zhe Jiang 0001|Da Yan 0001
+conf/sdm/BaiLG023,2023,SDM,inproceedings,Saliency-Augmented Memory Completion for Continual Learning.,Guangji Bai|Chen Ling 0003|Yuyang Gao|Liang Zhao 0002
+conf/sdm/FanFSLW19,2019,SDM,inproceedings,Reading Customer Reviews to Answer Product-related Questions.,Miao Fan|Chao Feng|Mingming Sun 0001|Ping Li 0001|Haifeng Wang 0001
+conf/sdm/DaiK0H21,2021,SDM,inproceedings,CiNet: Redesigning Deep Neural Networks for Efficient Mobile-Cloud Collaborative Inference.,Xin Dai|Xiangnan Kong|Tian Guo 0001|Yixian Huang
+conf/sdm/0002LZZ023,2023,SDM,inproceedings,STM-GAIL: Spatial-Temporal Meta-GAIL for Learning Diverse Human Driving Strategies.,Yingxue Zhang 0002|Yanhua Li|Xun Zhou 0001|Ziming Zhang|Jun Luo 0007
+conf/sdm/XiaoRTG18,2018,SDM,inproceedings,Reconstructing a cascade from temporal observations.,Han Xiao 0009|Polina Rozenshtein|Nikolaj Tatti|Aristides Gionis
+conf/sdm/LiuLFL19,2019,SDM,inproceedings,Deep Skip-Gram Networks for Text Classification.,Chaochun Liu|Yaliang Li|Hongliang Fei|Ping Li 0001
+conf/sdm/Amornbunchornvej18,2018,SDM,inproceedings,Framework for Inferring Leadership Dynamics of Complex Movement from Time Series.,Chainarong Amornbunchornvej|Tanya Y. Berger-Wolf
+conf/sdm/ChenLW22,2022,SDM,inproceedings,Adversarially Reprogramming Pretrained Neural Networks for Data-limited and Cost-efficient Malware Detection.,Lingwei Chen|Xiaoting Li 0001|Dinghao Wu
+conf/sdm/YouKS20,2020,SDM,inproceedings,DANR: Discrepancy-aware Network Regularization.,Hongyuan You|Furkan Kocayusufoglu|Ambuj K. Singh
+conf/sdm/RamGSB23,2023,SDM,inproceedings,Toward Theoretical Guidance for Two Common Questions in Practical Cross-Validation based Hyperparameter Selection.,Parikshit Ram|Alexander G. Gray|Horst C. Samulowitz|Gregory Bramble
+conf/sdm/Jiang0ZZXY18,2018,SDM,inproceedings,On Spectral Graph Embedding: A Non-Backtracking Perspective and Graph Approximation.,Fei Jiang|Lifang He 0001|Yi Zheng|Enqiang Zhu|Jin Xu 0002|Philip S. Yu
+conf/sdm/XuLLLT21,2021,SDM,inproceedings,"Yet Meta Learning Can Adapt Fast, it Can Also Break Easily.",Han Xu 0002|Yaxin Li 0001|Xiaorui Liu|Hui Liu 0031|Jiliang Tang
+conf/sdm/ItzhakJM24,2024,SDM,inproceedings,Early Multiple Temporal Patterns Based Event Prediction in Heterogeneous Multivariate Temporal Data.,Nevo Itzhak|Szymon Jaroszewicz|Robert Moskovitch
+conf/sdm/HeKTL21,2021,SDM,inproceedings,Robust Dual Recurrent Neural Networks for Financial Time Series Prediction.,Jiayu He|Matloob Khushi|Nguyen Hoang Tran|Tongliang Liu
+conf/sdm/ChengGSHL19,2019,SDM,inproceedings,Hierarchical Attention Networks for Cyberbullying Detection on the Instagram Social Network.,Lu Cheng 0001|Ruocheng Guo|Yasin N. Silva|Deborah L. Hall|Huan Liu 0001
+conf/sdm/MarxYL21,2021,SDM,inproceedings,Estimating Conditional Mutual Information for Discrete-Continuous Mixtures using Multi-Dimensional Adaptive Histograms.,Alexander Marx 0001|Lincen Yang|Matthijs van Leeuwen
+conf/sdm/GrzeszczykTS24,2024,SDM,inproceedings,MISS: Multiclass Interpretable Scoring Systems.,Michal K. Grzeszczyk|Tomasz Trzcinski|Arkadiusz Sitek
+conf/sdm/Matsuda00O22,2022,SDM,inproceedings,FedMe: Federated Learning via Model Exchange.,Koji Matsuda|Yuya Sasaki 0001|Chuan Xiao 0001|Makoto Onizuka
+conf/sdm/ZhengCH19,2019,SDM,inproceedings,Deep Multimodality Model for Multi-task Multi-view Learning.,Lecheng Zheng|Yu Cheng|Jingrui He
+conf/sdm/BruningDER24,2024,SDM,inproceedings,On the number of iterations of the DBA algorithm.,Frederik Br|Anne Driemel|Alperen Erg|Heiko R
+conf/sdm/ArrigoT19,2019,SDM,inproceedings,"Multi-Dimensional, Multilayer, Nonlinear and Dynamic HITS.",Francesca Arrigo|Francesco Tudisco
+conf/sdm/ChenLGP23,2023,SDM,inproceedings,Heavy Nodes in a Small Neighborhood: Algorithms and Applications.,Huiping Chen 0001|Grigorios Loukides|Robert Gwadera|Solon P. Pissis
+conf/sdm/SchierRR22,2022,SDM,inproceedings,Constrained Mean Shift Clustering.,Maximilian Schier|Christoph Reinders|Bodo Rosenhahn
+conf/sdm/GaoL0024,2024,SDM,inproceedings,Helper Recommendation with seniority control in Online Health Community.,Junruo Gao|Chen Ling 0003|Carl Yang 0001|Liang Zhao 0002
+conf/sdm/PunziCG023,2023,SDM,inproceedings,An Efficient Algorithm for Assessing the Number of,Giulia Punzi|Alessio Conte|Roberto Grossi|Andrea Marino 0001
+conf/sdm/NguyenHN19,2019,SDM,inproceedings,Efficient Summarizing of Evolving Events from Twitter Streams.,Thi-Huyen Nguyen|Tuan-Anh Hoang|Wolfgang Nejdl
+conf/sdm/0006TL0T22,2022,SDM,inproceedings,Learning from Imbalanced Crowdsourced Labeled Data.,Wentao Wang 0006|Joseph Thekinen|Xiaorui Liu|Zitao Liu 0001|Jiliang Tang
+conf/sdm/ChenL0Z24,2024,SDM,inproceedings,Test-Time Training for Spatial-Temporal Forecasting.,Changlu Chen|Yanbin Liu|Ling Chen 0006|Chengqi Zhang
+conf/sdm/NguyenTGRBV19,2019,SDM,inproceedings,Incomplete Conditional Density Estimation for Fast Materials Discovery.,Phuoc Nguyen|Truyen Tran 0001|Sunil Gupta 0001|Santu Rana|Matthew Barnett|Svetha Venkatesh
+conf/sdm/XiaoZZS20,2020,SDM,inproceedings,Vertex-reinforced Random Walk for Network Embedding.,Wenyi Xiao|Huan Zhao 0002|Vincent W. Zheng|Yangqiu Song
+conf/sdm/JiangTN024,2024,SDM,inproceedings,Disinformation Detection: An Evolving Challenge in the Age of LLMs.,Bohan Jiang|Zhen Tan 0001|Ayushi Nirmal|Huan Liu 0001
+conf/sdm/MartinM20,2020,SDM,inproceedings,Heavy-Tailed Universality Predicts Trends in Test Accuracies for Very Large Pre-Trained Deep Neural Networks.,Charles H. Martin|Michael W. Mahoney
+conf/sdm/MillotCB21,2021,SDM,inproceedings,Exceptional Model Mining meets Multi-objective Optimization.,Alexandre Millot|R|Jean-Fran
+conf/sdm/TranDNN24,2024,SDM,inproceedings,Robust Estimation of Causal Heteroscedastic Noise Models.,Quang-Duy Tran|Bao Duong|Phuoc Nguyen|Thin Nguyen
+conf/sdm/NiXHPC022,2022,SDM,inproceedings,Cyclic Transfer Learning for Recommender Systems with Heterogeneous Feedbacks.,Xuelian Ni|Fei Xiong|Yutian Hu|Shirui Pan|Hongshu Chen|Liang Wang 0017
+conf/sdm/YangZLG18,2018,SDM,inproceedings,Robust Cost-Sensitive Learning for Recommendation with Implicit Feedback.,Peng Yang 0010|Peilin Zhao|Yong Liu 0020|Xin Gao 0001
+conf/sdm/TongXZ23,2023,SDM,inproceedings,Probabilistic Decomposition Transformer for Time Series Forecasting.,Junlong Tong|Liping Xie|Kanjian Zhang
+conf/sdm/Chen0DJ023,2023,SDM,inproceedings,Gotta: Generative Few-shot Question Answering by Prompt-based Cloze Data Augmentation.,Xiusi Chen|Yu Zhang 0044|Jinliang Deng|Jyun-Yu Jiang|Wei Wang 0010
+conf/sdm/JinXZCWL18,2018,SDM,inproceedings,Maximizing the Effect of Information Adoption: A General Framework.,Tianyuan Jin|Tong Xu 0001|Hui Zhong|Enhong Chen|Zhefeng Wang 0001|Qi Liu 0003
+conf/sdm/YiHP21,2021,SDM,inproceedings,A Fine-grained Graph-based Spatiotemporal Network for Bike Flow Prediction in Bike-sharing Systems.,Peiyu Yi|Feihu Huang 0002|Jian Peng 0002
+conf/sdm/AbbasiFSV19,2019,SDM,inproceedings,Fairness in representation: quantifying stereotyping as a representational harm.,Mohsen Abbasi|Sorelle A. Friedler|Carlos Scheidegger|Suresh Venkatasubramanian
+conf/sdm/LiuJ22,2022,SDM,inproceedings,Neighbor2Seq: Deep Learning on Massive Graphs by Transforming Neighbors to Sequences.,Meng Liu 0015|Shuiwang Ji
+conf/sdm/RahmanP23,2023,SDM,inproceedings,Multi-state Survival Analysis using Pseudo value-based Deep Neural Networks.,Md Mahmudur Rahman|Sanjay Purushotham
+conf/sdm/LiZSY18,2018,SDM,inproceedings,Unsupervised Neural Categorization for Scientific Publications.,Keqian Li|Hanwen Zha|Yu Su 0001|Xifeng Yan
+conf/sdm/ErichsonTWM21,2021,SDM,inproceedings,Noise-Response Analysis of Deep Neural Networks Quantifies Robustness and Fingerprints Structural Malware.,N. Benjamin Erichson|Dane Taylor|Qixuan Wu|Michael W. Mahoney
+conf/sdm/HuZT24,2024,SDM,inproceedings,Genius: Subteam Replacement with Clustering-based Graph Neural Networks.,Chuxuan Hu|Qinghai Zhou|Hanghang Tong
+conf/sdm/ZhangZWLM20,2020,SDM,inproceedings,What Do Questions Exactly Ask? MFAE: Duplicate Question Identification with Multi-Fusion Asking Emphasis.,Rong Zhang|Qifei Zhou|Bo Wu 0018|Weiping Li|Tong Mo
+conf/sdm/GiacomettiS18,2018,SDM,inproceedings,Dense Neighborhood Pattern Sampling in Numerical Data.,Arnaud Giacometti|Arnaud Soulet
+conf/sdm/LiCW21,2021,SDM,inproceedings,Turning Attacks into Protection: Social Media Privacy Protection Using Adversarial Attacks.,Xiaoting Li 0001|Lingwei Chen|Dinghao Wu
+conf/sdm/GottckeBBZ23,2023,SDM,inproceedings,An Interpretable Measure of Dataset Complexity for Imbalanced Classification Problems.,Jonatan M|Colin Bellinger|Paula Branco|Arthur Zimek
+conf/sdm/IacobCM22,2022,SDM,inproceedings,Contextual Bandits for Advertising Campaigns: A Diffusion-Model Independent Approach.,Alexandra Iacob|Bogdan Cautis|Silviu Maniu
+conf/sdm/SatoYK21,2021,SDM,inproceedings,Random Features Strengthen Graph Neural Networks.,Ryoma Sato|Makoto Yamada|Hisashi Kashima
+conf/sdm/KeneshlooRR19,2019,SDM,inproceedings,Deep Transfer Reinforcement Learning for Text Summarization.,Yaser Keneshloo|Naren Ramakrishnan|Chandan K. Reddy
+conf/sdm/OhsakaSY20,2020,SDM,inproceedings,A Predictive Optimization Framework for Hierarchical Demand Matching.,Naoto Ohsaka|Tomoya Sakai 0001|Akihiro Yabe
+conf/sdm/TanDWLQZ18,2018,SDM,inproceedings,Modeling Item-specific Effects for Video Click.,Fei Tan 0002|Kuang Du|Zhi Wei 0001|Haoran Liu|Chenguang Qin|Ran Zhu
+conf/sdm/StanleyGWK20,2020,SDM,inproceedings,Harmonic Alignment.,Jay S. Stanley III|Scott Gigante|Guy Wolf|Smita Krishnaswamy
+conf/sdm/BanerjeeKBDSO21,2021,SDM,inproceedings,Synthesizing Skeletal Motion and Physiological Signals as a Function of a Virtual Human's Actions and Emotions.,Bonny Banerjee|Masoumeh Heidari Kapourchali|Murchana Baruah|Mousumi Deb|Kenneth Sakauye|Mette S. Olufsen
+conf/sdm/ZhangRD20,2020,SDM,inproceedings,A Graph-Based Approach for Active Learning in Regression.,Hongjing Zhang|S. S. Ravi|Ian Davidson
+conf/sdm/KimKLK19,2019,SDM,inproceedings,Predicting Multiple Demographic Attributes with Task Specific Embedding Transformation and Attention Network.,Raehyun Kim|Hyunjae Kim|Janghyuk Lee|Jaewoo Kang
+conf/sdm/ZhengCLL21,2021,SDM,inproceedings,Maximizing Approximately,Leqian Zheng|Hau Chan|Grigorios Loukides|Minming Li
+conf/sdm/TattiM19,2019,SDM,inproceedings,Boolean matrix factorization meets consecutive ones property.,Nikolaj Tatti|Pauli Miettinen
+conf/sdm/0002M24,2024,SDM,inproceedings,Bridging Semantics: Mobility Analytics Framework for Knowledge Transfer.,Shreya Ghosh 0002|Prasenjit Mitra
+conf/sdm/WangH018,2018,SDM,inproceedings,NLRR++: Scalable Subspace Clustering via Non-Convex Block Coordinate Descent.,Jun Wang|Cho-Jui Hsieh|Daming Shi 0001
+conf/sdm/RavirathinamGKJ24,2024,SDM,inproceedings,Combining Satellite and Weather Data for Crop Type Mapping: An Inverse Modelling Approach.,Praveen Ravirathinam|Rahul Ghosh|Ankush Khandelwal|Xiaowei Jia|David J. Mulla|Vipin Kumar 0001
+conf/sdm/ZhuangHH19,2019,SDM,inproceedings,Aspect-Based Sentiment Analysis with Minimal Guidance.,Honglei Zhuang|Timothy P. Hanratty|Jiawei Har
+conf/sdm/SunGZ0W24,2024,SDM,inproceedings,Exploiting Multifaceted Nature of Items and Users for Session-based Recommendation.,Tianqi Sun|Hongrui Guo|Zihan Zhang|Hongzhi Liu 0001|Zhonghai Wu
+conf/sdm/LiuE23,2023,SDM,inproceedings,STABLE: Identifying and Mitigating Instability in Embeddings of the Degenerate Core.,David Liu 0006|Tina Eliassi-Rad
+conf/sdm/LiMCW23,2023,SDM,inproceedings,Coarse-to-Fine Open Information Extraction via Relation Oriented Reading Comprehension.,Tingxin Li|Rui Meng|Feng Chen|Jianming Wu
+conf/sdm/LinC0S24,2024,SDM,inproceedings,Unified Modeling and Clustering of Mobility Trajectories with Spatiotemporal Point Processes.,Haowen Lin|Yao-Yi Chiang|Li Xiong 0001|Cyrus Shahabi
+conf/sdm/Zhou0X0022,2022,SDM,inproceedings,Cycle-Balanced Representation Learning For Counterfactual Inference.,Guanglin Zhou|Lina Yao 0001|Xiwei Xu 0001|Chen Wang 0008|Liming Zhu 0001
+conf/sdm/HsiehSWH21,2021,SDM,inproceedings,Functional Autoencoders for Functional Data Representation Learning.,Tsung-Yu Hsieh|Yiwei Sun|Suhang Wang|Vasant G. Honavar
+conf/sdm/00010S0W23,2023,SDM,inproceedings,Abnormal Event Detection via Hypergraph Contrastive Learning.,Bo Yan 0001|Cheng Yang 0002|Chuan Shi 0001|Jiawei Liu 0006|Xiaochen Wang
+conf/sdm/YeZYHHS24,2024,SDM,inproceedings,A Novel Hybrid Graph Learning Method for Inbound Parcel Volume Forecasting in Logistics System.,Lisha Ye|Jianfeng Zhou|Zhe Yin|Kunpeng Han|Haoyuan Hu|Dongjin Song
+conf/sdm/LinWW19,2019,SDM,inproceedings,MM-Pred: A Deep Predictive Model for Multi-attribute Event Sequence.,Li Lin 0011|Lijie Wen 0001|Jianmin Wang 0001
+conf/sdm/MandlechaCKK22,2022,SDM,inproceedings,Hybrid Tokenization and Datasets for Solving Mathematics and Science Problems Using Transformers.,Pratik Mandlecha|Snehith Kumar Chatakonda|Neeraj Kollepara|Pawan Kumar 0001
+conf/sdm/ZhangC23,2023,SDM,inproceedings,Understanding Influence Maximization via Higher-Order Decomposition.,Zonghan Zhang|Zhiqian Chen
+conf/sdm/ChenP19,2019,SDM,inproceedings,Joint Post and Link-level Influence Modeling on Social Media.,Liangzhe Chen|B. Aditya Prakash
+conf/sdm/LeeKMA20,2020,SDM,inproceedings,Deep Parametric Model for Discovering Group-cohesive Functional Brain Regions.,John Boaz Lee|Xiangnan Kong|Constance M. Moore|Nesreen K. Ahmed
+conf/sdm/TajimaHZK21,2021,SDM,inproceedings,Frank-Wolfe algorithm for learning SVM-type multi-category classifiers.,Kenya Tajima|Yoshihiro Hirohashi|Esmeraldo Ronnie Rey Zara|Tsuyoshi Kato
+conf/sdm/DingLBL19,2019,SDM,inproceedings,Deep Anomaly Detection on Attributed Networks.,Kaize Ding|Jundong Li|Rohit Bhanushali|Huan Liu 0001
+conf/sdm/CarpentierFMV24,2024,SDM,inproceedings,Pattern-based Time Series Semantic Segmentation with Gradual State Transitions.,Louis Carpentier|Len Feremans|Wannes Meert|Mathias Verbeke
+conf/sdm/ChuCC0R23,2023,SDM,inproceedings,Estimating Propensity Scores with Deep Adaptive Variable Selection.,Zhixuan Chu|Mechelle Claridy|Jos|Sheng Li 0001|Stephen L. Rathbun
+conf/sdm/LambaA19,2019,SDM,inproceedings,Learning On-the-Job to Re-rank Anomalies from Top-1 Feedback.,Hemank Lamba|Leman Akoglu
+conf/sdm/JiangZWZ22,2022,SDM,inproceedings,Capturing Model Uncertainty with Data Augmentation in Deep Learning.,Wenming Jiang|Ying Zhao|Yihan Wu|Haojia Zuo
+conf/sdm/KanatsoulisS21,2021,SDM,inproceedings,TeX-Graph: Coupled tensor-matrix knowledge-graph embedding for COVID-19 drug repurposing.,Charilaos I. Kanatsoulis|Nicholas D. Sidiropoulos
+conf/sdm/AdhikariRPV18,2018,SDM,inproceedings,Near-Optimal Mapping of Network States using Probes.,Bijaya Adhikari|Pavan Rangudu|B. Aditya Prakash|Anil Vullikanti
+conf/sdm/LiMJJ024,2024,SDM,inproceedings,Multi-Interest Network with Simple Diffusion for Multi-Behavior Sequential Recommendation.,Qingfeng Li 0001|Huifang Ma|Wangyu Jin|Yugang Ji|Zhixin Li 0001
+conf/sdm/FariaAM23,2023,SDM,inproceedings,Fisher Scoring Method for Neural Networks Optimization.,Jackson de Faria|Renato Assun|Fabricio Murai
+conf/sdm/ChenBG0T22,2022,SDM,inproceedings,Dense and well-connected subgraph detection in dual networks.,Tianyi Chen|Francesco Bonchi|David Garc|Atsushi Miyauchi 0001|Charalampos E. Tsourakakis
+conf/sdm/KisamoriWKF18,2018,SDM,inproceedings,A Rare and Critical Condition Search Technique and its Application to Telescope Stray Light Analysis.,Keiichi Kisamori|Takashi Washio|Yoshio Kameda|Ryohei Fujimaki
+conf/sdm/ZaidiPW18,2018,SDM,inproceedings,Efficient and Effective Accelerated Hierarchical Higher-Order Logistic Regression for Large Data Quantities.,Nayyar Abbas Zaidi|Fran|Geoffrey I. Webb
+conf/sdm/WiegandKV23,2023,SDM,inproceedings,Why Are We Waiting? Discovering Interpretable Models for Predicting Sojourn and Waiting Times.,Boris Wiegand|Dietrich Klakow|Jilles Vreeken
+conf/sdm/FergusonM22,2022,SDM,inproceedings,Computation of the Sample Fr,Daniel Ferguson|Fran
+conf/sdm/WangBLTZ19,2019,SDM,inproceedings,Deep Multi-view Information Bottleneck.,Qi Wang|Claire Boudreau|Qixing Luo|Pang-Ning Tan|Jiayu Zhou
+conf/sdm/LinZDOZ23,2023,SDM,inproceedings,MoVAE: A Variational AutoEncoder for Molecular Graph Generation.,Zerun Lin|Yuhan Zhang|Lixin Duan|Le Ou-Yang|Peilin Zhao
+conf/sdm/MatsunoG20,2020,SDM,inproceedings,Improved mixing time for,Ryuta Matsuno|Aristides Gionis
+conf/sdm/ZhangXZT23,2023,SDM,inproceedings,Representation Learning on Dynamic Network of Networks.,Si Zhang|Yinglong Xia|Yan Zhu|Hanghang Tong
+conf/sdm/GaoWR21,2021,SDM,inproceedings,Provable Distributed Stochastic Gradient Descent with Delayed Updates.,Hongchang Gao|Gang Wu 0013|Ryan A. Rossi
+conf/sdm/CaiZR18,2018,SDM,inproceedings,JUMP: A Fast Deterministic Algorithm to Find the Closest Pair of Subsequences.,Xingyu Cai|Shanglin Zhou|Sanguthevar Rajasekaran
+conf/sdm/TanYDWZ18,2018,SDM,inproceedings,Multi-view Weak-label Learning based on Matrix Completion.,Qiaoyu Tan|Guoxian Yu|Carlotta Domeniconi|Jun Wang 0035|Zili Zhang 0001
+conf/sdm/McNeilMTB23,2023,SDM,inproceedings,CADENCE: Community-Aware Detection of Dynamic Network States.,Maxwell McNeil|Carolina Mattsson|Frank W. Takes|Petko Bogdanov
+conf/sdm/YangHS20,2020,SDM,inproceedings,Identifying Potential Investors with Data Driven Approaches.,Bo Yang 0053|Kejun Huang|Nicholas D. Sidiropoulos
+conf/sdm/PhanI19,2019,SDM,inproceedings,,Dzung T. Phan|Tsuyoshi Id
+conf/sdm/0006LML18,2018,SDM,inproceedings,Toward Relational Learning with Misinformation.,Liang Wu 0006|Jundong Li|Fred Morstatter|Huan Liu 0001
+conf/sdm/0002ZYF024,2024,SDM,inproceedings,FedDCSR: Federated Cross-domain Sequential Recommendation via Disentangled Representation Learning.,Hongyu Zhang 0002|Dongyi Zheng|Xu Yang|Jiyuan Feng|Qing Liao 0001

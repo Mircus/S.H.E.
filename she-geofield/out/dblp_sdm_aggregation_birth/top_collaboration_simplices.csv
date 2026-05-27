@@ -1,0 +1,33 @@
+window,event_type,aggregation_id,unit_type,members,score,target,closure,persistence,activity
+2018-2020,birth,triangle:Carlotta Domeniconi-Guoxian Yu-Jun Wang 0035,triangle_seed,Carlotta Domeniconi-Guoxian Yu-Jun Wang 0035,9.958792224371889,0.0,1.0,0.5,1.0418138951399447
+2018-2020,birth,triangle:Guruprasad Nayak-Vipin Kumar 0001-Xiaowei Jia,triangle_seed,Guruprasad Nayak-Vipin Kumar 0001-Xiaowei Jia,7.824901303977681,0.0,1.0,0.5,1.1249895700894814
+2018-2020,birth,neighborhood:Carlotta Domeniconi-Qiaoyu Tan-Zili Zhang 0001,local_neighborhood,Carlotta Domeniconi-Guoxian Yu-Jun Wang 0035-Qiaoyu Tan-Zili Zhang 0001,7.606695575508447,0.0,1.0,0.0,1.646313741071483
+2018-2020,birth,neighborhood:Guoxian Yu-Qiaoyu Tan-Zili Zhang 0001,local_neighborhood,Carlotta Domeniconi-Guoxian Yu-Jun Wang 0035-Qiaoyu Tan-Zili Zhang 0001,7.606695575508447,0.0,1.0,0.0,1.646313741071483
+2018-2020,birth,neighborhood:Jun Wang 0035-Qiaoyu Tan-Zili Zhang 0001,local_neighborhood,Carlotta Domeniconi-Guoxian Yu-Jun Wang 0035-Qiaoyu Tan-Zili Zhang 0001,7.606695575508447,0.0,1.0,0.0,1.646313741071483
+2018-2020,birth,neighborhood:Carlotta Domeniconi-Jingzheng Tu-Xiangliang Zhang 0001,local_neighborhood,Carlotta Domeniconi-Guoxian Yu-Jingzheng Tu-Jun Wang 0035-Xiangliang Zhang 0001,7.3206363247240684,0.0,1.0,0.5,2.870548402274234
+2018-2020,birth,neighborhood:Guoxian Yu-Jingzheng Tu-Xiangliang Zhang 0001,local_neighborhood,Carlotta Domeniconi-Guoxian Yu-Jingzheng Tu-Jun Wang 0035-Xiangliang Zhang 0001,7.3206363247240684,0.0,1.0,0.5,2.870548402274234
+2018-2020,birth,neighborhood:Jingzheng Tu-Jun Wang 0035-Xiangliang Zhang 0001,local_neighborhood,Carlotta Domeniconi-Guoxian Yu-Jingzheng Tu-Jun Wang 0035-Xiangliang Zhang 0001,7.3206363247240684,0.0,1.0,0.5,2.870548402274234
+2019-2021,birth,triangle:Fenglong Ma-Jing Gao 0004-Yaqing Wang 0001,triangle_seed,Fenglong Ma-Jing Gao 0004-Yaqing Wang 0001,9.637393482375655,0.0,1.0,1.0,1.5656528171860224
+2019-2021,birth,triangle:Ahmad Hariri-Kunpeng Liu 0001-Yanjie Fu,triangle_seed,Ahmad Hariri-Kunpeng Liu 0001-Yanjie Fu,9.231256948671096,0.0,1.0,0.5,1.1754887505027054
+2019-2021,birth,triangle:Carlotta Domeniconi-Guoxian Yu-Jun Wang 0035,triangle_seed,Carlotta Domeniconi-Guoxian Yu-Jun Wang 0035,9.188030330482906,0.0,1.0,1.0,1.5759217597239263
+2019-2021,birth,triangle:Guruprasad Nayak-Vipin Kumar 0001-Xiaowei Jia,triangle_seed,Guruprasad Nayak-Vipin Kumar 0001-Xiaowei Jia,8.852482715502443,0.0,1.0,1.0,1.6499932985370906
+2019-2021,birth,triangle:Jing Gao 0004-Tianqi Wang-Yaqing Wang 0001,triangle_seed,Jing Gao 0004-Tianqi Wang-Yaqing Wang 0001,7.1964180345273165,0.0,1.0,0.5,1.1059554423328564
+2019-2021,birth,triangle:Jing Gao 0004-Longfei Zhang-Yaqing Wang 0001,triangle_seed,Jing Gao 0004-Longfei Zhang-Yaqing Wang 0001,7.196417585215456,0.0,1.0,0.5,1.1059555929120624
+2019-2021,birth,triangle:Jing Gao 0004-Tang Tang-Yaqing Wang 0001,triangle_seed,Jing Gao 0004-Tang Tang-Yaqing Wang 0001,7.196417566993448,0.0,1.0,0.5,1.1059555176224594
+2019-2021,birth,triangle:Carlotta Domeniconi-Guoxian Yu-Xiangliang Zhang 0001,triangle_seed,Carlotta Domeniconi-Guoxian Yu-Xiangliang Zhang 0001,7.1329337969836315,0.0,1.0,1.0,1.5764612863980516
+2020-2022,birth,triangle:Ahmad Hariri-Kunpeng Liu 0001-Yanjie Fu,triangle_seed,Ahmad Hariri-Kunpeng Liu 0001-Yanjie Fu,11.818719927421787,0.0,1.0,1.0,1.49905748693282
+2020-2022,birth,triangle:Lichen Wang-Yu Yin 0001-Yun Fu 0001,triangle_seed,Lichen Wang-Yu Yin 0001-Yun Fu 0001,10.672914765433811,0.0,1.0,1.0,1.4965612474241317
+2020-2022,birth,triangle:Fenglong Ma-Jing Gao 0004-Yaqing Wang 0001,triangle_seed,Fenglong Ma-Jing Gao 0004-Yaqing Wang 0001,10.101844362069912,0.0,1.0,1.0,1.5310336308321144
+2020-2022,birth,triangle:Dejing Dou-Kunpeng Liu 0001-Yanjie Fu,triangle_seed,Dejing Dou-Kunpeng Liu 0001-Yanjie Fu,8.345103582428516,0.0,1.0,1.0,1.4020566331965816
+2020-2022,birth,triangle:Haibo Huang-Kunpeng Liu 0001-Yanjie Fu,triangle_seed,Haibo Huang-Kunpeng Liu 0001-Yanjie Fu,8.345103582428516,0.0,1.0,1.0,1.4020566331965816
+2020-2022,birth,triangle:Hao Liu 0026-Kunpeng Liu 0001-Yanjie Fu,triangle_seed,Hao Liu 0026-Kunpeng Liu 0001-Yanjie Fu,8.345102619969232,0.0,1.0,1.0,1.4020538612326834
+2020-2022,birth,triangle:Kien A. Hua-Kunpeng Liu 0001-Yanjie Fu,triangle_seed,Kien A. Hua-Kunpeng Liu 0001-Yanjie Fu,8.345102619969232,0.0,1.0,1.0,1.4020538612326834
+2020-2022,birth,triangle:Kunpeng Liu 0001-Wei Fan 0010-Yanjie Fu,triangle_seed,Kunpeng Liu 0001-Wei Fan 0010-Yanjie Fu,8.342099154188354,0.0,1.0,1.0,1.3934682512545302
+2021-2023,birth,triangle:Lichen Wang-Yu Yin 0001-Yun Fu 0001,triangle_seed,Lichen Wang-Yu Yin 0001-Yun Fu 0001,10.935958702538496,0.0,1.0,1.0,1.5682225016658995
+2021-2023,birth,triangle:Ahmad Hariri-Kunpeng Liu 0001-Yanjie Fu,triangle_seed,Ahmad Hariri-Kunpeng Liu 0001-Yanjie Fu,10.728771192338113,0.0,1.0,0.5,1.2206621180718176
+2021-2023,birth,triangle:Kunpeng Liu 0001-Wei Zhang 0076-Yanjie Fu,triangle_seed,Kunpeng Liu 0001-Wei Zhang 0076-Yanjie Fu,8.901107795798016,0.0,1.0,1.0,1.5019764769678297
+2021-2023,birth,triangle:Fenglong Ma-Jing Gao 0004-Yaqing Wang 0001,triangle_seed,Fenglong Ma-Jing Gao 0004-Yaqing Wang 0001,8.617896325921242,0.0,1.0,0.5,1.3509768499163854
+2021-2023,birth,triangle:Lichen Wang-Sheng Li 0001-Yun Fu 0001,triangle_seed,Lichen Wang-Sheng Li 0001-Yun Fu 0001,7.841210094961316,0.0,1.0,1.0,1.453399412952305
+2021-2023,birth,triangle:Lichen Wang-Yue Bai-Yun Fu 0001,triangle_seed,Lichen Wang-Yue Bai-Yun Fu 0001,7.824202798452495,0.0,1.0,1.0,1.453399910344778
+2021-2023,birth,triangle:Lichen Wang-Yun Fu 0001-Zhiqiang Tao,triangle_seed,Lichen Wang-Yun Fu 0001-Zhiqiang Tao,7.8232157814933325,0.0,1.0,1.0,1.450575957636775
+2021-2023,birth,triangle:Kunpeng Liu 0001-Wei Fan 0010-Yanjie Fu,triangle_seed,Kunpeng Liu 0001-Wei Fan 0010-Yanjie Fu,7.798559405918627,0.0,1.0,0.5,1.274137759030133

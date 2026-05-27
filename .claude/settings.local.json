@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /c/Users/mirco/Desktop/SHE/docs/internal/archive)",
+      "Bash(mv /c/Users/mirco/Desktop/SHE/src/stanleyreisner /c/Users/mirco/Desktop/SHE/docs/internal/archive/stanleyreisner)",
+      "Bash(pip install:*)",
+      "Bash(python -c \"import she; print\\(''''import ok''''\\)\")",
+      "Bash(python -m pytest tests/ -q)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git tag:*)",
+      "Bash(git push:*)",
+      "Bash(python:*)",
+      "WebSearch",
+      "WebFetch(domain:snap.stanford.edu)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(gunzip -c \"C:/Users/mirco/.claude/projects/C--Users-mirco-Desktop-SHE/15ede6e5-a3c1-41df-84f4-9c56fafdead8/tool-results/webfetch-1774557318002-to5zcn.bin\")",
+      "Bash(curl:*)",
+      "Bash(python -c \":*)",
+      "Bash(ls *.md *.toml)",
+      "Bash(grep -roh \"\\\\[.*\\\\]\\(.*\\\\.md\\\\|.*\\\\.py\\\\|.*\\\\.ipynb\\)\" README.md docs/README.md docs/tutorials/*.md docs/api/*.md)",
+      "Bash(tr -d '\\(\\)')",
+      "Bash(git checkout:*)",
+      "Bash(find /c/Users/mirco/Desktop/SHE/docs -type f -name *.md)",
+      "Bash(find /c/Users/mirco/Desktop/SHE/src -type f -name *.py)",
+      "Bash(grep -r 'from she import' /c/Users/mirco/Desktop/SHE/examples --include=*.py)",
+      "Bash(grep -r v0.1.[01] /c/Users/mirco/Desktop/SHE --include=*.md --include=*.py --exclude-dir=.git)",
+      "Bash(python3 -c \":*)",
+      "Bash(python3:*)",
+      "Bash(__NEW_LINE_49ec036e2fc30152__ echo:*)",
+      "WebFetch(domain:www.python.org)"
+    ]
+  }
+}

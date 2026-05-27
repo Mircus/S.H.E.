@@ -1,0 +1,7 @@
+window,event_type,case_label,aggregation_id,unit_type,members,target,before_closure,before_persistence,before_activity,before_boundary_role,before_growth_potential,after_closure,after_persistence,after_activity,after_boundary_role,after_growth_potential
+2018-2020,reinforcement,positive,edge:Aasish Pappu-Manuel Gomez-Rodriguez,edge_seed,Aasish Pappu-Manuel Gomez-Rodriguez,0.004755628058808669,0.0,0.5,0.2364679490327557,0.9,2.0,0.0,0.5,0.25232004256211793,0.8333333333333334,2.0
+2018-2020,reinforcement,positive,edge:Aasish Pappu-Utkarsh Upadhyay,edge_seed,Aasish Pappu-Utkarsh Upadhyay,0.0018417965473803586,0.0,0.5,0.2461767105032896,0.8333333333333334,2.0,0.0,0.5,0.2523160323278908,0.8333333333333334,2.0
+2018-2020,reinforcement,positive,edge:Abhradeep Guha Thakurta-Ilya Mironov,edge_seed,Abhradeep Guha Thakurta-Ilya Mironov,0.0018381931269353196,0.0,0.5,0.24871998026232997,0.6666666666666666,1.0,0.0,0.5,0.2548472906854477,0.6666666666666666,1.0
+2018-2020,reinforcement,failed,edge:A-Juliana Freire,edge_seed,A-Juliana Freire,0.0,0.0,0.0,0.07374487856331315,0.6666666666666666,1.0,0.0,0.0,0.0,0.0,0.0
+2018-2020,reinforcement,failed,edge:A-Kien Pham,edge_seed,A-Kien Pham,0.0,0.0,0.0,0.07373704472210475,0.6666666666666666,1.0,0.0,0.0,0.0,0.0,0.0
+2018-2020,reinforcement,failed,edge:Aasish Pappu-Abir De,edge_seed,Aasish Pappu-Abir De,0.0,0.0,0.5,0.24888148552055522,0.8333333333333334,2.0,0.0,0.5,0.2466284050031568,0.8888888888888888,2.0

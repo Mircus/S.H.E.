@@ -1,0 +1,699 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{example}[definition]{Example}
+\newtheorem{corollary}[definition]{Corollary}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\wt}{\mathrm{wt}}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\supp}{\mathrm{supp}}
+\newcommand{\Energy}{\mathcal{E}}
+\newcommand{\Flow}{\mathcal{F}}
+
+\title{Coupled Geometry--Field Dynamics on Weighted Simplicial Complexes}
+\author{Mirco A. Mannucci\\HoloMathics, LLC\\\texttt{mirco@holomathics.com}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Classical higher-order diffusion models treat a weighted simplicial complex as a fixed substrate on which a field propagates. In many applications this is too static. Small-group structures do not merely carry signals; they strengthen, weaken, and reorganize under geometric and relational pressure. In this paper we introduce a discrete coupled geometry--field system on weighted simplicial complexes in which diffusion acts on the current simplicial geometry while the geometry itself evolves by a curvature-driven weight update that depends on the current field state. The coupling is bidirectional: the field propagates on the geometry, and the geometry responds to the field through a normalized field-energy term in the curvature functional. We prove unconditional positivity preservation for the exponential weight update, establish local contractivity of the log-weight flow near equilibrium, and give a structural non-equivalence result showing that the coupled system cannot be reduced to diffusion on a fixed weighted complex. A computed toy bridge-complex experiment exhibits three phenomena invisible to fixed-geometry propagation: field-dependent weight reversal (a triangle that would shrink under curvature alone instead grows when it carries signal), spectral stiffening of the Hodge Laplacian, and seed-dependent geometry (seeding a group versus an edge produces different final simplicial geometries). The paper is accompanied by a focused software extension to the public SHE platform implementing the proposed geometry--field layer, with all results fully reproducible.
+\end{abstract}
+
+\section{Introduction}
+
+Higher-order network science has made it clear that pairwise graphs are often too poor to represent real propagation systems. Signals may be carried not only by individuals and edges, but by bonded groups, recurrent triads, and larger interactional units. Simplicial complexes provide a natural language for such phenomena, and the last decade has produced a mature toolkit around simplicial contagion, Hodge Laplacians, topological signal processing, simplex centralities, and higher-order community structure \cite{IacopiniPetriBarratLatora2019,BattistonCencettiIacopiniEtAl2020,BarbarossaSardellitti2020,TorresBianconi2020,BacciniGeraciBianconi2022,BickGrossHarringtonSchaub2023}.
+
+Yet most of that literature treats the simplicial structure as fixed, or at most externally time-varying. This misses an important possibility. In many systems, the geometry of the higher-order substrate evolves in response to structural tension, cohesion, and local curvature. A bonded group may become stronger or weaker, a bridge simplex may tighten or erode, and these changes may in turn alter subsequent propagation. The central thesis of this paper is therefore simple:
+
+\begin{quote}
+\emph{Higher-order propagation need not occur on a fixed simplicial geometry; the geometry itself may evolve and feed back into the field.}
+\end{quote}
+
+This is the point at which the present paper departs from a pure synthesis of the simplicial-diffuser literature. Earlier work on simplicial diffusers correctly intuited that the real propagation carriers in a social tissue need not be isolated individuals but may instead be bonded groups embedded in overlapping higher-order structure. What was missing was a sufficiently hard mathematical nucleus. The aim here is to isolate such a nucleus.
+
+The object we study is a \emph{weighted temporal decorated simplicial complex}
+\[
+(\K_t,\wt_t,\pi_t)_{t\in T},
+\]
+where $\wt_t$ assigns positive weights to simplices and $\pi_t$ assigns additional simplex-level properties. Diffusion acts through Hodge-type operators computed from the current weights, while geometry evolves through a discrete curvature-driven update of the weights. The resulting coupled system is intentionally modest: it is small enough to simulate and prove basic results about, but expressive enough to show a genuinely new mechanism.
+
+The paper makes four concrete contributions.
+\begin{enumerate}[label=(\roman*)]
+    \item We define a discrete coupled geometry--field update on weighted simplicial complexes based on Hodge diffusion and Forman-type curvature.
+    \item We prove unconditional positivity preservation for the exponential weight update and derive a structural non-equivalence result with fixed-geometry diffusion.
+    \item We formulate simplex-level observables---diffuser score, bridge effect, and flow sensitivity---inside the coupled setting.
+    \item We give a focused computational architecture, implemented as a SHE extension, for reproducing the model and the toy experiment.
+\end{enumerate}
+
+We intentionally restrict the first version of the theory. We use a Forman-style curvature rather than attempting to merge multiple discrete curvature notions; we work in discrete time rather than forcing everything into continuous-time flow; and we treat the more ambitious regime-language (hyperbolic/parabolic/elliptic) only as interpretation, not as theorem. This restriction is deliberate. The point is to make the paper hard enough to stand, not broad enough to sag.
+
+\section{Background and positioning}
+
+There are three nearby bodies of work that matter here.
+
+First, the \emph{higher-order propagation} literature studies diffusion and contagion on simplicial and hypergraph structures. This includes simplicial contagion and its temporal variants \cite{IacopiniPetriBarratLatora2019,ChowdharyDellaRossaTumminelloBattistonLatora2021}, as well as broader surveys of higher-order dynamics \cite{BattistonCencettiIacopiniEtAl2020,BattistonLucasCencettiEtAl2023}. These papers show that higher-order structure changes propagation qualitatively, but they do not by themselves give a coupled geometry--field mechanism.
+
+Second, the \emph{operator-theoretic} line studies Hodge Laplacians, topological signal processing, weighted simplicial representations, and higher-order spectral structure \cite{BarbarossaSardellitti2020,TorresBianconi2020,BacciniGeraciBianconi2022,KrishnagopalBianconi2021,GongHighamZygalakisBianconi2024}. This machinery is central for the field part of our model. We do not claim novelty in the Hodge framework itself.
+
+Third, discrete \emph{curvature and geometric flow} on combinatorial structures has been developed in several directions, especially through Forman and Ollivier type curvature and graph-level Ricci flows \cite{Forman2003,SreejithJostSaucanSamal2016,SamalEtAl2018,WeberSaucanJost2017,NiLinLuoGao2019}. Here again we do not claim to invent discrete curvature. What we claim is narrower: in the simplicial higher-order propagation setting, curvature can be used to evolve simplex weights and thereby feed back into the diffusion operator.
+
+The paper is also motivated by the older simplicial-diffuser line \cite{KeeSparksStruppaManucciDamiano2016,KeeStruppaManucciDamiano2015}. The important social intuition there was that the crucial carrier of propagation need not be a single individual node; it may instead be a bonded micro-group embedded in the social tissue. The present paper keeps that intuition, but the mathematical center is no longer the old diffuser score by itself. It is the coupled geometry--field mechanism.
+
+\section{Weighted temporal decorated simplicial complexes}
+
+We now fix the basic object.
+
+\begin{definition}[Weighted temporal decorated simplicial complex]
+A \emph{weighted temporal decorated simplicial complex} is a family
+\[
+(\K_t,\wt_t,\pi_t)_{t\in T}
+\]
+indexed by a discrete time set $T\subseteq \mathbb{Z}$ such that:
+\begin{itemize}
+    \item each $\K_t$ is a finite simplicial complex on a vertex set $\V_t$;
+    \item $\wt_t:\K_t\to \R_{>0}$ assigns a strictly positive weight to every simplex;
+    \item $\pi_t$ assigns to each simplex $\sigma\in\K_t$ a finite list of decorations or attributes.
+\end{itemize}
+\end{definition}
+
+The positivity of the weights is essential, since the weighted Hodge operators are built from diagonal weight matrices and we want to avoid degeneracy. The decorations encoded by $\pi_t$ are not merely cosmetic. They may affect the dynamics through effective weights, curvature modifiers, field couplings, or observation functionals.
+
+\begin{example}
+A simplex decoration may include any of the following: cohesion, trust, topic, role composition, community signature, persistence score, or semantic polarity. Two triangles with the same raw weight may play different dynamical roles if one is a trusted recurrent group and the other is a transient, mixed, low-cohesion group.
+\end{example}
+
+\begin{remark}
+This is the point where the public SHE platform is especially relevant. SHE already supports decorated, weighted higher-order structures and a stable public package surface oriented toward group-level diffusion analysis; the extension proposed here adds the geometry--field layer on top of that substrate rather than replacing it.
+\end{remark}
+
+\section{Weighted Hodge operators}
+
+Fix a finite simplicial complex $\K$ with orientations chosen on all simplices. Let $C_k(\K;\R)$ denote the space of $k$-chains and identify it with $\R^{n_k}$, where $n_k$ is the number of $k$-simplices. Let $\partial_k:C_k\to C_{k-1}$ be the boundary operator.
+
+Given a positive weight function $\wt$ on simplices, let $W_k=\diag(\wt(\sigma):\sigma\in \K_k)$. The weighted adjoint of $\partial_k$ is
+\[
+\partial_k^\ast = W_k^{-1}\partial_k^\top W_{k-1},
+\]
+and the weighted $k$-Hodge Laplacian is
+\[
+L_k(\wt)= \partial_k^\ast \partial_k + \partial_{k+1}\partial_{k+1}^\ast.
+\]
+
+This is standard. The only point we need to stress is that the operator depends on the current simplex weights. When the weights evolve, the Laplacian evolves with them.
+
+\begin{remark}
+One may also define \emph{effective weights} using decorations. For instance, if a modifier $m(\sigma,\pi(\sigma))>0$ is extracted from the simplex decorations, then the operational weight may be
+\[
+\widetilde{\wt}(\sigma)=\wt(\sigma)\,m(\sigma,\pi(\sigma)).
+\]
+Nothing in the formalism prevents this. For the basic theory below we write $L_k(\wt)$, with the understanding that $\wt$ may already incorporate such modifiers.
+\end{remark}
+
+\section{Field diffusion on fixed geometry}
+
+Let $x_k^n\in C_k(\K;\R)$ denote a field living on $k$-simplices at discrete time $n$. On a fixed weighted simplicial complex, the natural one-step linear diffusion is
+\[
+x_k^{n+1}=P_k(\wt)\,x_k^n,
+\qquad
+P_k(\wt)=e^{-\Delta t\,L_k(\wt)}.
+\]
+Since $L_k(\wt)$ is positive semidefinite, the propagator $P_k(\wt)$ is well-defined and contracts transient modes.
+
+For the coupled theory we may gather fields across dimensions into a block vector $x^n=(x_0^n,x_1^n,\dots,x_d^n)$ and use a block operator
+\[
+P(\wt)=e^{-\Delta t\,\mathcal{L}(\wt)},
+\]
+where $\mathcal{L}(\wt)$ may include cross-dimensional couplings. In the first version of the paper, however, the single-dimension case already suffices to establish the new mechanism.
+
+\section{Curvature-driven weight evolution}
+
+We now define the geometric side.  Two curvature functionals are used: a diagnostic \emph{edge Forman curvature} and a \emph{triangle curvature} that drives the weight flow.
+
+\paragraph{Edge Forman curvature.}
+For a 1-simplex $e=(u,v)$ with boundary vertices $u,v$ and coboundary triangles $\{t\supset e\}$:
+\begin{equation}\label{eq:edge-forman}
+  F(e) \;=\; \frac{\wt(u)}{\wt(e)}+\frac{\wt(v)}{\wt(e)}
+         \;-\;\sum_{t\supset e}\frac{\wt(e)}{\wt(t)}.
+\end{equation}
+Boundary vertices contribute positively; coboundary triangles contribute negatively.  A bridge edge with no triangles attains maximal curvature.  This functional is used for analysis, not for driving the flow.
+
+\paragraph{Triangle curvature (field-coupled).}
+For a 2-simplex $t$ with boundary edges $e_1,e_2,e_3$ and a current field state~$x$:
+\begin{equation}\label{eq:tri-curv}
+  \Flow(t;\wt,\pi,x)
+    \;=\; \frac{\wt(t)}{\bar w_e(t)} - 1 + \lambda\,\mathrm{cohesion}(t)
+          \;-\;\mu\,E(t;x),
+\end{equation}
+where $\bar w_e(t)=\tfrac{1}{3}\sum_{i}\wt(e_i)$, $\lambda\ge 0$ controls cohesion coupling, and
+\[
+  E(t;x) \;=\; \frac{\tfrac{1}{3}\sum_{e\in\partial t}|x_e|}{\max_e|x_e|+\varepsilon}
+\]
+is the normalized field energy on the boundary of~$t$ (with $\varepsilon>0$ a regularizer).
+
+The field feedback term $-\mu\,E(t;x)$ is the key coupling mechanism: \emph{triangles whose boundary edges carry more signal have lower effective curvature, so their weight grows.  Active groups strengthen.}  Setting $\mu=0$ recovers the exogenous (one-way) geometry flow.
+
+The sign convention is: positive curvature (triangle weight above equilibrium) drives weight \emph{down}; negative curvature drives weight \emph{up}.  When $\mu=0$, the unique equilibrium is $\wt^\ast(t) = \bar w_e(t)(1-\lambda\,\mathrm{cohesion}(t))$.  When $\mu>0$, the equilibrium depends on the field state, making the system genuinely coupled.
+
+\paragraph{Weight update.}
+The geometry evolves by an \emph{exponential} multiplicative rule:
+\begin{equation}
+\wt^{n+1}(\sigma)=\wt^n(\sigma)\,\exp\!\bigl(-\eta \,\Flow(\sigma;\wt^n,\pi^n,x^n)\bigr),
+\label{eq:weightupdate}
+\end{equation}
+where $\eta>0$ is a step size.  Because the exponential is strictly positive, the updated weight $\wt^{n+1}(\sigma)>0$ \emph{for all} $\eta>0$ and all finite $\Flow$, without any step-size restriction.
+
+\begin{definition}[Admissible curvature score]
+A curvature score $\Flow$ is \emph{admissible} if for every finite weighted decorated simplicial complex $(\K,\wt,\pi)$ there exists a finite constant
+\[
+M(\wt,\pi)=\max_{\sigma\in\K} |\Flow(\sigma;\wt,\pi)|.
+\]
+\end{definition}
+
+This is a very mild condition, satisfied by any explicit curvature formula on a finite complex.  Both \eqref{eq:edge-forman} and \eqref{eq:tri-curv} are admissible whenever all weights are strictly positive.
+
+\section{The coupled geometry--field system}
+
+We are now ready to combine the two pieces.
+
+\begin{definition}[Discrete coupled geometry--field step]
+Let $(\K,\wt^n,\pi^n)$ be the simplicial state at time $n$, and let $x^n$ be a field on simplices. A one-step coupled geometry--field update consists of:
+\begin{align}
+x^{n+1} &= P(\wt^n)\,x^n, \label{eq:fieldstep}\\
+\wt^{n+1}(\sigma)&=\wt^n(\sigma)\,\exp\!\bigl(-\eta \,\Flow(\sigma;\wt^n,\pi^n,x^n)\bigr). \label{eq:geomstep}
+\end{align}
+\end{definition}
+
+Equation \eqref{eq:fieldstep} says that the field sees the current geometry.  Equation \eqref{eq:geomstep} says that the geometry changes according to both the current curvature \emph{and the current field state}.  The dependence of $\Flow$ on~$x^n$ through the field energy term $E(t;x^n)$ is what makes this a genuine two-way coupling: the field propagates on the geometry, and the geometry evolves in response to the field.  Setting $\mu=0$ recovers the one-way (exogenous geometry) variant.
+
+\begin{remark}
+The coupled system is not conceptually large, but it is enough to break the fixed-geometry paradigm. Once $\wt^n$ changes, the propagator at the next time step is not the old one. The signal no longer evolves on a single operator; it evolves through a sequence of operators generated by the geometry.
+\end{remark}
+
+\section{Basic mathematical properties}
+
+We record three properties of the coupled system: unconditional positivity preservation, local stability of the log-weight flow near equilibrium, and structural non-equivalence to fixed-geometry diffusion.
+
+\begin{proposition}[Unconditional positivity preservation]\label{prop:positivity}
+Suppose $\wt^0(\sigma)>0$ for every simplex $\sigma$, and let $\Flow$ be any admissible curvature score.  Then for every $\eta>0$ and every $n\ge 0$, the exponential weight update \eqref{eq:geomstep} satisfies
+\[
+\wt^n(\sigma)>0 \qquad \text{for all } \sigma\in\K.
+\]
+No step-size restriction is required.
+\end{proposition}
+
+\begin{proof}
+Fix $n$ and $\sigma$.  By \eqref{eq:geomstep},
+\[
+\wt^{n+1}(\sigma)=\wt^n(\sigma)\,\exp\!\bigl(-\eta\,\Flow(\sigma;\wt^n,\pi^n,x^n)\bigr).
+\]
+Since $\wt^n(\sigma)>0$ by induction and $\exp(\cdot)>0$ for all real arguments, the product is strictly positive.
+\end{proof}
+
+\begin{corollary}
+Under the hypotheses of Proposition~\ref{prop:positivity}, the weighted Hodge Laplacians $L_k(\wt^n)$ and the propagators $P_k(\wt^n)$ remain well-defined for all $n\ge 0$.
+\end{corollary}
+
+\begin{proposition}[Local stability of the log-weight flow near equilibrium]\label{prop:lipschitz}
+Let $\Flow$ be the triangle curvature~\eqref{eq:tri-curv} with $\mu=0$ (exogenous geometry) and let edge weights be fixed.  Write $w_t^n=\wt^n(t)$ for the weight of a triangle $t$ with boundary-edge mean $\bar w_e>0$ and cohesion $c$ satisfying $\lambda c<1$.  The log-weight update map
+\[
+\phi(u) = u - \eta\Bigl(\frac{e^u}{\bar w_e}-1+\lambda c\Bigr), \qquad u=\log w_t,
+\]
+has a unique fixed point $u^\ast=\log[\bar w_e(1-\lambda c)]$ with
+\[
+\phi'(u^\ast) = 1 - \eta(1-\lambda c).
+\]
+Hence the fixed point is locally contracting whenever $0<\eta<2/(1-\lambda c)$.  More precisely, on the interval
+\[
+I_\delta = \{u : |u-u^\ast|\le \delta\}
+\qquad\text{with } \delta = \log\frac{2/(1-\lambda c)}{\eta} \text{ (when }\eta<2/(1{-}\lambda c)),
+\]
+the map $\phi$ satisfies $|\phi'(u)|<1$ for all $u\in I_\delta$, and iterates of $\phi$ starting in $I_\delta$ converge to~$u^\ast$.
+\end{proposition}
+
+\begin{proof}
+In the exogenous case $\mu=0$, the field term is absent from $\Flow$, so the triangle update reduces to a scalar map depending only on the current triangle weight and the fixed local edge/cohesion data. Taking logarithms of \eqref{eq:geomstep},
+\[
+\log w_t^{n+1} = \phi(\log w_t^n),
+\qquad
+\phi(u)=u-\eta\Bigl(\frac{e^u}{\bar w_e}-1+\lambda c\Bigr).
+\]
+At $u^\ast=\log[\bar w_e(1-\lambda c)]$ we have $e^{u^\ast}/\bar w_e = 1-\lambda c$, so $\phi(u^\ast)=u^\ast$: a fixed point.  The derivative is $\phi'(u)=1-(\eta/\bar w_e)\,e^u$.  Evaluating at~$u^\ast$:
+\[
+\phi'(u^\ast)=1-\eta(1-\lambda c).
+\]
+This lies in $(-1,1)$ when $0<\eta<2/(1-\lambda c)$, confirming local contractivity.
+
+For the explicit basin: $|\phi'(u)|<1$ requires $e^u < 2\bar w_e/\eta$, i.e., $u<\log(2\bar w_e/\eta)$.  Since $\phi'$ is monotonically decreasing in~$u$, the contraction property holds on the half-line $u\le u^\ast + \delta$ where $\delta = \log(2\bar w_e/\eta)-u^\ast = \log[2/(\eta(1-\lambda c))]>0$.  On the other side, $\phi'(u)\to 1$ as $u\to-\infty$, so $\phi$ is still non-expansive for all $u<u^\ast$.  Moreover, by the mean value theorem, for any $u\in I_\delta$ we have
+\[
+|\phi(u)-u^\ast|\le \sup_{v\in I_\delta}|\phi'(v)|\,|u-u^\ast|<|u-u^\ast|,
+\]
+so $\phi(I_\delta)\subset I_\delta$ and the contraction mapping theorem gives convergence of all iterates starting in $I_\delta$.
+\end{proof}
+
+\begin{remark}
+This is only a local stability statement: it establishes convergence within an explicit neighborhood of the equilibrium weight $\wt^\ast(t)=\bar w_e(1-\lambda c)$ for the exogenous geometry update with fixed edge data. It is not a global convergence theorem for the full coupled system. When $\mu>0$ (field-coupled case), the equilibrium depends on the field state and shifts over time. In the toy experiment (Section~\ref{sec:experiment}), all three triangle weights converge smoothly, and the field feedback modifies \emph{which} equilibria they approach.
+\end{remark}
+
+The next result explains why the coupled dynamics are genuinely different from fixed-geometry diffusion.
+
+\begin{proposition}[Structural non-equivalence to fixed-geometry diffusion]
+Assume there exist two time indices $n\neq m$ such that $\wt^n\neq \wt^m$. Then the coupled field trajectory generated by \eqref{eq:fieldstep} cannot, in general, be represented as diffusion on a single fixed weighted simplicial complex. More precisely, unless all propagators $P(\wt^n)$ coincide, there is no single weighted complex $(\K,\bar{\wt})$ with propagator $\bar P=P(\bar{\wt})$ such that
+\[
+x^{n}= \bar P^{\,n}x^0
+\qquad \text{for all initial states }x^0 \text{ and all }n\ge 0.
+\]
+\end{proposition}
+
+\begin{proof}
+Suppose such a fixed weighted complex existed. Then for every $n$ and every initial state $x^0$ we would have
+\[
+x^{n+1}=\bar P\,x^n.
+\]
+But the coupled dynamics give
+\[
+x^{n+1}=P(\wt^n)x^n.
+\]
+Since $\bar P=e^{-\Delta t\,L}$ is a matrix exponential, it is invertible. Thus equality on the full set of reachable states implies $P(\wt^n)=\bar P$ as operators on the entire state space. Hence all propagators coincide. The contrapositive proves the claim.
+\end{proof}
+
+This result is elementary, but conceptually important. The coupled system is not merely diffusion with a time-varying parameter in the informal sense; it is a genuinely different dynamical object because the field is propagated by an operator sequence induced by the geometry flow.
+
+\section{Observables: diffusers, bridges, and flow sensitivity}
+
+The coupled system lets us reinterpret several older notions in a sharper way.
+
+\begin{definition}[Coupled diffuser score]
+Fix a time horizon $N$ and an observation functional $\Phi$ on the field state. For a simplex $\sigma$, define the coupled diffuser score
+\[
+I_N^{\mathrm{coupled}}(\sigma)=\Phi(x_\sigma^N),
+\]
+where the initial condition is concentrated on $\sigma$ and the field evolves under the coupled geometry--field update.
+\end{definition}
+
+This differs from a fixed-geometry heat-kernel score because the geometry may evolve differently over the course of the trajectory. A simplex can therefore be influential not only because of the initial operator, but because the evolving geometry amplifies or suppresses its propagation channel.
+
+\begin{definition}[Flow sensitivity]
+Let $G_N$ be a scalar propagation observable at time $N$ (for example total activation in a target region). The flow sensitivity of a simplex $\sigma$ is
+\[
+S_N(\sigma)= G_N^{\mathrm{coupled}}(\sigma)-G_N^{\mathrm{fixed}}(\sigma),
+\]
+the difference between the observable under coupled geometry--field dynamics and under frozen geometry.
+\end{definition}
+
+A positive flow sensitivity means that curvature-driven geometry evolution makes the simplex a better propagation carrier than it would be in the frozen geometry picture. This is one of the main ways in which the coupled system can reveal propagation roles invisible to a fixed-geometry model.
+
+\section{A toy bridge-complex experiment}\label{sec:experiment}
+
+We now present the computed experiment.  All numbers below are produced by \texttt{she-geofield} and are reproducible via \texttt{python -m she\_geofield.experiment}.
+
+\subsection{Setup}
+
+Let $\K$ be the simplicial complex on vertex set $\V=\{a,b,c,d,e,f\}$ with 2-simplices
+\[
+[a,b,c], \qquad [c,d,e], \qquad [c,e,f].
+\]
+The first triangle plays the role of a left community; the last two form a denser right region.  The shared vertex $c$ and the edge $[c,e]$ create an asymmetric bridge geometry.  The 1-skeleton has eight edges, determined by the triangles.
+
+Initial triangle weights and cohesion decorations:
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+Triangle & $\wt^0$ & cohesion & $\wt^\ast = \bar w_e(1-\lambda c)$ \\
+\midrule
+$[a,b,c]$ & 1.20 & 0.50 & 0.75 \\
+$[c,d,e]$ & 0.90 & 0.30 & 0.85 \\
+$[c,e,f]$ & 1.40 & 0.80 & 0.60 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent All edge and vertex weights are initialized to~$1.0$.  The edge weights are held fixed throughout the flow; only triangle weights evolve.
+
+Parameters: $\Delta t=0.5$, $\eta=0.15$, $\lambda=0.5$, $\mu=0.5$, 10 coupled steps.  The field is seeded with unit mass on the bridge edge $(a,c)$.  The field feedback strength $\mu>0$ means that the geometry sees the current field state: triangles carrying more signal have lower effective curvature and their weights are reinforced.
+
+\subsection{Structural verification}
+
+Before running the dynamics, we verify the algebraic infrastructure:
+\begin{itemize}
+  \item \textbf{Chain complex:} $\|\partial_1\circ\partial_2\|_{\max}=0$ (exact).
+  \item \textbf{Symmetry:} $\|L_1-L_1^\top\|_{\max}=0$.
+  \item \textbf{Positive semi-definiteness:} all eigenvalues of $L_1(\wt^0)$ are non-negative.
+  \item \textbf{Initial spectrum of $L_1$:}
+    $\lambda_0=1.00,\; \lambda_1=1.67,\; \lambda_2=2.00,\; \lambda_3=2.50,\;
+     \lambda_4=3.00,\; \lambda_5=3.81,\; \lambda_6=4.00,\; \lambda_7=6.00$.
+\end{itemize}
+
+\subsection{Results: signal redistribution}
+
+We compare two runs: (a)~fixed-geometry diffusion using $\wt^0$ at every step; (b)~coupled evolution using \eqref{eq:fieldstep}--\eqref{eq:geomstep}.  The observable is the fraction of total absolute field mass residing on right-region edges (those touching vertices $d$, $e$, or~$f$).
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Right-region mass fraction and triangle weight evolution under coupled flow.}
+\label{tab:trajectory}
+\begin{tabular}{ccccccc}
+\toprule
+Step & Fixed frac.\ & Coupled frac.\ & $w_{abc}$ & $w_{cde}$ & $w_{cef}$ \\
+\midrule
+ 0 & 0.0000 & 0.0000 & 1.200 & 0.900 & 1.400 \\
+ 1 & 0.4520 & 0.4520 & 1.150 & 0.893 & 1.242 \\
+ 2 & 0.4853 & 0.4869 & 1.117 & 0.903 & 1.147 \\
+ 3 & 0.4922 & 0.4941 & 1.100 & 0.919 & 1.084 \\
+ 4 & 0.4956 & 0.4972 & 1.093 & 0.936 & 1.038 \\
+ 5 & 0.4977 & 0.4987 & 1.089 & 0.954 & 1.003 \\
+ 6 & 0.4988 & 0.4994 & 1.087 & 0.970 & 0.976 \\
+ 7 & 0.4994 & 0.4997 & 1.086 & 0.985 & 0.953 \\
+ 8 & 0.4997 & 0.4999 & 1.086 & 0.998 & 0.935 \\
+ 9 & 0.4999 & 0.5000 & 1.085 & 1.009 & 0.919 \\
+10 & 0.4999 & 0.5000 & 1.085 & 1.019 & 0.906 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three effects are visible.  First, the coupled system reaches symmetric redistribution ($\text{frac}=0.5$) measurably faster than the fixed system.  Second, the field feedback qualitatively changes the weight dynamics: triangle $[a,b,c]$ \emph{stabilizes above}~$1$ (it carries signal early and is reinforced) while $[c,d,e]$ \emph{grows} from $0.90$ to $1.02$ (rather than shrinking as it would without field feedback).  Third, the crossing of weight trajectories around step~6 shows the field actively reshaping the geometry---a genuinely coupled phenomenon absent in the $\mu=0$ case.
+
+\subsection{Results: spectral shift}
+
+The coupled geometry evolution reshapes the Hodge Laplacian spectrum.  After 10~steps:
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Hodge Laplacian $L_1$ spectrum: initial vs.\ final geometry.}
+\label{tab:spectrum}
+\begin{tabular}{cccc}
+\toprule
+Index & $\lambda_i^{\mathrm{init}}$ & $\lambda_i^{\mathrm{final}}$ & Shift \\
+\midrule
+0 & 1.000 & 1.000 & $+0.000$ \\
+1 & 1.667 & 2.000 & $+0.333$ \\
+2 & 2.000 & 2.072 & $+0.072$ \\
+3 & 2.500 & 2.766 & $+0.266$ \\
+4 & 3.000 & 3.000 & $+0.000$ \\
+5 & 3.810 & 4.000 & $+0.190$ \\
+6 & 4.000 & 4.186 & $+0.186$ \\
+7 & 6.000 & 6.000 & $+0.000$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Five of eight eigenvalues shift upward (by $+0.07$ to $+0.33$), while the spectral gap $\lambda_0=1$ and the top eigenvalue $\lambda_7=6$ are invariant.  The field-coupled geometry produces a more moderate spectral stiffening than the $\mu=0$ case, because the field feedback partially counteracts curvature-driven weight reduction on active triangles.
+
+\subsection{Results: edge Forman curvature}
+
+The diagnostic edge Forman curvature~\eqref{eq:edge-forman} reveals how the geometry redistributes curvature inhomogeneously:
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Edge Forman curvature before and after 10 coupled steps.}
+\label{tab:curvature}
+\begin{tabular}{lccc}
+\toprule
+Edge & $F^{\mathrm{init}}$ & $F^{\mathrm{final}}$ & $\Delta F$ \\
+\midrule
+$(a,b)$ & $+1.167$ & $+1.078$ & $-0.089$ \\
+$(a,c)$ & $+1.167$ & $+1.078$ & $-0.089$ \\
+$(b,c)$ & $+1.167$ & $+1.078$ & $-0.089$ \\
+$(c,d)$ & $+0.889$ & $+1.018$ & $+0.129$ \\
+$(c,e)$ & $+0.175$ & $-0.086$ & $-0.260$ \\
+$(c,f)$ & $+1.286$ & $+0.896$ & $-0.390$ \\
+$(d,e)$ & $+0.889$ & $+1.018$ & $+0.129$ \\
+$(e,f)$ & $+1.286$ & $+0.896$ & $-0.390$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The bridge edge $(c,e)$---shared by triangles $[c,d,e]$ and $[c,e,f]$---develops \emph{negative} Forman curvature ($-0.086$), despite starting positive ($+0.175$).  This curvature sign flip is a direct consequence of the coupled weight evolution.  Note also that edges $(c,d)$ and $(d,e)$ \emph{increase} in curvature ($+0.129$), because triangle $[c,d,e]$ grew under field reinforcement while $[c,e,f]$ shrank.  The field feedback creates an asymmetric redistribution of curvature that is invisible to any fixed-geometry or one-way coupled analysis.
+
+\subsection{Results: parameter sensitivity}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Sensitivity to the step size~$\eta$ (10 steps, $\lambda=0.5$, $\mu=0.5$).}
+\label{tab:eta}
+\begin{tabular}{ccccc}
+\toprule
+$\eta$ & Final right frac.\ & $\max w_t$ & $\min w_t$ & Spectral gap \\
+\midrule
+0.01 & 0.4999 & 1.321 & 0.911 & 1.000 \\
+0.05 & 0.5000 & 1.132 & 0.951 & 1.000 \\
+0.10 & 0.5000 & 1.100 & 0.977 & 1.000 \\
+0.15 & 0.5000 & 1.085 & 0.906 & 1.000 \\
+0.25 & 0.5000 & 1.078 & 0.844 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Sensitivity to cohesion coupling~$\lambda$ (10 steps, $\eta=0.15$, $\mu=0.5$).}
+\label{tab:lambda}
+\begin{tabular}{ccccc}
+\toprule
+$\lambda$ & Final right frac.\ & $\max w_t$ & $\min w_t$ & Spectral gap \\
+\midrule
+0.0 & 0.4999 & 1.301 & 1.146 & 1.000 \\
+0.2 & 0.4999 & 1.212 & 1.093 & 1.000 \\
+0.5 & 0.5000 & 1.085 & 0.906 & 1.000 \\
+0.8 & 0.5000 & 0.965 & 0.739 & 1.000 \\
+1.0 & 0.5000 & 0.899 & 0.639 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Sensitivity to field feedback strength~$\mu$ (10 steps, $\eta=0.15$, $\lambda=0.5$).}
+\label{tab:mu}
+\begin{tabular}{ccccc}
+\toprule
+$\mu$ & Final right frac.\ & $\max w_t$ & $\min w_t$ & Spectral gap \\
+\midrule
+0.0 & 0.5000 & 0.862 & 0.765 & 1.000 \\
+0.25 & 0.5000 & 0.960 & 0.834 & 1.000 \\
+0.50 & 0.5000 & 1.085 & 0.906 & 1.000 \\
+1.00 & 0.4999 & 1.360 & 1.061 & 1.000 \\
+2.00 & 0.4989 & 1.984 & 1.408 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three effects are clear.  Increasing $\eta$ drives faster convergence.  Increasing $\lambda$ widens the weight spread as cohesion differentially suppresses triangle weights.  Increasing $\mu$ amplifies field reinforcement: at $\mu=0$ (one-way coupling) all weights decrease, while at $\mu=2$ the maximum weight nearly doubles.  This confirms that the field feedback term produces qualitatively different geometry depending on $\mu$, not merely a quantitative rescaling.  In all cases the spectral gap is preserved.
+
+\subsection{Results: seed comparison (groups as propagation units)}
+
+The older simplicial-diffuser intuition holds that the crucial carrier of propagation may be a bonded micro-group, not a single edge.  To test this in the coupled setting, we compare three seed configurations: signal on the bridge edge $(a,c)$, signal distributed equally on the left triangle $[a,b,c]$, and signal on the right triangle $[c,e,f]$.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Seed comparison: final right-region fraction and weight state (10 steps).}
+\label{tab:seeds}
+\begin{tabular}{lccccc}
+\toprule
+Seed & Fixed frac.\ & Coupled frac.\ & $w_{abc}$ & $w_{cde}$ & $w_{cef}$ \\
+\midrule
+bridge $(a,c)$ & 0.4999 & 0.5000 & 1.085 & 1.019 & 0.906 \\
+triangle $[a,b,c]$ & 0.5000 & 0.5000 & 1.111 & 1.026 & 0.912 \\
+triangle $[c,e,f]$ & 0.5041 & 0.5029 & 1.087 & 1.041 & 0.961 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two observations.  First, the triangle seeds produce different final geometries from the edge seed: seeding a group changes the geometry it evolves through, confirming that the coupled system is genuinely seed-dependent via the field feedback.  Second, seeding the right triangle $[c,e,f]$ produces a \emph{negative} flow sensitivity ($\Delta=-0.0012$): the coupled geometry \emph{reduces} the right-region fraction compared to fixed geometry.  The right triangle reinforces itself through field feedback ($w_{cef}=0.961$ vs $0.906$ for the bridge seed), but this self-reinforcement slows cross-bridge redistribution.  This asymmetry---a group-level phenomenon invisible to edge-level seeding---is exactly the kind of effect the coupled framework was designed to detect.
+
+\section{The \texttt{she-geofield} companion package}
+
+The paper is accompanied by a working Python package \texttt{she-geofield}, implemented as a focused sub-repository of SHE.  All figures, tables, and numerical results in Section~\ref{sec:experiment} are produced by this package.
+
+The public SHE platform already provides a stable package surface in \texttt{src/she/}.  It supports weighted/decorated higher-order structures, Hodge diffusion, social analysis, and temporal slicing.  Rather than a separate generic library, \texttt{she-geofield} extends SHE with the geometry--field layer:
+
+\begin{quote}
+\emph{Curvature-driven simplex-weight evolution and coupled geometry--field simulation for weighted temporal decorated simplicial complexes.}
+\end{quote}
+
+Package layout:
+\begin{verbatim}
+she-geofield/
+|-- pyproject.toml
+|-- src/she_geofield/
+|   |-- __init__.py
+|   |-- toy_complex.py     # WeightedToyComplex dataclass
+|   |-- boundaries.py      # Oriented boundary operators d1, d2
+|   |-- hodge.py            # Weighted Hodge Laplacian L1
+|   |-- curvature.py        # Edge Forman + triangle curvature
+|   |-- flow.py             # Coupled geometry--field step
+|   |-- observables.py      # Right-region mass functional
+|   |-- experiment.py       # Full reproducible experiment
+|   `-- figures.py          # Demo plot generation
+|-- tests/
+|   |-- test_hodge.py
+|   |-- test_curvature.py
+|   |-- test_positive_weights.py
+|   `-- test_coupled_step.py
+`-- out/                     # Generated figures and tables
+\end{verbatim}
+
+Key implementation details:
+\begin{itemize}
+  \item \textbf{Boundary operators} use proper orientation signs: $\partial_1[u,v]=[v]-[u]$ for $u<v$; $\partial_2[a,b,c]=+[b,c]-[a,c]+[a,b]$ with alternating signs $(-1)^i$.
+  \item \textbf{Hodge Laplacian} $L_1=L_1^{\downarrow}+L_1^{\uparrow}$ where $L_1^{\downarrow}=W_1^{-1}\partial_1^\top W_0\partial_1$ and $L_1^{\uparrow}=\partial_2 W_2^{-1}\partial_2^\top W_1$.
+  \item \textbf{Triangle curvature} includes the field feedback term $-\mu E(t;x)$ when $\mu>0$; setting $\mu=0$ recovers the one-way variant.
+  \item \textbf{Weight update} uses the exponential rule $w\mapsto w\exp(-\eta G)$ for unconditional positivity.
+  \item \textbf{Field propagator} uses the matrix exponential $P=e^{-\Delta t\,L_1}$ via \texttt{scipy.linalg.expm}.
+  \item \textbf{Experiment script} (\texttt{python -m she\_geofield.experiment}) generates all figures, tables, sensitivity sweeps, and seed comparisons reported in Section~\ref{sec:experiment}.
+  \item All four tests pass (\texttt{pytest}), verifying Hodge shape, curvature finiteness, coupled step shapes, and weight positivity over 5~iterated steps.
+\end{itemize}
+
+\section{What is genuinely new here?}
+
+It is important to be precise. The paper does \emph{not} claim novelty for the generic facts that higher-order diffusion exists, that simplicial complexes matter, that Hodge Laplacians are useful, or that discrete curvature has been studied. Those all belong to an existing literature.
+
+The narrower claim is this:
+\begin{quote}
+\emph{Propagation on higher-order structures need not be studied on fixed geometry alone. Even at a minimal discrete level, curvature-driven evolution of simplex weights---with the field feeding back into the curvature---produces a coupled geometry--field system whose propagation behavior is not reducible to fixed-geometry diffusion and can be implemented directly on decorated simplicial objects.}
+\end{quote}
+
+A note on terminology.  The edge curvature~\eqref{eq:edge-forman} is a recognizable weighted Forman-Ricci expression.  The triangle curvature~\eqref{eq:tri-curv} is \emph{not} canonical Forman-Ricci; it is a custom stability-oriented functional designed to have a well-defined equilibrium and to incorporate field feedback.  The paper uses ``Forman-type'' or ``Forman-inspired'' to signal this distinction.  Nothing here should be read as claiming that the coupled flow is the simplicial Forman-Ricci flow in the standard sense.
+
+\section{Discussion and future directions}
+
+The toy experiment confirms the central mechanism: curvature-driven weight evolution produces measurably different propagation from fixed-geometry diffusion.  Several concrete extensions are within reach.
+
+First, the Lipschitz stability result (Proposition~\ref{prop:lipschitz}) establishes local contractivity of the weight flow, but a sharper dissipation or Lyapunov statement for a coupled energy functional $\Energy(\wt,x)$ would give global convergence guarantees.  The monotone convergence of triangle weights in Table~\ref{tab:trajectory} suggests such a functional exists.
+
+Second, richer geometric language---local hyperbolic versus elliptic regions, or comparisons among Forman, Ollivier, and sectional curvature notions---can be explored now that the small hard core is stable. In collaboration terms, one may eventually distinguish bridge-generating, outward-branching regions from more cohesion-dominated, internally trapping ones. The curvature sign flip observed on edge $(c,e)$ (Table~\ref{tab:curvature}) already hints at such a local regime transition under the flow.
+
+Third, the present model evolves triangle weights only; extending the flow to edge weights introduces a second feedback channel with richer dynamics but also potential instabilities (our experiments confirmed that edge-weight evolution requires careful stabilization).
+
+Finally, real-data experiments on temporal social interaction datasets, mediated by the existing SHE temporal windowing layer, would test whether the coupled mechanism captures empirically observable group-level strengthening and erosion effects.
+
+\section{Conclusion}
+
+The right way to harden the simplicial-diffuser programme is to isolate a smaller and more defensible center.  In this paper that center is the coupled geometry--field view: a weighted simplicial complex is not only a substrate for higher-order propagation, but an object whose geometry can itself evolve and thereby change the subsequent field dynamics.
+
+Even in a basic discrete-time setting with a six-vertex bridge complex, this produces measurable effects invisible to fixed-geometry models: the field feedback qualitatively changes weight dynamics (triangle $[c,d,e]$ grows rather than shrinks when carrying signal), the Hodge spectrum stiffens, and the bridge edge $(c,e)$ undergoes a curvature sign flip.  Seeding a group rather than an edge produces different final geometries---a genuinely coupled, seed-dependent phenomenon.  Three propositions---unconditional positivity, local contractivity of the log-weight flow, and structural non-equivalence---give the model its mathematical footing.  The companion \texttt{she-geofield} package reproduces every number and figure in the paper.
+
+That, rather than a loose grand theory, is the contribution: a coupled geometry--field mechanism that is small enough to prove things about, concrete enough to compute, and rich enough to show group-level propagation effects.
+
+In social modeling this matters because ties and groups strengthen or erode as they carry interaction.  A concrete example is rumor or aid propagation: repeated co-activation of a small group can increase its cohesion (triangle weight), which in turn accelerates future spread within and across that group.  A fixed-geometry model cannot capture this feedback loop.
+
+\begin{thebibliography}{99}
+
+\bibitem{KeeSparksStruppaManucciDamiano2016}
+K. F. Kee, L. Sparks, D. C. Struppa, M. A. Mannucci, and A. Damiano.
+\newblock Information diffusion, Facebook clusters, and the simplicial model of social aggregation: a computational simulation of simplicial diffusers for community health interventions.
+\newblock {\em Health Communication}, 31(4):385--399, 2016.
+
+\bibitem{KeeStruppaManucciDamiano2015}
+K. F. Kee, D. C. Struppa, M. A. Mannucci, and A. Damiano.
+\newblock The simplicial model of social aggregation, information diffusion, and hyperlocal human dynamics on social media.
+\newblock Position paper / extended abstract, 2015.
+
+\bibitem{IacopiniPetriBarratLatora2019}
+I. Iacopini, G. Petri, A. Barrat, and V. Latora.
+\newblock Simplicial models of social contagion.
+\newblock {\em Nature Communications}, 10:2485, 2019.
+
+\bibitem{BattistonCencettiIacopiniEtAl2020}
+F. Battiston, G. Cencetti, I. Iacopini, V. Latora, M. Lucas, A. Patania, J.-G. Young, and G. Petri.
+\newblock Networks beyond pairwise interactions: structure and dynamics.
+\newblock {\em Physics Reports}, 874:1--92, 2020.
+
+\bibitem{BarbarossaSardellitti2020}
+S. Barbarossa and S. Sardellitti.
+\newblock Topological signal processing over simplicial complexes.
+\newblock {\em IEEE Transactions on Signal Processing}, 68:2992--3007, 2020.
+
+\bibitem{TorresBianconi2020}
+J. J. Torres and G. Bianconi.
+\newblock Simplicial complexes: higher-order spectral dimension and dynamics.
+\newblock {\em Journal of Physics: Complexity}, 1(1):015002, 2020.
+
+\bibitem{ChowdharyDellaRossaTumminelloBattistonLatora2021}
+J. Chowdhary, F. Della Rossa, M. Tumminello, F. Battiston, and V. Latora.
+\newblock Simplicial contagion in temporal higher-order networks.
+\newblock {\em Journal of Physics: Complexity}, 2(3):035019, 2021.
+
+\bibitem{BacciniGeraciBianconi2022}
+F. Baccini, F. Geraci, and G. Bianconi.
+\newblock Weighted simplicial complexes and their representation power of higher-order network data and topology.
+\newblock {\em Physical Review E}, 106:034319, 2022.
+
+\bibitem{BickGrossHarringtonSchaub2023}
+C. Bick, E. Gross, H. A. Harrington, and M. T. Schaub.
+\newblock What are higher-order networks?
+\newblock {\em SIAM Review}, 65(3):686--731, 2023.
+
+\bibitem{BattistonLucasCencettiEtAl2023}
+F. Battiston, M. Lucas, G. Cencetti, I. Iacopini, A. Patania, J.-G. Young, and G. Petri.
+\newblock Dynamics on networks with higher-order interactions.
+\newblock {\em Chaos}, 33(4):040401, 2023.
+
+\bibitem{KrishnagopalBianconi2021}
+S. Krishnagopal and G. Bianconi.
+\newblock Spectral detection of simplicial communities via Hodge Laplacians.
+\newblock {\em Physical Review E}, 104:064303, 2021.
+
+\bibitem{GongHighamZygalakisBianconi2024}
+X. Gong, D. J. Higham, K. Zygalakis, and G. Bianconi.
+\newblock Higher-order connection Laplacians for directed simplicial complexes.
+\newblock {\em Journal of Physics: Complexity}, 5(1):015022, 2024.
+
+\bibitem{Forman2003}
+R. Forman.
+\newblock Bochner's method for cell complexes and combinatorial Ricci curvature.
+\newblock {\em Discrete \& Computational Geometry}, 29(3):323--374, 2003.
+
+\bibitem{SreejithJostSaucanSamal2016}
+R. P. Sreejith, K. Mohanraj, J. Jost, E. Saucan, and A. Samal.
+\newblock Forman curvature for complex networks.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment}, 2016:063206, 2016.
+
+\bibitem{SamalEtAl2018}
+A. Samal, R. P. Sreejith, J. Jost, and E. Saucan.
+\newblock Comparative analysis of two discretizations of Ricci curvature for complex networks.
+\newblock {\em Scientific Reports}, 8:8650, 2018.
+
+\bibitem{WeberSaucanJost2017}
+M. Weber, E. Saucan, and J. Jost.
+\newblock Characterizing complex networks with Forman-Ricci curvature and associated geometric flows.
+\newblock {\em Journal of Complex Networks}, 5(4):527--550, 2017.
+
+\bibitem{NiLinLuoGao2019}
+C.-C. Ni, Y.-Y. Lin, F. Luo, and J. Gao.
+\newblock Community detection on networks with Ricci flow.
+\newblock {\em Scientific Reports}, 9:9984, 2019.
+
+\end{thebibliography}
+
+\end{document}

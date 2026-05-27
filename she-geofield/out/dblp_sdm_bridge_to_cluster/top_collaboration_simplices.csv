@@ -1,0 +1,21 @@
+window,simplex,target_mode,candidate_regime,score,support_count,persistence,future_support
+2018-2020,Jessica Lin 0001-Xiaosheng Li,edge_to_triangle_expansion,bridge_to_cluster,0.37176690455494665,2.0,0.5,0.0
+2018-2020,Philip S. Yu-Yao Li,edge_to_triangle_expansion,bridge_to_cluster,0.35427896471217535,1.0,0.5,0.0
+2018-2020,Hengrui Zhang-Julian J. McAuley,edge_to_triangle_expansion,bridge_to_cluster,0.3533762505045095,1.0,0.5,0.0
+2018-2020,Shuiwang Ji-Zhengyang Wang,edge_to_triangle_expansion,bridge_to_cluster,0.341070594211313,2.0,0.5,0.0
+2018-2020,Nikolaj Tatti-Pauli Miettinen,edge_to_triangle_expansion,bridge_to_cluster,0.3395913689398357,1.0,0.5,0.0
+2019-2021,Jilles Vreeken-Mario Boley,edge_to_triangle_expansion,bridge_to_cluster,0.3911578577331972,1.0,0.5,0.0
+2019-2021,Christian Beecks-Fabian Berns,edge_to_triangle_expansion,bridge_to_cluster,0.35590043083765444,2.0,0.5,0.0
+2019-2021,Boris Wiegand-Jilles Vreeken,edge_to_triangle_expansion,bridge_to_cluster,0.3324646683170934,1.0,0.5,0.0
+2019-2021,David Kaltenpoth-Jilles Vreeken,edge_to_triangle_expansion,bridge_to_cluster,0.3324478513665965,1.0,0.5,0.0
+2019-2021,Dietrich Klakow-Jilles Vreeken,edge_to_triangle_expansion,bridge_to_cluster,0.3324310344160993,1.0,0.5,0.0
+2020-2022,Ronghang Zhu-Sheng Li 0001,edge_to_triangle_expansion,bridge_to_cluster,0.31207780545611236,1.0,0.5,2.0
+2020-2022,Charles H. Martin-Michael W. Mahoney,edge_to_triangle_expansion,bridge_to_cluster,0.3113395976480753,1.0,0.5,0.0
+2020-2022,Hyunjin Choo-Kijung Shin,edge_to_triangle_expansion,bridge_to_cluster,0.3113395976480753,1.0,0.5,0.0
+2020-2022,Sheng Li 0001-Zhixuan Chu,edge_to_triangle_expansion,bridge_to_cluster,0.31063215000414124,1.0,0.5,2.0
+2020-2022,Sheng Li 0001-Stephen L. Rathbun,edge_to_triangle_expansion,bridge_to_cluster,0.3105706296759358,1.0,0.5,2.0
+2021-2023,Jilles Vreeken-Mario Boley,edge_to_triangle_expansion,bridge_to_cluster,0.4426946605530456,1.0,0.5,0.0
+2021-2023,Jilles Vreeken-Kailash Budhathoki,edge_to_triangle_expansion,bridge_to_cluster,0.36598069950148704,1.0,0.5,0.0
+2021-2023,Christian Beecks-Fabian Berns,edge_to_triangle_expansion,bridge_to_cluster,0.35590043083765444,2.0,0.5,0.0
+2021-2023,Kailash Budhathoki-Mario Boley,edge_to_triangle_expansion,bridge_to_cluster,0.35415322939633387,1.0,0.5,0.0
+2021-2023,Jerry Chun-Wei Lin-Philip S. Yu,edge_to_triangle_expansion,bridge_to_cluster,0.3222498121890326,1.0,0.5,0.0

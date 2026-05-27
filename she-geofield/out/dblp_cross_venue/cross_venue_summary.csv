@@ -1,0 +1,15 @@
+venue,model,mean_top_k_precision,mean_spearman_future_support
+SDM,author_degree,0.8500000000000001,0.09058512773973156
+SDM,author_productivity,0.85,0.08483648995218442
+SDM,graph_bridge,0.7499999999999999,0.03655711185669512
+SDM,simplex_support,0.925,0.2616491156485241
+SDM,persistence_only,1.0,0.6054908791914677
+SDM,frozen_diffusion,0.6499999999999999,-0.0180564169896479
+SDM,evolving_geometry,1.0,0.5271202296903326
+WSDM,author_degree,0.725,0.07772748207271553
+WSDM,author_productivity,0.9,0.08139648471246295
+WSDM,graph_bridge,0.775,0.071574609545008
+WSDM,simplex_support,1.0,0.2878882093820877
+WSDM,persistence_only,1.0,0.5918877205365768
+WSDM,frozen_diffusion,0.575,0.00311979789274789
+WSDM,evolving_geometry,1.0,0.5218881906168075

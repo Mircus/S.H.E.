@@ -1,0 +1,41 @@
+window,simplex,target_mode,candidate_regime,score,support_count,persistence,future_support
+2018-2020,Vipin Kumar 0001-Xiaowei Jia,future_support,all,0.37500000006018025,4.0,0.5,3.0
+2018-2020,Guruprasad Nayak-Xiaowei Jia,future_support,all,0.3749947850380889,4.0,0.5,3.0
+2018-2020,Guruprasad Nayak-Vipin Kumar 0001,future_support,all,0.3749947849912122,4.0,0.5,3.0
+2018-2020,Huan Liu 0001-Jundong Li,future_support,all,0.3727084740687079,4.0,0.5,2.0
+2018-2020,Jessica Lin 0001-Xiaosheng Li,future_support,all,0.37176690455494665,2.0,0.5,1.0
+2018-2020,Huan Liu 0001-Ruocheng Guo,future_support,all,0.3586765485147529,3.0,0.5,3.0
+2018-2020,Ekta Gujral-Evangelos E. Papalexakis,future_support,all,0.3544483722436256,3.0,0.5,1.0
+2018-2020,Philip S. Yu-Yao Li,future_support,all,0.35427896471217535,1.0,0.5,2.0
+2018-2020,Hengrui Zhang-Julian J. McAuley,future_support,all,0.3533762505045095,1.0,0.5,1.0
+2018-2020,Carlotta Domeniconi-Jun Wang 0035,future_support,all,0.3472716359552884,3.0,0.5,2.0
+2019-2021,Charu C. Aggarwal-Philip S. Yu,future_support,all,0.5983660597486664,2.0,1.0,2.0
+2019-2021,Charu C. Aggarwal-Yao Li,future_support,all,0.5684038106962814,2.0,1.0,2.0
+2019-2021,Carlotta Domeniconi-Guoxian Yu,future_support,all,0.5535935726224861,3.0,1.0,2.0
+2019-2021,Huan Liu 0001-Ruocheng Guo,future_support,all,0.551169284727258,3.0,1.0,2.0
+2019-2021,Jing Gao 0004-Yaqing Wang 0001,future_support,all,0.5500132262753843,3.0,1.0,3.0
+2019-2021,Akihiro Yamaguchi-Ken Ueno,future_support,all,0.550000393902438,3.0,1.0,4.0
+2019-2021,Vipin Kumar 0001-Xiaowei Jia,future_support,all,0.5500000002705643,3.0,1.0,2.0
+2019-2021,Guruprasad Nayak-Xiaowei Jia,future_support,all,0.5499966491876125,3.0,1.0,1.0
+2019-2021,Guruprasad Nayak-Vipin Kumar 0001,future_support,all,0.5499966490789139,3.0,1.0,1.0
+2019-2021,Jiliang Tang-Suhang Wang,future_support,all,0.5315136606770144,2.0,1.0,1.0
+2020-2022,Jilles Vreeken-Mario Boley,future_support,all,0.5733969716207288,1.0,1.0,1.0
+2020-2022,Akihiro Yamaguchi-Ken Ueno,future_support,all,0.5499904312120047,4.0,1.0,2.0
+2020-2022,Jing Gao 0004-Yaqing Wang 0001,future_support,all,0.5227789884134246,3.0,1.0,2.0
+2020-2022,Carlotta Domeniconi-Xiangliang Zhang 0001,future_support,all,0.5226469845122735,2.0,1.0,1.0
+2020-2022,Lichen Wang-Yun Fu 0001,future_support,all,0.5222795170976648,3.0,1.0,3.0
+2020-2022,Kunpeng Liu 0001-Yanjie Fu,future_support,all,0.5222640896918399,3.0,1.0,3.0
+2020-2022,Fenglong Ma-Jing Gao 0004,future_support,all,0.5205588426578895,3.0,1.0,2.0
+2020-2022,Boris Wiegand-Jilles Vreeken,future_support,all,0.5117479376975637,1.0,1.0,2.0
+2020-2022,Dietrich Klakow-Jilles Vreeken,future_support,all,0.5116399887174858,1.0,1.0,2.0
+2020-2022,Guoxian Yu-Xiangliang Zhang 0001,future_support,all,0.5103802965920766,2.0,1.0,1.0
+2021-2023,Boris Wiegand-Jilles Vreeken,future_support,all,0.6169987529726465,2.0,1.0,1.0
+2021-2023,Dietrich Klakow-Jilles Vreeken,future_support,all,0.6167742775268219,2.0,1.0,1.0
+2021-2023,Lichen Wang-Yun Fu 0001,future_support,all,0.5500016950651203,3.0,1.0,2.0
+2021-2023,Maxwell McNeil-Petko Bogdanov,future_support,all,0.5500006762712583,3.0,1.0,3.0
+2021-2023,Kunpeng Liu 0001-Yanjie Fu,future_support,all,0.5498345621638994,3.0,1.0,2.0
+2021-2023,Ronghang Zhu-Sheng Li 0001,future_support,all,0.5436980580741744,2.0,1.0,2.0
+2021-2023,Sheng Li 0001-Zhixuan Chu,future_support,all,0.530242942994053,2.0,1.0,2.0
+2021-2023,Sheng Li 0001-Stephen L. Rathbun,future_support,all,0.530242140646162,2.0,1.0,2.0
+2021-2023,Boya Ma-Petko Bogdanov,future_support,all,0.5219436656209249,2.0,1.0,2.0
+2021-2023,Boya Ma-Maxwell McNeil,future_support,all,0.5219340845762311,2.0,1.0,2.0

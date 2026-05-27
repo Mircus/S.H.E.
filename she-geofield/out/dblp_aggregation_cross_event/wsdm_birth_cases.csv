@@ -1,0 +1,7 @@
+window,event_type,case_label,aggregation_id,unit_type,members,target,before_closure,before_persistence,before_activity,before_boundary_role,before_growth_potential,after_closure,after_persistence,after_activity,after_boundary_role,after_growth_potential
+2018-2020,birth,positive,triangle:Abir De-Adish Singla-Manuel Gomez-Rodriguez,triangle_seed,Abir De-Adish Singla-Manuel Gomez-Rodriguez,1.0,1.0,0.5,0.7685600802571089,0.75,4.0,1.0,1.0,1.3425837297453007,0.7272727272727273,4.0
+2018-2020,birth,positive,triangle:Abir De-Adish Singla-Utkarsh Upadhyay,triangle_seed,Abir De-Adish Singla-Utkarsh Upadhyay,1.0,1.0,0.5,0.7831239724431109,0.625,4.0,1.0,1.0,1.3425862664591972,0.7272727272727273,4.0
+2018-2020,birth,positive,triangle:Abir De-Manuel Gomez-Rodriguez-Utkarsh Upadhyay,triangle_seed,Abir De-Manuel Gomez-Rodriguez-Utkarsh Upadhyay,1.0,1.0,0.5,0.8637856616712641,0.7692307692307693,6.0,1.0,1.0,1.4263038605813383,0.75,6.0
+2018-2020,birth,failed,edge:A-Juliana Freire,edge_seed,A-Juliana Freire,0.0,0.0,0.0,0.07374487856331315,0.6666666666666666,1.0,0.0,0.0,0.0,0.0,0.0
+2018-2020,birth,failed,edge:A-Kien Pham,edge_seed,A-Kien Pham,0.0,0.0,0.0,0.07373704472210475,0.6666666666666666,1.0,0.0,0.0,0.0,0.0,0.0
+2018-2020,birth,failed,edge:Aasish Pappu-Abir De,edge_seed,Aasish Pappu-Abir De,0.0,0.0,0.5,0.24888148552055522,0.8333333333333334,2.0,0.0,0.5,0.2466284050031568,0.8888888888888888,2.0

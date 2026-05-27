@@ -1,0 +1,3 @@
+venue,weight_semantics,group,sample_size,mean_anisotropy,mean_volume_growth_r1,mean_core_region_cohesion,mean_core_region_conductance,mean_multiscale_consistency
+WSDM,contained-support,brokerage_edges,10,0.5357575756465155,3.518009049517996,0.34543268016947404,2.929683257705945,0.6409761819905149
+WSDM,contained-support,balanced_triangles,10,0.0,3.0374999996203127,0.3806349206163604,2.6999999996625,0.9943985278264806

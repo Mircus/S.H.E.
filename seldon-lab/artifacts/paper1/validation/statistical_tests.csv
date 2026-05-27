@@ -1,0 +1,3 @@
+venue,test,comparison,n_per_group,mean_betweenness_most_negative,mean_betweenness_near_zero,U_statistic,p_value,rank_biserial_r
+SDM,Mann-Whitney U,most_negative vs near_zero (edge betweenness),154,14.396103896103897,1.0,0.0,3.288791593885335e-59,1.0
+WSDM,Mann-Whitney U,most_negative vs near_zero (edge betweenness),258,41.84496124031008,1.0,0.0,5.206012304986761e-98,1.0

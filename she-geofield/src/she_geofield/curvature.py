@@ -33,7 +33,7 @@ def edge_forman_curvature(complex_: WeightedToyComplex, edge):
 
 def triangle_curvature(complex_: WeightedToyComplex, triangle,
                        x1: np.ndarray = None, lam: float = 0.5,
-                       mu: float = 0.0):
+                       mu: float = 0.0, field_location: str = "edges"):
     """Curvature functional driving triangle-weight evolution.
 
     G(t) = w(t)/mean(w_e) - 1 + lambda*cohesion - mu*E(t)
@@ -53,11 +53,17 @@ def triangle_curvature(complex_: WeightedToyComplex, triangle,
 
     # Field feedback: active triangles are reinforced
     if x1 is not None and mu > 0.0:
-        edge_list = list(complex_.edges)
-        edge_idx = [edge_list.index(e) for e in edges_of_tri]
-        boundary_energy = np.mean(np.abs(x1[edge_idx]))
         total_energy = np.max(np.abs(x1)) + 1e-15
-        E_t = boundary_energy / total_energy
+        if field_location == "edges":
+            edge_list = list(complex_.edges)
+            edge_idx = [edge_list.index(e) for e in edges_of_tri]
+            boundary_energy = np.mean(np.abs(x1[edge_idx]))
+            E_t = boundary_energy / total_energy
+        elif field_location == "triangles":
+            triangle_idx = list(complex_.triangles).index(triangle)
+            E_t = abs(float(x1[triangle_idx])) / total_energy
+        else:
+            raise ValueError(f"unsupported field location: {field_location}")
         F -= mu * E_t
 
     return F

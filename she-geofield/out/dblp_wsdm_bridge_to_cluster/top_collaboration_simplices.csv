@@ -1,0 +1,21 @@
+window,simplex,target_mode,candidate_regime,score,support_count,persistence,future_support
+2018-2020,Alfan Farizki Wicaksono-Alistair Moffat,edge_to_triangle_expansion,bridge_to_cluster,0.33660862986404494,1.0,0.5,0.0
+2018-2020,Austin R. Benson-Jure Leskovec,edge_to_triangle_expansion,bridge_to_cluster,0.33570684226108655,1.0,0.5,0.0
+2018-2020,Alistair Moffat-Matthias Petri,edge_to_triangle_expansion,bridge_to_cluster,0.31863044726601153,2.0,0.5,0.0
+2018-2020,Hamid Karimi-Jiliang Tang,edge_to_triangle_expansion,bridge_to_cluster,0.3149387729709851,1.0,0.5,0.0
+2018-2020,Ji-Rong Wen-Zhicheng Dou,edge_to_triangle_expansion,bridge_to_cluster,0.3088481414217254,1.0,0.5,0.0
+2019-2021,Jun Xu 0001-Qingyao Ai,edge_to_triangle_expansion,bridge_to_cluster,0.43910680873835295,1.0,0.5,0.0
+2019-2021,Jun Xu 0001-Liang Pang 0001,edge_to_triangle_expansion,bridge_to_cluster,0.35172091269045846,1.0,0.5,0.0
+2019-2021,Liang Pang 0001-Qingyao Ai,edge_to_triangle_expansion,bridge_to_cluster,0.3422008293399281,1.0,0.5,0.0
+2019-2021,Jundong Li-Mihajlo Grbovic,edge_to_triangle_expansion,bridge_to_cluster,0.31973569366630383,1.0,0.5,0.0
+2019-2021,Athanasios N. Nikolakopoulos-George Karypis,edge_to_triangle_expansion,bridge_to_cluster,0.31930960923656704,1.0,0.5,0.0
+2020-2022,Jin Huang 0010-Maarten de Rijke,edge_to_triangle_expansion,bridge_to_cluster,0.36064335294908323,1.0,0.5,0.0
+2020-2022,Hamid Karimi-Jiliang Tang,edge_to_triangle_expansion,bridge_to_cluster,0.3453998245625923,1.0,0.5,0.0
+2020-2022,Dung D. Le-Hady W. Lauw,edge_to_triangle_expansion,bridge_to_cluster,0.2964457234550012,1.0,0.5,0.0
+2020-2022,Suhang Wang-Teng Xiao,edge_to_triangle_expansion,bridge_to_cluster,0.2916956555010024,1.0,0.5,0.0
+2020-2022,Charles Wang Wai Ng-Lei Chen 0002,edge_to_triangle_expansion,bridge_to_cluster,0.2864338514003617,1.0,0.5,0.0
+2021-2023,Jun Xu 0001-Qingyao Ai,edge_to_triangle_expansion,bridge_to_cluster,0.47701332305379185,1.0,0.5,0.0
+2021-2023,Xiangliang Zhang 0001-Xiaochuan Gou,edge_to_triangle_expansion,bridge_to_cluster,0.39257384917007965,1.0,0.5,0.0
+2021-2023,Jun Xu 0001-Liang Pang 0001,edge_to_triangle_expansion,bridge_to_cluster,0.37101181922188015,1.0,0.5,0.0
+2021-2023,Liang Pang 0001-Qingyao Ai,edge_to_triangle_expansion,bridge_to_cluster,0.3695764601898335,1.0,0.5,0.0
+2021-2023,Gholamreza Haffari-Shirui Pan,edge_to_triangle_expansion,bridge_to_cluster,0.33433516112470324,1.0,0.5,0.0

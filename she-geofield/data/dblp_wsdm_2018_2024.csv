@@ -1,0 +1,775 @@
+key,year,venue,pub_type,title,authors
+conf/wsdm/WuBG0LY23,2023,WSDM,inproceedings,Modeling Fine-grained Information via Knowledge-aware Hierarchical Graph for Zero-shot Entity Retrieval.,Taiqiang Wu|Xingyu Bai|Weigang Guo|Weijie Liu 0002|Siheng Li|Yujiu Yang 0001
+conf/wsdm/WhiteA19,2019,WSDM,inproceedings,Task Duration Estimation.,Ryen W. White|Ahmed Hassan Awadallah
+conf/wsdm/LiWLY23,2023,WSDM,inproceedings,Self-Supervised Group Graph Collaborative Filtering for Group Recommendation.,Kang Li|Chang-Dong Wang 0001|Jian-Huang Lai|Huaqiang Yuan
+conf/wsdm/BudylinDKT18,2018,WSDM,inproceedings,Consistent Transformation of Ratio Metrics for Efficient Online Controlled Experiments.,Roman Budylin|Alexey Drutsa|Ilya Katsev|Valeriya Tsoy
+conf/wsdm/VirinchiS23,2023,WSDM,inproceedings,BLADE: Biased Neighborhood Sampling based Graph Neural Network for Directed Graphs.,Srinivas Virinchi|Anoop Saladi
+conf/wsdm/KimJ021,2021,WSDM,inproceedings,Discovering Undisclosed Paid Partnership on Social Media via Aspect-Attentive Sponsored Post Learning.,Seungbae Kim|Jyun-Yu Jiang|Wei Wang 0010
+conf/wsdm/Ben-EliezerEOF22,2022,WSDM,inproceedings,Sampling Multiple Nodes in Large Networks: Beyond Random Walks.,Omri Ben-Eliezer|Talya Eden|Joel Oren|Dimitris Fotakis 0001
+conf/wsdm/XinSH0022,2022,WSDM,inproceedings,Informed Multi-context Entity Alignment.,Kexuan Xin|Zequn Sun 0001|Wen Hua|Wei Hu 0007|Xiaofang Zhou 0001
+conf/wsdm/HuS24,2024,WSDM,inproceedings,User Consented Federated Recommender System Against Personalized Attribute Inference Attack.,Qi Hu|Yangqiu Song
+conf/wsdm/KiyoharaSMNSY22,2022,WSDM,inproceedings,Doubly Robust Off-Policy Evaluation for Ranking Policies under the Cascade Behavior Model.,Haruka Kiyohara|Yuta Saito|Tatsuya Matsuhiro|Yusuke Narita|Nobuyuki Shimizu|Yasuo Yamamoto
+conf/wsdm/RosinGR22,2022,WSDM,inproceedings,Time Masking for Temporal Language Models.,Guy D. Rosin|Ido Guy|Kira Radinsky
+conf/wsdm/BorattoM21,2021,WSDM,inproceedings,Advances in Bias-aware Recommendation on the Web.,Ludovico Boratto|Mirko Marras
+conf/wsdm/ZhangXJCDY21,2021,WSDM,inproceedings,Modeling Across-Context Attention For Long-Tail Query Classification in E-commerce.,Junhao Zhang|Weidi Xu|Jianhui Ji|Xi Chen|Hongbo Deng|Keping Yang
+conf/wsdm/ZhangYHDYL18,2018,WSDM,inproceedings,Discrete Deep Learning for Fast Content-Aware Recommendation.,Yan Zhang 0036|Hongzhi Yin|Zi Huang|Xingzhong Du|Guowu Yang|Defu Lian
+conf/wsdm/KongWPZH24,2024,WSDM,inproceedings,C²DR: Robust Cross-Domain Recommendation based on Causal Disentanglement.,Menglin Kong|Jia Wang 0009|Yushan Pan|Haiyang Zhang 0004|Muzhou Hou
+conf/wsdm/AkbiyikEKVA23,2023,WSDM,inproceedings,"Ask ""Who"", Not ""What"": Bitcoin Volatility Forecasting with Twitter Data.",M. Eren Akbiyik|Mert Erkul|Killian K|Vaiva Vasiliauskaite|Nino Antulov-Fantulin
+conf/wsdm/WenWZC23,2023,WSDM,inproceedings,Visual Matching is Enough for Scene Text Retrieval.,Lilong Wen|Yingrong Wang|Dongxiang Zhang|Gang Chen 0001
+conf/wsdm/WuW0ZW22,2022,WSDM,inproceedings,Improving the Applicability of Knowledge-Enhanced Dialogue Generation Systems by Using Heterogeneous Knowledge from Multiple Sources.,Sixing Wu|Minghui Wang|Ying Li 0012|Dawei Zhang 0003|Zhonghai Wu
+conf/wsdm/ZhouDW20,2020,WSDM,inproceedings,Enhancing Re-finding Behavior with External Memories for Personalized Search.,Yujia Zhou 0002|Zhicheng Dou|Ji-Rong Wen
+conf/wsdm/HuSXHCL18,2018,WSDM,inproceedings,Who Will Share My Image?: Predicting the Content Diffusion Path in Online Social Networks.,Wenjian Hu|Krishna Kumar Singh|Fanyi Xiao|Jinyoung Han|Chen-Nee Chuah|Yong Jae Lee
+conf/wsdm/AwadallahGSW19,2019,WSDM,inproceedings,Task Intelligence Workshop @ WSDM 2019.,Ahmed Hassan Awadallah|Cathal Gurrin|Mark Sanderson|Ryen W. White
+conf/wsdm/LaenenZM18,2018,WSDM,inproceedings,Web Search of Fashion Items with Multimodal Querying.,Katrien Laenen|Susana Zoghbi|Marie-Francine Moens
+conf/wsdm/ZhengHM19,2019,WSDM,inproceedings,FaceOff: Assisting the Manifestation Design of Web Graphical User Interface.,Shuyu Zheng|Ziniu Hu|Yun Ma 0003
+conf/wsdm/0001CHA23,2023,WSDM,inproceedings,DeMEtRIS: Counting (near)-Cliques by Crawling.,Suman K. Bera 0001|Jayesh Choudhari|Shahrzad Haddadan|Sara Ahmadian
+conf/wsdm/FuXTH23,2023,WSDM,inproceedings,Natural and Artificial Dynamics in GNNs: A Tutorial.,Dongqi Fu|Zhe Xu 0007|Hanghang Tong|Jingrui He
+conf/wsdm/DaiXC018,2018,WSDM,inproceedings,Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search.,Zhuyun Dai|Chenyan Xiong|Jamie Callan|Zhiyuan Liu 0001
+conf/wsdm/LiLC21,2021,WSDM,inproceedings,Filter Pruning via Probabilistic Model-based Optimization for Accelerating Deep Convolutional Neural Networks.,Qinghua Li|Cuiping Li 0001|Hong Chen 0001
+conf/wsdm/ChenLCL20,2020,WSDM,inproceedings,Context-aware Deep Model for Joint Mobility and Time Prediction.,Yile Chen 0001|Cheng Long 0001|Gao Cong|Chenliang Li
+conf/wsdm/NourbakhshGP20,2020,WSDM,inproceedings,SPread: Automated Financial Metric Extraction and Spreading Tool from Earnings Reports.,Armineh Nourbakhsh|Mohammad M. Ghassemi|Steven Pomerville
+conf/wsdm/GaoW0022,2022,WSDM,inproceedings,Graph Neural Networks for Recommender System.,Chen Gao 0001|Xiang Wang 0010|Xiangnan He 0001|Yong Li 0008
+conf/wsdm/SteckDRJ20,2020,WSDM,inproceedings,ADMM SLIM: Sparse Recommendations for Many Users.,Harald Steck|Maria Dimakopoulou|Nickolai Riabov|Tony Jebara
+conf/wsdm/JuHHH19,2019,WSDM,inproceedings,"A Sequential Test for Selecting the Better Variant: Online A/B testing, Adaptive Allocation, and Continuous Monitoring.",Nianqiao Ju|Diane Hu|Adam Henderson|Liangjie Hong
+conf/wsdm/GaoRZZYY19,2019,WSDM,inproceedings,Product-Aware Answer Generation in E-Commerce Question-Answering.,Shen Gao|Zhaochun Ren|Yihong Eric Zhao|Dongyan Zhao 0001|Dawei Yin 0001|Rui Yan 0001
+conf/wsdm/LinGW19,2019,WSDM,inproceedings,Learning Personalized Topical Compositions with Item Response Theory.,Lu Lin 0001|Lin Gong|Hongning Wang
+conf/wsdm/Guo0W24,2024,WSDM,inproceedings,GEMRec: Towards Generative Model Recommendation.,Yuanhe Guo|Haoming Liu 0003|Hongyi Wen
+conf/wsdm/YooLSK22,2022,WSDM,inproceedings,Directed Network Embedding with Virtual Negative Edges.,Hyunsik Yoo|Yeon-Chang Lee|Kijung Shin|Sang-Wook Kim
+conf/wsdm/BhowmickMDGM20,2020,WSDM,inproceedings,LouvainNE: Hierarchical Louvain Method for High Quality and Scalable Network Embedding.,Ayan Kumar Bhowmick|Koushik Meneni|Maximilien Danisch|Jean-Loup Guillaume|Bivas Mitra
+conf/wsdm/BahriTZBMT21,2021,WSDM,inproceedings,Generative Models are Unsupervised Predictors of Page Quality: A Colossal-Scale Study.,Dara Bahri|Yi Tay|Che Zheng|Cliff Brunk|Donald Metzler|Andrew Tomkins
+conf/wsdm/0006RA21,2021,WSDM,inproceedings,"Explain and Predict, and then Predict Again.",Zijian Zhang 0006|Koustav Rudra|Avishek Anand
+conf/wsdm/WangWH24,2024,WSDM,inproceedings,FairIF: Boosting Fairness in Deep Learning via Influence Functions with Validation Set Sensitive Attributes.,Haonan Wang|Ziwei Wu|Jingrui He
+conf/wsdm/CaoLGLL021,2021,WSDM,inproceedings,Bipartite Graph Embedding via Mutual Information Maximization.,Jiangxia Cao|Xixun Lin|Shu Guo|Luchen Liu|Tingwen Liu|Bin Wang 0004
+conf/wsdm/SunLCWBZ24,2024,WSDM,inproceedings,Rethinking and Simplifying Bootstrapped Graph Latents.,Wangbin Sun|Jintang Li|Liang Chen 0001|Bingzhe Wu|Yatao Bian|Zibin Zheng
+conf/wsdm/TianWPWX21,2021,WSDM,inproceedings,I2PS: An Online Item Intelligent Publishing System in Consumer to Consumer (C2C) Transaction Platform.,Lei Tian|Nanyang Wang|Pan Pan|Bin Wang|Yinghui Xu
+conf/wsdm/HuangOR22,2022,WSDM,inproceedings,It Is Different When Items Are Older: Debiasing Recommendations When Selection Bias and User Preferences Are Dynamic.,Jin Huang 0010|Harrie Oosterhuis|Maarten de Rijke
+conf/wsdm/DingLCL22,2022,WSDM,inproceedings,Graph Minimally-supervised Learning.,Kaize Ding|Jundong Li|Nitesh V. Chawla|Huan Liu 0001
+conf/wsdm/Alonso024,2024,WSDM,inproceedings,"Some Useful Things to Know When Combining IR and NLP: The Easy, the Hard and the Ugly.",Omar Alonso|Kenneth Church 0001
+conf/wsdm/WangF0NC21,2021,WSDM,inproceedings,Denoising Implicit Feedback for Recommendation.,Wenjie Wang 0007|Fuli Feng|Xiangnan He 0001|Liqiang Nie|Tat-Seng Chua
+conf/wsdm/XuDZ22,2022,WSDM,inproceedings,Identifying Cost-effective Debunkers for Multi-stage Fake News Mitigation Campaigns.,Xiaofei Xu|Ke Deng|Xiuzhen Zhang 0001
+conf/wsdm/GrbovicN18,2018,WSDM,inproceedings,"Workshop on Two-sided Marketplace Optimization: Search, Pricing, Matching & Growth.",Mihajlo Grbovic|Thanasis Noulas
+conf/wsdm/SakotaP024,2024,WSDM,inproceedings,Fly-Swat or Cannon? Cost-Effective Language Model Choice via Meta-Modeling.,Marija Sakota|Maxime Peyrard|Robert West 0001
+conf/wsdm/Abbasiantaeb0KA24,2024,WSDM,inproceedings,Let the LLMs Talk: Simulating Human-to-Human Conversational QA via Zero-Shot LLM-to-LLM Interactions.,Zahra Abbasiantaeb|Yifei Yuan 0002|Evangelos Kanoulas|Mohammad Aliannejadi
+conf/wsdm/WenYTPS18,2018,WSDM,inproceedings,Customer Purchase Behavior Prediction from Payment Datasets.,Yu Ting Wen|Pei-Wen Yeh|Tzu-Hao Tsai|Wen-Chih Peng|Hong-Han Shuai
+conf/wsdm/JagermanMR19,2019,WSDM,inproceedings,When People Change their Mind: Off-Policy Evaluation in Non-stationary Recommendation Environments.,Rolf Jagerman|Ilya Markov|Maarten de Rijke
+conf/wsdm/Prado-RomeroPS23,2023,WSDM,inproceedings,Developing and Evaluating Graph Counterfactual Explanation with GRETEL.,Mario Alfonso Prado-Romero|Bardh Prenkaj|Giovanni Stilo
+conf/wsdm/PibiriPM19,2019,WSDM,inproceedings,Fast Dictionary-Based Compression for Inverted Indexes.,Giulio Ermanno Pibiri|Matthias Petri|Alistair Moffat
+conf/wsdm/YuL18,2018,WSDM,inproceedings,Review-Aware Answer Prediction for Product-Related Questions Incorporating Aspects.,Qian Yu|Wai Lam
+conf/wsdm/MengKZM20,2020,WSDM,inproceedings,Separate and Attend in Personal Email Search.,Yu Meng 0001|Maryam Karimzadehgan|Honglei Zhuang|Donald Metzler
+conf/wsdm/ChenGJH23,2023,WSDM,inproceedings,Relation Preference Oriented High-order Sampling for Recommendation.,Mukun Chen|Xiuwen Gong|YH Jin|Wenbin Hu 0001
+conf/wsdm/GallagherCBC19,2019,WSDM,inproceedings,Joint Optimization of Cascade Ranking Models.,Luke Gallagher|Ruey-Cheng Chen|Roi Blanco|J. Shane Culpepper
+conf/wsdm/GuZCLPQ19,2019,WSDM,inproceedings,Relevance Search over Schema-Rich Knowledge Graphs.,Yu Gu 0016|Tianshuo Zhou|Gong Cheng 0001|Ziyang Li 0005|Jeff Z. Pan|Yuzhong Qu
+conf/wsdm/UstalovSBL23,2023,WSDM,inproceedings,4th Crowd Science Workshop - CANDLE: Collaboration of Humans and Learning Algorithms for Data Labeling.,Dmitry Ustalov|Saiph Savage|Niels van Berkel|Yang Liu 0018
+conf/wsdm/WangCDXG023,2023,WSDM,inproceedings,Effective Graph Kernels for Evolving Functional Brain Networks.,Xinlei Wang|Jinyi Chen|Bing Tian Dai|Junchang Xin|Yu Gu 0002|Ge Yu 0001
+conf/wsdm/HopeS18,2018,WSDM,inproceedings,Ballpark Crowdsourcing: The Wisdom of Rough Group Comparisons.,Tom Hope|Dafna Shahaf
+conf/wsdm/ISVGV24,2024,WSDM,inproceedings,Mitigating Factual Inconsistency and Hallucination in Large Language Models.,Muneeswaran I|Advaith Shankar|Varun V|Saisubramaniam Gopalakrishnan|Vishal Vaddina
+conf/wsdm/WangZF22,2022,WSDM,inproceedings,Scalable Graph Topology Learning via Spectral Densification.,Yongyu Wang|Zhiqiang Zhao|Zhuo Feng
+conf/wsdm/OvaisiHLZZX22,2022,WSDM,inproceedings,RGRecSys: A Toolkit for Robustness Evaluation of Recommender Systems.,Zohreh Ovaisi|Shelby Heinecke|Jia Li 0015|Yongfeng Zhang 0003|Elena Zheleva|Caiming Xiong
+conf/wsdm/XiaLWL21,2021,WSDM,inproceedings,DeepIS: Susceptibility Estimation on Social Networks.,Wenwen Xia|Yuchen Li 0001|Jun Wu 0001|Shenghong Li 0001
+conf/wsdm/WuWYLHX19,2019,WSDM,inproceedings,MSA: Jointly Detecting Drug Name and Adverse Drug Reaction Mentioning Tweets with Multi-Head Self-Attention.,Chuhan Wu|Fangzhao Wu|Zhigang Yuan|Junxin Liu|Yongfeng Huang 0001|Xing Xie 0001
+conf/wsdm/DengZKZZC20,2020,WSDM,inproceedings,Meta-Learning with Dynamic-Memory-Based Prototypical Network for Few-Shot Event Detection.,Shumin Deng|Ningyu Zhang 0001|Jiaojian Kang|Yichi Zhang 0010|Wei Zhang 0127|Huajun Chen
+conf/wsdm/LiuW0YLZ24,2024,WSDM,inproceedings,Capturing Temporal Node Evolution via Self-supervised Learning: A New Perspective on Dynamic Graph Learning.,Lingwen Liu|Guangqi Wen|Peng Cao 0001|Jinzhu Yang|Weiping Li 0002|Osmar R. Za
+conf/wsdm/WuL18,2018,WSDM,inproceedings,Tracing Fake-News Footprints: Characterizing Social Media Messages by How They Propagate.,Liang Wu 0006|Huan Liu 0001
+conf/wsdm/Pujara018,2018,WSDM,inproceedings,Mining Knowledge Graphs From Text.,Jay Pujara|Sameer Singh 0001
+conf/wsdm/SarrafzadehALLS19,2019,WSDM,inproceedings,Characterizing and Predicting Email Deferral Behavior.,Bahareh Sarrafzadeh|Ahmed Hassan Awadallah|Christopher H. Lin|Chia-Jung Lee|Milad Shokouhi|Susan T. Dumais
+conf/wsdm/LuoL00022,2022,WSDM,inproceedings,Ada-GNN: Adapting to Local Patterns for Improving Graph Neural Networks.,Zihan Luo 0001|Jianxun Lian|Hong Huang 0001|Hai Jin 0001|Xing Xie 0001
+conf/wsdm/YueWHZMW24,2024,WSDM,inproceedings,Linear Recurrent Units for Sequential Recommendation.,Zhenrui Yue|Yueqi Wang|Zhankui He|Huimin Zeng 0001|Julian J. McAuley|Dong Wang 0002
+conf/wsdm/SchneebeliKK21,2021,WSDM,inproceedings,A Practical Federated Learning Framework for Small Number of Stakeholders.,Christian Schneebeli|Saikishore Kalloori|Severin Klingler
+conf/wsdm/YangMZGZ023,2023,WSDM,inproceedings,Interpretable Research Interest Shift Detection with Temporal Heterogeneous Graphs.,Qiang Yang 0015|Changsheng Ma|Qiannan Zhang|Xin Gao 0001|Chuxu Zhang|Xiangliang Zhang 0001
+conf/wsdm/NikolakopoulosK19,2019,WSDM,inproceedings,RecWalk: Nearly Uncoupled Random Walks for Top-N Recommendation.,Athanasios N. Nikolakopoulos|George Karypis
+conf/wsdm/0006GL21,2021,WSDM,inproceedings,Toward User Engagement Optimization in 2D Presentation.,Liang Wu 0006|Mihajlo Grbovic|Jundong Li
+conf/wsdm/FazelniaS0CL22,2022,WSDM,inproceedings,Variational User Modeling with Slow and Fast Features.,Ghazal Fazelnia|Eric Simon|Ian Anderson 0003|Benjamin A. Carterette|Mounia Lalmas
+conf/wsdm/KarimiT20,2020,WSDM,inproceedings,Decision Boundary of Deep Neural Networks: Challenges and Opportunities.,Hamid Karimi|Jiliang Tang
+conf/wsdm/BeheshtiHYMG020,2020,WSDM,inproceedings,personality2vec: Enabling the Analysis of Behavioral Disorders in Social Networks.,Amin Beheshti|Vahid Moraveji Hashemi|Shahpar Yakhchi|Hamid Reza Motahari-Nezhad|Seyed Mohssen Ghafari|Jian Yang 0001
+conf/wsdm/ShenbinATMN20,2020,WSDM,inproceedings,RecVAE: A New Variational Autoencoder for Top-N Recommendations with Implicit Feedback.,Ilya Shenbin|Anton Alekseev 0001|Elena Tutubalina|Valentin Malykh|Sergey I. Nikolenko
+conf/wsdm/SinhaVS18,2018,WSDM,inproceedings,Modeling Time to Open of Emails with a Latent State for User Engagement Level.,Moumita Sinha|Vishwa Vinay|Harvineet Singh
+conf/wsdm/NaseemKKD23,2023,WSDM,inproceedings,A Multimodal Framework for the Identification of Vaccine Critical Memes on Twitter.,Usman Naseem|Jinman Kim|Matloob Khushi|Adam G. Dunn
+conf/wsdm/KumarHMKFS18,2018,WSDM,inproceedings,REV2: Fraudulent User Prediction in Rating Platforms.,Srijan Kumar|Bryan Hooi|Disha Makhija|Mohit Kumar 0008|Christos Faloutsos|V. S. Subrahmanian
+conf/wsdm/KoyejoL24,2024,WSDM,inproceedings,Towards Trustworthy Large Language Models.,Sanmi Koyejo|Bo Li 0026
+conf/wsdm/WuRXL018,2018,WSDM,inproceedings,Indirect Supervision for Relation Extraction using Question-Answer Pairs.,Zeqiu Wu|Xiang Ren 0001|Frank F. Xu|Ji Li|Jiawei Han 0001
+conf/wsdm/HanifBZWBF24,2024,WSDM,inproceedings,EvidenceQuest: An Interactive Evidence Discovery System for Explainable Artificial Intelligence.,Ambreen Hanif|Amin Beheshti|Xuyun Zhang|Steven Wood|Boualem Benatallah|EuJin Foo
+conf/wsdm/TanDG022,2022,WSDM,inproceedings,Graph Few-shot Class-incremental Learning.,Zhen Tan 0001|Kaize Ding|Ruocheng Guo|Huan Liu 0001
+conf/wsdm/LiK18,2018,WSDM,inproceedings,Bayesian Optimization for Optimizing Retrieval Systems.,Dan Li 0015|Evangelos Kanoulas
+conf/wsdm/ZhaoDSW22,2022,WSDM,inproceedings,Towards Fair Classifiers Without Sensitive Attributes: Exploring Biases in Related Features.,Tianxiang Zhao 0001|Enyan Dai|Kai Shu|Suhang Wang
+conf/wsdm/TigunovaMYW21,2021,WSDM,inproceedings,Exploring Personal Knowledge Extraction from Conversations with CHARM.,Anna Tigunova|Paramita Mirza|Andrew Yates|Gerhard Weikum
+conf/wsdm/Chen0S0ZZ22,2022,WSDM,inproceedings,Graph Collaborative Reasoning.,Hanxiong Chen|Yunqi Li 0003|Shaoyun Shi|Shuchang Liu 0001|He Zhu 0001|Yongfeng Zhang 0003
+conf/wsdm/MoffatP18,2018,WSDM,inproceedings,Index Compression Using Byte-Aligned ANS Coding and Two-Dimensional Contexts.,Alistair Moffat|Matthias Petri
+conf/wsdm/SchedlGL23,2023,WSDM,inproceedings,Trustworthy Algorithmic Ranking Systems.,Markus Schedl|Emilia G|Elisabeth Lex
+conf/wsdm/YuW0LQS19,2019,WSDM,inproceedings,NAIRS: A Neural Attentive Interpretable Recommendation System.,Shuai Yu 0002|Yongbo Wang|Min Yang 0007|Baocheng Li|Qiang Qu 0001|Jialie Shen 0001
+conf/wsdm/ZhouLCWW20,2020,WSDM,inproceedings,GREASE: A Generative Model for Relevance Search over Knowledge Graphs.,Tianshuo Zhou|Ziyang Li 0005|Gong Cheng 0001|Jun Wang 0012|Yuang Wei
+conf/wsdm/TangZ23,2023,WSDM,inproceedings,Range Restricted Route Recommendation Based on Spatial Keyword.,Hongwei Tang|Detian Zhang
+conf/wsdm/LiuZZ024,2024,WSDM,inproceedings,Attribute Simulation for Item Embedding Enhancement in Multi-interest Recommendation.,Yaokun Liu|Xiaowang Zhang|Minghui Zou|Zhiyong Feng 0002
+conf/wsdm/FabrisSSB23,2023,WSDM,inproceedings,Pairwise Fairness in Ranking as a Dissatisfaction Measure.,Alessandro Fabris|Gianmaria Silvello|Gian Antonio Susto|Asia J. Biega
+conf/wsdm/RossiAKKRA20,2020,WSDM,inproceedings,A Structural Graph Representation Learning Framework.,Ryan A. Rossi|Nesreen K. Ahmed|Eunyee Koh|Sungchul Kim|Anup Rao 0002|Yasin Abbasi-Yadkori
+conf/wsdm/XuYXG0W21,2021,WSDM,inproceedings,Adapting User Preference to Online Feedback in Multi-round Conversational Recommendation.,Kerui Xu|Jingxuan Yang|Jun Xu 0001|Sheng Gao 0001|Jun Guo 0002|Ji-Rong Wen
+conf/wsdm/OhsakaM22,2022,WSDM,inproceedings,Reconfiguration Problems on Submodular Functions.,Naoto Ohsaka|Tatsuya Matsuoka
+conf/wsdm/YangZ18,2018,WSDM,inproceedings,Differential Privacy for Information Retrieval.,Grace Hui Yang|Sicong Zhang
+conf/wsdm/FriggstadGKSST18,2018,WSDM,inproceedings,Orienteering Algorithms for Generating Travel Itineraries.,Zachary Friggstad|Sreenivas Gollapudi|Kostas Kollias|Tam|Chaitanya Swamy|Andrew Tomkins
+conf/wsdm/Derr0DZA24,2024,WSDM,inproceedings,The 5th International Workshop on Machine Learning on Graphs (MLoG).,Tyler Derr|Yao Ma 0001|Kaize Ding|Tong Zhao 0003|Nesreen K. Ahmed
+conf/wsdm/RanganathBL18,2018,WSDM,inproceedings,Leveraging Implicit Contribution Amounts to Facilitate Microfinancing Requests.,Suhas Ranganath|Ghazaleh Beigi|Huan Liu 0001
+conf/wsdm/SajadmaneshG24,2024,WSDM,inproceedings,ProGAP: Progressive Graph Neural Networks with Differential Privacy Guarantees.,Sina Sajadmanesh|Daniel Gatica-Perez
+conf/wsdm/MaGCZL21,2021,WSDM,inproceedings,Deconfounding with Networked Observational Data in a Dynamic Environment.,Jing Ma 0002|Ruocheng Guo|Chen Chen 0022|Aidong Zhang 0001|Jundong Li
+conf/wsdm/FeyisetanGT20,2020,WSDM,inproceedings,Workshop on Privacy in NLP (PrivateNLP 2020).,Oluwaseyi Feyisetan|Sepideh Ghanavati|Patricia Thaine
+conf/wsdm/VedulaCAR23,2023,WSDM,inproceedings,Generating Explainable Product Comparisons for Online Shopping.,Nikhita Vedula|Marcus D. Collins|Eugene Agichtein|Oleg Rokhlenko
+conf/wsdm/WangJRTY18,2018,WSDM,inproceedings,A Path-constrained Framework for Discriminating Substitutable and Complementary Products in E-commerce.,Zihan Wang 0002|Ziheng Jiang|Zhaochun Ren|Jiliang Tang|Dawei Yin 0001
+conf/wsdm/SachdevaMRP19,2019,WSDM,inproceedings,Sequential Variational Autoencoders for Collaborative Filtering.,Noveen Sachdeva|Giuseppe Manco 0001|Ettore Ritacco|Vikram Pudi
+conf/wsdm/XuanL0Y23,2023,WSDM,inproceedings,Knowledge Enhancement for Contrastive Multi-Behavior Recommendation.,Hongrui Xuan|Yi Liu 0071|Bohan Li 0001|Hongzhi Yin
+conf/wsdm/LevyR23,2023,WSDM,inproceedings,DisKeyword: Tweet Corpora Exploration for Keyword Selection.,Sacha L|Reihaneh Rabbany
+conf/wsdm/QiuWJZ20,2020,WSDM,inproceedings,Stepwise Reasoning for Multi-Relation Question Answering over Knowledge Graph with Weak Supervision.,Yunqi Qiu|Yuanzhuo Wang|Xiaolong Jin 0001|Kun Zhang 0041
+conf/wsdm/ZhouZSL19,2019,WSDM,inproceedings,"Fake News: Fundamental Theories, Detection Strategies and Challenges.",Xinyi Zhou 0001|Reza Zafarani|Kai Shu|Huan Liu 0001
+conf/wsdm/PetrovM24,2024,WSDM,inproceedings,RecJPQ: Training Large-Catalogue Sequential Recommenders.,Aleksandr V. Petrov|Craig Macdonald
+conf/wsdm/DehghaniAKR19,2019,WSDM,inproceedings,"Learning to Transform, Combine, and Reason in Open-Domain Question Answering.",Mostafa Dehghani 0001|Hosein Azarbonyad|Jaap Kamps|Maarten de Rijke
+conf/wsdm/ChenW21,2021,WSDM,inproceedings,An Efficient and Effective Framework for Session-based Social Recommendation.,Tianwen Chen|Raymond Chi-Wing Wong
+conf/wsdm/ZhuC22,2022,WSDM,inproceedings,Fighting Mainstream Bias in Recommender Systems via Local Fine Tuning.,Ziwei Zhu 0001|James Caverlee
+conf/wsdm/DattaGGM22,2022,WSDM,inproceedings,Deep-QPP: A Pairwise Interaction-based Deep Learning Model for Supervised Query Performance Prediction.,Suchana Datta|Debasis Ganguly|Derek Greene|Mandar Mitra
+conf/wsdm/DeffayetTRR23,2023,WSDM,inproceedings,Generative Slate Recommendation with Reinforcement Learning.,Romain Deffayet|Thibaut Thonet|Jean-Michel Renders|Maarten de Rijke
+conf/wsdm/0001WZH24,2024,WSDM,inproceedings,TTC-QuAli: A Text-Table-Chart Dataset for Multimodal Quantity Alignment.,Haoyu Dong 0001|Haochen Wang|Anda Zhou|Yue Hu 0002
+conf/wsdm/0001S22,2022,WSDM,inproceedings,How Do You Test a Test?: A Multifaceted Examination of Significance Tests.,Nicola Ferro 0001|Mark Sanderson
+conf/wsdm/00440MC022,2022,WSDM,inproceedings,MotifClass: Weakly Supervised Text Classification with Higher-order Metadata Information.,Yu Zhang 0044|Shweta Garg 0004|Yu Meng 0001|Xiusi Chen|Jiawei Han 0001
+conf/wsdm/DengSZ0023,2023,WSDM,inproceedings,S2TUL: A Semi-Supervised Framework for Trajectory-User Linking.,Liwei Deng 0001|Hao Sun 0015|Yan Zhao 0008|Shuncheng Liu 0001|Kai Zheng 0001
+conf/wsdm/ZhouZZWJ022,2022,WSDM,inproceedings,C²-CRS: Coarse-to-Fine Contrastive Learning for Conversational Recommender System.,Yuanhang Zhou|Kun Zhou 0002|Wayne Xin Zhao|Cheng Wang|Peng Jiang|He Hu 0001
+conf/wsdm/HeZLC20,2020,WSDM,inproceedings,Consistency-Aware Recommendation for User-Generated Item List Continuation.,Yun He 0001|Yin Zhang 0011|Weiwen Liu|James Caverlee
+conf/wsdm/MaoWXLW20,2020,WSDM,inproceedings,MRAEA: An Efficient and Robust Entity Alignment Approach for Cross-lingual Knowledge Graph.,Xin Mao|Wenting Wang|Huimin Xu|Man Lan|Yuanbin Wu
+conf/wsdm/ParaparR21,2021,WSDM,inproceedings,Diverse User Preference Elicitation with Multi-Armed Bandits.,Javier Parapar|Filip Radlinski
+conf/wsdm/Katsogiannis-Meimarakis23,2023,WSDM,inproceedings,Data Democratisation with Deep Learning: The Anatomy of a Natural Language Data Interface.,George Katsogiannis-Meimarakis|Mike Xydas|Georgia Koutrika
+conf/wsdm/BautistaBBS24,2024,WSDM,inproceedings,MAD: Multi-Scale Anomaly Detection in Link Streams.,Esteban Bautista|Laurent Brisson|C|Gr
+conf/wsdm/LiT18,2018,WSDM,inproceedings,"Network Science of Teams: Characterization, Prediction, and Optimization.",Liangyue Li|Hanghang Tong
+conf/wsdm/DessiKMPS21,2021,WSDM,inproceedings,L2D 2021: First International Workshop on Enabling Data-Driven Decisions from Learning on the Web.,Danilo Dess|Tanja K|Mirko Marras|Elvira Popescu|Harald Sack
+conf/wsdm/YanBZLL24,2024,WSDM,inproceedings,Towards Alignment-Uniformity Aware Representation in Graph Contrastive Learning.,Rong Yan|Peng Bao|Xiao Zhang|Zhongyi Liu 0002|Hui Liu
+conf/wsdm/NguyenTPN22,2022,WSDM,inproceedings,Node Co-occurrence based Graph Neural Networks for Knowledge Graph Link Prediction.,Dai Quoc Nguyen|Vinh Tong|Dinh Q. Phung|Dat Quoc Nguyen
+conf/wsdm/ZhouSZH18,2018,WSDM,inproceedings,Predicting Multi-step Citywide Passenger Demands Using Attention-based Neural Networks.,Xian Zhou 0003|Yanyan Shen|Yanmin Zhu 0006|Linpeng Huang
+conf/wsdm/WangDZZC20,2020,WSDM,inproceedings,Key Opinion Leaders in Recommendation Systems: Opinion Elicitation and Diffusion.,Jianling Wang|Kaize Ding|Ziwei Zhu 0001|Yin Zhang 0011|James Caverlee
+conf/wsdm/Lin0HKDW24,2024,WSDM,inproceedings,Pre-trained Recommender Systems: A Causal Debiasing Perspective.,Ziqian Lin|Hao Ding 0003|Trong Nghia Hoang|Branislav Kveton|Anoop Deoras|Hao Wang 0014
+conf/wsdm/WangNWYL20,2020,WSDM,inproceedings,Deep Learning for Anomaly Detection.,Ruoying Wang|Kexin Nie|Tie Wang|Yang Yang 0095|Bo Long
+conf/wsdm/DaiJLW22,2022,WSDM,inproceedings,Towards Robust Graph Neural Networks for Noisy Graphs with Sparse Labels.,Enyan Dai|Wei Jin 0009|Hui Liu 0031|Suhang Wang
+conf/wsdm/XuRKKA21,2021,WSDM,inproceedings,Theoretical Understandings of Product Embedding for E-commerce Machine Learning.,Da Xu|Chuanwei Ruan|Evren K|Sushant Kumar|Kannan Achan
+conf/wsdm/GhoshRW23,2023,WSDM,inproceedings,CoQEx: Entity Counts Explained.,Shrestha Ghosh|Simon Razniewski|Gerhard Weikum
+conf/wsdm/LiL0RCR21,2021,WSDM,inproceedings,Abstractive Opinion Tagging.,Qintong Li|Piji Li|Xinyi Li 0001|Zhaochun Ren|Zhumin Chen|Maarten de Rijke
+conf/wsdm/HeL0ZW21,2021,WSDM,inproceedings,Improving Multi-hop Knowledge Base Question Answering by Learning Intermediate Supervision Signals.,Gaole He|Yunshi Lan|Jing Jiang 0001|Wayne Xin Zhao|Ji-Rong Wen
+conf/wsdm/SuY0Z23,2023,WSDM,inproceedings,Mining User-aware Multi-relations for Fake News Detection in Large Scale Online Social Networks.,Xing Su 0006|Jian Yang 0001|Jia Wu 0001|Yuchen Zhang
+conf/wsdm/DeshpandeMDS21,2021,WSDM,inproceedings,Long Horizon Forecasting with Temporal Point Processes.,Prathamesh Deshpande|Kamlesh Marathe|Abir De|Sunita Sarawagi
+conf/wsdm/RezvaniWL18,2018,WSDM,inproceedings,FACH: Fast Algorithm for Detecting Cohesive Hierarchies of Communities in Large Networks.,Mojtaba Rezvani|Qing Wang 0002|Weifa Liang
+conf/wsdm/0001ZM22,2022,WSDM,inproceedings,Fast Learning of MNL Model from General Partial Rankings with Application to Network Formation Modeling.,Jiaqi Ma 0001|Xingjian Zhang 0002|Qiaozhu Mei
+conf/wsdm/Zarate-CartasM24,2024,WSDM,inproceedings,Automatic Extraction of Patterns in Digital News Articles of Femicides occurred in Mexico by Text Mining Techniques.,Jonathan Z|Alejandro Molina-Villegas
+conf/wsdm/WangZZLY21,2021,WSDM,inproceedings,Modeling Inter-station Relationships with Attentive Temporal Graph Convolutional Network for Air Quality Prediction.,Chunyang Wang 0001|Yanmin Zhu 0006|Tianzi Zang|Haobing Liu 0001|Jiadi Yu
+conf/wsdm/Escobar-Turriza24,2024,WSDM,inproceedings,Genomic-World Fungi Data: Synteny Part.,Pedro Escobar-Turriza|Luis Mu|Alejandro Pereira-Santana
+conf/wsdm/QiuDMLWT18,2018,WSDM,inproceedings,"Network Embedding as Matrix Factorization: Unifying DeepWalk, LINE, PTE, and node2vec.",Jiezhong Qiu|Yuxiao Dong|Hao Ma 0001|Jian Li 0015|Kuansan Wang|Jie Tang 0001
+conf/wsdm/GabertPC21,2021,WSDM,inproceedings,A Unifying Framework to Identify Dense Subgraphs on Streams: Graph Nuclei to Hypergraph Cores.,Kasimir Gabert|Ali Pinar
+conf/wsdm/SuHLZM18,2018,WSDM,inproceedings,"User Intent, Behaviour, and Perceived Satisfaction in Product Search.",Ning Su|Jiyin He|Yiqun Liu 0001|Min Zhang 0006|Shaoping Ma
+conf/wsdm/YangWDW21,2021,WSDM,inproceedings,Explanation as a Defense of Recommendation.,Aobo Yang|Nan Wang|Hongbo Deng|Hongning Wang
+conf/wsdm/WangZKH24,2024,WSDM,inproceedings,Cost-Effective Active Learning for Bid Exploration in Online Advertising.,Zixiao Wang 0007|Zhenzhe Zheng 0001|Yanrong Kang|Jiani Huang
+conf/wsdm/ZhangJBM19,2019,WSDM,inproceedings,,Yating Zhang|Adam Jatowt|Sourav S. Bhowmick|Yuji Matsumoto 0001
+conf/wsdm/0004W0Y24,2024,WSDM,inproceedings,DeSCo: Towards Generalizable and Scalable Deep Subgraph Counting.,Tianyu Fu 0004|Chiyue Wei|Yu Wang 0002|Rex Ying
+conf/wsdm/ChenHXWXL23,2023,WSDM,inproceedings,Heterogeneous Graph Contrastive Learning for Recommendation.,Mengru Chen|Chao Huang 0001|Lianghao Xia|Wei Wei 0027|Yong Xu 0007|Ronghua Luo
+conf/wsdm/0001LP023,2023,WSDM,inproceedings,A Tutorial on Domain Generalization.,Jindong Wang 0001|Haoliang Li|Sinno Jialin Pan|Xing Xie 0001
+conf/wsdm/LuoDWBYX24,2024,WSDM,inproceedings,An Interpretable Brain Graph Contrastive Learning Framework for Brain Disorder Analysis.,Xuexiong Luo|Guangwei Dong|Jia Wu 0001|Amin Beheshti|Jian Yang 0001|Shan Xue 0001
+conf/wsdm/DengD0W24,2024,WSDM,inproceedings,CL4DIV: A Contrastive Learning Framework for Search Result Diversification.,Zhirui Deng|Zhicheng Dou|Yutao Zhu 0001|Ji-Rong Wen
+conf/wsdm/Montazeralghaem22,2022,WSDM,inproceedings,Learning Relevant Questions for Conversational Product Search using Deep Reinforcement Learning.,Ali Montazeralghaem|James Allan 0001
+conf/wsdm/BhargavSK22,2022,WSDM,inproceedings,'It's on the tip of my tongue': A new Dataset for Known-Item Retrieval.,Samarth Bhargav 0001|Georgios Sidiropoulos|Evangelos Kanoulas
+conf/wsdm/ChienS24,2024,WSDM,inproceedings,Customized and Robust Deep Neural Network Watermarking.,Tzu-Yun Chien|Chih-Ya Shen
+conf/wsdm/XuMMSK21,2021,WSDM,inproceedings,Split-Treatment Analysis to Rank Heterogeneous Causal Effects for Prospective Interventions.,Yanbo Xu|Divyat Mahajan|Liz Manrao|Amit Sharma 0007|Emre Kiciman
+conf/wsdm/MalhotraWSA022,2022,WSDM,inproceedings,Speaker and Time-aware Joint Contextual Learning for Dialogue-act Classification in Counselling Conversations.,Ganeshan Malhotra|Abdul Waheed|Aseem Srivastava|Md. Shad Akhtar|Tanmoy Chakraborty 0002
+conf/wsdm/WangZS22,2022,WSDM,inproceedings,Profiling the Design Space for Graph Neural Networks based Collaborative Filtering.,Zhenyi Wang|Huan Zhao 0002|Chuan Shi 0001
+conf/wsdm/KashinskayaSA19,2019,WSDM,inproceedings,Spring-Electrical Models For Link Prediction.,Yana Kashinskaya|Egor Samosvat|Akmal Artikov
+conf/wsdm/YuanYWZHW23,2023,WSDM,inproceedings,Federated Unlearning for On-Device Recommendation.,Wei Yuan 0003|Hongzhi Yin|Fangzhao Wu|Shijie Zhang|Tieke He|Hao Wang 0005
+conf/wsdm/ShuangP24,2024,WSDM,inproceedings,Using Causal Inference to Solve Uncertainty Issues in Dataset Shift.,Song Shuang|Muhammad Syafiq Bin Mohd Pozi
+conf/wsdm/TangLHWS22,2022,WSDM,inproceedings,Friend Story Ranking with Edge-Contextual Local Graph Convolutions.,Xianfeng Tang|Yozen Liu|Xinran He|Suhang Wang|Neil Shah
+conf/wsdm/DizajiYH18,2018,WSDM,inproceedings,Joint Generative-Discriminative Aggregation Model for Multi-Option Crowd Labels.,Kamran Ghasedi Dizaji|Yanhua Yang|Heng Huang 0001
+conf/wsdm/00010L23,2023,WSDM,inproceedings,Recent Advances on Deep Learning based Knowledge Tracing.,Zitao Liu 0001|Jiahao Chen 0006|Weiqi Luo 0002
+conf/wsdm/ShinKLBX19,2019,WSDM,inproceedings,Visualizing Graph Differences from Social Media Streams.,Minjeong Shin|Dongwoo Kim 0002|Jae Hee Lee 0003|Umanga Bista|Lexing Xie
+conf/wsdm/HarandizadehPM22,2022,WSDM,inproceedings,Keyword Assisted Embedded Topic Model.,Bahareh Harandizadeh|J. Hunter Priniski|Fred Morstatter
+conf/wsdm/CMR24,2024,WSDM,inproceedings,Augmenting Keyword-based Search in Mobile Applications Using LLMs.,Harikrishnan C|Giridhar Sreenivasa Murthy|Kumar Rangarajan
+conf/wsdm/KanatsoulisS22,2022,WSDM,inproceedings,GAGE: Geometry Preserving Attributed Graph Embeddings.,Charilaos I. Kanatsoulis|Nicholas D. Sidiropoulos
+conf/wsdm/SeolGLP24,2024,WSDM,inproceedings,Proxy-based Item Representation for Attribute and Context-aware Recommendation.,Jinseok Seol|Minseok Gang|Sang-goo Lee|Jaehui Park
+conf/wsdm/TangYLWL23,2023,WSDM,inproceedings,Graph Neural Networks with Interlayer Feature Representation for Image Super-Resolution.,Shenggui Tang|Kaixuan Yao|Jianqing Liang|Zhiqiang Wang 0005|Jiye Liang
+conf/wsdm/Gondara0C22,2022,WSDM,inproceedings,Differentially Private Ensemble Classifiers for Data Streams.,Lovedeep Gondara|Ke Wang 0001|Ricardo Silva Carvalho
+conf/wsdm/BiDFWHZ23,2023,WSDM,inproceedings,MM-GNN: Mix-Moment Graph Neural Network towards Modeling Neighborhood Feature Distribution.,Wendong Bi|Lun Du|Qiang Fu 0015|Yanlin Wang 0001|Shi Han|Dongmei Zhang 0001
+conf/wsdm/HuL18,2018,WSDM,inproceedings,Collaborative Filtering via Additive Ordinal Regression.,Jun Hu|Ping Li 0001
+conf/wsdm/VassoyRSA19,2019,WSDM,inproceedings,Time is of the Essence: A Joint Hierarchical RNN and Point Process Model for Time and Item Predictions.,Bj|Massimiliano Ruocco|Eliezer de Souza da Silva|Erlend Aune
+conf/wsdm/LiDSC21,2021,WSDM,inproceedings,FluxEV: A Fast and Effective Unsupervised Framework for Time-Series Anomaly Detection.,Jia Li 0014|Shimin Di|Yanyan Shen|Lei Chen 0002
+conf/wsdm/AlsuhaibaniZRJX24,2024,WSDM,inproceedings,IDoFew: Intermediate Training Using Dual-Clustering in Language Models for Few Labels Text Classification.,Abdullah Alsuhaibani|Hamad Zogan|Imran Razzak|Shoaib Jameel|Guandong Xu
+conf/wsdm/ChinCC22,2022,WSDM,inproceedings,The Datasets Dilemma: How Much Do We Really Know About Recommendation Datasets?,Jin Yao Chin|Yile Chen 0001|Gao Cong
+conf/wsdm/CeccarelloPP18,2018,WSDM,inproceedings,Fast Coreset-based Diversity Maximization under Matroid Constraints.,Matteo Ceccarello|Andrea Pietracaprina|Geppino Pucci
+conf/wsdm/WangZS21,2021,WSDM,inproceedings,Modeling Context Pair Interaction for Pairwise Tasks on Graphs.,Zhen Wang 0041|Bo Zong|Huan Sun 0001
+conf/wsdm/LiJJW19,2019,WSDM,inproceedings,CORALS: Who Are My Potential New Customers? Tapping into the Wisdom of Customers' Decisions.,Ruirui Li 0002|Jyun-Yu Jiang|Chelsea J.-T. Ju|Wei Wang 0010
+conf/wsdm/0003ZS021,2021,WSDM,inproceedings,Combating Selection Biases in Recommender Systems with a Few Unbiased Ratings.,Xiaojie Wang 0003|Rui Zhang 0003|Yu Sun 0021|Jianzhong Qi 0001
+conf/wsdm/LiG0LWC23,2023,WSDM,inproceedings,SGCCL: Siamese Graph Contrastive Consensus Learning for Personalized Recommendation.,Boyu Li 0003|Ting Guo 0005|Xingquan Zhu 0001|Qian Li 0003|Yang Wang 0002|Fang Chen 0001
+conf/wsdm/YangQSYY22,2022,WSDM,inproceedings,Lightweight Composite Re-Ranking for Efficient Keyword Search with BERT.,Yingrui Yang|Yifan Qiao 0001|Jinjin Shao|Xifeng Yan|Tao Yang 0009
+conf/wsdm/CraneLSV24,2024,WSDM,inproceedings,Overlapping and Robust Edge-Colored Clustering in Hypergraphs.,Alex Crane|Brian Lavallee|Blair D. Sullivan|Nate Veldt
+conf/wsdm/GilotteCNAD18,2018,WSDM,inproceedings,Offline A/B Testing for Recommender Systems.,Alexandre Gilotte|Cl|Thomas Nedelec|Alexandre Abraham|Simon Doll
+conf/wsdm/JosifoskiPPJ019,2019,WSDM,inproceedings,Crosslingual Document Embedding as Reduced-Rank Ridge Regression.,Martin Josifoski|Ivan S. Paskov|Hristo S. Paskov|Martin Jaggi|Robert West 0001
+conf/wsdm/ChengG021,2021,WSDM,inproceedings,Long-Term Effect Estimation with Surrogate Representation.,Lu Cheng 0001|Ruocheng Guo|Huan Liu 0001
+conf/wsdm/0009KMZ23,2023,WSDM,inproceedings,AgAsk: A Conversational Search Agent for Answering Agricultural Questions.,Hang Li 0009|Bevan Koopman|Ahmed Mourad|Guido Zuccon
+conf/wsdm/MaKWWL19,2019,WSDM,inproceedings,Gated Attentive-Autoencoder for Content-Aware Recommendation.,Chen Ma 0001|Peng Kang|Bin Wu 0019|Qinglong Wang 0003|Xue Liu 0001
+conf/wsdm/WeiZLZZ23,2023,WSDM,inproceedings,AntTS: A Toolkit for Time Series Forecasting in Industrial Scenarios.,Jianping Wei|Zhibo Zhu|Ziqi Liu|Zhiqiang Zhang 0012|Jun Zhou 0011
+conf/wsdm/DingZCWZD23,2023,WSDM,inproceedings,"DistriBayes: A Distributed Platform for Learning, Inference and Attribution on Large Scale Bayesian Network.",Yi Ding 0006|Jun Zhou 0011|Qing Cui|Lin Wang 0098|Mengqi Zhang 0003|Yang Dong
+conf/wsdm/KeGSC22,2022,WSDM,inproceedings,"ConsistSum: Unsupervised Opinion Summarization with the Consistency of Aspect, Sentiment and Semantic.",Wenjun Ke 0002|Jinhua Gao|Huawei Shen|Xueqi Cheng
+conf/wsdm/YangSS22,2022,WSDM,inproceedings,Graph Neural Networks for the Global Economy with Microsoft DeepGraph.,Jaewon Yang|Baoxu Shi|Alex Samylkin
+conf/wsdm/KenthapadiMT19,2019,WSDM,inproceedings,Privacy-preserving Data Mining in Industry.,Krishnaram Kenthapadi|Ilya Mironov|Abhradeep Guha Thakurta
+conf/wsdm/RenZZYLL22,2022,WSDM,inproceedings,A Simple but Effective Bidirectional Framework for Relational Triple Extraction.,Feiliang Ren|Longhui Zhang|Xiaofeng Zhao|Shujuan Yin|Shilei Liu|Bochao Li
+conf/wsdm/ZhuRSZE019,2019,WSDM,inproceedings,Integrating Local Context and Global Cohesiveness for Open Information Extraction.,Qi Zhu 0008|Xiang Ren 0001|Jingbo Shang|Yu Zhang 0044|Ahmed El-Kishky|Jiawei Han 0001
+conf/wsdm/WangD023,2023,WSDM,inproceedings,Heterogeneous Graph-based Context-aware Document Ranking.,Shuting Wang 0002|Zhicheng Dou|Yutao Zhu 0001
+conf/wsdm/Liu0HHH20,2020,WSDM,inproceedings,Athena: A Ranking Enabled Scholarly Search System.,Junfeng Liu|Shuai Ma 0001|Renjun Hu|Chunming Hu|Jinpeng Huai
+conf/wsdm/YangWDSNE19,2019,WSDM,inproceedings,More Than Just Words: Modeling Non-Textual Characteristics of Podcasts.,Longqi Yang 0001|Yu Wang|Drew Dunne|Michael Sobolev|Mor Naaman|Deborah Estrin
+conf/wsdm/ZhengWGS0K21,2021,WSDM,inproceedings,Scalable Graph Neural Networks with Deep Graph Library.,Da Zheng 0004|Minjie Wang|Quan Gan|Xiang Song 0003|Zheng Zhang 0001|George Karypis
+conf/wsdm/ZhuoZYZH22,2022,WSDM,inproceedings,A Neighborhood-Attention Fine-grained Entity Typing for Knowledge Graph Completion.,Jianhuan Zhuo|Qiannan Zhu|Yinliang Yue|Yuhong Zhao|Weisi Han
+conf/wsdm/DongLL022,2022,WSDM,inproceedings,Combinatorial Bandits under Strategic Manipulations.,Jing Dong 0008|Ke Li|Shuai Li 0010|Baoxiang Wang 0001
+conf/wsdm/ZhangY0L24,2024,WSDM,inproceedings,Defense Against Model Extraction Attacks on Recommender Systems.,Sixiao Zhang|Hongzhi Yin|Hongxu Chen 0002|Cheng Long 0001
+conf/wsdm/SchnabelBJ19,2019,WSDM,inproceedings,Shaping Feedback Data in Recommender Systems with Interventions Based on Information Foraging Theory.,Tobias Schnabel|Paul N. Bennett|Thorsten Joachims
+conf/wsdm/AriannezhadLSR23,2023,WSDM,inproceedings,A Personalized Neighborhood-based Model for Within-basket Recommendation in Grocery Shopping.,Mozhdeh Ariannezhad|Ming Li 0068|Sebastian Schelter|Maarten de Rijke
+conf/wsdm/ZhangBP24,2024,WSDM,inproceedings,Maximizing Malicious Influence in Node Injection Attack.,Xiao Zhang|Peng Bao|Shirui Pan
+conf/wsdm/ZhuCLLZ24,2024,WSDM,inproceedings,Dance with Labels: Dual-Heterogeneous Label Graph Interaction for Multi-intent Spoken Language Understanding.,Zhihong Zhu|Xuxin Cheng|Hongxiang Li 0004|Yaowei Li 0001|Yuexian Zou
+conf/wsdm/LiuQZKC23,2023,WSDM,inproceedings,MMBench: The Match Making Benchmark.,Yongsheng Liu|Yanxing Qi|Jiangwei Zhang|Connie Kou|Qiaolin Chen
+conf/wsdm/WangX0ZZ21,2021,WSDM,inproceedings,AutoCite: Multi-Modal Representation Fusion for Contextual Citation Generation.,Qingqin Wang|Yun Xiong|Yao Zhang 0009|Jiawei Zhang 0001|Yangyong Zhu
+conf/wsdm/ChengG022a,2022,WSDM,inproceedings,Causal Mediation Analysis with Hidden Confounders.,Lu Cheng 0001|Ruocheng Guo|Huan Liu 0001
+conf/wsdm/ChenDZZ23,2023,WSDM,inproceedings,Adversarial Autoencoder for Unsupervised Time Series Anomaly Detection and Interpretation.,Xuanhao Chen 0001|Liwei Deng 0001|Yan Zhao 0008|Kai Zheng 0001
+conf/wsdm/DaiQZ20,2020,WSDM,inproceedings,Joint Recognition of Names and Publications in Academic Homepages.,Yimeng Dai|Jianzhong Qi 0001|Rui Zhang 0003
+conf/wsdm/ZhangXZ20,2020,WSDM,inproceedings,Nearly Linear Time Algorithm for Mean Hitting Times of Random Walks on a Graph.,Zuobai Zhang|Wanyue Xu|Zhongzhi Zhang
+conf/wsdm/LiuLZXT19,2019,WSDM,inproceedings,Spiral of Silence in Recommender Systems.,Dugang Liu|Chen Lin 0001|Zhilin Zhang 0001|Yanghua Xiao|Hanghang Tong
+conf/wsdm/0002PZKFL21,2021,WSDM,inproceedings,DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving.,Wei Deng 0002|Junwei Pan|Tian Zhou 0006|Deguang Kong|Aaron Flores 0001|Guang Lin 0001
+conf/wsdm/ZhangWLTZ24,2024,WSDM,inproceedings,IncMSR: An Incremental Learning Approach for Multi-Scenario Recommendation.,Kexin Zhang 0007|Yichao Wang 0002|Xiu Li 0001|Ruiming Tang|Rui Zhang 0003
+conf/wsdm/MerchantM023,2023,WSDM,inproceedings,Graph Summarization via Node Grouping: A Spectral Algorithm.,Arpit Merchant|Michael Mathioudakis|Yanhao Wang 0001
+conf/wsdm/HuangZKW24,2024,WSDM,inproceedings,From Second to First: Mixed Censored Multi-Task Learning for Winning Price Prediction.,Jiani Huang|Zhenzhe Zheng 0001|Yanrong Kang|Zixiao Wang 0007
+conf/wsdm/WangTHH22,2022,WSDM,inproceedings,Hierarchical Imitation Learning via Subgoal Representation Learning for Dynamic Treatment Recommendation.,Lu Wang|Ruiming Tang|Xiaofeng He|Xiuqiang He 0001
+conf/wsdm/HuertasS24,2024,WSDM,inproceedings,Profiling Urban Mobility Patterns with High Spatial and Temporal Resolution: A Deep Dive into Cellphone Geo-position Data.,Jos|Luisa Fernanda Chaparro Sierra
+conf/wsdm/LiWM20,2020,WSDM,inproceedings,Time Interval Aware Self-Attention for Sequential Recommendation.,Jiacheng Li 0003|Yujie Wang|Julian J. McAuley
+conf/wsdm/WangJLZ23,2023,WSDM,inproceedings,Improving News Recommendation with Channel-Wise Dynamic Representations and Contrastive User Modeling.,Jingkun Wang|Yongtao Jiang|Haochen Li 0001|Wen Zhao 0008
+conf/wsdm/0025LHZ23,2023,WSDM,inproceedings,Dependency-aware Self-training for Entity Alignment.,Bing Liu 0025|Tiancheng Lan|Wen Hua|Guido Zuccon
+conf/wsdm/LuoM22,2022,WSDM,inproceedings,RLMob: Deep Reinforcement Learning for Successive Mobility Prediction.,Ziyan Luo|Congcong Miao
+conf/wsdm/CinusBMP21,2021,WSDM,inproceedings,WoMG: A Library for Word-of-Mouth Cascades Generation.,Federico Cinus|Francesco Bonchi|Corrado Monti|Andr
+conf/wsdm/DengYKS23,2023,WSDM,inproceedings,Zero to Hero: Exploiting Null Effects to Achieve Variance Reduction in Experiments with One-sided Triggering.,Alex Deng|Lo-Hua Yuan|Naoya Kanai|Alexandre Salama-Manteau
+conf/wsdm/FanARHYG19,2019,WSDM,inproceedings,DAPA: The WSDM 2019 Workshop on Deep Matching in Practical Applications.,Yixing Fan|Qingyao Ai|Zhaochun Ren|Liangjie Hong|Dawei Yin 0001|Jiafeng Guo
+conf/wsdm/ChenBCJBC19,2019,WSDM,inproceedings,Top-K Off-Policy Correction for a REINFORCE Recommender System.,Minmin Chen|Alex Beutel|Paul Covington|Sagar Jain|Francois Belletti|Ed H. Chi
+conf/wsdm/FarseevYFLCL21,2021,WSDM,inproceedings,SoMin.ai: Personality-Driven Content Generation Platform.,Aleksandr Farseev|Qi Yang 0005|Andrey Filchenkov|Kirill Lepikhin|Yu-Yi Chu-Farseeva|Daron-Benjamin Loo
+conf/wsdm/EntezariADP20,2020,WSDM,inproceedings,All You Need Is Low (Rank): Defending Against Adversarial Attacks on Graphs.,Negin Entezari|Saba A. Al-Sayouri|Amirali Darvishzadeh|Evangelos E. Papalexakis
+conf/wsdm/ButlerDK22,2022,WSDM,inproceedings,iLFQA: A Platform for Efficient and Accurate Long-Form Question Answering.,Rhys Butler|Vishnu Dutt Duggirala|Farnoush Banaei Kashani
+conf/wsdm/ZhangZLZCC19,2019,WSDM,inproceedings,Enabling Privacy-Preserving Sharing of Genomic Data for GWASs in Decentralized Networks.,Yanjun Zhang|Xin Zhao 0013|Xue Li 0001|Mingyang Zhong|Caitlin Curtis|Chen Chen 0056
+conf/wsdm/SuGFLC20,2020,WSDM,inproceedings,Label Distribution Augmented Maximum Likelihood Estimation for Reading Comprehension.,Lixin Su|Jiafeng Guo|Yixing Fan|Yanyan Lan|Xueqi Cheng
+conf/wsdm/YaoZHYGZ24,2024,WSDM,inproceedings,COTER: Conditional Optimal Transport meets Table Retrieval.,Xun Yao|Zhixin Zhang|Xinrong Hu|Jie (Jack) Yang|Yi Guo 0001|Daniel (Dianliang) Zhu
+conf/wsdm/FanLC0QZ24,2024,WSDM,inproceedings,Guardian: Guarding against Gradient Leakage with Provable Defense for Federated Learning.,Mingyuan Fan 0003|Yang Liu 0118|Cen Chen 0001|Chengyu Wang 0001|Minghui Qiu|Wenmeng Zhou
+conf/wsdm/Hu0CYR21,2021,WSDM,inproceedings,Time-Series Event Prediction with Evolutionary State Graph.,Wenjie Hu 0003|Yang Yang 0009|Ziqiang Cheng|Carl Yang 0001|Xiang Ren 0001
+conf/wsdm/XianTPL24,2024,WSDM,inproceedings,Vector Search with OpenAI Embeddings: Lucene Is All You Need.,Jasper Xian|Tommaso Teofili|Ronak Pradeep|Jimmy Lin
+conf/wsdm/MaGWYZL22,2022,WSDM,inproceedings,Learning Fair Node Representations with Graph Counterfactual Fairness.,Jing Ma 0002|Ruocheng Guo|Mengting Wan|Longqi Yang 0001|Aidong Zhang 0001|Jundong Li
+conf/wsdm/ZamaniC20,2020,WSDM,inproceedings,Learning a Joint Search and Recommendation Model from User-Item Interactions.,Hamed Zamani|W. Bruce Croft
+conf/wsdm/ZhouDTY18,2018,WSDM,inproceedings,Micro Behaviors: A New Perspective in E-commerce Recommender Systems.,Meizi Zhou|Zhuoye Ding|Jiliang Tang|Dawei Yin 0001
+conf/wsdm/RastegarpanahGC19,2019,WSDM,inproceedings,Fighting Fire with Fire: Using Antidote Data to Improve Polarization and Fairness of Recommender Systems.,Bashir Rastegarpanah|Krishna P. Gummadi|Mark Crovella
+conf/wsdm/GuyMHRS18,2018,WSDM,inproceedings,Identifying Informational vs. Conversational Questions on Community Question Answering Archives.,Ido Guy|Victor Makarenkov|Niva Hazon|Lior Rokach|Bracha Shapira
+conf/wsdm/KuangWCK022,2022,WSDM,inproceedings,Efficient Two-stage Label Noise Reduction for Retrieval-based Tasks.,Mengmeng Kuang|Weiyan Wang|Zhenhong Chen|Lie Kang|Qiang Yan 0001
+conf/wsdm/LiuLZL22,2022,WSDM,inproceedings,Surrogate Representation Learning with Isometric Mapping for Gray-box Graph Adversarial Attacks.,Zihan Liu|Yun Luo|Zelin Zang|Stan Z. Li
+conf/wsdm/ZhaoZZC20,2020,WSDM,inproceedings,Improving the Estimation of Tail Ratings in Recommender System with Multi-Latent Representations.,Xing Zhao 0003|Ziwei Zhu 0001|Yin Zhang 0011|James Caverlee
+conf/wsdm/ZhangLDHZ24,2024,WSDM,inproceedings,A Scalable Open-Source System for Segmenting Urban Areas with Road Networks.,Ming Zhang|Yanyan Li|Jianguo Duan|Jizhou Huang|Jingbo Zhou 0003
+conf/wsdm/LiuDH19,2019,WSDM,inproceedings,Representation Interpretation with Spatial Encoding and Multimodal Analytics.,Ninghao Liu 0001|Mengnan Du|Xia Hu 0001
+conf/wsdm/QuOHYZ19,2019,WSDM,inproceedings,Discovering Correlations between Sparse Features in Distant Supervision for Relation Extraction.,Jianfeng Qu|Dantong Ouyang|Wen Hua|Yuxin Ye|Xiaofang Zhou 0001
+conf/wsdm/LiHLDP23,2023,WSDM,inproceedings,"International Workshop on Learning with Knowledge Graphs: Construction, Embedding, and Reasoning.",Qing Li 0001|Xiao Huang 0001|Ninghao Liu 0001|Yuxiao Dong|Guansong Pang
+conf/wsdm/XuLLSHJ23,2023,WSDM,inproceedings,Self-supervised Graph Representation Learning for Black Market Account Detection.,Zequan Xu|Lianyun Li|Hui Li 0057|Qihang Sun|Shaofeng Hu|Rongrong Ji
+conf/wsdm/JoYK18,2018,WSDM,inproceedings,Fast and Scalable Distributed Loopy Belief Propagation on Real-World Graphs.,Saehan Jo|Jaemin Yoo|U Kang
+conf/wsdm/LiuYXWL24,2024,WSDM,inproceedings,Interact with the Explanations: Causal Debiased Explainable Recommendation System.,Xu Liu|Tong Yu 0001|Kaige Xie|Junda Wu|Shuai Li 0010
+conf/wsdm/Guo023,2023,WSDM,inproceedings,Student Behavior Pattern Mining and Analysis: Towards Smart Campuses.,Teng Guo 0002|Feng Xia 0001
+conf/wsdm/LuoADG22,2022,WSDM,inproceedings,The Multi-vehicle Ride-Sharing Problem.,Kelin Luo|Chaitanya Agarwal|Syamantak Das|Xiangyu Guo
+conf/wsdm/XuR22,2022,WSDM,inproceedings,Modern Theoretical Tools for Understanding and Designing Next-generation Information Retrieval System.,Da Xu|Chuanwei Ruan
+conf/wsdm/NiuLLT0D21,2021,WSDM,inproceedings,Heterogeneous Graph Augmented Multi-Scenario Sharing Recommendation with Tree-Guided Expert Networks.,Xichuan Niu|Bofang Li|Chenliang Li 0005|Jun Tan|Rong Xiao 0005|Hongbo Deng
+conf/wsdm/WangC19,2019,WSDM,inproceedings,Recurrent Recommendation with Local Coherence.,Jianling Wang|James Caverlee
+conf/wsdm/HuangZLL19,2019,WSDM,inproceedings,Knowledge Graph Embedding Based Question Answering.,Xiao Huang 0001|Jingyuan Zhang|Dingcheng Li|Ping Li 0001
+conf/wsdm/XieZW0L22,2022,WSDM,inproceedings,A Peep into the Future: Adversarial Future Encoding in Recommendation.,Ruobing Xie|Shaoliang Zhang|Rui Wang 0068|Feng Xia 0006|Leyu Lin
+conf/wsdm/FarnadiTCM18,2018,WSDM,inproceedings,User Profiling through Deep Multimodal Fusion.,Golnoosh Farnadi|Jie Tang 0001|Martine De Cock|Marie-Francine Moens
+conf/wsdm/ChowdharyGVMG23,2023,WSDM,inproceedings,Unsupervised Question Duplicate and Related Questions Detection in e-learning platforms.,Maksimjeet Chowdhary|Sanyam Goyal|Venktesh V|Mukesh K. Mohania|Vikram Goyal
+conf/wsdm/0004MHBML21,2021,WSDM,inproceedings,Shifting Consumption towards Diverse Content on Music Streaming Platforms.,Christian Hansen 0004|Rishabh Mehrotra|Casper Hansen|Brian Brost|Lucas Maystre|Mounia Lalmas
+conf/wsdm/ZhangWH22,2022,WSDM,inproceedings,GraSP: Optimizing Graph-based Nearest Neighbor Search with Subgraph Sampling and Pruning.,Minjia Zhang|Wenhan Wang|Yuxiong He
+conf/wsdm/DuanBZ21,2021,WSDM,inproceedings,Online Experimentation with Surrogate Metrics: Guidelines and a Case Study.,Weitao Duan|Shan Ba|Chunzhe Zhang
+conf/wsdm/ChenYJZ18,2018,WSDM,inproceedings,Improving Negative Sampling for Word Representation using Self-embedded Features.,Long Chen 0008|Fajie Yuan|Joemon M. Jose|Weinan Zhang 0001
+conf/wsdm/HubeF19,2019,WSDM,inproceedings,Neural Based Statement Classification for Biased Language.,Christoph Hube|Besnik Fetahu
+conf/wsdm/SankarZK020,2020,WSDM,inproceedings,Inf-VAE: A Variational Autoencoder Framework to Integrate Homophily and Influence in Diffusion Prediction.,Aravind Sankar|Xinyang Zhang 0002|Adit Krishnan|Jiawei Han 0001
+conf/wsdm/WiSP24,2024,WSDM,inproceedings,Continuous-time Autoencoders for Regular and Irregular Time Series Imputation.,Hyowon Wi|Yehjin Shin|Noseong Park
+conf/wsdm/WangGBMN18,2018,WSDM,inproceedings,Position Bias Estimation for Unbiased Learning to Rank in Personal Search.,Xuanhui Wang|Nadav Golbandi|Michael Bendersky|Donald Metzler|Marc Najork
+conf/wsdm/QianTMC18,2018,WSDM,inproceedings,DSANLS: Accelerating Distributed Nonnegative Matrix Factorization via Sketching.,Yuqiu Qian|Conghui Tan|Nikos Mamoulis|David W. Cheung
+conf/wsdm/HuiYBM18,2018,WSDM,inproceedings,Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval.,Kai Hui 0001|Andrew Yates|Klaus Berberich|Gerard de Melo
+conf/wsdm/GaoW0LF023,2023,WSDM,inproceedings,Alleviating Structural Distribution Shift in Graph Anomaly Detection.,Yuan Gao 0020|Xiang Wang 0010|Xiangnan He 0001|Zhenguang Liu|Huamin Feng|Yongdong Zhang 0001
+conf/wsdm/YangKC022,2022,WSDM,inproceedings,Personalized Information Retrieval for Touristic Attractions in Augmented Reality.,Felix Yang|Saikishore Kalloori|Ribin Chalumattu|Markus Gross 0001
+conf/wsdm/NandanwarMM18,2018,WSDM,inproceedings,Fusing Diversity in Recommendations in Heterogeneous Information Networks.,Sharad Nandanwar|Aayush Moroney|M. Narasimha Murty
+conf/wsdm/TorbatiTW24,2024,WSDM,inproceedings,SIRUP: Search-based Book Recommendation Playground.,Ghazaleh Haratinezhad Torbati|Anna Tigunova|Gerhard Weikum
+conf/wsdm/RenM19,2019,WSDM,inproceedings,Investment Recommendation System for Low-Liquidity Online Peer to Peer Lending (P2PL) Marketplaces.,Ke Ren|Avinash Malik
+conf/wsdm/BruchHBN20,2020,WSDM,inproceedings,A Stochastic Treatment of Learning to Rank Scoring Functions.,Sebastian Bruch 0001|Shuguang Han|Michael Bendersky|Marc Najork
+conf/wsdm/LemmerichS0Z19,2019,WSDM,inproceedings,Why the World Reads Wikipedia: Beyond English Speakers.,Florian Lemmerich|Diego S|Robert West 0001|Leila Zia
+conf/wsdm/LabhishettyZXGS22,2022,WSDM,inproceedings,Differential Query Semantic Analysis: Discovery of Explicit Interpretable Knowledge from E-Com Search Logs.,Sahiti Labhishetty|ChengXiang Zhai|Min Xie 0002|Lin Gong|Rahul Sharnagat|Satya Chembolu
+conf/wsdm/LaiCZCH23,2023,WSDM,inproceedings,Disentangled Negative Sampling for Collaborative Filtering.,Riwei Lai|Li Chen 0009|Yuhan Zhao 0001|Rui Chen 0012|Qilong Han
+conf/wsdm/OosterhuisR21,2021,WSDM,inproceedings,Unifying Online and Counterfactual Learning to Rank: A Novel Counterfactual Estimator that Effectively Utilizes Online Interventions.,Harrie Oosterhuis|Maarten de Rijke
+conf/wsdm/HaddadanMRU21,2021,WSDM,inproceedings,RePBubLik: Reducing Polarized Bubble Radius with Link Insertions.,Shahrzad Haddadan|Cristina Menghini|Matteo Riondato|Eli Upfal
+conf/wsdm/ArefievaESS23,2023,WSDM,inproceedings,Travel Bird: A Personalized Destination Recommender with TourBERT and Airbnb Experiences.,Veronika Arefieva|Roman Egger|Michael Schrefl|Markus Schedl
+conf/wsdm/FerdjaouiAN24,2024,WSDM,inproceedings,WordGraph: A Python Package for Reconstructing Interactive Causal Graphical Models from Text Data.,Amine Ferdjaoui|S|Mohamed Nadif
+conf/wsdm/ChowdhuryCMRW20,2020,WSDM,inproceedings,Illustrate Your Story: Enriching Text with Images.,Sreyasi Nag Chowdhury|William Cheng|Gerard de Melo|Simon Razniewski|Gerhard Weikum
+conf/wsdm/LiSCZLL24,2024,WSDM,inproceedings,CDRNP: Cross-Domain Recommendation to Cold-Start Users via Neural Process.,Xiaodong Li 0012|Jiawei Sheng|Jiangxia Cao|Wenyuan Zhang 0002|Quangang Li|Tingwen Liu
+conf/wsdm/BingZD23,2023,WSDM,inproceedings,Cognition-aware Knowledge Graph Reasoning for Explainable Recommendation.,Qingyu Bing|Qiannan Zhu|Zhicheng Dou
+conf/wsdm/KongRX20,2020,WSDM,inproceedings,Modeling Information Cascades with Self-exciting Processes via Generalized Epidemic Models.,Quyu Kong|Marian-Andrei Rizoiu|Lexing Xie
+conf/wsdm/WangZW24,2024,WSDM,inproceedings,Distribution Consistency based Self-Training for Graph Neural Networks with Sparse Labels.,Fali Wang|Tianxiang Zhao 0001|Suhang Wang
+conf/wsdm/LahotiGG18,2018,WSDM,inproceedings,Joint Non-negative Matrix Factorization for Learning Ideological Leaning on Twitter.,Preethi Lahoti|Kiran Garimella 0001|Aristides Gionis
+conf/wsdm/CaoL0GL023,2023,WSDM,inproceedings,Towards Universal Cross-Domain Recommendation.,Jiangxia Cao|Shaoshuai Li|Bowen Yu 0002|Xiaobo Guo|Tingwen Liu|Bin Wang 0004
+conf/wsdm/EickhoffKW20,2020,WSDM,inproceedings,Overview of the Health Search and Data Mining (HSDM 2020) Workshop.,Carsten Eickhoff|Yubin Kim 0001|Ryen W. White
+conf/wsdm/ChaudhariBT18,2018,WSDM,inproceedings,Putting Data in the Driver's Seat: Optimizing Earnings for On-Demand Ride-Hailing.,Harshal A. Chaudhari|John W. Byers|Evimaria Terzi
+conf/wsdm/FettalLN23,2023,WSDM,inproceedings,Simultaneous Linear Multi-view Attributed Graph Representation Learning and Clustering.,Chakib Fettal|Lazhar Labiod|Mohamed Nadif
+conf/wsdm/XieXCS21,2021,WSDM,inproceedings,How to Measure Your App: A Couple of Pitfalls and Remedies in Measuring App Performance in Online Controlled Experiments.,Yuxiang Xie|Meng Xu 0015|Evan Chow|Xiaolin Shi
+conf/wsdm/FanJS23,2023,WSDM,inproceedings,Metropolitan-scale Mobility Digital Twin.,Zipei Fan|Renhe Jiang|Ryosuke Shibasaki
+conf/wsdm/XuXQ21,2021,WSDM,inproceedings,Privacy Monitoring Service for Conversations.,Qiongkai Xu|Chenchen Xu|Lizhen Qu
+conf/wsdm/LiuBC19,2019,WSDM,inproceedings,Sampling Methods for Counting Temporal Motifs.,Paul Liu 0001|Austin R. Benson|Moses Charikar
+conf/wsdm/LalmasH18,2018,WSDM,inproceedings,"Tutorial on Metrics of User Engagement: Applications to News, Search and E-Commerce.",Mounia Lalmas|Liangjie Hong
+conf/wsdm/0001H0VO24,2024,WSDM,inproceedings,Unbiased Learning to Rank: On Recent Advances and Practical Applications.,Shashank Gupta 0001|Philipp Hager 0001|Jin Huang 0010|Ali Vardasbi|Harrie Oosterhuis
+conf/wsdm/XiaoW22,2022,WSDM,inproceedings,Towards Unbiased and Robust Causal Ranking for Recommender Systems.,Teng Xiao|Suhang Wang
+conf/wsdm/KenterBGDRM18,2018,WSDM,inproceedings,Neural Networks for Information Retrieval.,Tom Kenter|Alexey Borisov|Christophe Van Gysel|Mostafa Dehghani 0001|Maarten de Rijke|Bhaskar Mitra 0001
+conf/wsdm/TuckerJ23,2023,WSDM,inproceedings,Variance-Minimizing Augmentation Logging for Counterfactual Evaluation in Contextual Bandits.,Aaron David Tucker|Thorsten Joachims
+conf/wsdm/TangLSYMW20,2020,WSDM,inproceedings,Transferring Robustness for Graph Neural Network Against Poisoning Attacks.,Xianfeng Tang|Yandong Li|Yiwei Sun|Huaxiu Yao|Prasenjit Mitra|Suhang Wang
+conf/wsdm/ParkCBPK22,2022,WSDM,inproceedings,Reinforcement Learning over Sentiment-Augmented Knowledge Graphs towards Accurate and Explainable Recommendation.,Sung-Jun Park|Dong-Kyu Chae|Hong-Kyun Bae|Sumin Park|Sang-Wook Kim
+conf/wsdm/GamzuLS18,2018,WSDM,inproceedings,Unsubscription: A Simple Way to Ease Overload in Email.,Iftah Gamzu|Liane Lewin-Eytan|Natalia Silberstein
+conf/wsdm/Zhu0ZZWC21,2021,WSDM,inproceedings,Popularity-Opportunity Bias in Collaborative Filtering.,Ziwei Zhu 0001|Yun He 0001|Xing Zhao 0003|Yin Zhang 0011|Jianling Wang|James Caverlee
+conf/wsdm/MaCP022,2022,WSDM,inproceedings,VAE++: Variational AutoEncoder for Heterogeneous One-Class Collaborative Filtering.,Wanqi Ma|Xiancong Chen|Weike Pan|Zhong Ming 0001
+conf/wsdm/ParkCYK23,2023,WSDM,inproceedings,Never Too Late to Learn: Regularizing Gender Bias in Coreference Resolution.,Sunyoung Park|Kyuri Choi|Haeun Yu|Youngjoong Ko
+conf/wsdm/YesilerMSG22,2022,WSDM,inproceedings,Assessing Algorithmic Biases for Musical Version Identification.,Furkan Yesiler|Marius Miron|Joan Serr|Emilia G
+conf/wsdm/0008T20,2020,WSDM,inproceedings,DDTCDR: Deep Dual Transfer Cross Domain Recommendation.,Pan Li 0008|Alexander Tuzhilin
+conf/wsdm/RenRS0YR20,2020,WSDM,inproceedings,NLP4REC: The WSDM 2020 Workshop on Natural Language Processing for Recommendations.,Pengjie Ren|Zhaochun Ren|Fei Sun 0001|Xiangnan He 0001|Dawei Yin 0001|Maarten de Rijke
+conf/wsdm/Cruz-PerezM24,2024,WSDM,inproceedings,Automated Topic Generation for the Mexican Platform for Access to Government Public Information During the Period 2003-2020.,Hermelando Cruz-P|Alejandro Molina-Villegas
+conf/wsdm/MehrotraAY18,2018,WSDM,inproceedings,LearnIR: WSDM 2018 Workshop on Learning from User Interactions.,Rishabh Mehrotra|Ahmed Hassan Awadallah|Emine Yilmaz
+conf/wsdm/AlipourfardFL18,2018,WSDM,inproceedings,Can you Trust the Trend?: Discovering Simpson's Paradoxes in Social Data.,Nazanin Alipourfard|Peter G. Fennell|Kristina Lerman
+conf/wsdm/GrubenmannCL20,2020,WSDM,inproceedings,TSA: A Truthful Mechanism for Social Advertising.,Tobias Grubenmann|Reynold C. K. Cheng|Laks V. S. Lakshmanan
+conf/wsdm/ZhaoX0CDW23,2023,WSDM,inproceedings,Separating Examination and Trust Bias from Click Predictions for Unbiased Relevance Ranking.,Haiyuan Zhao|Jun Xu 0001|Xiao Zhang 0034|Guohao Cai|Zhenhua Dong|Ji-Rong Wen
+conf/wsdm/ZhanM0GZM22,2022,WSDM,inproceedings,Learning Discrete Representations via Constrained Clustering for Effective and Efficient Dense Retrieval.,Jingtao Zhan|Jiaxin Mao|Yiqun Liu 0001|Jiafeng Guo|Min Zhang 0006|Shaoping Ma
+conf/wsdm/LiUH21,2021,WSDM,inproceedings,Leave No User Behind: Towards Improving the Utility of Recommender Systems for Non-mainstream Users.,Roger Zhe Li|Juli|Alan Hanjalic
+conf/wsdm/YangSGLJ20,2020,WSDM,inproceedings,Model Compression with Two-stage Multi-teacher Knowledge Distillation for Web Question Answering System.,Ze Yang 0005|Linjun Shou|Ming Gong 0001|Wutao Lin|Daxin Jiang
+conf/wsdm/ZhouWLW0L23,2023,WSDM,inproceedings,Inductive Graph Transformer for Delivery Time Estimation.,Xin Zhou 0008|Jinglong Wang|Yong Liu 0020|Xingyu Wu|Zhiqi Shen 0001|Cyril Leung
+conf/wsdm/Qu0NY24,2024,WSDM,inproceedings,Budgeted Embedding Table For Recommender Systems.,Yunke Qu|Tong Chen 0005|Quoc Viet Hung Nguyen|Hongzhi Yin
+conf/wsdm/LinBW22,2022,WSDM,inproceedings,Graph Embedding with Hierarchical Attentive Membership.,Lu Lin 0001|Ethan Blaser|Hongning Wang
+conf/wsdm/NakovMA22,2022,WSDM,inproceedings,"Fact-Checking, Fake News, Propaganda, Media Bias, and the COVID-19 Infodemic.",Preslav Nakov|Giovanni Da San Martino|Firoj Alam
+conf/wsdm/FuXZZ21,2021,WSDM,inproceedings,WSDM 2021 Tutorial on Conversational Recommendation Systems.,Zuohui Fu|Yikun Xian|Yongfeng Zhang 0003|Yi Zhang 0001
+conf/wsdm/SekulicAC22,2022,WSDM,inproceedings,Evaluating Mixed-initiative Conversational Search Systems via User Simulation.,Ivan Sekulic|Mohammad Aliannejadi|Fabio Crestani
+conf/wsdm/YangTNPF23,2023,WSDM,inproceedings,"""Just To See You Smile"": SMILEY, a Voice-Guided GUY GAN.",Qi Yang 0005|Christos Tzelepis|Sergey I. Nikolenko|Ioannis Patras|Aleksandr Farseev
+conf/wsdm/RoblesMPPM24,2024,WSDM,inproceedings,Preserving Heritage: Developing a Translation Tool for Indigenous Dialects.,Melissa Robles|Cristian A. Mart|Juan Camilo Prieto|Sara Palacios|Rub
+conf/wsdm/CohenSJA21,2021,WSDM,inproceedings,A Black-Box Attack Model for Visually-Aware Recommender Systems.,Rami Cohen|Oren Sar Shalom|Dietmar Jannach|Amihood Amir
+conf/wsdm/ZhangPZBC19,2019,WSDM,inproceedings,Interaction Embeddings for Prediction and Explanation in Knowledge Graphs.,Wen Zhang 0015|Bibek Paudel|Wei Zhang 0127|Abraham Bernstein|Huajun Chen
+conf/wsdm/LiuGLTYH20,2020,WSDM,inproceedings,End-to-End Deep Reinforcement Learning based Recommendation with Supervised Embedding.,Feng Liu 0034|Huifeng Guo|Xutao Li 0003|Ruiming Tang|Yunming Ye|Xiuqiang He 0001
+conf/wsdm/HangDZSWZ22,2022,WSDM,inproceedings,Outside In: Market-aware Heterogeneous Graph Neural Network for Employee Turnover Prediction.,Jinquan Hang|Zheng Dong|Hongke Zhao|Xin Song|Peng Wang 0173|Hengshu Zhu
+conf/wsdm/RegevJ024,2024,WSDM,inproceedings,Future Timelines: Extraction and Visualization of Future-related Content From News Articles.,Juwal Regev|Adam Jatowt|Michael F
+conf/wsdm/WangJ23,2023,WSDM,inproceedings,Uncertainty Quantification for Fairness in Two-Stage Recommender Systems.,Lequn Wang|Thorsten Joachims
+conf/wsdm/FarfadeVCM24,2024,WSDM,inproceedings,Scaling Use-case Based Shopping using LLMs.,Sachin Farfade|Sachin Vernekar|Vineet Chaoji|Rajdeep Mukherjee
+conf/wsdm/TruongSL21,2021,WSDM,inproceedings,Bilateral Variational Autoencoder for Collaborative Filtering.,Quoc-Tuan Truong|Aghiles Salah|Hady W. Lauw
+conf/wsdm/BurySS18,2018,WSDM,inproceedings,Sketch 'Em All: Fast Approximate Similarity Search for Dynamic Data Streams.,Marc Bury|Chris Schwiegelshohn|Mara Sorella
+conf/wsdm/LiuCS024,2024,WSDM,inproceedings,ONCE: Boosting Content-based Recommendation with Both Open- and Closed-source Large Language Models.,Qijiong Liu|Nuo Chen 0004|Tetsuya Sakai|Xiao-Ming Wu 0003
+conf/wsdm/ZhaoZZLZ22,2022,WSDM,inproceedings,Joint Learning of E-commerce Search and Recommendation with a Unified Graph Neural Network.,Kai Zhao 0009|Yukun Zheng|Tao Zhuang|Xiang Li 0107|Xiaoyi Zeng
+conf/wsdm/KimKO19,2019,WSDM,inproceedings,Homogeneity-Based Transmissive Process to Model True and False News in Social Networks.,Jooyeon Kim|Dongkwan Kim 0001|Alice Oh
+conf/wsdm/RageshSIBL21,2021,WSDM,inproceedings,HeteGCN: Heterogeneous Graph Convolutional Networks for Text Classification.,Rahul Ragesh|Sundararajan Sellamanickam|Arun Iyer|Ramakrishna Bairi|Vijay Lingam
+conf/wsdm/Deng0D22,2022,WSDM,inproceedings,Improving Personalized Search with Dual-Feedback Network.,Chenlong Deng|Yujia Zhou 0002|Zhicheng Dou
+conf/wsdm/Chen0SXY21,2021,WSDM,inproceedings,Temporal Meta-path Guided Explainable Recommendation.,Hongxu Chen 0002|Yicong Li 0001|Xiangguo Sun|Guandong Xu|Hongzhi Yin
+conf/wsdm/LiuLSYZ23,2023,WSDM,inproceedings,Multimodal Pre-Training with Self-Distillation for Product Understanding in E-Commerce.,Shilei Liu|Lin Li|Jun Song|Yonghua Yang|Xiaoyi Zeng
+conf/wsdm/ShethMKC024,2024,WSDM,inproceedings,Causality Guided Disentanglement for Cross-Platform Hate Speech Detection.,Paras Sheth|Raha Moraffah|Tharindu S. Kumarage|Aman Chadha|Huan Liu 0001
+conf/wsdm/SunLLRGN20,2020,WSDM,inproceedings,LARA: Attribute-to-feature Adversarial Learning for New-item Recommendation.,Changfeng Sun|Han Liu|Meng Liu 0006|Zhaochun Ren|Tian Gan 0002|Liqiang Nie
+conf/wsdm/AfzaliDB023,2023,WSDM,inproceedings,UserSimCRS: A User Simulation Toolkit for Evaluating Conversational Recommender Systems.,Jafar Afzali|Aleksander Mark Drzewiecki|Krisztian Balog|Shuo Zhang 0006
+conf/wsdm/DongZHTZZ23,2023,WSDM,inproceedings,Active Ensemble Learning for Knowledge Graph Error Detection.,Junnan Dong|Qinggang Zhang|Xiao Huang 0001|Qiaoyu Tan|Daochen Zha|Zihao Zhao
+conf/wsdm/WanNMM20,2020,WSDM,inproceedings,Addressing Marketing Bias in Product Recommendations.,Mengting Wan|Jianmo Ni|Rishabh Misra|Julian J. McAuley
+conf/wsdm/JuYQSSZ22,2022,WSDM,inproceedings,KGNN: Harnessing Kernel-based Networks for Semi-supervised Graph Classification.,Wei Ju 0001|Junwei Yang|Meng Qu|Weiping Song|Jianhao Shen|Ming Zhang 0004
+conf/wsdm/DasSVWX24,2024,WSDM,inproceedings,Applications of LLMs in E-Commerce Search and Product Knowledge Graph: The DoorDash Case Study.,Sudeep Das|Raghav Saboo|Chaitanya S. K. Vadrevu|Bruce Wang|Steven Xu
+conf/wsdm/Fang00L0C23,2023,WSDM,inproceedings,Cooperative Explanations of Graph Neural Networks.,Junfeng Fang|Xiang Wang 0010|An Zhang 0003|Zemin Liu|Xiangnan He 0001|Tat-Seng Chua
+conf/wsdm/ChenLJJDH24,2024,WSDM,inproceedings,Towards Mitigating Dimensional Collapse of Representations in Collaborative Filtering.,Huiyuan Chen|Vivian Lai|Hongye Jin|Zhimeng Jiang|Mahashweta Das|Xia Hu 0001
+conf/wsdm/0022SCZ21,2021,WSDM,inproceedings,Personalized Food Recommendation as Constrained Question Answering over a Large-scale Food Knowledge Graph.,Yu Chen 0022|Ananya Subburathinam|Ching-Hua Chen|Mohammed J. Zaki
+conf/wsdm/LentiMM24,2024,WSDM,inproceedings,Likelihood-Based Methods Improve Parameter Estimation in Opinion Dynamics Models.,Jacopo Lenti|Corrado Monti|Gianmarco De Francisci Morales
+conf/wsdm/EbrahimiVPN18,2018,WSDM,inproceedings,Predicting Audio Advertisement Quality.,Samaneh Ebrahimi 0001|Hossein Vahabi|Matthew Prockup|Oriol Nieto
+conf/wsdm/SagtaniJMJ24,2024,WSDM,inproceedings,Ad-load Balancing via Off-policy Learning in a Content Marketplace.,Hitesh Sagtani|Madan Gopal Jhawar|Rishabh Mehrotra|Olivier Jeunen
+conf/wsdm/TepperHBRL18,2018,WSDM,inproceedings,Collabot: Personalized Group Chat Summarization.,Naama Tepper|Anat Hashavit|Maya Barnea|Inbal Ronen|Lior Leiba
+conf/wsdm/ShishkinBFDG20,2020,WSDM,inproceedings,Text Recognition Using Anonymous CAPTCHA Answers.,Alexander Shishkin|Anastasia A. Bezzubtseva|Valentina Fedorova|Alexey Drutsa|Gleb Gusev
+conf/wsdm/SariyuceP18,2018,WSDM,inproceedings,Peeling Bipartite Networks for Dense Subgraph Discovery.,Ahmet Erdem Sariy|Ali Pinar
+conf/wsdm/ShinKSS22,2022,WSDM,inproceedings,"Finding a Concise, Precise, and Exhaustive Set of Near Bi-Cliques in Dynamic Graphs.",Hyeonjeong Shin|Taehyung Kwon|Neil Shah|Kijung Shin
+conf/wsdm/YinBL19,2019,WSDM,inproceedings,The Local Closure Coefficient: A New Perspective On Network Clustering.,Hao Yin|Austin R. Benson|Jure Leskovec
+conf/wsdm/KicimanS19,2019,WSDM,inproceedings,Causal Inference and Counterfactual Reasoning (3hr Tutorial).,Emre Kiciman|Amit Sharma 0007
+conf/wsdm/LiL020,2020,WSDM,inproceedings,Incremental Filter Pruning via Random Walk for Accelerating Deep Convolutional Neural Networks.,Qinghua Li|Cuiping Li 0001|Hong Chen 0001
+conf/wsdm/LiYM20,2020,WSDM,inproceedings,Learning with Small Data.,Zhenhui Li|Huaxiu Yao|Fenglong Ma
+conf/wsdm/LuoHP23,2023,WSDM,inproceedings,Graph Sequential Neural ODE Process for Link Prediction on Dynamic and Sparse Graphs.,Linhao Luo|Gholamreza Haffari|Shirui Pan
+conf/wsdm/ZhangLLXZ22,2022,WSDM,inproceedings,Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling.,Qianqian Zhang|Xinru Liao|Quan Liu 0008|Jian Xu 0015|Bo Zheng 0007
+conf/wsdm/HibshmanGSW21,2021,WSDM,inproceedings,Joint Subgraph-to-Subgraph Transitions: Generalizing Triadic Closure for Powerful and Interpretable Graph Modeling.,Justus Isaiah Hibshman|Daniel Gonzalez 0001|Satyaki Sikdar|Tim Weninger
+conf/wsdm/BayirXZS19,2019,WSDM,inproceedings,Genie: An Open Box Counterfactual Policy Estimator for Optimizing Sponsored Search Marketplace.,Murat Ali Bayir|Mingsen Xu|Yaojia Zhu|Yifan Shi
+conf/wsdm/ZhaoLZW23,2023,WSDM,inproceedings,Towards Faithful and Consistent Explanations for Graph Neural Networks.,Tianxiang Zhao 0001|Dongsheng Luo|Xiang Zhang 0001|Suhang Wang
+conf/wsdm/DuY00023,2023,WSDM,inproceedings,IDNP: Interest Dynamics Modeling Using Generative Neural Processes for Sequential Recommendation.,Jing Du 0003|Zesheng Ye|Bin Guo 0001|Zhiwen Yu 0001|Lina Yao 0001
+conf/wsdm/JainBCV19,2019,WSDM,inproceedings,Slice: Scalable Linear Extreme Classifiers Trained on 100 Million Labels for Related Searches.,Himanshu Jain|Venkatesh Balasubramanian|Bhanu Chunduri|Manik Varma
+conf/wsdm/TruongL23,2023,WSDM,inproceedings,Concept-Oriented Transformers for Visual Sentiment Analysis.,Quoc-Tuan Truong|Hady W. Lauw
+conf/wsdm/LiaoYS23,2023,WSDM,inproceedings,Proactive Conversational Agents.,Lizi Liao|Grace Hui Yang|Chirag Shah 0001
+conf/wsdm/Zhou0VET22,2022,WSDM,inproceedings,Learning Transferable Node Representations for Attribute Extraction from Web Documents.,Yichao Zhou 0001|Ying Sheng 0002|Nguyen Vo|Nick Edmonds|Sandeep Tata
+conf/wsdm/ManousakasM21,2021,WSDM,inproceedings,β-Cores: Robust Large-Scale Bayesian Data Summarization in the Presence of Outliers.,Dionysis Manousakas|Cecilia Mascolo
+conf/wsdm/SankarWGZY20,2020,WSDM,inproceedings,DySAT: Deep Neural Representation Learning on Dynamic Graphs via Self-Attention Networks.,Aravind Sankar|Yanhong Wu|Liang Gou|Wei Zhang 0189|Hao Yang 0007
+conf/wsdm/KeCW22,2022,WSDM,inproceedings,An Unsupervised Detection Framework for Chinese Jargons in the Darknet.,Liang Ke|Xinyu Chen|Haizhou Wang 0001
+conf/wsdm/AzarbonyadSW19,2019,WSDM,inproceedings,Domain Adaptation for Commitment Detection in Email.,Hosein Azarbonyad|Robert Sim|Ryen W. White
+conf/wsdm/Jin0L024,2024,WSDM,inproceedings,Bridging Text Data and Graph Data: Towards Semantics and Structure-aware Knowledge Discovery.,Bowen Jin|Yu Zhang 0044|Sha Li|Jiawei Han 0001
+conf/wsdm/KoopmanZ19,2019,WSDM,inproceedings,WSDM 2019 Tutorial on Health Search (HS2019): A Full-Day from Consumers to Clinicians.,Bevan Koopman|Guido Zuccon
+conf/wsdm/UpadhyayDPG19,2019,WSDM,inproceedings,On the Complexity of Opinions and Online Discussions.,Utkarsh Upadhyay|Abir De|Aasish Pappu|Manuel Gomez-Rodriguez
+conf/wsdm/ShuWL19,2019,WSDM,inproceedings,Beyond News Contents: The Role of Social Context for Fake News Detection.,Kai Shu|Suhang Wang|Huan Liu 0001
+conf/wsdm/ChengG022,2022,WSDM,inproceedings,Estimating Causal Effects of Multi-Aspect Online Reviews with Multi-Modal Proxies.,Lu Cheng 0001|Ruocheng Guo|Huan Liu 0001
+conf/wsdm/LuoZACY023,2023,WSDM,inproceedings,Model-based Unbiased Learning to Rank.,Dan Luo 0004|Lixin Zou|Qingyao Ai|Zhiyu Chen 0001|Dawei Yin 0001|Brian D. Davison 0001
+conf/wsdm/LeL21,2021,WSDM,inproceedings,Explainable Recommendation with Comparative Constraints on Product Aspects.,Trung-Hoang Le|Hady W. Lauw
+conf/wsdm/BeigiGNZ019,2019,WSDM,inproceedings,Protecting User Privacy: An Approach for Untraceable Web Browsing History and Unambiguous User Profiles.,Ghazaleh Beigi|Ruocheng Guo|Alexander Nou|Yanchao Zhang|Huan Liu 0001
+conf/wsdm/0003S20,2020,WSDM,inproceedings,The Power of Pivoting for Exact Clique Counting.,Shweta Jain 0003|C. Seshadhri 0001
+conf/wsdm/ZhaoZF21,2021,WSDM,inproceedings,Towards Scalable Spectral Embedding and Data Visualization via Spectral Coarsening.,Zhiqiang Zhao|Ying Zhang|Zhuo Feng
+conf/wsdm/MaGZFJC21,2021,WSDM,inproceedings,PROP: Pre-training with Representative Words Prediction for Ad-hoc Retrieval.,Xinyu Ma|Jiafeng Guo|Ruqing Zhang 0001|Yixing Fan|Xiang Ji|Xueqi Cheng
+conf/wsdm/SchedlMSHL24,2024,WSDM,inproceedings,Psychology-informed Information Access Systems Workshop.,Markus Schedl|Marta Moscati|Bruno Sguerra|Romain Hennequin|Elisabeth Lex
+conf/wsdm/GangulyVSPJ21,2021,WSDM,inproceedings,Overview of the Supporting and Understanding of Conversational Dialogues (SUD) Workshop.,Debasis Ganguly|Manisha Verma|Procheta Sen|Dipasree Pal|Gareth J. F. Jones
+conf/wsdm/GuDWY20,2020,WSDM,inproceedings,Hierarchical User Profiling for E-commerce Recommender Systems.,Yulong Gu|Zhuoye Ding|Shuaiqiang Wang|Dawei Yin 0001
+conf/wsdm/JinDW0LT21,2021,WSDM,inproceedings,Node Similarity Preserving Graph Convolutional Networks.,Wei Jin 0009|Tyler Derr|Yiqi Wang 0001|Yao Ma 0001|Zitao Liu 0001|Jiliang Tang
+conf/wsdm/FairsteinHLL22,2022,WSDM,inproceedings,External Evaluation of Ranking Models under Extreme Position-Bias.,Yaron Fairstein|Elad Haramaty|Arnon Lazerson|Liane Lewin-Eytan
+conf/wsdm/YangLZTC24,2024,WSDM,inproceedings,GAP: A Grammar and Position-Aware Framework for Efficient Recognition of Multi-Line Mathematical Formulas.,Zhe Yang|Qi Liu 0003|Kai Zhang 0038|Shiwei Tong|Enhong Chen
+conf/wsdm/HuangKMRS23,2023,WSDM,inproceedings,Global Counterfactual Explainer for Graph Neural Networks.,Zexi Huang|Mert Kosan|Sourav Medya|Sayan Ranu|Ambuj K. Singh
+conf/wsdm/WangLC24,2024,WSDM,inproceedings,Fresh Content Recommendation at Scale: A Multi-funnel Solution and the Potential of LLMs.,Jianling Wang|Haokai Lu|Minmin Chen
+conf/wsdm/HuangRZHWD19,2019,WSDM,inproceedings,Taxonomy-Aware Multi-Hop Reasoning Networks for Sequential Recommendation.,Jin Huang 0010|Zhaochun Ren|Wayne Xin Zhao|Gaole He|Ji-Rong Wen|Daxiang Dong
+conf/wsdm/ZhouZZ19,2019,WSDM,inproceedings,The 1st International Workshop on Context-Aware Recommendation Systems with Big Data Analytics (CARS-BDA).,Xiangmin Zhou|Ji Zhang 0001|Yanchun Zhang
+conf/wsdm/ZhuLCZ24,2024,WSDM,inproceedings,The Devil is in the Data: Learning Fair Graph Neural Networks via Partial Knowledge Distillation.,Yuchang Zhu|Jintang Li|Liang Chen 0001|Zibin Zheng
+conf/wsdm/WangHLS23,2023,WSDM,inproceedings,Graph Explicit Neural Networks: Explicitly Encoding Graphs for Efficient and Accurate Inference.,Yiwei Wang 0001|Bryan Hooi|Yozen Liu|Neil Shah
+conf/wsdm/XuRKKA20,2020,WSDM,inproceedings,Product Knowledge Graph Embedding for E-commerce.,Da Xu|Chuanwei Ruan|Evren K|Sushant Kumar|Kannan Achan
+conf/wsdm/PangAX21,2021,WSDM,inproceedings,Beyond Probability Ranking Principle: Modeling the Dependencies among Documents.,Liang Pang 0001|Qingyao Ai|Jun Xu 0001
+conf/wsdm/KimKSK24,2024,WSDM,inproceedings,MONET: Modality-Embracing Graph Convolutional Network and Target-Aware Attention for Multimedia Recommendation.,Yungi Kim|Taeri Kim 0001|Won-Yong Shin|Sang-Wook Kim
+conf/wsdm/ChakrabortyRMD23,2023,WSDM,inproceedings,Learning and Maximizing Influence in Social Networks Under Capacity Constraints.,Pritish Chakraborty|Sayan Ranu|Krishna Sri Ipsit Mantri|Abir De
+conf/wsdm/YongDS23,2023,WSDM,inproceedings,DOCoR: Document-level OpenIE with Coreference Resolution.,Shan Jie Yong|Kuicai Dong|Aixin Sun
+conf/wsdm/QuT018,2018,WSDM,inproceedings,Curriculum Learning for Heterogeneous Star Network Embedding via Deep Reinforcement Learning.,Meng Qu|Jian Tang 0005|Jiawei Han 0001
+conf/wsdm/LiuZSW023,2023,WSDM,inproceedings,WSDM 2023 Workshop on Interactive Recommender Systems.,Yong Liu 0020|Hao Zhang 0048|Zhu Sun 0001|Shoujin Wang|Jie Zhang 0002
+conf/wsdm/DeldariSMKSM24,2024,WSDM,inproceedings,CroSSL: Cross-modal Self-Supervised Learning for Time-series through Latent Masking.,Shohreh Deldari|Dimitris Spathis|Mohammad Malekzadeh|Fahim Kawsar|Flora D. Salim|Akhil Mathur
+conf/wsdm/ZhangW023,2023,WSDM,inproceedings,Disentangled Representation for Diversified Recommendations.,Xiaoying Zhang|Hongning Wang|Hang Li 0001
+conf/wsdm/ZhengMLSZM20,2020,WSDM,inproceedings,Investigating Examination Behavior in Mobile Search.,Yukun Zheng|Jiaxin Mao|Yiqun Liu 0001|Mark Sanderson|Min Zhang 0006|Shaoping Ma
+conf/wsdm/DrutsaFUMZB20,2020,WSDM,inproceedings,"Practice of Efficient Data Collection via Crowdsourcing: Aggregation, Incremental Relabelling, and Pricing.",Alexey Drutsa|Valentina Fedorova|Dmitry Ustalov|Olga Megorskaya|Evfrosiniya Zerminova|Daria Baidakova
+conf/wsdm/ShenCCZX22,2022,WSDM,inproceedings,Diversified Query Generation Guided by Knowledge Graph.,Xinyao Shen|Jiangjie Chen|Jiaze Chen|Chun Zeng|Yanghua Xiao
+conf/wsdm/ChenZWLX24,2024,WSDM,inproceedings,TemporalMed: Advancing Medical Dialogues with Time-Aware Responses in Large Language Models.,Yuyan Chen|Jin Zhao 0004|Zhihao Wen|Zhixu Li|Yanghua Xiao
+conf/wsdm/ChenWQM20,2020,WSDM,inproceedings,Parameter Tuning in Personal Search Systems.,Suming J. Chen|Xuanhui Wang|Zhen Qin 0001|Donald Metzler
+conf/wsdm/ChowdhuryTFW18,2018,WSDM,inproceedings,VISIR: Visual and Semantic Image Label Refinement.,Sreyasi Nag Chowdhury|Niket Tandon|Hakan Ferhatosmanoglu|Gerhard Weikum
+conf/wsdm/Clarke0A23,2023,WSDM,inproceedings,Preference-Based Offline Evaluation.,Charles L. A. Clarke|Fernando Diaz 0001|Negar Arabzadeh
+conf/wsdm/WangZHXGL18,2018,WSDM,inproceedings,SHINE: Signed Heterogeneous Information Network Embedding for Sentiment Link Prediction.,Hongwei Wang 0004|Fuzheng Zhang|Min Hou 0004|Xing Xie 0001|Minyi Guo|Qi Liu 0003
+conf/wsdm/LiouCTHC21,2021,WSDM,inproceedings,FinSense: An Assistant System for Financial Journalists and Investors.,Yi-Ting Liou|Chung-Chi Chen 0001|Tsun-Hsien Tang|Hen-Hsen Huang|Hsin-Hsi Chen
+conf/wsdm/KlettiRL22,2022,WSDM,inproceedings,Introducing the Expohedron for Efficient Pareto-optimal Fairness-Utility Amortizations in Repeated Rankings.,Till Kletti|Jean-Michel Renders|Patrick Loiseau
+conf/wsdm/RakeshWSL19,2019,WSDM,inproceedings,Linked Variational AutoEncoders for Inferring Substitutable and Supplementary Items.,Vineeth Rakesh|Suhang Wang|Kai Shu|Huan Liu 0001
+conf/wsdm/ShuWTWL18,2018,WSDM,inproceedings,CrossFire: Cross Media Joint Friend and Item Recommendations.,Kai Shu|Suhang Wang|Jiliang Tang|Yilin Wang 0002|Huan Liu 0001
+conf/wsdm/Xie0YZDH24,2024,WSDM,inproceedings,Making Small Language Models Better Multi-task Learners with Mixture-of-Task-Adapters.,Yukang Xie|Chengyu Wang 0001|Junbing Yan|Jiyong Zhou|Feiqi Deng|Jun Huang 0007
+conf/wsdm/Vedula021,2021,WSDM,inproceedings,FACE-KEG: Fact Checking Explained using KnowledgE Graphs.,Nikhita Vedula|Srinivasan Parthasarathy 0001
+conf/wsdm/ParkLMCFD22,2022,WSDM,inproceedings,EvoKG: Jointly Modeling Event Time and Network Structure for Reasoning over Temporal Knowledge Graphs.,Namyong Park 0001|Fuchen Liu|Purvanshi Mehta|Dana Cristofor|Christos Faloutsos|Yuxiao Dong
+conf/wsdm/Derr0RSP23,2023,WSDM,inproceedings,The 3rd International Workshop on Machine Learning on Graphs (MLoG).,Tyler Derr|Yao Ma 0001|Benedek Rozemberczki|Neil Shah|Shirui Pan
+conf/wsdm/PrabhuKGV20,2020,WSDM,inproceedings,Extreme Regression for Dynamic Search Advertising.,Yashoteja Prabhu|Aditya Kusupati|Nilesh Gupta|Manik Varma
+conf/wsdm/GomezC24,2024,WSDM,inproceedings,Framework for Bias Detection in Machine Learning Models: A Fairness Approach.,Alveiro Alonso Rosado Gomez|Maritza Liliana Calder
+conf/wsdm/JagermanKPQBN21,2021,WSDM,inproceedings,Improving Cloud Storage Search with User Activity.,Rolf Jagerman|Weize Kong|Rama Kumar Pasumarthi|Zhen Qin 0001|Michael Bendersky|Marc Najork
+conf/wsdm/Jhaveri0V19,2019,WSDM,inproceedings,clstk: The Cross-Lingual Summarization Tool-Kit.,Nisarg Jhaveri|Manish Gupta 0001|Vasudeva Varma
+conf/wsdm/SpitzAG19,2019,WSDM,inproceedings,TopExNet: Entity-Centric Network Topic Exploration in News Streams.,Andreas Spitz|Satya Almasian|Michael Gertz 0001
+conf/wsdm/StamenkovicKAXK22,2022,WSDM,inproceedings,Choosing the Best of Both Worlds: Diverse and Novel Recommendations through Multi-Objective Reinforcement Learning.,Dusan Stamenkovic|Alexandros Karatzoglou|Ioannis Arapakis|Xin Xin 0003|Kleomenis Katevas
+conf/wsdm/WangLHCCH20,2020,WSDM,inproceedings,Time to Shop for Valentine's Day: Shopping Occasions and Sequential Recommendation in E-commerce.,Jianling Wang|Raphael Louca|Diane Hu|Caitlin Cellier|James Caverlee|Liangjie Hong
+conf/wsdm/BhallaLM23,2023,WSDM,inproceedings,Local Edge Dynamics and Opinion Polarization.,Nikita Bhalla|Adam Lechowicz|Cameron Musco
+conf/wsdm/YuPXZ023,2023,WSDM,inproceedings,Web of Conferences: A Conference Knowledge Graph.,Shuo Yu 0001|Ciyuan Peng|Chengchuan Xu|Chen Zhang 0032|Feng Xia 0001
+conf/wsdm/FlaggFMM21,2021,WSDM,inproceedings,Real-time Streaming of Gait Assessment for Parkinson's Disease.,Cristopher Flagg|Ophir Frieder|Sean MacAvaney|Gholam Motamedi
+conf/wsdm/KornilovaB21,2021,WSDM,inproceedings,Mining the Stars: Learning Quality Ratings with User-facing Explanations for Vacation Rentals.,Anastasiia Kornilova|Lucas Bernardi
+conf/wsdm/XuRCKKA20,2020,WSDM,inproceedings,Knowledge-aware Complementary Product Representation Learning.,Da Xu|Chuanwei Ruan|Jason H. D. Cho|Evren K|Sushant Kumar|Kannan Achan
+conf/wsdm/YuanKAJ019,2019,WSDM,inproceedings,A Simple Convolutional Generative Network for Next Item Recommendation.,Fajie Yuan|Alexandros Karatzoglou|Ioannis Arapakis|Joemon M. Jose|Xiangnan He 0001
+conf/wsdm/WuSDHC19,2019,WSDM,inproceedings,Neural Tensor Factorization for Temporal Interaction Learning.,Xian Wu 0003|Baoxu Shi|Yuxiao Dong|Chao Huang 0001|Nitesh V. Chawla
+conf/wsdm/Lin0Y18,2018,WSDM,inproceedings,"The 5th International Workshop on Social Web for Disaster Management(SWDM'18): Collective Sensing, Trust, and Resilience in Global Crises.",Yu-Ru Lin|Carlos Castillo 0001|Jie Yin 0001
+conf/wsdm/Benson0T18,2018,WSDM,inproceedings,A Discrete Choice Model for Subset Selection.,Austin R. Benson|Ravi Kumar 0001|Andrew Tomkins
+conf/wsdm/ArnaoutNRW23,2023,WSDM,inproceedings,UnCommonSense in Action! Informative Negations for Commonsense Knowledge Bases.,Hiba Arnaout|Tuan-Phong Nguyen|Simon Razniewski|Gerhard Weikum
+conf/wsdm/ZhuSZWMN24,2024,WSDM,inproceedings,Collaboration and Transition: Distilling Item Transitions into Multi-Query Self-Attention for Sequential Recommendation.,Tianyu Zhu|Yansong Shi|Yuan Zhang 0024|Yihong Wu 0006|Fengran Mo|Jian-Yun Nie
+conf/wsdm/XieLRHZM18,2018,WSDM,inproceedings,Why People Search for Images using Web Search Engines.,Xiaohui Xie|Yiqun Liu 0001|Maarten de Rijke|Jiyin He|Min Zhang 0006|Shaoping Ma
+conf/wsdm/MaLWT0C24,2024,WSDM,inproceedings,Leveraging Multimodal Features and Item-level User Feedback for Bundle Construction.,Yunshan Ma 0002|Xiaohao Liu|Yinwei Wei|Zhulin Tao|Xiang Wang 0010|Tat-Seng Chua
+conf/wsdm/Pan0T0021,2021,WSDM,inproceedings,Unsupervised Attributed Network Embedding via Cross Fusion.,Guosheng Pan|Yuan Yao 0001|Hanghang Tong|Feng Xu 0007|Jian Lu 0001
+conf/wsdm/HoPKBW20,2020,WSDM,inproceedings,"Entities with Quantities: Extraction, Search, and Ranking.",Vinh Thinh Ho|Koninika Pal|Niko Kleer|Klaus Berberich|Gerhard Weikum
+conf/wsdm/ShirzadkhaniHKR24,2024,WSDM,inproceedings,Temporal Graph Analysis with TGX.,Razieh Shirzadkhani|Shenyang Huang|Elahe Kooshafar|Reihaneh Rabbany|Farimah Poursafaei
+conf/wsdm/ZengSLS19,2019,WSDM,inproceedings,Attitude Detection for One-Round Conversation: Jointly Extracting Target-Polarity Pairs.,Zhaohao Zeng|Ruihua Song|Pingping Lin|Tetsuya Sakai
+conf/wsdm/ChenXLC18,2018,WSDM,inproceedings,WSDM Cup 2018: Music Recommendation and Churn Prediction.,Yian Chen|Xing Xie 0001|Shou-De Lin|Arden Chiu
+conf/wsdm/YangBGHE18,2018,WSDM,inproceedings,OpenRec: A Modular Framework for Extensible and Adaptable Recommendation Algorithms.,Longqi Yang 0001|Eugene Bagdasaryan|Joshua Gruenstein|Cheng-Kang Hsieh|Deborah Estrin
+conf/wsdm/HassonNFA21,2021,WSDM,inproceedings,Category Recognition in E-Commerce using Sequence-to-Sequence Hierarchical Classification.,Idan Hasson|Slava Novgorodov|Gilad Fuchs|Yoni Acriche
+conf/wsdm/XuTLHB18,2018,WSDM,inproceedings,GTA,Jiejun Xu|Hanghang Tong|Tsai-Ching Lu|Jingrui He|Nadya Bliss
+conf/wsdm/WangCN22,2022,WSDM,inproceedings,A New Class of Polynomial Activation Functions of Deep Learning for Precipitation Forecasting.,Jiachuan Wang|Lei Chen 0002|Charles Wang Wai Ng
+conf/wsdm/ChenCXC21,2021,WSDM,inproceedings,User Response Models to Improve a REINFORCE Recommender System.,Minmin Chen|Bo Chang 0002|Can Xu|Ed H. Chi
+conf/wsdm/RajGDSSV24,2024,WSDM,inproceedings,"""Maya""- A Conversational Shopping Assistant for Fashion at Myntra.",Akhil Raj|Hrishikesh Ganu|Saikat Kumar Das|R. Sandeep|Satyajeet Singh|Sreekanth Vempati
+conf/wsdm/DaiW21,2021,WSDM,inproceedings,Say No to the Discrimination: Learning Fair Graph Neural Networks with Limited Sensitive Attribute Information.,Enyan Dai|Suhang Wang
+conf/wsdm/GuptaSDFM20,2020,WSDM,inproceedings,"Challenges, Best Practices and Pitfalls in Evaluating Results of Online Controlled Experiments.",Somit Gupta|Xiaolin Shi|Pavel A. Dmitriev|Xin Fu|Avijit Mukherjee
+conf/wsdm/Fan0HH22,2022,WSDM,inproceedings,Building Multi-turn Query Interpreters for E-commercial Chatbots with Sparse-to-dense Attentive Modeling.,Yan Fan|Chengyu Wang 0001|Peng He|Yunhua Hu
+conf/wsdm/LiCCC020,2020,WSDM,inproceedings,Interpretable Click-Through Rate Prediction through Hierarchical Attention.,Zeyu Li 0001|Wei Cheng 0002|Yang Chen 0063|Haifeng Chen|Wei Wang 0010
+conf/wsdm/AnandKSZZ19,2019,WSDM,inproceedings,Asynchronous Training of Word Embeddings for Large Text Corpora.,Avishek Anand|Megha Khosla|Jaspreet Singh|Jan-Hendrik Zab|Zijian Zhang 0006
+conf/wsdm/Song0WCZT19,2019,WSDM,inproceedings,Session-Based Social Recommendation via Dynamic Graph Attention Networks.,Weiping Song|Zhiping Xiao 0001|Yifan Wang 0014|Laurent Charlin|Ming Zhang 0004|Jian Tang 0005
+conf/wsdm/PonzaCFMK21,2021,WSDM,inproceedings,Contextualizing Trending Entities in News Stories.,Marco Ponza|Diego Ceccarelli|Paolo Ferragina|Edgar Meij|Sambhav Kothari
+conf/wsdm/Derr0FLAT20,2020,WSDM,inproceedings,Epidemic Graph Convolutional Network.,Tyler Derr|Yao Ma 0001|Wenqi Fan|Xiaorui Liu|Charu C. Aggarwal|Jiliang Tang
+conf/wsdm/StergiouRT18,2018,WSDM,inproceedings,Shortcutting Label Propagation for Distributed Connected Components.,Stergios Stergiou|Dipen Rughwani|Kostas Tsioutsiouliklis
+conf/wsdm/YuanZCYR19,2019,WSDM,inproceedings,A State Transition Model for Mobile Notifications via Survival Analysis.,Yiping Yuan|Jing Zhang|Shaunak Chatterjee|Shipeng Yu|R
+conf/wsdm/ChatterjeeGA20,2020,WSDM,inproceedings,FAQAugmenter: Suggesting Questions for Enterprise FAQ Pages.,Ankush Chatterjee|Manish Gupta 0001|Puneet Agrawal
+conf/wsdm/YaoSDRX18,2018,WSDM,inproceedings,Dynamic Word Embeddings for Evolving Semantic Discovery.,Zijun Yao 0001|Yifan Sun 0001|Weicong Ding|Nikhil Rao 0001|Hui Xiong 0001
+conf/wsdm/HiranandaniSKA19,2019,WSDM,inproceedings,Clustered Monotone Transforms for Rating Factorization.,Gaurush Hiranandani|Raghav Somani|Oluwasanmi Koyejo|Sreangsu Acharyya
+conf/wsdm/0007SBQ19,2019,WSDM,inproceedings,Intelligent Traffic Analytics: From Monitoring to Controlling.,Sheng Wang 0007|Yunzhuang Shen|Zhifeng Bao|Xiaolin Qin
+conf/wsdm/KalifaSGRR22,2022,WSDM,inproceedings,Leveraging World Events to Predict E-Commerce Consumer Demand under Anomaly.,Dan Kalifa|Uriel Singer|Ido Guy|Guy D. Rosin|Kira Radinsky
+conf/wsdm/WangSWZ024,2024,WSDM,inproceedings,Dynamic Sparse Learning: A Novel Paradigm for Efficient Recommendation.,Shuyao Wang|Yongduo Sui|Jiancan Wu|Zhi Zheng 0008|Hui Xiong 0001
+conf/wsdm/ZhangYCHNC22,2022,WSDM,inproceedings,PipAttack: Poisoning Federated Recommender Systems for Manipulating Item Promotion.,Shijie Zhang|Hongzhi Yin|Tong Chen 0005|Zi Huang|Quoc Viet Hung Nguyen|Lizhen Cui
+conf/wsdm/AliSKMR21,2021,WSDM,inproceedings,Ad Delivery Algorithms: The Hidden Arbiters of Political Messaging.,Muhammad Ali 0014|Piotr Sapiezynski|Aleksandra Korolova|Alan Mislove|Aaron Rieke
+conf/wsdm/SachdevaWM22,2022,WSDM,inproceedings,On Sampling Collaborative Filtering Datasets.,Noveen Sachdeva|Carole-Jean Wu|Julian J. McAuley
+conf/wsdm/TanjimA18,2018,WSDM,inproceedings,sSketch: A Scalable Sketching Technique for PCA in the Cloud.,Md. Mehrab Tanjim|Muhammad Abdullah Adnan
+conf/wsdm/BendreDWY21,2021,WSDM,inproceedings,GPR: Global Personalized Restaurant Recommender System Leveraging Billions of Financial Transactions.,Mangesh Bendre|Mahashweta Das|Fei Wang 0062|Hao Yang 0007
+conf/wsdm/0001SRC22,2022,WSDM,inproceedings,Translating Human Mobility Forecasting through Natural Language Generation.,Hao Xue 0001|Flora D. Salim|Yongli Ren|Charles L. A. Clarke
+conf/wsdm/SawhneyJGS21,2021,WSDM,inproceedings,Towards Ordinal Suicide Ideation Detection on Social Media.,Ramit Sawhney|Harshit Joshi|Saumya Gandhi|Rajiv Ratn Shah
+conf/wsdm/FeyisetanBDD20,2020,WSDM,inproceedings,Privacy- and Utility-Preserving Textual Analysis via Calibrated Multivariate Perturbations.,Oluwaseyi Feyisetan|Borja Balle|Thomas Drake|Tom Diethe
+conf/wsdm/PelechrinisP18,2018,WSDM,inproceedings,Athlytics: Winning in Sports with Data.,Konstantinos Pelechrinis|Evangelos E. Papalexakis
+conf/wsdm/ChitraM20,2020,WSDM,inproceedings,Analyzing the Impact of Filter Bubbles on Social Network Polarization.,Uthsav Chitra|Christopher Musco
+conf/wsdm/Gad-Elrab0UW19,2019,WSDM,inproceedings,ExFaKT: A Framework for Explaining Facts over Knowledge Graphs and Text.,Mohamed H. Gad-Elrab|Daria Stepanova 0001|Jacopo Urbani|Gerhard Weikum
+conf/wsdm/ChenML0M20,2020,WSDM,inproceedings,A Context-Aware Click Model for Web Search.,Jia Chen 0003|Jiaxin Mao|Yiqun Liu 0001|Min Zhang 0006|Shaoping Ma
+conf/wsdm/Wood-DoughtyB22,2022,WSDM,inproceedings,The Incentives Platform at Lyft.,Alex Wood-Doughty|Cameron Bruggeman
+conf/wsdm/ZhangSA0ZL23,2023,WSDM,inproceedings,A Semantic Search Framework for Similar Audit Issue Recommendation in Financial Industry.,Chuchu Zhang|Can Song|Samarth Agarwal|Huayu Wu 0001|Xuejie Zhang|John Jianan Lu
+conf/wsdm/Li0Y0MX23,2023,WSDM,inproceedings,Exploiting Explicit and Implicit Item relationships for Session-based Recommendation.,Zihao Li 0005|Xianzhi Wang 0001|Chao Yang 0024|Lina Yao 0001|Julian J. McAuley|Guandong Xu
+conf/wsdm/WallatJA24,2024,WSDM,inproceedings,Temporal Blind Spots in Large Language Models.,Jonas Wallat|Adam Jatowt|Avishek Anand
+conf/wsdm/TaoSCHC21,2021,WSDM,inproceedings,Adversarial Immunization for Certifiable Robustness on Graphs.,Shuchang Tao|Huawei Shen|Qi Cao 0005|Liang Hou|Xueqi Cheng
+conf/wsdm/MengLBZ19,2019,WSDM,inproceedings,Co-Embedding Attributed Networks.,Zaiqiao Meng|Shangsong Liang|Hongyan Bao|Xiangliang Zhang 0001
+conf/wsdm/FengWLLW24,2024,WSDM,inproceedings,Contextual MAB Oriented Embedding Denoising for Sequential Recommendation.,Zhichao Feng|Pengfei Wang 0009|Kaiyuan Li|Chenliang Li 0005|Shangguang Wang
+conf/wsdm/GhazimatinRW19,2019,WSDM,inproceedings,FAIRY: A Framework for Understanding Relationships Between Users' Actions and their Social Feeds.,Azin Ghazimatin|Rishiraj Saha Roy|Gerhard Weikum
+conf/wsdm/ChoiJLL21,2021,WSDM,inproceedings,Local Collaborative Autoencoders.,Minjin Choi 0001|Yoonki Jeong|Joonseok Lee|Jongwuk Lee
+conf/wsdm/XuHSW22,2022,WSDM,inproceedings,MAF: A General Matching and Alignment Framework for Multimodal Named Entity Recognition.,Bo Xu 0023|Shizhou Huang|Chaofeng Sha|Hongya Wang
+conf/wsdm/RazniewskiTV21,2021,WSDM,inproceedings,Information to Wisdom: Commonsense Knowledge Extraction and Compilation.,Simon Razniewski|Niket Tandon|Aparna S. Varde
+conf/wsdm/RenKWS18,2018,WSDM,inproceedings,"First Workshop on Knowledge Base Construction, Mining and Reasoning.",Xiang Ren 0001|Craig A. Knoblock|William Yang Wang|Yu Su 0001
+conf/wsdm/DuanJ19,2019,WSDM,inproceedings,Across-Time Comparative Summarization of News Articles.,Yijun Duan|Adam Jatowt
+conf/wsdm/WangFGCH19,2019,WSDM,inproceedings,Solving the Sparsity Problem in Recommendations via Cross-Domain Item Embedding Based on Co-Clustering.,Yaqing Wang 0004|Chunyan Feng|Caili Guo|Yunfei Chu|Jenq-Neng Hwang
+conf/wsdm/WuLZWZM19,2019,WSDM,inproceedings,The Influence of Image Search Intents on User Behavior and Satisfaction.,Zhijing Wu 0001|Yiqun Liu 0001|Qianfan Zhang 0002|Kailu Wu|Min Zhang 0006|Shaoping Ma
+conf/wsdm/LiuYXL023,2023,WSDM,inproceedings,Position-Aware Subgraph Neural Networks with Data-Efficient Learning.,Chang Liu 0078|Yuwen Yang|Zhe Xie|Hongtao Lu 0001|Yue Ding 0001
+conf/wsdm/ZhouC0LH22,2022,WSDM,inproceedings,AngHNE: Representation Learning for Bipartite Heterogeneous Networks with Angular Loss.,Cangqi Zhou|Hui Chen|Jing Zhang 0015|Qianmu Li|Dianming Hu
+conf/wsdm/MasudPDGNC22,2022,WSDM,inproceedings,"Half-Day Tutorial on Combating Online Hate Speech: The Role of Content, Networks, Psychology, User Behavior, etc.",Sarah Masud|Pinkesh Pinkesh|Amitava Das 0001|Manish Gupta 0001|Preslav Nakov|Tanmoy Chakraborty 0002
+conf/wsdm/WangHLD22,2022,WSDM,inproceedings,Learning-To-Ensemble by Contextual Rank Aggregation in E-Commerce.,Xuesi Wang|Guangda Huzhang|Qianying Lin|Qing Da
+conf/wsdm/JagatapF24,2024,WSDM,inproceedings,Recent Advances in Refinement Recommendations.,Akshay Jagatap|Sachin Farfade
+conf/wsdm/AfsharinejadH18,2018,WSDM,inproceedings,Performance Analysis of a Privacy Constrained kNN Recommendation Using Data Sketches.,Armita Afsharinejad|Neil Hurley
+conf/wsdm/LiYC22,2022,WSDM,inproceedings,a2RegInf: An Interactive System for Maximizing Influence within Arbitrary Number of Arbitrary Shaped Query Regions.,Hui Li 0005|Qiting Yang|Jiangtao Cui
+conf/wsdm/MiaoLZW20,2020,WSDM,inproceedings,Predicting Human Mobility via Attentive Convolutional Network.,Congcong Miao|Ziyan Luo|Fengzhu Zeng|Jilong Wang 0001
+conf/wsdm/JiangQX024,2024,WSDM,inproceedings,Incomplete Graph Learning via Attribute-Structure Decoupled Variational Auto-Encoder.,Xinke Jiang|Zidi Qin|Jiarong Xu|Xiang Ao 0001
+conf/wsdm/MahajanCLGS21,2021,WSDM,inproceedings,Community Connect: A Mock Social Media Platform to Study Online Behavior.,Khyati Mahajan|Sourav Roy Choudhury|Sara Levens|Tiffany Gallicano|Samira Shaikh
+conf/wsdm/RosinGR21,2021,WSDM,inproceedings,Event-Driven Query Expansion.,Guy D. Rosin|Ido Guy|Kira Radinsky
+conf/wsdm/YouCWS22,2022,WSDM,inproceedings,Bringing Your Own View: Graph Contrastive Learning without Prefabricated Data Augmentations.,Yuning You|Tianlong Chen 0001|Zhangyang Wang|Yang Shen 0001
+conf/wsdm/LiuD0P23,2023,WSDM,inproceedings,GOOD-D: On Unsupervised Graph Out-Of-Distribution Detection.,Yixin Liu 0001|Kaize Ding|Huan Liu 0001|Shirui Pan
+conf/wsdm/WangXKZYZ23,2023,WSDM,inproceedings,Reducing Negative Effects of the Biases of Language Models in Zero-Shot Setting.,Xiaosu Wang|Yun Xiong|Beichen Kang|Yao Zhang 0009|Philip S. Yu|Yangyong Zhu
+conf/wsdm/LoDXJK21,2021,WSDM,inproceedings,All the Wiser: Fake News Intervention Using User Reading Preferences.,Kuan-Chieh Lo|Shih-Chieh Dai|Aiping Xiong|Jing Jiang 0001|Lun-Wei Ku
+conf/wsdm/MaedaYHT21,2021,WSDM,inproceedings,ColorfulFeedback: Enhancing Interest Prediction Performance through Multi-dimensional Labeled Feedback from Users.,Yuki Maeda|Shuji Yamaguchi|Tatsuru Higurashi|Kota Tsubouchi
+conf/wsdm/SahaDM023,2023,WSDM,inproceedings,"Hate Speech: Detection, Mitigation and Beyond.",Punyajoy Saha|Mithun Das|Binny Mathew|Animesh Mukherjee 0001
+conf/wsdm/0002B19,2019,WSDM,inproceedings,Structured Search in Annotated Document Collections.,Dhruv Gupta 0002|Klaus Berberich
+conf/wsdm/ChenZLM19,2019,WSDM,inproceedings,Social Attentional Memory Network: Modeling Aspect- and Friend-Level Differences in Recommendation.,Chong Chen 0001|Min Zhang 0006|Yiqun Liu 0001|Shaoping Ma
+conf/wsdm/KasturiaGH22,2022,WSDM,inproceedings,Query Interpretations from Entity-Linked Segmentations.,Vaibhav Kasturia|Marcel Gohsen|Matthias Hagen
+conf/wsdm/Papakyriakopoulos23,2023,WSDM,inproceedings,Considerations for Ethical Speech Recognition Datasets.,Orestis Papakyriakopoulos|Alice Xiang
+conf/wsdm/QinYZ0ZS24,2024,WSDM,inproceedings,Intent Contrastive Learning with Cross Subsequences for Sequential Recommendation.,Xiuyuan Qin|Huanhuan Yuan|Pengpeng Zhao 0001|Guanfeng Liu 0001|Fuzhen Zhuang|Victor S. Sheng
+conf/wsdm/WangZC20,2020,WSDM,inproceedings,User Recommendation in Content Curation Platforms.,Jianling Wang|Ziwei Zhu 0001|James Caverlee
+conf/wsdm/WangPWS22,2022,WSDM,inproceedings,Personalized Long-distance Fuel-efficient Route Recommendation Through Historical Trajectories Mining.,Zhan Wang|Zhaohui Peng|Senzhang Wang|Qiao Song
+conf/wsdm/LiaoLMZ21,2021,WSDM,inproceedings,Learning Dynamic Embeddings for Temporal Knowledge Graphs.,Siyuan Liao|Shangsong Liang|Zaiqiao Meng|Qiang Zhang 0026
+conf/wsdm/KhanK22,2022,WSDM,inproceedings,Cluster-Aware Heterogeneous Information Network Embedding.,Rayyan Ahmad Khan|Martin Kleinsteuber
+conf/wsdm/PangC021,2021,WSDM,inproceedings,"Deep Learning for Anomaly Detection: Challenges, Methods, and Opportunities.",Guansong Pang|Longbing Cao|Charu Aggarwal 0001
+conf/wsdm/YuJJJY019,2019,WSDM,inproceedings,WassRank: Listwise Document Ranking Using Optimal Transport Theory.,Haitao Yu 0003|Adam Jatowt|Hideo Joho|Joemon M. Jose|Xiao Yang|Long Chen 0008
+conf/wsdm/ChenXWD21,2021,WSDM,inproceedings,Decomposed Collaborative Filtering: Modeling Explicit and Implicit Factors For Recommender Systems.,Hao Chen 0099|Xin Xin 0003|Dong Wang 0024|Yue Ding 0001
+conf/wsdm/ChoudhuryPLWHA18,2018,WSDM,inproceedings,Percolator: Scalable Pattern Discovery in Dynamic Graphs.,Sutanay Choudhury|Sumit Purohit|Peng Lin|Yinghui Wu 0001|Lawrence B. Holder|Khushbu Agarwal
+conf/wsdm/ChristmannRW22,2022,WSDM,inproceedings,Beyond NED: Fast and Effective Search Space Reduction for Complex Question Answering over Knowledge Bases.,Philipp Christmann|Rishiraj Saha Roy|Gerhard Weikum
+conf/wsdm/WuCZHY021,2021,WSDM,inproceedings,Unbiased Learning to Rank in Feeds Recommendation.,Xinwei Wu 0001|Hechang Chen|Jiashu Zhao|Li He|Dawei Yin 0001|Yi Chang 0001
+conf/wsdm/JinWCZ20,2020,WSDM,inproceedings,WebShapes: Network Visualization with 3D Shapes.,Shengmin Jin|Richard Wituszynski|Max Caiello-Gingold|Reza Zafarani
+conf/wsdm/JiaB19,2019,WSDM,inproceedings,Random Spatial Network Models for Core-Periphery Structure.,Junteng Jia|Austin R. Benson
+conf/wsdm/SikdarSW22,2022,WSDM,inproceedings,Attributed Graph Modeling with Vertex Replacement Grammars.,Satyaki Sikdar|Neil Shah|Tim Weninger
+conf/wsdm/MartinsMC19,2019,WSDM,inproceedings,Modeling Temporal Evidence from External Collections.,Fl|Jo|Jamie Callan
+conf/wsdm/SadequeXB18,2018,WSDM,inproceedings,Measuring the Latency of Depression Detection in Social Media.,Farig Sadeque|Dongfang Xu|Steven Bethard
+conf/wsdm/LiJLH020,2020,WSDM,inproceedings,Automatic Speaker Recognition with Limited Data.,Ruirui Li 0002|Jyun-Yu Jiang|Jiahao Liu|Chu-Cheng Hsieh|Wei Wang 0010
+conf/wsdm/ChenLZLGG22,2022,WSDM,inproceedings,A Personalized Cross-Platform Post Style Transfer Method Based on Transformer and Bi-Attention Mechanism.,Zhuo Chen|Baoxi Liu|Peng Zhang 0060|Tun Lu|Hansu Gu|Ning Gu 0001
+conf/wsdm/WangZ21,2021,WSDM,inproceedings,CONQ: CONtinuous Quantile Treatment Effects for Large-Scale Online Controlled Experiments.,Weinan Wang|Xi Zhang
+conf/wsdm/YangJWZ23,2023,WSDM,inproceedings,Feature Missing-aware Routing-and-Fusion Network for Customer Lifetime Value Prediction in Advertising.,Xuejiao Yang|Binfeng Jia|Shuangyang Wang|Shijie Zhang
+conf/wsdm/ZhangLZ0YP22,2022,WSDM,inproceedings,Learning Concept Prerequisite Relations from Educational Data via Multi-Head Attention Variational Graph Auto-Encoders.,Juntao Zhang|Nanzhou Lin|Xuelong Zhang|Wei Song 0006|Xiandi Yang|Zhiyong Peng 0001
+conf/wsdm/BenderskyWNM22,2022,WSDM,inproceedings,Search and Discovery in Personal Email Collections.,Michael Bendersky|Xuanhui Wang|Marc Najork|Donald Metzler
+conf/wsdm/WangLZ23,2023,WSDM,inproceedings,MeSH Suggester: A Library and System for MeSH Term Suggestion for Systematic Review Boolean Query Construction.,Shuai Wang 0032|Hang Li 0009|Guido Zuccon
+conf/wsdm/HillLT24,2024,WSDM,inproceedings,Ginkgo-P: General Illustrations of Knowledge Graphs for Openness as a Platform.,Blaine Hill|Lihui Liu|Hanghang Tong
+conf/wsdm/0001GPG022,2022,WSDM,inproceedings,Wikipedia Reader Navigation: When Synthetic Data Is Enough.,Akhil Arora 0001|Martin Gerlach|Tiziano Piccardi|Alberto Garc|Robert West 0001
+conf/wsdm/ZhangWSDFP20,2020,WSDM,inproceedings,AutoBlock: A Hands-off Blocking Framework for Entity Matching.,Wei Zhang 0058|Hao Wei|Bunyamin Sisman|Xin Luna Dong|Christos Faloutsos|David Page
+conf/wsdm/ZengBPCK21,2021,WSDM,inproceedings,Causal Transfer Random Forest: Combining Logged Data and Randomized Experiments for Robust Prediction.,Shuxi Zeng|Murat Ali Bayir|Joseph J. Pfeiffer III|Denis Charles|Emre Kiciman
+conf/wsdm/NaseemKKD24,2024,WSDM,inproceedings,A Linguistic Grounding-Infused Contrastive Learning Approach for Health Mention Classification on Social Media.,Usman Naseem|Jinman Kim|Matloob Khushi|Adam G. Dunn
+conf/wsdm/YuanZC024,2024,WSDM,inproceedings,PhoGAD: Graph-based Anomaly Behavior Detection with Persistent Homology Optimization.,Ziqi Yuan|Haoyi Zhou|Tianyu Chen|Jianxin Li 0002
+conf/wsdm/DuW0L0N23,2023,WSDM,inproceedings,Multi-queue Momentum Contrast for Microvideo-Product Retrieval.,Yali Du 0002|Yinwei Wei|Wei Ji 0008|Fan Liu 0008|Xin Luo 0006|Liqiang Nie
+conf/wsdm/SongCZ021,2021,WSDM,inproceedings,Triangular Bidword Generation for Sponsored Search Auction.,Zhenqiao Song|Jiaze Chen|Hao Zhou 0012|Lei Li 0005
+conf/wsdm/KawaseMS23,2023,WSDM,inproceedings,Stochastic Solutions for Dense Subgraph Discovery in Multilayer Networks.,Yasushi Kawase|Atsushi Miyauchi 0001|Hanna Sumita
+conf/wsdm/VakulenkoLTA21,2021,WSDM,inproceedings,Question Rewriting for Conversational Question Answering.,Svitlana Vakulenko|Shayne Longpre|Zhucheng Tu|Raviteja Anantha
+conf/wsdm/RamKR21,2021,WSDM,inproceedings,Birdspotter: A Tool for Analyzing and Labeling Twitter Users.,Rohit Ram|Quyu Kong|Marian-Andrei Rizoiu
+conf/wsdm/ZhangYS24,2024,WSDM,inproceedings,AAGenRec: A Novel Approach for Mitigating Inter-task Interference in Multi-task Optimization of Sequential Behavior Modeling.,Jiawei Zhang|Shimin Yang|Liang Shen
+conf/wsdm/ZhangZZJL22,2022,WSDM,inproceedings,A Counterfactual Modeling Framework for Churn Prediction.,Guozhen Zhang|Jinwei Zeng|Zhengyue Zhao|Depeng Jin|Yong Li 0008
+conf/wsdm/HsiehWSH21,2021,WSDM,inproceedings,Explainable Multivariate Time Series Classification: A Deep Neural Network Which Learns to Attend to Important Variables As Well As Time Intervals.,Tsung-Yu Hsieh|Suhang Wang|Yiwei Sun|Vasant G. Honavar
+conf/wsdm/HuLBLL18,2018,WSDM,inproceedings,Listening to Chaotic Whispers: A Deep Learning Framework for News-oriented Stock Trend Prediction.,Ziniu Hu|Weiqing Liu|Jiang Bian 0002|Xuanzhe Liu|Tie-Yan Liu
+conf/wsdm/XuHL19,2019,WSDM,inproceedings,Deep Learning for Matching in Search and Recommendation.,Jun Xu 0001|Xiangnan He 0001|Hang Li 0001
+conf/wsdm/LuWZLX23,2023,WSDM,inproceedings,VRKG4Rec: Virtual Relational Knowledge Graph for Recommendation.,Lingyun Lu|Bang Wang 0001|Zizhuo Zhang|Shenghao Liu|Han Xu 0003
+conf/wsdm/NarvaezM24,2024,WSDM,inproceedings,Integrating Knowledge Graph Data with Large Language Models for Explainable Inference.,Carlos Efrain Quintero Narvaez|Ra
+conf/wsdm/XuSLH023,2023,WSDM,inproceedings,Hansel: A Chinese Few-Shot and Zero-Shot Entity Linking Benchmark.,Zhenran Xu|Zifei Shan|Yuxin Li|Baotian Hu|Bing Qin 0001
+conf/wsdm/BirdKKM19,2019,WSDM,inproceedings,Fairness-Aware Machine Learning: Practical Challenges and Lessons Learned.,Sarah Bird|Krishnaram Kenthapadi|Emre Kiciman|Margaret Mitchell
+conf/wsdm/YooKSCZ20,2020,WSDM,inproceedings,Sampling Subgraphs with Guaranteed Treewidth for Accurate and Efficient Graphical Inference.,Jaemin Yoo|U Kang|Mauro Scanagatta|Giorgio Corani|Marco Zaffalon
+conf/wsdm/AkkerJL0NP24,2024,WSDM,inproceedings,Practical Bandits: An Industry Perspective.,Bram van den Akker|Olivier Jeunen|Ying Li 0124|Ben London 0001|Zahra Nazari|Devesh Parekh
+conf/wsdm/WuQ0YDZ22,2022,WSDM,inproceedings,Crowdsourcing-based Multi-Device Communication Cooperation for Mobile High-Quality Video Enhancement.,Xiaotong Wu|Lianyong Qi|Xiaolong Xu 0001|Shui Yu 0001|Wanchun Dou|Xuyun Zhang
+conf/wsdm/SarviHASR22,2022,WSDM,inproceedings,Understanding and Mitigating the Effect of Outliers in Fair Ranking.,Fatemeh Sarvi|Maria Heuss|Mohammad Aliannejadi|Sebastian Schelter|Maarten de Rijke
+conf/wsdm/FakhraeiLSW18,2018,WSDM,inproceedings,HeteroNAM: International Workshop on Heterogeneous Networks Analysis and Mining.,Shobeir Fakhraei|Yanen Li|Yizhou Sun|Tim Weninger
+conf/wsdm/ZhangYLL23,2023,WSDM,inproceedings,Reducing the Bias of Visual Objects in Multimodal Named Entity Recognition.,Xin Zhang 0159|Jingling Yuan|Lin Li 0001|Jianquan Liu
+conf/wsdm/TogashiOS21,2021,WSDM,inproceedings,Alleviating Cold-Start Problems in Recommendation through Pseudo-Labelling over Knowledge Graph.,Riku Togashi|Mayu Otani|Shin'ichi Satoh 0001
+conf/wsdm/WangCZWZW23,2023,WSDM,inproceedings,A Multi-graph Fusion Based Spatiotemporal Dynamic Learning Framework.,Xu Wang 0029|Lianliang Chen|Hongbo Zhang|Pengkun Wang 0001|Zhengyang Zhou|Yang Wang 0015
+conf/wsdm/YatesNL21,2021,WSDM,inproceedings,Pretrained Transformers for Text Ranking: BERT and Beyond.,Andrew Yates|Rodrigo Nogueira 0001|Jimmy Lin
+conf/wsdm/ChetanJD019,2019,WSDM,inproceedings,CoReRank: Ranking to Detect Users Involved in Blackmarket-Based Collusive Retweeting Activities.,Aditya Chetan|Brihi Joshi|Hridoy Sankar Dutta|Tanmoy Chakraborty 0002
+conf/wsdm/MaY0HH20,2020,WSDM,inproceedings,Beyond Statistical Relations: Integrating Knowledge Relations into Style Correlations for Multi-Label Music Style Classification.,Qianwen Ma|Chunyuan Yuan|Wei Zhou 0019|Jizhong Han|Songlin Hu 0001
+conf/wsdm/ZhuZYGC18,2018,WSDM,inproceedings,IFUP: Workshop on Multi-dimensional Information Fusion for User Modeling and Personalization.,Feida Zhu 0001|Yongfeng Zhang 0003|Neil Yorke-Smith|Guibing Guo|Xu Chen 0017
+conf/wsdm/BeigiMGAN020,2020,WSDM,inproceedings,Privacy-Aware Recommendation with Private-Attribute Protection using Adversarial Learning.,Ghazaleh Beigi|Ahmadreza Mosallanezhad|Ruocheng Guo|Hamidreza Alvari|Alexander Nou|Huan Liu 0001
+conf/wsdm/LiuCWWB24,2024,WSDM,inproceedings,Generative Models for Complex Logical Reasoning over Knowledge Graphs.,Yu Liu 0118|Yanan Cao 0001|Shi Wang 0002|Qingyue Wang|Guanqun Bi
+conf/wsdm/PascaW19,2019,WSDM,inproceedings,Lightweight Lexical and Semantic Evidence for Detecting Classes Among Wikipedia Articles.,Marius Pasca|Travis Wolfe
+conf/wsdm/SaidPBP19,2019,WSDM,inproceedings,IDM-WSDM 2019: Workshop on Interactive Data Mining.,Alan Said|Denis Parra|Juhee Bae|Sepideh Pashami
+conf/wsdm/PhamSF18,2018,WSDM,inproceedings,Learning to Discover Domain-Specific Web Content.,Kien Pham|A|Juliana Freire
+conf/wsdm/MaGTW22,2022,WSDM,inproceedings,Diversified Subgraph Query Generation with Group Fairness.,Hanchao Ma|Sheng Guan|Christopher Toomey|Yinghui Wu 0001
+conf/wsdm/AgichteinHKM20,2020,WSDM,inproceedings,ConvERSe'20: The WSDM 2020 Workshop on Conversational Systems for E-Commerce Recommendations and Search.,Eugene Agichtein|Dilek Hakkani-T|Surya Kallumadi|Shervin Malmasi
+conf/wsdm/FettalLN22,2022,WSDM,inproceedings,Efficient Graph Convolution for Joint Node Representation Learning and Clustering.,Chakib Fettal|Lazhar Labiod|Mohamed Nadif
+conf/wsdm/He0WZYX23,2023,WSDM,inproceedings,Simplifying Graph-based Collaborative Filtering for Recommendation.,Li He|Xianzhi Wang 0001|Dingxian Wang|Haoyuan Zou|Hongzhi Yin|Guandong Xu
+conf/wsdm/ChenLWCW024,2024,WSDM,inproceedings,Empathetic Response Generation with Relation-aware Commonsense Knowledge.,Changyu Chen|Yanran Li|Chen Wei|Jianwei Cui 0002|Bin Wang 0004|Rui Yan 0001
+conf/wsdm/NargesianAJ23,2023,WSDM,inproceedings,Next-generation Challenges of Responsible Data Integration.,Fatemeh Nargesian|Abolfazl Asudeh|H. V. Jagadish
+conf/wsdm/DingLL19,2019,WSDM,inproceedings,Interactive Anomaly Detection on Attributed Networks.,Kaize Ding|Jundong Li|Huan Liu 0001
+conf/wsdm/XieWZY0L21,2021,WSDM,inproceedings,Real-time Relevant Recommendation Suggestion.,Ruobing Xie|Rui Wang 0068|Shaoliang Zhang|Zhihong Yang|Feng Xia 0006|Leyu Lin
+conf/wsdm/0020MKKZ19,2019,WSDM,inproceedings,A General View for Network Embedding as Matrix Factorization.,Xin Liu 0020|Tsuyoshi Murata|Kyoung-Sook Kim 0001|Chatchawan Kotarasu|Chenyi Zhuang
+conf/wsdm/ZhangZMJM023,2023,WSDM,inproceedings,Effective Seed-Guided Topic Discovery by Integrating Multiple Types of Contexts.,Yu Zhang 0044|Yunyi Zhang 0001|Martin Michalski|Yucheng Jiang|Yu Meng 0001|Jiawei Han 0001
+conf/wsdm/BandyopadhyayNV20,2020,WSDM,inproceedings,Outlier Resistant Unsupervised Deep Architectures for Attributed Network Embedding.,Sambaran Bandyopadhyay|Lokesh N|Saley Vishal Vivek|M. Narasimha Murty
+conf/wsdm/LuoNWBYZ20,2020,WSDM,inproceedings,Deep Multi-Graph Clustering via Attentive Cross-Graph Association.,Dongsheng Luo|Jingchao Ni|Suhang Wang|Yuchen Bian|Xiong Bill Yu|Xiang Zhang 0001
+conf/wsdm/BrantleyFDJ24,2024,WSDM,inproceedings,Ranking with Long-Term Constraints.,Kiant|Zhichong Fang|Sarah Dean|Thorsten Joachims
+conf/wsdm/HaoZYL021,2021,WSDM,inproceedings,Pre-Training Graph Neural Networks for Cold-Start Users and Items Representation.,Bowen Hao|Jing Zhang 0001|Hongzhi Yin|Cuiping Li 0001|Hong Chen 0001
+conf/wsdm/SaitoYNSN20,2020,WSDM,inproceedings,Unbiased Recommender Learning from Missing-Not-At-Random Implicit Feedback.,Yuta Saito|Suguru Yaginuma|Yuta Nishino|Hayato Sakata|Kazuhide Nakata
+conf/wsdm/ZamaniMSCT18,2018,WSDM,inproceedings,Neural Ranking Models with Multiple Document Fields.,Hamed Zamani|Bhaskar Mitra 0001|Xia Song|Nick Craswell|Saurabh Tiwary
+conf/wsdm/ZhangMDZ23,2023,WSDM,inproceedings,SimSumIoT: A Platform for Simulating the Summarisation from Internet of Things.,Wei Emma Zhang|Adnan Mahmood|Lixin Deng|Minhao Zhu
+conf/wsdm/LiFLLZ21,2021,WSDM,inproceedings,"AnaSearch: Extract, Retrieve and Visualize Structured Results from Unstructured Text for Analytical Queries.",Tongliang Li|Lei Fang 0004|Jian-Guang Lou|Zhoujun Li 0001|Dongmei Zhang 0001
+conf/wsdm/QinRF0020,2020,WSDM,inproceedings,Sequential Recommendation with Dual Side Neighbor-based Collaborative Relation Modeling.,Jiarui Qin|Kan Ren|Yuchen Fang|Weinan Zhang 0001|Yong Yu 0001
+conf/wsdm/KumarJJLL18,2018,WSDM,inproceedings,MIS2: Misinformation and Misbehavior Mining on the Web.,Srijan Kumar|Meng Jiang 0001|Taeho Jung|Roger Jie Luo|Jure Leskovec
+conf/wsdm/CarmelHLLM20,2020,WSDM,inproceedings,Why Do People Buy Seemingly Irrelevant Items in Voice Product Search?: On the Relation between Product Relevance and Customer Satisfaction in eCommerce.,David Carmel|Elad Haramaty|Arnon Lazerson|Liane Lewin-Eytan|Yoelle Maarek
+conf/wsdm/YatesAZYJL20,2020,WSDM,inproceedings,Capreolus: A Toolkit for End-to-End Neural Ad Hoc Retrieval.,Andrew Yates|Siddhant Arora|Xinyu Zhang 0018|Wei Yang 0017|Kevin Martin Jose|Jimmy Lin
+conf/wsdm/KermanyY0P22,2022,WSDM,inproceedings,Fair-SRS: A Fair Session-based Recommendation System.,Naime Ranjbar Kermany|Jian Yang 0001|Jia Wu 0001|Luiz Pizzato
+conf/wsdm/GoldenbergKAMHT21,2021,WSDM,inproceedings,Personalization in Practice: Methods and Applications.,Dmitri Goldenberg|Kostia Kofman|Javier Albert|Sarai Mizrachi|Adam Horowitz|Irene Teinemaa
+conf/wsdm/YangXWTA23,2023,WSDM,inproceedings,Marginal-Certainty-Aware Fair Ranking Algorithm.,Tao Yang 0030|Zhichao Xu 0001|Zhenduo Wang|Anh Tran|Qingyao Ai
+conf/wsdm/KucukC22,2022,WSDM,inproceedings,A Tutorial on Stance Detection.,Dilek K|Fazli Can
+conf/wsdm/SunLWFFL18,2018,WSDM,inproceedings,Logician: A Unified End-to-End Neural Approach for Open-Domain Information Extraction.,Mingming Sun 0001|Xu Li 0001|Xin Wang 0017|Miao Fan|Yue Feng 0002|Ping Li 0001
+conf/wsdm/JiangYXH24,2024,WSDM,inproceedings,DiffKG: Knowledge Graph Diffusion Model for Recommendation.,Yangqin Jiang|Yuhao Yang 0002|Lianghao Xia|Chao Huang 0001
+conf/wsdm/SarkarS23,2023,WSDM,inproceedings,A Synthetic Search Session Generator for Task-Aware Information Seeking and Retrieval.,Shawon Sarkar|Chirag Shah 0001
+conf/wsdm/HubeIF20,2020,WSDM,inproceedings,Debiasing Word Embeddings from Sentiment Associations in Names.,Christoph Hube|Maximilian Idahl|Besnik Fetahu
+conf/wsdm/Gou023,2023,WSDM,inproceedings,Telecommunication Traffic Forecasting via Multi-task Learning.,Xiaochuan Gou|Xiangliang Zhang 0001
+conf/wsdm/MackenzieCBCCL18,2018,WSDM,inproceedings,Query Driven Algorithm Selection in Early Stage Retrieval.,Joel M. Mackenzie|J. Shane Culpepper|Roi Blanco|Matt Crane|Charles L. A. Clarke|Jimmy Lin
+conf/wsdm/CottaHJL19,2019,WSDM,inproceedings,Off-Policy Evaluation of Probabilistic Identity Data in Lookalike Modeling.,Randell Cotta|Mingyang Hu|Dan Jiang|Peizhou Liao
+conf/wsdm/WangDDCL23,2023,WSDM,inproceedings,Few-shot Node Classification with Extremely Weak Supervision.,Song Wang 0013|Yushun Dong|Kaize Ding|Chen Chen 0022|Jundong Li
+conf/wsdm/NemirovskyTXG21,2021,WSDM,inproceedings,Providing Actionable Feedback in Hiring Marketplaces using Generative Adversarial Networks.,Daniel Nemirovsky|Nicolas Thiebaut|Ye Xu|Abhishek Gupta
+conf/wsdm/BagadMDSGK21,2021,WSDM,inproceedings,Data-Sharing Economy: Value-Addition from Data meets Privacy.,Piyush Bagad|Subrata Mitra|Sunny Dhamnani|Atanu R. Sinha|Raunak Gautam|Haresh Khanna
+conf/wsdm/KordanK18,2018,WSDM,inproceedings,Deep Neural Architecture for Multi-Modal Retrieval based on Joint Embedding Space for Text and Images.,Saeid Balaneshin Kordan|Alexander Kotov 0001
+conf/wsdm/TanLNL23,2023,WSDM,inproceedings,Compliance Analyses of Australia's Online Household Appliances.,Chang How Tan|Vincent C. S. Lee|Jessie Nghiem|Priya Laxman
+conf/wsdm/KongRR21,2021,WSDM,inproceedings,Evently: Modeling and Analyzing Reshare Cascades with Hawkes Processes.,Quyu Kong|Rohit Ram|Marian-Andrei Rizoiu
+conf/wsdm/ZhangCS0H22,2022,WSDM,inproceedings,ESC-GAN: Extending Spatial Coverage of Physical Sensors.,Xiyuan Zhang 0001|Ranak Roy Chowdhury|Jingbo Shang|Rajesh K. Gupta 0001|Dezhi Hong
+conf/wsdm/ChenLX19,2019,WSDM,inproceedings,How A/B Tests Could Go Wrong: Automatic Diagnosis of Invalid Online Experiments.,Nanyu Chen|Min Liu|Ya Xu
+conf/wsdm/LyuFMW21,2021,WSDM,inproceedings,Centrality with Diversity.,Liang Lyu 0001|Brandon Fain|Kamesh Munagala|Kangning Wang 0001
+conf/wsdm/BernardKB24,2024,WSDM,inproceedings,IAI MovieBot 2.0: An Enhanced Research Platform with Trainable Neural Components and Transparent User Modeling.,Nolwenn Bernard|Ivica Kostric|Krisztian Balog
+conf/wsdm/TrabelsiHC22,2022,WSDM,inproceedings,DAME: Domain Adaptation for Matching Entities.,Mohamed Trabelsi 0003|Jeff Heflin|Jin Cao
+conf/wsdm/Wang0WW21,2021,WSDM,inproceedings,Non-Clicks Mean Irrelevant? Propensity Ratio Scoring As a Correction.,Nan Wang|Zhen Qin 0001|Xuanhui Wang|Hongning Wang
+conf/wsdm/ZhangC0021,2021,WSDM,inproceedings,Hierarchical Metadata-Aware Document Categorization under Weak Supervision.,Yu Zhang 0044|Xiusi Chen|Yu Meng 0001|Jiawei Han 0001
+conf/wsdm/ChangAM24,2024,WSDM,inproceedings,"To Copy, or not to Copy; That is a Critical Issue of the Output Softmax Layer in Neural Sequential Recommenders.",Haw-Shiuan Chang|Nikhil Agarwal|Andrew McCallum
+conf/wsdm/DeSUG20,2020,WSDM,inproceedings,Can A User Guess What Her Followers Want?,Abir De|Adish Singla|Utkarsh Upadhyay|Manuel Gomez-Rodriguez
+conf/wsdm/NiuCL18,2018,WSDM,inproceedings,Neural Personalized Ranking for Image Recommendation.,Wei Niu 0003|James Caverlee|Haokai Lu
+conf/wsdm/SchnabelBDJ18,2018,WSDM,inproceedings,Short-Term Satisfaction and Long-Term Coverage: Understanding How Users Tolerate Algorithmic Exploration.,Tobias Schnabel|Paul N. Bennett|Susan T. Dumais|Thorsten Joachims
+conf/wsdm/HuangSS22,2022,WSDM,inproceedings,POLE: Polarized Embedding for Signed Networks.,Zexi Huang|Arlei Silva|Ambuj K. Singh
+conf/wsdm/ChenLLXLC23,2023,WSDM,inproceedings,Can Pre-trained Language Models Understand Chinese Humor?,Yuyan Chen|Zhixu Li|Jiaqing Liang|Yanghua Xiao|Bang Liu 0003|Yunwen Chen
+conf/wsdm/WeiHXXZY22,2022,WSDM,inproceedings,Contrastive Meta Learning with Behavior Multiplicity for Recommendation.,Wei Wei 0027|Chao Huang 0001|Lianghao Xia|Yong Xu 0007|Jiashu Zhao|Dawei Yin 0001
+conf/wsdm/0002L22,2022,WSDM,inproceedings,Sentiment Analysis of Fashion Related Posts in Social Media.,Yifei Yuan 0002|Wai Lam
+conf/wsdm/TanZXL20,2020,WSDM,inproceedings,Fast Item Ranking under Neural Network based Measures.,Shulong Tan|Zhixin Zhou|Zhaozhuo Xu|Ping Li 0001
+conf/wsdm/CaoSGWC20,2020,WSDM,inproceedings,Popularity Prediction on Social Platforms with Coupled Graph Neural Networks.,Qi Cao 0005|Huawei Shen|Jinhua Gao|Bingzheng Wei|Xueqi Cheng
+conf/wsdm/0002WJZ023,2023,WSDM,inproceedings,Self-Supervised Graph Structure Refinement for Graph Neural Networks.,Jianan Zhao 0002|Qianlong Wen|Mingxuan Ju|Chuxu Zhang|Yanfang Ye 0001
+conf/wsdm/ShivaswamyC21,2021,WSDM,inproceedings,Bias-Variance Decomposition for Ranking.,Pannaga Shivaswamy|Ashok Chandrashekar
+conf/wsdm/GhazimatinBRW20,2020,WSDM,inproceedings,PRINCE: Provider-side Interpretability with Counterfactual Explanations in Recommender Systems.,Azin Ghazimatin|Oana Balalau|Rishiraj Saha Roy|Gerhard Weikum
+conf/wsdm/KaiserRW24,2024,WSDM,inproceedings,Robust Training for Conversational Question Answering Models with Reinforced Reformulation Generation.,Magdalena Kaiser|Rishiraj Saha Roy|Gerhard Weikum
+conf/wsdm/BuiRR18,2018,WSDM,inproceedings,Neural Graph Learning: Training Neural Networks Using Graphs.,Thang D. Bui|Sujith Ravi|Vivek Ramavajjala
+conf/wsdm/JiangLFWZ18,2018,WSDM,inproceedings,Recommendation in Heterogeneous Information Networks Based on Generalized Random Walk Model and Bayesian Personalized Ranking.,Zhengshen Jiang|Hongzhi Liu 0001|Bin Fu|Zhonghai Wu|Tao Zhang 0070
+conf/wsdm/0001RJTY18,2018,WSDM,inproceedings,Multi-Dimensional Network Embedding with Hierarchical Structure.,Yao Ma 0001|Zhaochun Ren|Ziheng Jiang|Jiliang Tang|Dawei Yin 0001
+conf/wsdm/WeiH020,2020,WSDM,inproceedings,VISION-KG: Topic-centric Visualization System for Summarizing Knowledge Graph.,Jiaqi Wei|Shuo Han 0010|Lei Zou 0001
+conf/wsdm/HirschNGN21,2021,WSDM,inproceedings,Generating Tips from Product Reviews.,Sharon Hirsch|Slava Novgorodov|Ido Guy|Alexander Nus
+conf/wsdm/DeldjooNM20,2020,WSDM,inproceedings,Adversarial Machine Learning in Recommender Systems (AML-RecSys).,Yashar Deldjoo|Tommaso Di Noia|Felice Antonio Merra
+conf/wsdm/ZhangSC19,2019,WSDM,inproceedings,SHNE: Representation Learning for Semantic-Associated Heterogeneous Networks.,Chuxu Zhang|Ananthram Swami|Nitesh V. Chawla
+conf/wsdm/0001WSZW22,2022,WSDM,inproceedings,CMT-Net: A Mutual Transition Aware Framework for Taxicab Pick-ups and Drop-offs Co-Prediction.,Yudong Zhang 0005|Binwu Wang|Ziyang Shan|Zhengyang Zhou|Yang Wang 0015
+conf/wsdm/KimKZLRK19,2019,WSDM,inproceedings,Domain Switch-Aware Holistic Recurrent Neural Network for Modeling Multi-Domain User Behavior.,Donghyun Kim 0007|Sungchul Kim|Handong Zhao|Sheng Li 0001|Ryan A. Rossi|Eunyee Koh
+conf/wsdm/VaucherSC021,2021,WSDM,inproceedings,Quotebank: A Corpus of Quotations from a Decade of News.,Timot|Andreas Spitz|Michele Catasta|Robert West 0001
+conf/wsdm/Chen0F0023,2023,WSDM,inproceedings,Unbiased Knowledge Distillation for Recommendation.,Gang Chen 0047|Jiawei Chen 0007|Fuli Feng|Sheng Zhou 0004|Xiangnan He 0001
+conf/wsdm/AslayLLX18,2018,WSDM,inproceedings,Influence Maximization in Online Social Networks.,Laks V. S. Lakshmanan|Wei Lu 0002|Xiaokui Xiao
+conf/wsdm/LiCWL18,2018,WSDM,inproceedings,Streaming Link Prediction on Dynamic Attributed Networks.,Jundong Li|Kewei Cheng|Liang Wu 0006|Huan Liu 0001
+conf/wsdm/ChuRW20,2020,WSDM,inproceedings,ENTYFI: Entity Typing in Fictional Texts.,Cuong Xuan Chu|Simon Razniewski|Gerhard Weikum
+conf/wsdm/ZhangCZXG22,2022,WSDM,inproceedings,Geometric Inductive Matrix Completion: A Hyperbolic Approach with Unified Message Passing.,Chengkun Zhang|Hongxu Chen 0002|Sixiao Zhang|Guandong Xu|Junbin Gao
+conf/wsdm/Chang0SASL21,2021,WSDM,inproceedings,F-FADE: Frequency Factorization for Anomaly Detection in Edge Streams.,Yen-Yu Chang|Pan Li 0005|Rok Sosic|M. H. Afifi|Marco Schweighauser|Jure Leskovec
+conf/wsdm/GuyNPS18,2018,WSDM,inproceedings,Care to Share?: Learning to Rank Personal Photos for Public Sharing.,Ido Guy|Alexander Nus|Dan Pelleg|Idan Szpektor
+conf/wsdm/ZhangZHW021,2021,WSDM,inproceedings,WULAI-QA: Web Understanding and Learning with AI towards Document-based Question Answering against COVID-19.,Yuan Zhang|Xiaoqing Zhang 0017|Yichuan Hu|Guanchun Wang|Rui Yan 0001
+conf/wsdm/SuWZCM22,2022,WSDM,inproceedings,Efficient Reachability Query with Extreme Labeling Filter.,Zhixiang Su|Di Wang 0004|Xiaofeng Zhang 0002|Lizhen Cui|Chunyan Miao
+conf/wsdm/ZhuCLYYX20,2020,WSDM,inproceedings,Sequential Modeling of Hierarchical User Intention and Preference for Next-item Recommendation.,Nengjun Zhu|Jian Cao 0001|Yanchi Liu|Yang Yang 0074|Haochao Ying|Hui Xiong 0001
+conf/wsdm/ZuoDW22,2022,WSDM,inproceedings,Improving Session Search by Modeling Multi-Granularity Historical Query Change.,Xiaochen Zuo|Zhicheng Dou|Ji-Rong Wen
+conf/wsdm/HaoY0YY24,2024,WSDM,inproceedings,Motif-based Prompt Learning for Universal Cross-domain Recommendation.,Bowen Hao|Chaoqun Yang 0002|Lei Guo 0008|Junliang Yu|Hongzhi Yin
+conf/wsdm/JinKRK22,2022,WSDM,inproceedings,On Generalizing Static Node Embedding to Dynamic Settings.,Di Jin 0003|Sungchul Kim|Ryan A. Rossi|Danai Koutra
+conf/wsdm/WeiGZ00H23,2023,WSDM,inproceedings,CLNode: Curriculum Learning for Node Classification.,Xiaowen Wei|Xiuwen Gong|Yibing Zhan|Bo Du 0001|Yong Luo 0002|Wenbin Hu 0001
+conf/wsdm/SiedlaczekMS22,2022,WSDM,inproceedings,Using Conjunctions for Faster Disjunctive Top-k Queries.,Michal Siedlaczek|Antonio Mallia|Torsten Suel
+conf/wsdm/0001XRL0023,2023,WSDM,inproceedings,Knowledge-Augmented Methods for Natural Language Processing.,Chenguang Zhu 0001|Yichong Xu|Xiang Ren 0001|Bill Yuchen Lin|Meng Jiang 0001|Wenhao Yu 0002
+conf/wsdm/LinHZCC20,2020,WSDM,inproceedings,Initialization for Network Embedding: A Graph Partition Approach.,Wenqing Lin|Feng He|Faqiang Zhang|Xu Cheng|Hongyun Cai 0001
+conf/wsdm/WicaksonoM20,2020,WSDM,inproceedings,"Metrics, User Models, and Satisfaction.",Alfan Farizki Wicaksono|Alistair Moffat
+conf/wsdm/KimTOSG18,2018,WSDM,inproceedings,Leveraging the Crowd to Detect and Reduce the Spread of Fake News and Misinformation.,Jooyeon Kim|Behzad Tabibian|Alice Oh|Bernhard Sch|Manuel Gomez-Rodriguez
+conf/wsdm/WuKWYL20,2020,WSDM,inproceedings,"PERQ: Predicting, Explaining, and Rectifying Failed Questions in KB-QA Systems.",Zhiyong Wu 0003|Ben Kao|Tien-Hsuan Wu|Pengcheng Yin|Qun Liu 0001
+conf/wsdm/LinHG19,2019,WSDM,inproceedings,Sparsemax and Relaxed Wasserstein for Topic Sparsity.,Tianyi Lin|Zhiyue Hu|Xin Guo 0001
+conf/wsdm/PashanasangiS20,2020,WSDM,inproceedings,"Efficiently Counting Vertex Orbits of All 5-vertex Subgraphs, by EVOKE.",Noujan Pashanasangi|C. Seshadhri 0001
+conf/wsdm/ChengLDZFZ22,2022,WSDM,inproceedings,An Adaptive Unified Allocation Framework for Guaranteed Display Advertising.,Xiao Cheng|Chuanren Liu|Liang Dai|Peng Zhang 0001|Zhen Fang|Zhonglin Zu
+conf/wsdm/RahmanH24,2024,WSDM,inproceedings,Customer Understanding for Recommender Systems.,Md. Mostafizur Rahman|Yu Hirate
+conf/wsdm/DifallahFI18,2018,WSDM,inproceedings,Demographics and Dynamics of Mechanical Turk Workers.,Djellel Eddine Difallah|Elena Filatova|Panos Ipeirotis
+conf/wsdm/WangLT24,2024,WSDM,inproceedings,CityCAN: Causal Attention Network for Citywide Spatio-Temporal Forecasting.,Chengxin Wang|Yuxuan Liang 0002|Gary Tan
+conf/wsdm/TaoWXHZY19,2019,WSDM,inproceedings,Multi-Representation Fusion Network for Multi-Turn Response Selection in Retrieval-Based Chatbots.,Chongyang Tao|Wei Wu 0014|Can Xu|Wenpeng Hu|Dongyan Zhao 0001|Rui Yan 0001
+conf/wsdm/0001BCS19,2019,WSDM,inproceedings,Interactive Visualization of Urban Areas of Interest: A Parameter-Free and Efficient Footprint Method.,Mingzhao Li 0001|Zhifeng Bao|Farhana Murtaza Choudhury|Timos Sellis
+conf/wsdm/GuoLL20,2020,WSDM,inproceedings,Learning Individual Causal Effects from Networked Observational Data.,Ruocheng Guo|Jundong Li|Huan Liu 0001
+conf/wsdm/WuWLHHX19,2019,WSDM,inproceedings,Neural Demographic Prediction using Search Query.,Chuhan Wu|Fangzhao Wu|Junxin Liu|Shaojian He|Yongfeng Huang 0001|Xing Xie 0001
+conf/wsdm/OlteanuK018,2018,WSDM,inproceedings,"A Critical Review of Online Social Data: Biases, Methodological Pitfalls, and Ethical Boundaries.",Alexandra Olteanu|Emre Kiciman|Carlos Castillo 0001
+conf/wsdm/HeZYY18,2018,WSDM,inproceedings,Robust Transfer Learning for Cross-domain Collaborative Filtering Using Multiple Rating Patterns Approximation.,Ming He 0001|Jiuling Zhang|Peng Yang|Kaisheng Yao
+conf/wsdm/YuZHLZ21,2021,WSDM,inproceedings,Chebyshev Accelerated Spectral Clustering.,Tianyu Yu 0005|Yonghua Zhao|Rongfeng Huang|Shifang Liu|Xinyin Zhang
+conf/wsdm/0001R023,2023,WSDM,inproceedings,Scalable Adversarial Attack Algorithms on Influence Maximization.,Lichao Sun 0001|Xiaobin Rui|Wei Chen 0013
+conf/wsdm/RenHZZZ23,2023,WSDM,inproceedings,Slate-Aware Ranking for Recommendation.,Yi Ren|Xiao Han|Xu Zhao 0007|Shenzheng Zhang|Yan Zhang
+conf/wsdm/WakamiyaS0KAJ19,2019,WSDM,inproceedings,Pleasant Route Suggestion based on Color and Object Rates.,Shoko Wakamiya|Panote Siriaraya|Yihong Zhang 0001|Yukiko Kawai|Eiji Aramaki|Adam Jatowt
+conf/wsdm/Zhao0W22,2022,WSDM,inproceedings,ST-GSP: Spatial-Temporal Global Semantic Representation Learning for Urban Flow Prediction.,Liang Zhao|Min Gao 0001|Zongwei Wang 0002
+conf/wsdm/LiangSPGZJ21,2021,WSDM,inproceedings,CalibreNet: Calibration Networks for Multilingual Sequence Labeling.,Shining Liang|Linjun Shou|Jian Pei 0001|Ming Gong 0001|Wanli Zuo|Daxin Jiang
+conf/wsdm/Wang0C20,2020,WSDM,inproceedings,Learning and Reasoning on Graph for Recommendation.,Xiang Wang 0010|Xiangnan He 0001|Tat-Seng Chua
+conf/wsdm/SuG022,2022,WSDM,inproceedings,Automating ETL and Mining of Ethereum Blockchain Network.,Voon Hou Su|Sourav Sen Gupta 0001|Arijit Khan 0001
+conf/wsdm/0001DM22,2022,WSDM,inproceedings,Adversarial Attack on Graph Neural Networks as An Influence Maximization Problem.,Jiaqi Ma 0001|Junwei Deng|Qiaozhu Mei
+conf/wsdm/GongLSW20,2020,WSDM,inproceedings,JNET: Learning User Representations via Joint Network Embedding and Topic Embedding.,Lin Gong|Lu Lin 0001|Weihao Song|Hongning Wang
+conf/wsdm/SinghA19,2019,WSDM,inproceedings,EXS: Explainable Search Using Local Model Agnostic Interpretability.,Jaspreet Singh|Avishek Anand
+conf/wsdm/ChoiKLSL22,2022,WSDM,inproceedings,S-Walk: Accurate and Scalable Session-based Recommendation with Random Walks.,Minjin Choi 0001|Jinhong Kim|Joonseok Lee|Hyunjung Shim|Jongwuk Lee
+conf/wsdm/AhujaRKSR20,2020,WSDM,inproceedings,Language-Agnostic Representation Learning for Product Search on E-Commerce Platforms.,Aman Ahuja|Nikhil Rao 0001|Sumeet Katariya|Karthik Subbian|Chandan K. Reddy
+conf/wsdm/HuangYA23,2023,WSDM,inproceedings,Improving Cross-lingual Information Retrieval on Low-Resource Languages via Optimal Transport Distillation.,Zhiqi Huang 0002|Puxuan Yu|James Allan 0001
+conf/wsdm/LeL22,2022,WSDM,inproceedings,Collaborative Curating for Discovery and Expansion of Visual Clusters.,Dung D. Le|Hady W. Lauw
+conf/wsdm/AlmanzaEPR22,2022,WSDM,inproceedings,k-Clustering with Fair Outliers.,Matteo Almanza|Alessandro Epasto|Alessandro Panconesi|Giuseppe Re
+conf/wsdm/KumarLCB20,2020,WSDM,inproceedings,Retrieving Top Weighted Triangles in Graphs.,Raunak Kumar|Paul Liu 0001|Moses Charikar|Austin R. Benson
+conf/wsdm/WangBHZ18,2018,WSDM,inproceedings,A Unified Processing Paradigm for Interactive Location-based Web Search.,Sheng Wang 0007|Zhifeng Bao|Shixun Huang|Rui Zhang 0003
+conf/wsdm/XiaoYZJNY24,2024,WSDM,inproceedings,Deep Evolutional Instant Interest Network for CTR Prediction in Trigger-Induced Recommendation.,Zhibo Xiao|Luwei Yang|Tao Zhang 0124|Wen Jiang|Wei Ning|Yujiu Yang 0001
+conf/wsdm/ShankarSMSMS23,2023,WSDM,inproceedings,Privacy Aware Experiments without Cookies.,Shiv Shankar|Ritwik Sinha|Saayan Mitra|Viswanathan (Vishy) Swaminathan|Sridhar Mahadevan|Moumita Sinha
+conf/wsdm/AgarwalZWLNJ19,2019,WSDM,inproceedings,Estimating Position Bias without Intrusive Interventions.,Aman Agarwal|Ivan Zaitsev|Xuanhui Wang|Cheng Li 0012|Marc Najork|Thorsten Joachims
+conf/wsdm/SunCYC20,2020,WSDM,inproceedings,Influence Maximization with Spontaneous User Adoption.,Lichao Sun 0001|Albert C. Chen 0002|Philip S. Yu|Wei Chen 0013
+conf/wsdm/ChuWXLW23,2023,WSDM,inproceedings,Meta Policy Learning for Cold-Start Conversational Recommendation.,Zhendong Chu|Hongning Wang|Yun Xiao|Bo Long|Lingfei Wu 0001
+conf/wsdm/JainVMVK23,2023,WSDM,inproceedings,Self-supervised Multi-view Disentanglement for Expansion of Visual Collections.,Nihal Jain|Praneetha Vaddamanu|Paridhi Maheshwari|Vishwa Vinay|Kuldeep Kulkarni
+conf/wsdm/0001JF0S23,2023,WSDM,inproceedings,Towards an Event-Aware Urban Mobility Prediction System.,Zhaonan Wang 0001|Renhe Jiang|Zipei Fan|Xuan Song 0001|Ryosuke Shibasaki
+conf/wsdm/LuBH22,2022,WSDM,inproceedings,An Ensemble Model for Combating Label Noise.,Yangdi Lu|Yang Bo|Wenbo He
+conf/wsdm/ZhaoZW21,2021,WSDM,inproceedings,GraphSMOTE: Imbalanced Node Classification on Graphs with Graph Neural Networks.,Tianxiang Zhao 0001|Xiang Zhang 0001|Suhang Wang
+conf/wsdm/TosicCNRTP22,2022,WSDM,inproceedings,Towards a Cross-domain Semantically Interoperable Ecosystem.,Milenko Tosic|F|Barry Nouwt|David Emanuel Rua|Aleksandar Tomcic|Sasa Pesic
+conf/wsdm/ZhaoYY22,2022,WSDM,inproceedings,Multi-Sparse-Domain Collaborative Recommendation via Enhanced Comprehensive Aspect Preference Learning.,Xiaoyun Zhao|Ning Yang 0001|Philip S. Yu
+conf/wsdm/SharmaGMRB21,2021,WSDM,inproceedings,Balance Maximization in Signed Networks via Edge Deletions.,Kartik Sharma|Iqra Altaf Gillani|Sourav Medya|Sayan Ranu|Amitabha Bagchi
+conf/wsdm/HanHZ0WS23,2023,WSDM,inproceedings,Search Behavior Prediction: A Hypergraph Perspective.,Yan Han 0001|Edward W. Huang|Wenqing Zheng|Nikhil Rao 0001|Zhangyang Wang|Karthik Subbian
+conf/wsdm/MontalvoS23,2023,WSDM,inproceedings,Learning to Infer Product Attribute Values From Descriptive Texts and Images.,Pablo Montalvo|Aghiles Salah
+conf/wsdm/LiTHXCJ22,2022,WSDM,inproceedings,Unsupervised Cross-Domain Adaptation for Response Selection Using Self-Supervised and Adversarial Training.,Jia Li 0012|Chongyang Tao|Huang Hu|Can Xu|Yining Chen|Daxin Jiang
+conf/wsdm/MalliaSS21,2021,WSDM,inproceedings,Fast Disjunctive Candidate Generation Using Live Block Filtering.,Antonio Mallia|Michal Siedlaczek|Torsten Suel
+conf/wsdm/SuDJJ22,2022,WSDM,inproceedings,An Interactive Knowledge Graph Based Platform for COVID-19 Clinical Research.,Juntao Su|Edward T. Dougherty|Shuang Jiang|Fang Jin
+conf/wsdm/LinLL20,2020,WSDM,inproceedings,Balanced Influence Maximization in Attributed Social Network Based on Sampling.,Mingkai Lin|Wenzhong Li|Sanglu Lu
+conf/wsdm/ChoudharyRKSR22,2022,WSDM,inproceedings,ANTHEM: Attentive Hyperbolic Entity Model for Product Search.,Nurendra Choudhary|Nikhil Rao 0001|Sumeet Katariya|Karthik Subbian|Chandan K. Reddy
+conf/wsdm/ZhaoZ00L23,2023,WSDM,inproceedings,Differentially Private Temporal Difference Learning with Stochastic Nonconvex-Strongly-Concave Optimization.,Canzhe Zhao|Yanjie Ze|Jing Dong 0008|Baoxiang Wang 0001|Shuai Li 0010
+conf/wsdm/AkujuobiZY020,2020,WSDM,inproceedings,Recurrent Attention Walk for Semi-supervised Classification.,Uchenna Akujuobi|Qiannan Zhang|Yufei Han 0001|Xiangliang Zhang 0001
+conf/wsdm/LiW020,2020,WSDM,inproceedings,Adversarial Learning to Compare: Self-Attentive Prospective Customer Recommendation in Location based Social Networks.,Ruirui Li 0002|Xian Wu 0001|Wei Wang 0010
+conf/wsdm/CaiFWYLX23,2023,WSDM,inproceedings,A Causal View for Item-level Effect of Recommendation on User Preference.,Wei Cai|Fuli Feng|Qifan Wang 0001|Tian Yang|Zhenguang Liu|Congfu Xu
+conf/wsdm/KaghazgaranCS18,2018,WSDM,inproceedings,Combating Crowdsourced Review Manipulators: A Neighborhood-Based Approach.,Parisa Kaghazgaran|James Caverlee|Anna Cinzia Squicciarini
+conf/wsdm/TranT0CL20,2020,WSDM,inproceedings,HyperML: A Boosting Metric Learning Approach in Hyperbolic Space for Recommender Systems.,Lucas Vinh Tran|Yi Tay|Shuai Zhang 0007|Gao Cong|Xiaoli Li 0001
+conf/wsdm/DevinsTL22,2022,WSDM,inproceedings,Aligning the Research and Practice of Building Search Applications: Elasticsearch and Pyserini.,Josh Devins|Julie Tibshirani|Jimmy Lin
+conf/wsdm/LabiodNS24,2024,WSDM,inproceedings,WSDM 2024 Workshop on Representation Learning & Clustering.,Lazhar Labiod|Mohamed Nadif|Aghiles Salah
+conf/wsdm/QiuHYW22,2022,WSDM,inproceedings,Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation.,Ruihong Qiu|Zi Huang|Hongzhi Yin|Zijian Wang 0009
+conf/wsdm/TangW18,2018,WSDM,inproceedings,Personalized Top-N Sequential Recommendation via Convolutional Sequence Embedding.,Jiaxi Tang|Ke Wang 0001
+conf/wsdm/WangYXZT22,2022,WSDM,inproceedings,Structure Meets Sequences: Predicting Network of Co-evolving Sequences.,Yaojing Wang|Yuan Yao 0001|Feng Xu 0007|Yada Zhu|Hanghang Tong
+conf/wsdm/ChengLSHL19,2019,WSDM,inproceedings,XBully: Cyberbullying Detection within a Multi-Modal Context.,Lu Cheng 0001|Jundong Li|Yasin N. Silva|Deborah L. Hall|Huan Liu 0001
+conf/wsdm/Pougue-BiyongGH23,2023,WSDM,inproceedings,Learning Stance Embeddings from Signed Social Graphs.,John Pougu|Akshay Gupta|Aria Haghighi|Ahmed El-Kishky
+conf/wsdm/SopranoRBM22,2022,WSDM,inproceedings,Crowd_Frame: A Simple and Complete Framework to Deploy Complex Crowdsourcing Tasks Off-the-shelf.,Michael Soprano|Kevin Roitero|Francesco Bombassei De Bona|Stefano Mizzaro
+conf/wsdm/LockardSDH20,2020,WSDM,inproceedings,Web-scale Knowledge Collection.,Colin Lockard|Prashant Shiralkar|Xin Luna Dong|Hannaneh Hajishirzi
+conf/wsdm/DuttaCC022,2022,WSDM,inproceedings,Semi-supervised Stance Detection of Tweets Via Distant Network Supervision.,Subhabrata Dutta|Samiya Caur|Soumen Chakrabarti|Tanmoy Chakraborty 0002
+conf/wsdm/KonarS21,2021,WSDM,inproceedings,Exploring the Subgraph Density-Size Trade-off via the Lovaśz Extension.,Aritra Konar|Nicholas D. Sidiropoulos
+conf/wsdm/BaoCLLLX22,2022,WSDM,inproceedings,Harvesting More Answer Spans from Paragraph beyond Annotation.,Qiaoben Bao|Jiangjie Chen|Linfang Liu|Jingping Liu|Jiaqing Liang|Yanghua Xiao
+conf/wsdm/KangLZ21,2021,WSDM,inproceedings,QueryBlazer: Efficient Query Autocompletion Framework.,Young Mo Kang|Wenhao Liu 0003|Yingbo Zhou 0002
+conf/wsdm/GeH0023,2023,WSDM,inproceedings,"FineSum: Target-Oriented, Fine-Grained Opinion Summarization.",Suyu Ge|Jiaxin Huang 0001|Yu Meng 0001|Jiawei Han 0001
+conf/wsdm/TayTH18,2018,WSDM,inproceedings,Hyperbolic Representation Learning for Fast and Efficient Neural Question Answering.,Yi Tay|Luu Anh Tuan|Siu Cheung Hui
+conf/wsdm/ZhangXZZ20,2020,WSDM,inproceedings,Distilling Structured Knowledge into Embeddings for Explainable and Accurate Recommendation.,Yuan Zhang 0024|Xiaoran Xu|Hanning Zhou|Yan Zhang 0004
+conf/wsdm/ChenLJZC19,2019,WSDM,inproceedings,Review-Driven Answer Generation for Product-Related Questions in E-Commerce.,Shiqian Chen|Chenliang Li|Feng Ji|Wei Zhou|Haiqing Chen
+conf/wsdm/HuangSLH18,2018,WSDM,inproceedings,Exploring Expert Cognition for Attributed Network Embedding.,Xiao Huang 0001|Qingquan Song|Jundong Li|Xia Hu 0001
+conf/wsdm/LiuS23,2023,WSDM,inproceedings,Combining vs. Transferring Knowledge: Investigating Strategies for Improving Demographic Inference in Low Resource Settings.,Yaguang Liu|Lisa Singh
+conf/wsdm/0004K20,2020,WSDM,inproceedings,Listwise Learning to Rank by Exploring Unique Ratings.,Xiaofeng Zhu 0004|Diego Klabjan
+conf/wsdm/SuhHWA21,2021,WSDM,inproceedings,Population-Scale Study of Human Needs During the COVID-19 Pandemic: Analysis and Implications.,Jina Suh|Eric Horvitz|Ryen W. White|Tim Althoff
+conf/wsdm/BaiDBCSW19,2019,WSDM,inproceedings,SimGNN: A Neural Network Approach to Fast Graph Similarity Computation.,Yunsheng Bai|Hao Ding 0003|Song Bian 0002|Ting Chen 0007|Yizhou Sun|Wei Wang 0010
+conf/wsdm/LiBCS18,2018,WSDM,inproceedings,Supporting Large-scale Geographical Visualization in a Multi-granularity Way.,Mingzhao Li 0001|Zhifeng Bao|Farhana Murtaza Choudhury|Timos Sellis
+conf/wsdm/BondarenkoADHBH22,2022,WSDM,inproceedings,Towards Understanding and Answering Comparative Questions.,Alexander Bondarenko 0001|Yamen Ajjour|Valentin Dittmar|Niklas Homann|Pavel Braslavski 0001|Matthias Hagen
+conf/wsdm/LiuSZ18,2018,WSDM,inproceedings,Inferring Dockless Shared Bike Distribution in New Cities.,Zhaoyang Liu 0003|Yanyan Shen|Yanmin Zhu 0006
+conf/wsdm/SuiZZH024,2024,WSDM,inproceedings,Table Meets LLM: Can Large Language Models Understand Structured Table Data? A Benchmark and Empirical Study.,Yuan Sui 0001|Mengyu Zhou|Mingjie Zhou|Shi Han|Dongmei Zhang 0001
+conf/wsdm/AnwarSR21,2021,WSDM,inproceedings,Balanced Influence Maximization in the Presence of Homophily.,Md Sanzeed Anwar|Martin Saveski|Deb Roy
+conf/wsdm/MaPCH22,2022,WSDM,inproceedings,Deep Graph-level Anomaly Detection by Glocal Knowledge Distillation.,Rongrong Ma|Guansong Pang|Ling Chen 0006|Anton van den Hengel
+conf/wsdm/XinKAJ22,2022,WSDM,inproceedings,Supervised Advantage Actor-Critic for Recommender Systems.,Xin Xin 0003|Alexandros Karatzoglou|Ioannis Arapakis|Joemon M. Jose
+conf/wsdm/MarquezW19,2019,WSDM,inproceedings,Overlapping Community Detection in Static and Dynamic Social Networks.,Renny M|Richard Weber 0002
+conf/wsdm/BalashankarBS21,2021,WSDM,inproceedings,Enhancing Neural Recommender Models through Domain-Specific Concordance.,Ananth Balashankar|Alex Beutel|Lakshminarayanan Subramanian
+conf/wsdm/KarisaniK21,2021,WSDM,inproceedings,Semi-Supervised Text Classification via Self-Pretraining.,Payam Karisani|Negin Karisani
+conf/wsdm/YangZZ022,2022,WSDM,inproceedings,Interpretable Relation Learning on Heterogeneous Graphs.,Qiang Yang 0015|Qiannan Zhang|Chuxu Zhang|Xiangliang Zhang 0001
+conf/wsdm/GuoWYLW22,2022,WSDM,inproceedings,Multi-Scale Variational Graph AutoEncoder for Link Prediction.,Zhihao Guo|Feng Wang 0038|Kaixuan Yao|Jiye Liang|Zhiqiang Wang 0005

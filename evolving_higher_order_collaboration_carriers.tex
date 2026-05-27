@@ -1,0 +1,460 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{csquotes}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{example}[definition]{Example}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\wt}{\mathrm{wt}}
+\newcommand{\field}{\mathsf{f}}
+\newcommand{\score}{\mathsf{Score}}
+
+\title{Evolving Higher-Order Collaboration Carriers in Temporal Coauthorship Data\\
+A Geometry--Field Study on DBLP}
+\author{Mirco A. Mannucci}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Higher-order propagation models are usually studied on a fixed combinatorial substrate. In temporal collaboration systems this is too static: small coauthor configurations do not merely carry activity, they strengthen, weaken, and reorganize over time. In this paper we study temporal coauthorship data through a weighted simplicial representation in which papers induce simplices, repeated collaboration determines simplex weights, and current collaboration activity is modeled as a field evolving on the simplicial structure. We then compare frozen higher-order diffusion with a geometry--field model in which simplex weights evolve across time windows and feed back into subsequent propagation. The concrete goal is not a full theory of scientific diffusion, but a first empirical test of a sharper hypothesis: in temporal collaboration systems, the effective carrier of future structural spread need not be captured adequately by an individual author alone. We formulate the data pipeline, define the weighted temporal simplicial objects used in the experiments, specify the observables of interest, and outline a reproducible experimental programme implemented in the \texttt{she-geofield} extension of S.H.E. The paper is designed as a basic arXiv note accompanying the first real-data investigation.
+\end{abstract}
+
+\medskip
+\noindent\textbf{MSC 2020:} 05C82, 05C50, 68R10, 37N99.
+
+\noindent\textbf{Keywords:} weighted simplicial complexes, temporal coauthorship, higher-order diffusion, Hodge Laplacian, collaboration dynamics, DBLP, geometry--field coupling.
+
+\section{Introduction}
+Most diffusion models on networks ask how a field propagates on a given graph or higher-order structure. In many real systems, however, the underlying structure is itself dynamic. This is especially true in collaboration systems. Research groups form, persist, split, and reconnect. Repeated collaboration may strengthen some small groups, while other groups decay or act only as transient bridges.
+
+The natural higher-order representation of such systems is simplicial. A paper with $k+1$ coauthors induces a $k$-simplex, not merely a clique of pairwise edges. This makes it possible to distinguish bonded micro-groups from their graph projections. The main social and scientific intuition behind the present paper is that the relevant carrier of structural spread need not be summarized adequately by individual-author statistics alone. Recurrent collaboration units may carry temporal information that is blurred or flattened in graph projections.
+
+The present note follows a recent geometry--field line of work on weighted simplicial complexes, but moves from toy models to real data. Our target dataset is DBLP, whose bibliographic records naturally define temporal coauthorship simplices, publication years, authorship groups, and venues. DBLP provides an especially clean first real-data test because the higher-order structure is not imposed artificially: each paper already comes with a genuine coauthor set, and the dataset is openly available as a full XML dump with bibliographic metadata and persistent person identifiers \cite{DBLPXML,DBLPFAQ}.
+
+There are two reasons to start with DBLP rather than with a noisier social or semantic dataset. First, the simplicial lift is direct and auditable: the higher-order object comes from the observed author set of each paper. Second, the temporal axis is explicit at the record level, so one can define rolling windows and ask predictive questions without inventing timestamps indirectly. This makes it possible to test a narrow but meaningful claim: whether recurrent collaboration carriers contain predictive information about subsequent collaboration structure beyond author-only summaries.
+
+The main question is simple:
+\begin{quote}
+\emph{Do recurrent collaboration carriers become better predictors of future collaboration structure than node-centric or frozen-geometry baselines?}
+\end{quote}
+
+Our contribution in this first version is deliberately modest. We do not claim a complete theory of scientific collaboration. Instead, we isolate a tractable empirical programme:
+\begin{enumerate}[label=(\roman*)]
+    \item define a temporal simplicial lifting of DBLP coauthorship data;
+    \item assign weights and decorations to collaboration simplices;
+    \item model current collaboration activity as a field on the simplicial structure;
+    \item compare frozen higher-order propagation with an evolving geometry--field alternative;
+    \item test whether recurrent collaboration carriers act as stronger higher-order signals than node-only baselines.
+\end{enumerate}
+
+The paper is intentionally a first mathematical-computational note rather than a full theory of scientific collaboration flow. We do not attempt to explain all mechanisms of topic formation, seniority, prestige, or citation dynamics. The narrower aim is to state a clean experimental programme, implement it reproducibly, and determine whether the group-level carrier hypothesis survives first contact with real temporal data.
+
+\section{Related work}
+The present paper sits at the intersection of three literatures. First, higher-order network science has developed a substantial body of work on simplicial and hypergraph representations of complex systems, including higher-order organization, simplicial contagion, and propagation beyond pairwise interactions \cite{BensonGleichLeskovec2016,IacopiniPetriBarratLatora2019,BattistonCencettiIacopiniEtAl2020,BickGrossHarringtonSchaub2023}. Second, operator-theoretic work has made Hodge Laplacians and topological signal processing central tools for structured dynamics on simplicial objects \cite{BarbarossaSardellitti2020,TorresBianconi2020,BacciniGeraciBianconi2022}. Third, bibliometric and coauthorship studies have long treated scientific collaboration as a networked and evolving object, though mostly at the graph level.
+
+What is still underdeveloped is a real-data programme in which collaboration units are treated as first-class higher-order carriers and tested through an evolving simplicial geometry rather than only through static graph-based collaboration networks. This is the gap we target here.
+
+More concretely, most coauthorship studies ask which authors are central, prolific, well connected, or structurally bridging in a graph projection. Those are useful questions, but they partially collapse the very collaboration object we wish to study. If three or four authors repeatedly act together as a stable unit, a graph summary distributes that signal over pairwise edges or node-level marginals. Our approach instead preserves the group as an explicit simplex and asks whether this improves predictive and structural diagnostics.
+
+\section{DBLP as a temporal simplicial dataset}
+DBLP is a curated open bibliography for computer science. The official dataset is distributed as a full XML dump and includes bibliographic records with authors, publication year, and venue metadata \cite{DBLPXML}. This makes it suitable for constructing temporal simplicial complexes directly from observed coauthor sets.
+
+\begin{definition}[DBLP simplicial lift]
+Fix a time window $W$. For each paper published inside $W$, let $A(p)$ be its set of authors. The DBLP simplicial lift associated with $W$ is the simplicial complex $\K_W$ generated by the coauthor sets $A(p)$, together with all their faces.
+\end{definition}
+
+Thus, a paper with two authors induces an edge, a paper with three authors induces a triangle, and so on. The higher-order structure is not heuristic: it is directly derived from the authorship relation.
+
+\section{Weights, decorations, and field semantics}
+The critical modeling choices are not the simplices themselves but their interpretation.
+
+\subsection*{Simplex weight}
+For a simplex $\sigma$ in a time window $W$, a natural first weight is
+\[
+\wt_W(\sigma)=\#\{p\in W: \sigma \subseteq A(p)\},
+\]
+that is, the number of papers in the window whose coauthor set contains $\sigma$.
+
+This contained-team weight is preferred over an exact-team weight in the first empirical version because it is denser and more robust. It counts repeated reuse of the collaboration unit even when the surrounding larger author team changes.
+
+\subsection*{Simplex decorations}
+A simplex may also carry additional metadata extracted from the papers supporting it. Candidate decorations include:
+\begin{itemize}
+    \item mean venue prestige or venue category,
+    \item topical coherence or topic entropy,
+    \item interdisciplinarity,
+    \item mean author seniority or productivity spread,
+    \item persistence across consecutive windows.
+\end{itemize}
+
+\subsection*{Field}
+The field should not be interpreted as a literal epidemic variable. In the DBLP setting the most natural first interpretation is \emph{collaboration activation}. Informally, it measures how active a simplex is as a current carrier of collaborative energy or future collaboration potential. In a simple first model, the field may be initialized from recent activity counts and then diffused through weighted Hodge operators.
+
+At the code level, the first operational version uses recent support-derived activation on edges and triangle-level diagnostics. This is a deliberately conservative starting point. It avoids speculative semantic interpretations while still allowing a higher-order dynamical comparison between static and evolving simplicial substrates.
+
+\begin{remark}
+A second-stage extension would interpret the field semantically, for example as topic activation or knowledge-flow intensity. The first real-data paper should avoid that extra burden and stay with collaboration activation.
+\end{remark}
+
+\section{Temporal geometry--field model}
+Let $W_1,W_2,\dots,W_T$ be rolling windows, for example 3-year windows shifted by 1 year. Each window determines a weighted decorated simplicial complex $(\K_t,\wt_t,\pi_t)$.
+
+The frozen baseline uses only the operator induced by $(\K_t,\wt_t)$ inside a given window. The evolving alternative tracks how the weights change across windows and allows a geometry--field layer to compare current activation with structural evolution.
+
+A minimal field step has the form
+\[
+\field^{(t+1)} = P_t\field^{(t)},
+\qquad P_t = e^{-\Delta t L_1(\wt_t)},
+\]
+while the evolving-geometry side uses window-to-window weight updates and comparison observables extracted from $\wt_t$ and $\field^{(t)}$.
+
+In the current implementation, the final edge-level carrier score is not the raw evolved field by itself. Empirically, that quantity was too brittle on the first real venue slices. The checked-in pipeline therefore uses a bounded hybrid score
+\[
+\score_{\mathrm{evol}}(e)
+=
+0.45\,\field_{\mathrm{evolved}}(e)
++
+0.35\,\score_{\mathrm{pers}}(e)
++
+0.20\,\log\!\bigl(1+\wt(e)\bigr)_{\mathrm{norm}},
+\]
+where the last term is a normalized log-support factor. This keeps the geometry--field contribution central while stabilizing it with recurrence and support information already visible in the temporal simplicial data.
+
+In the current note we do not force a single universal update law. The goal is empirical: we want to compare frozen and evolving higher-order collaboration carriers on the same temporal dataset using a common simplicial representation and common observables.
+
+This restriction is deliberate. The first DBLP study does not need a grand continuum model of scholarly interaction. It needs a disciplined comparison protocol. Each window supplies a weighted simplicial state, a field initialization, and a bounded number of internal propagation steps. Frozen and evolving variants are then evaluated against the same future collaboration targets. The point is not to claim that all collaboration dynamics are diffusive, but to ask whether the geometry--field formalism captures a useful predictive distinction that node-only or frozen baselines miss.
+
+\section{Observables and empirical questions}
+The following observables are central.
+
+\begin{definition}[Group persistence score]
+For a simplex $\sigma$, define its persistence score across windows by
+\[
+\score_{\mathrm{pers}}(\sigma)=\sum_t \mathbf{1}_{\sigma\in \K_t}.
+\]
+\end{definition}
+
+\begin{definition}[Higher-order bridge score]
+A collaboration simplex is a higher-order bridge if its removal or downweighting produces a significant decrease in cross-community connectivity or future activation transfer.
+\end{definition}
+
+\begin{definition}[Future-spread score]
+Fix a horizon $h$. The future-spread score of a simplex $\sigma$ at time $t$ is the amount of later activation or later collaboration structure within windows $t+1,\dots,t+h$ predicted by seeding or scoring $\sigma$ at time $t$.
+\end{definition}
+
+The real-data paper should address at least three questions:
+\begin{enumerate}[label=(Q\arabic*)]
+    \item Do recurrent collaboration simplices predict future collaboration structure better than high-degree or high-productivity authors alone?
+    \item Are higher-order bridge simplices more informative than graph bridges for cross-community collaboration development?
+    \item Does evolving simplicial geometry outperform frozen geometry in predicting later collaboration activity?
+\end{enumerate}
+
+These questions can be operationalized in a narrow and reproducible way. For Q1, one ranks simplices or edges induced by group-level scores at time $t$ and compares them against realized support in later windows. For Q2, one evaluates whether candidate bridge simplices disproportionately connect collaboration regions that would otherwise be weakly linked under graph-only views. For Q3, one compares predictive rankings produced by a frozen simplicial operator against rankings produced after a bounded geometry--field evolution inside each window.
+
+\section{Experimental design}
+The first empirical paper should stay narrow and reproducible.
+
+\subsection*{Windowing}
+Use rolling 3-year windows shifted by 1 year.
+
+\subsection*{Simplicial construction}
+For each window:
+\begin{itemize}
+    \item papers induce simplices on coauthor sets;
+    \item weights are contained-team publication counts;
+    \item decorations are derived from venue, topical, and persistence metadata as available.
+\end{itemize}
+
+\subsection*{Baselines}
+Compare against:
+\begin{itemize}
+    \item node degree / weighted degree,
+    \item author productivity,
+    \item graph-based bridge centrality,
+    \item frozen simplicial diffusion,
+    \item evolving simplicial geometry--field scoring.
+\end{itemize}
+
+\subsection*{First experimental slice}
+The initial experiment should use a manageable DBLP subset rather than the entire corpus. Suitable first slices include one venue family, one subject-adjacent venue regex, or a decade-scale year range with moderate team sizes such as 2--6 authors. The objective is to obtain a stable real-data result quickly, not to maximize corpus size before the methodology is debugged.
+
+\subsection*{Concrete experiment types}
+The first repo-supported paper should include at least the following experiment classes.
+\begin{enumerate}[label=(E\arabic*)]
+    \item \textbf{Predictive ranking:} compare whether top-ranked simplices under support, persistence, frozen diffusion, and evolving geometry better align with future collaboration support.
+    \item \textbf{Bridge detection:} compare higher-order bridge candidates against graph bridge baselines on collaboration regions that later reconnect or expand.
+    \item \textbf{Window-to-window persistence:} track which simplices survive, decay, or reappear and whether geometry--field scores separate these regimes.
+    \item \textbf{Ablation by simplex size:} compare edges, triangles, and small larger teams where computationally feasible.
+    \item \textbf{Case study analysis:} isolate a small collaboration substructure whose higher-order role is not obvious from node centrality alone.
+\end{enumerate}
+
+\subsection*{Outputs}
+At minimum, report:
+\begin{itemize}
+    \item persistence of collaboration simplices,
+    \item bridge scores,
+    \item future-spread prediction accuracy,
+    \item ablations by simplex size and venue class,
+    \item examples of groups whose higher-order role is invisible at the node level.
+\end{itemize}
+
+In practical terms, the first paper should produce a compact but concrete set of deliverables: a table of top-ranked collaboration simplices, a model-comparison table for predictive performance, a temporal performance plot across windows, and a small case-study figure showing a collaboration carrier whose group-level role would be flattened in a graph projection.
+
+\subsection*{Current implemented experiment path}
+The repository now supports both a deterministic DBLP-shaped smoke test and a first real-data venue-slice experiment. In its current checked-in form, the pipeline can operate either on a small XML fixture with publication years 2020--2023 or on a filtered real DBLP slice. In both cases it builds rolling windows, lifts coauthor sets to simplicial complexes, initializes an edge-level collaboration-activation field, and compares the following score families:
+\begin{itemize}
+    \item author weighted degree,
+    \item author productivity,
+    \item graph bridge score,
+    \item simplex support,
+    \item persistence-only scoring,
+    \item frozen simplicial diffusion,
+    \item evolving geometry--field scoring.
+\end{itemize}
+
+The current implementation already emits the paper-style output types we need for the real study:
+\begin{itemize}
+    \item a window summary table,
+    \item a model-comparison table for future-support prediction,
+    \item a top-ranked collaboration-simplex table,
+    \item a predictive comparison figure,
+    \item a temporal performance figure,
+    \item a small case-study figure.
+\end{itemize}
+
+The smoke-test fixture confirms that the code path is reproducible end to end, but the more important point is that the same pipeline now runs on a real venue slice. In the first real experiment we use an SDM-only subset extracted from DBLP for 2018--2024 with team sizes 2--6. This produces five rolling 3-year windows. The corresponding window summaries are already nontrivial: the windows 2018--2020 through 2022--2024 contain between 230 and 239 papers, 711 and 836 authors, 1252 and 1548 edges, and 1118 and 1500 triangles. This is no longer toy structure, but a genuine venue-level temporal collaboration slice.
+
+The first real comparison table is also informative. On this SDM slice, persistence-only scoring remains the strongest temporal baseline, but the current evolving geometry score is now strongly positive as well and no longer looks marginal relative to the simpler baselines. Top-$k$ precision is high for both persistence and the evolving score, while author-only and graph-only baselines remain materially weaker by correlation. That is the right kind of result for a first real-data note: the pipeline is now honest enough to reveal both where geometry helps and where recurrence still dominates.
+
+The top-ranked collaboration table likewise contains real repeated carrier candidates rather than synthetic placeholders. Representative examples include \texttt{Jilles Vreeken--Mario Boley}, \texttt{Boris Wiegand--Jilles Vreeken}, \texttt{Dietrich Klakow--Jilles Vreeken}, and \texttt{Philip S. Yu--Yao Li}. These are exactly the kinds of outputs the paper needs: explicit collaboration carriers, explicit baselines, explicit future targets, and explicit failure modes when a more ambitious model does not yet dominate.
+
+These are not yet the final headline scientific claims of the DBLP paper. They are, however, the first real empirical outputs demonstrating that the repository now computes the intended family of objects on actual DBLP data and emits paper-usable comparison artifacts.
+
+\section{First results on an SDM slice}
+We now record the first actual outputs obtained from the current implementation on a real DBLP slice. The slice consists of SDM papers from 2018--2024 with team sizes between 2 and 6 authors. The purpose of this section is not to claim broad empirical validation. It is to document what the current geometry--field pipeline does on real data and what the first comparisons already show.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+Window & Papers & Authors & Edges & Triangles \\
+\midrule
+2018--2020 & 230 & 711 & 1252 & 1118 \\
+2019--2021 & 228 & 714 & 1239 & 1105 \\
+2020--2022 & 224 & 715 & 1263 & 1149 \\
+2021--2023 & 238 & 782 & 1394 & 1285 \\
+2022--2024 & 239 & 836 & 1548 & 1500 \\
+\bottomrule
+\end{tabular}
+\caption{Window summary for the first real SDM slice extracted from DBLP. Even this narrow venue-level subset already produces nontrivial higher-order structure across all rolling windows.}
+\label{tab:sdm-window-summary}
+\end{table}
+
+Table~\ref{tab:sdm-window-summary} shows that the resulting simplicial windows are large enough to make the comparison substantive rather than cosmetic. Each rolling window contains well over one thousand edges and triangles, so the higher-order carriers are not isolated curiosities.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrr}
+\toprule
+Model & Mean top-$k$ precision & Mean Spearman to future support \\
+\midrule
+Author degree & 0.85 & 0.0906 \\
+Author productivity & 0.83 & 0.0848 \\
+Graph bridge & 0.70 & 0.0366 \\
+Simplex support & 0.93 & 0.2616 \\
+Persistence only & 1.00 & 0.6055 \\
+Frozen diffusion & 0.65 & -0.0181 \\
+Evolving geometry & 1.00 & 0.5271 \\
+\bottomrule
+\end{tabular}
+\caption{Mean predictive scores across the evaluated SDM windows after introducing the hybrid evolving score. Persistence remains the strongest positive signal by correlation, but the geometry--field score is now also strongly positive and attains mean top-$k$ precision $1.0$ on this slice.}
+\label{tab:sdm-model-comparison}
+\end{table}
+
+Table~\ref{tab:sdm-model-comparison} is the main empirical checkpoint of the current note. The geometry--field model still does not beat persistence by correlation, but it is now competitive at the level we hoped to reach for a first real-data version. On SDM the evolving score nearly matches persistence in mean correlation while clearly outperforming the author-only, graph-bridge, and frozen-diffusion baselines.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.88\linewidth]{she-geofield/out/dblp_sdm_real/predictive_comparison.png}
+\caption{Mean top-$k$ predictive precision on the SDM slice after hybridizing the evolving score. The geometry--field score now matches the strongest ranking precision on this venue slice.}
+\label{fig:sdm-predictive-comparison}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.88\linewidth]{she-geofield/out/dblp_sdm_real/temporal_performance.png}
+\caption{Window-by-window predictive performance on the SDM slice for simplex support, frozen diffusion, and evolving geometry. The revised evolving score is now positive across the evaluated windows and much closer to persistence than in the earlier draft, although persistence remains the strongest simple correlation signal overall.}
+\label{fig:sdm-temporal-performance}
+\end{figure}
+
+Figures~\ref{fig:sdm-predictive-comparison} and~\ref{fig:sdm-temporal-performance} make the same point visually. The code is no longer merely able to produce scores; it now produces a comparison landscape. This is the threshold an arXiv note needs: there is an actual experiment, actual figures, actual tables, and an actual mismatch between hypothesis and current performance that can guide the next round of refinement.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{llrrrr}
+\toprule
+Window & Simplex & Score & Support & Persistence & Future support \\
+\midrule
+2018--2020 & Philip S. Yu--Yao Li & 0.3789 & 1 & 0.5 & 2 \\
+2019--2021 & Charu C. Aggarwal--Philip S. Yu & 0.5299 & 2 & 1.0 & 2 \\
+2020--2022 & Jilles Vreeken--Mario Boley & 0.5500 & 1 & 1.0 & 1 \\
+2020--2022 & Boris Wiegand--Jilles Vreeken & 0.5415 & 2 & 1.0 & 3 \\
+2020--2022 & Dietrich Klakow--Jilles Vreeken & 0.5415 & 2 & 1.0 & 3 \\
+\bottomrule
+\end{tabular}
+\caption{Representative collaboration carriers surfaced by the revised evolving-geometry ranking on the SDM slice. At the current stage these highlighted examples are recurrent pair-level carriers with nonzero future support, not yet a claim that larger simplices dominate pair-level signals on real data.}
+\label{tab:sdm-carriers}
+\end{table}
+
+Table~\ref{tab:sdm-carriers} gives the sort of qualitative evidence the larger paper will need. The carrier candidates are recognizable repeated research pairs, and the table records not only their current score but also their immediate support, persistence, and realized future support. This is the right level of granularity for later case-study analysis.
+
+\subsection*{Cross-venue comparison}
+To check that the SDM slice is not a one-off curiosity, we also ran the same pipeline on a second real venue slice: WSDM for 2018--2024 with the same team-size restriction. The WSDM windows are somewhat larger than the SDM ones, ranging from 294 to 380 papers and from 1899 to 2671 edges across the rolling 3-year windows. This produces a second real evaluation regime with a denser collaboration surface.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+Venue & Persistence precision & Persistence Spearman & Evolving precision & Evolving Spearman \\
+\midrule
+SDM & 1.0000 & 0.6055 & 1.0000 & 0.5271 \\
+WSDM & 1.0000 & 0.5919 & 1.0000 & 0.5219 \\
+\bottomrule
+\end{tabular}
+\caption{Cross-venue comparison of the strongest simple baseline and the revised evolving geometry score on the broad future-support task. The evolving score is now strongly positive on both venue slices and matches persistence in mean top-$k$ precision, but persistence still retains the stronger average correlation with future support.}
+\label{tab:cross-venue}
+\end{table}
+
+Table~\ref{tab:cross-venue} is important because it changes the interpretive tone of the paper. We are no longer looking at one lucky or unlucky slice. Across both SDM and WSDM, the revised evolving score is now strongly positive and competitive in ranking precision, while persistence remains the strongest signal by correlation. This is a more credible outcome for the present stage of the programme: the geometry--field layer contributes usefully, but it has not yet displaced the best temporal baseline on the broad recurrence-driven task.
+
+This cross-venue stability also sharpens the next research step. The key challenge is not to build more ingestion machinery. That part now exists. The challenge is to identify and formalize the regime in which geometry captures something persistence alone does not. At present the higher-order carrier hypothesis is partially supported: the simplicial representation is useful, the evolving score is now competitive, but the best temporal baseline still wins on the broad recurrence target.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.95\linewidth]{she-geofield/out/dblp_cross_venue/cross_venue_summary.png}
+\caption{Cross-venue summary for SDM and WSDM on the broad future-support task. The revised evolving score is now strongly positive and matches persistence in mean top-$k$ precision across both venue slices, but persistence retains the stronger mean correlation with future support.}
+\label{fig:cross-venue}
+\end{figure}
+
+\subsection*{Bridge-emergence regime}
+The broad future-support task still favors persistence because it rewards repeated reuse of already established collaboration edges. To test whether geometry captures a different phenomenon, we also evaluate a narrower regime centered on bridge-emergence candidates: edges with high graph-bridge score, low persistence, and future branching into new triangle contexts. This is a deliberately harder target for recurrence-based scoring, because the task is no longer to identify stable repeated carriers but to identify edges that later expand into new local collaboration structure.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrr}
+\toprule
+Venue & Pers. prec. & Pers. $\rho$ & Evol. prec. & Evol. $\rho$ & Frozen prec. & Frozen $\rho$ \\
+\midrule
+SDM & 0.00 & 0.0168 & 0.05 & 0.0548 & 0.15 & 0.0688 \\
+WSDM & 0.05 & 0.0297 & 0.00 & 0.0751 & 0.00 & 0.0580 \\
+\bottomrule
+\end{tabular}
+\caption{Bridge-emergence regime across the two venue slices. Here the target is future branching into novel triangle contexts among low-persistence bridge candidates. Persistence no longer dominates: the evolving score exceeds persistence in mean Spearman correlation on both venues, although the strongest regime-specific baseline is not the same on the two slices.}
+\label{tab:bridge-regime}
+\end{table}
+
+Table~\ref{tab:bridge-regime} is the first concrete sign that geometry may be earning its keep on a phenomenon that persistence is not built to capture. On the broad recurrence task, persistence remains the champion. On the bridge-emergence task, by contrast, persistence collapses toward near-zero correlation, while the evolving score remains positive on both venue slices and exceeds persistence in mean correlation on both. The gain is still modest, and on SDM the frozen diffusion baseline is even stronger on this narrow target, so this is not yet a clean claim of geometry-field dominance. But it is exactly the kind of regime-specific result that justifies continuing the line rather than immediately collapsing the paper to a purely negative conclusion.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.95\linewidth]{she-geofield/out/dblp_bridge_cross_venue/cross_venue_summary.png}
+\caption{Cross-venue summary for the bridge-emergence regime. Persistence is no longer the dominant signal here; geometry-based scores retain positive correlation with future branching where recurrence is weak.}
+\label{fig:bridge-cross-venue}
+\end{figure}
+
+\section{Discussion and next steps}
+The present note is best read as a bridge from toy geometry--field experiments to a first real-data evaluation regime. Its main contribution is not that the geometry--field layer has already won decisively on DBLP. The main contribution is that the repository now supports a reproducible temporal simplicial experiment on real coauthorship data, and that the first cross-venue results are concrete enough to reveal both promise and current limits. In particular, the evolving score reported here should be understood as a stabilized empirical ranking rather than as a pure geometry--field observable: it combines evolved field signal with persistence and normalized support because the raw evolved field alone was too brittle on the first real slices.
+
+The scientific picture is therefore more specific than in the previous draft. On the broad future-support task, persistence remains the strongest baseline and the honest claim is competitiveness rather than superiority. On the narrower bridge-emergence task, persistence is no longer dominant and geometry-based scores retain useful signal. This is the right next-step structure for the project: not to tune blindly against persistence everywhere, but to identify the empirical regimes in which evolving simplicial geometry captures predictive structure beyond recurrence.
+
+A natural next step is to study not only which collaboration units act as higher-order carriers, but how local collaboration geometry changes under repeated activation. In particular, one may ask whether a region becomes more cohesion-dominated, more bridge-generating, or remains near a transitional regime. In later work, this could be operationalized through local curvature sign patterns, branching diagnostics, and persistence-versus-expansion measures on temporal simplicial windows.
+
+\section{Repo support via \texttt{she-geofield}}
+The current \texttt{she-geofield} extension began as a toy geometry--field package, but it now also includes a first DBLP branch with bibliographic parsing, temporal windowing, coauthor lifting, baseline evaluation, and config-driven experiment execution. The remaining work is therefore no longer conceptual bootstrapping. It is empirical refinement, broader subset selection, and more careful interpretation of the resulting comparisons.
+
+The role of this paper is therefore twofold:
+\begin{itemize}
+    \item provide the conceptual and methodological skeleton for the DBLP follow-up;
+    \item define the exact repo work needed to produce a real experiment.
+\end{itemize}
+
+The current repository already implements the core of that path in reproducible form: ingest a DBLP-style XML file, filter by year and team size, construct rolling windows, lift each window to a weighted simplicial complex, initialize collaboration-activation fields, run frozen and evolving higher-order scoring, and emit comparison tables and figures from a single config-driven command. What remains for the first full paper is not conceptual plumbing but scale and curation: running the same pipeline on a filtered real DBLP slice, validating the outputs, and selecting the strongest case studies.
+
+\section{Conclusion}
+DBLP offers a clean path from toy geometry--field models to a first real-data investigation. Each paper already defines a genuine higher-order collaboration unit, the temporal information is directly available, and the resulting simplicial structures can be compared against node-centric and graph-centric baselines. This makes DBLP an ideal first setting in which to test the central hypothesis of the geometry--field programme: in evolving collaboration systems, future structure may be better captured by recurrent collaboration carriers than by individual-node summaries alone.
+
+The intended claim is modest but testable. We are not asserting that group-level simplices universally dominate author-level statistics in every bibliometric regime. We are asserting that DBLP provides a clean environment in which this hypothesis can be evaluated rigorously, with explicit baselines and reproducible code. If the higher-order carrier view succeeds even in this first narrow setting, then the geometry--field programme has cleared an important empirical threshold.
+
+\begin{thebibliography}{99}
+
+\bibitem{DBLPXML}
+dblp team.
+\newblock How can I download the whole dblp dataset?
+\newblock dblp FAQ, accessed 2026.
+
+\bibitem{DBLPFAQ}
+dblp team.
+\newblock What do I find in dblp.xml?
+\newblock dblp FAQ, accessed 2026.
+
+\bibitem{BensonGleichLeskovec2016}
+A. R. Benson, D. F. Gleich, and J. Leskovec.
+\newblock Higher-order organization of complex networks.
+\newblock {\em Science}, 353(6295):163--166, 2016.
+
+\bibitem{IacopiniPetriBarratLatora2019}
+I. Iacopini, G. Petri, A. Barrat, and V. Latora.
+\newblock Simplicial models of social contagion.
+\newblock {\em Nature Communications}, 10:2485, 2019.
+
+\bibitem{BattistonCencettiIacopiniEtAl2020}
+F. Battiston, G. Cencetti, I. Iacopini, V. Latora, M. Lucas, A. Patania, J.-G. Young, and G. Petri.
+\newblock Networks beyond pairwise interactions: structure and dynamics.
+\newblock {\em Physics Reports}, 874:1--92, 2020.
+
+\bibitem{BarbarossaSardellitti2020}
+S. Barbarossa and S. Sardellitti.
+\newblock Topological signal processing over simplicial complexes.
+\newblock {\em IEEE Transactions on Signal Processing}, 68:2992--3007, 2020.
+
+\bibitem{TorresBianconi2020}
+J. J. Torres and G. Bianconi.
+\newblock Simplicial complexes: higher-order spectral dimension and dynamics.
+\newblock {\em Journal of Physics: Complexity}, 1(1):015002, 2020.
+
+\bibitem{BacciniGeraciBianconi2022}
+F. Baccini, F. Geraci, and G. Bianconi.
+\newblock Weighted simplicial complexes and their representation power of higher-order network data and topology.
+\newblock {\em Physical Review E}, 106:034319, 2022.
+
+\bibitem{BickGrossHarringtonSchaub2023}
+C. Bick, E. Gross, H. A. Harrington, and M. T. Schaub.
+\newblock What are higher-order networks?
+\newblock {\em SIAM Review}, 65(3):686--731, 2023.
+
+\bibitem{BattistonLucasCencettiEtAl2023}
+F. Battiston, M. Lucas, G. Cencetti, I. Iacopini, A. Patania, J.-G. Young, and G. Petri.
+\newblock Dynamics on networks with higher-order interactions.
+\newblock {\em Chaos}, 33(4):040401, 2023.
+
+\end{thebibliography}
+
+\end{document}

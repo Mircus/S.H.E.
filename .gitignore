@@ -21,4 +21,8 @@ coupled_geometry_field.blg
 coupled_geometry_field.log
 coupled_geometry_field.out
 coupled_geometry_field.pdf
+seldon-lab/.mplconfig/
+seldon-lab/*.aux
+seldon-lab/*.log
+seldon-lab/*.out
 docs/archive/

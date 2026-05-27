@@ -1,0 +1,5 @@
+venue,event_type,best_predictor,best_predictor_precision,best_predictor_rho
+SDM,birth,aggregation_birth_score,0.0,0.20004491214164616
+SDM,reinforcement,author_level_proxy,0.71875,0.1937551031740299
+WSDM,birth,aggregation_birth_score,0.0,0.23678513889941255
+WSDM,reinforcement,author_level_proxy,0.59375,0.16797060320819338

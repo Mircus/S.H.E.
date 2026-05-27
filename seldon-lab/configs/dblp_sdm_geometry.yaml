@@ -1,0 +1,19 @@
+# SDM static geometry pilot, 2018--2024.
+venue: SDM
+input_file: ../she-geofield/data/dblp_sdm_2018_2024.csv
+output_dir: out/dblp_sdm_geometry
+start_year: 2018
+end_year: 2024
+window_width: 3
+window_stride: 1
+# min_team_size=2 is intentional even though is_simplex_aggregation() requires
+# ≥3 members.  Edge-level geometry (dim=1) is retained for brokerage analysis
+# even though edges are not bona fide aggregations in the ontology.  This is
+# intentional: broker edges are the primary signal of interest in paper1.
+min_team_size: 2
+max_team_size: 6
+max_simplex_size: 3
+weight_mode: contained
+weight_semantics: contained-support
+report_window: latest
+publication_types: article,inproceedings

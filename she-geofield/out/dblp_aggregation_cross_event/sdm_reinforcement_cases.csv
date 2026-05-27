@@ -1,0 +1,7 @@
+window,event_type,case_label,aggregation_id,unit_type,members,target,before_closure,before_persistence,before_activity,before_boundary_role,before_growth_potential,after_closure,after_persistence,after_activity,after_boundary_role,after_growth_potential
+2018-2020,reinforcement,positive,edge:Abd-Krim Seghouane-Yousef Saad,edge_seed,Abd-Krim Seghouane-Yousef Saad,0.004158604531380783,0.0,0.5,0.2636571387373494,0.6666666666666666,1.0,0.0,0.5,0.277519153841952,0.6666666666666666,1.0
+2018-2020,reinforcement,positive,edge:Abdul-Saboor Sheikh-Evgenii Koriagin,edge_seed,Abdul-Saboor Sheikh-Evgenii Koriagin,0.23165906496154243,0.0,0.5,0.26116188990942546,0.8888888888888888,4.0,0.0,1.0,0.45002543978123355,0.8888888888888888,4.0
+2018-2020,reinforcement,positive,edge:Abdul-Saboor Sheikh-Julia Lasserre,edge_seed,Abdul-Saboor Sheikh-Julia Lasserre,0.2316592357385694,0.0,0.5,0.26116248436501177,0.8888888888888888,4.0,0.0,1.0,0.4500266034935765,0.8888888888888888,4.0
+2018-2020,reinforcement,failed,edge:Abd-Krim Seghouane-Shashanka Ubaru,edge_seed,Abd-Krim Seghouane-Shashanka Ubaru,0.0,0.0,0.5,0.2636125329342168,0.6666666666666666,1.0,0.0,0.5,0.24401037108773266,0.8571428571428571,1.0
+2018-2020,reinforcement,failed,edge:Ahid Aleimat-Fethi Filali,edge_seed,Ahid Aleimat-Fethi Filali,0.0,0.0,0.0,0.08616306588618526,0.8888888888888888,4.0,0.0,0.0,0.0,0.0,0.0
+2018-2020,reinforcement,failed,edge:Ahid Aleimat-Rade Stanojevic,edge_seed,Ahid Aleimat-Rade Stanojevic,0.0,0.0,0.0,0.0861630723533917,0.8888888888888888,4.0,0.0,0.0,0.0,0.0,0.0

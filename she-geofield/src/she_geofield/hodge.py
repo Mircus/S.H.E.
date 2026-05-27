@@ -1,6 +1,8 @@
-"""Weighted Hodge Laplacian on 1-forms (edges).
+"""Weighted Hodge Laplacians on edges and triangles.
 
 L_1 = d1* d1 + d2 d2*
+
+L_2 = d2* d2
 
 where d_k* = W_k^{-1} d_k^T W_{k-1} is the weighted adjoint.
 
@@ -36,3 +38,20 @@ def hodge_laplacian_1(complex_: WeightedToyComplex) -> np.ndarray:
     L1_up = B21 @ W2_inv @ B21.T @ W1
 
     return L1_down + L1_up
+
+
+def hodge_laplacian_2(complex_: WeightedToyComplex) -> np.ndarray:
+    """Weighted Hodge Laplacian on 2-chains (triangles).
+
+    With no tetrahedra in the current model, this is the down-Laplacian
+    L_2 = d2* d2 = W_2^{-1} d2^T W_1 d2.
+    """
+    B21 = boundary_2_to_1(complex_)
+
+    w1 = np.array([complex_.edge_weights[e] for e in complex_.edges], dtype=float)
+    w2 = np.array([complex_.triangle_weights[t] for t in complex_.triangles], dtype=float)
+
+    W1 = np.diag(w1)
+    W2_inv = np.diag(1.0 / w2)
+
+    return W2_inv @ B21.T @ W1 @ B21

@@ -63,6 +63,68 @@ This writes:
 - `out/table1_trajectory.csv` through `out/table7_mu_sensitivity.csv`,
 - `out/verification.txt`.
 
+## DBLP pipeline
+
+Version 0.2 adds a narrow DBLP branch for the follow-up paper on temporal
+coauthorship carriers. The DBLP support is intentionally scoped to one
+reproducible experiment family:
+
+- stream DBLP XML into a canonical `PaperRecord`,
+- filter by year, team size, venue, and publication type,
+- build deterministic rolling windows,
+- lift coauthor sets into weighted simplicial windows,
+- compare node baselines, frozen diffusion, and evolving geometry-field scores.
+
+Run the sample DBLP experiment from the `she-geofield` directory:
+
+```bash
+python -m she_geofield.dblp.experiments --config configs/dblp_small.yaml
+```
+
+This writes:
+
+- `out/dblp_small/window_summary.csv`,
+- `out/dblp_small/model_comparison.csv`,
+- `out/dblp_small/top_collaboration_simplices.csv`,
+- `out/dblp_small/predictive_comparison.png`,
+- `out/dblp_small/temporal_performance.png`,
+- `out/dblp_small/case_study.png`.
+
+For a first real-data run, extract a filtered slice from the official DBLP dump
+and then point the experiment runner at the resulting CSV:
+
+```bash
+python -m she_geofield.dblp.extract_subset --input /path/to/dblp.xml.gz --output data/dblp_subset.csv --start-year 2018 --end-year 2024 --min-team-size 2 --max-team-size 6 --venue-regex '^SDM$' --publication-types article,inproceedings
+python -m she_geofield.dblp.experiments --config configs/dblp_sdm_real.yaml
+```
+
+The real-data configs also emit a secondary bridge/emergence bundle alongside
+the broad future-support outputs:
+
+- `bridge_emergence_model_comparison.csv`
+- `bridge_emergence_top_collaboration_simplices.csv`
+- `bridge_emergence_predictive_comparison.png`
+- `bridge_emergence_temporal_performance.png`
+- `bridge_emergence_case_study.png`
+
+This secondary evaluation targets low-persistence bridge candidates and future
+branching into novel triangle contexts, which is the first regime where the
+geometry layer is tested against something recurrence alone is not built to
+capture.
+
+There is also a dedicated bridge-to-cluster regime with standalone configs:
+
+- `configs/dblp_sdm_bridge_to_cluster.yaml`
+- `configs/dblp_wsdm_bridge_to_cluster.yaml`
+
+These runs target early thin bridge edges that later thicken into new triangle
+contexts. The corresponding outputs live in:
+
+- `out/dblp_sdm_bridge_to_cluster/`
+- `out/dblp_wsdm_bridge_to_cluster/`
+- `out/dblp_task_cross_venue/` for the broad-recurrence vs bridge-emergence vs
+  bridge-to-cluster comparison figure.
+
 ## Publication role
 
 `she-geofield` is intentionally narrow. It is not the general S.H.E. package.

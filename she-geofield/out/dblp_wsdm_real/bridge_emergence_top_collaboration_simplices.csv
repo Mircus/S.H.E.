@@ -1,0 +1,21 @@
+window,simplex,target_mode,candidate_regime,score,support_count,persistence,future_support
+2018-2020,Huan Liu 0001-Suhang Wang,future_branching,bridge_emergence,0.41380389829612474,3.0,0.5,0.0
+2018-2020,Huan Liu 0001-Vineeth Rakesh,future_branching,bridge_emergence,0.3829924224321814,1.0,0.5,0.0
+2018-2020,Kai Shu-Suhang Wang,future_branching,bridge_emergence,0.3776845630002251,3.0,0.5,0.0
+2018-2020,Min Zhang 0006-Shaoping Ma,future_branching,bridge_emergence,0.37499925686849456,6.0,0.5,0.0
+2018-2020,Shaoping Ma-Yiqun Liu 0001,future_branching,bridge_emergence,0.37499923180760747,6.0,0.5,0.0
+2019-2021,Huan Liu 0001-Suhang Wang,future_branching,bridge_emergence,0.4896713682033685,2.0,0.5,0.0
+2019-2021,Jun Xu 0001-Qingyao Ai,future_branching,bridge_emergence,0.43910680873835295,1.0,0.5,0.0
+2019-2021,Huan Liu 0001-Vineeth Rakesh,future_branching,bridge_emergence,0.4265718193695889,1.0,0.5,0.0
+2019-2021,Huan Liu 0001-Kai Shu,future_branching,bridge_emergence,0.37361946065715396,3.0,0.5,0.0
+2019-2021,Ahmed Hassan Awadallah-Ryen W. White,future_branching,bridge_emergence,0.3674912981692023,2.0,0.5,0.0
+2020-2022,Jin Huang 0010-Maarten de Rijke,future_branching,bridge_emergence,0.36064335294908323,1.0,0.5,0.0
+2020-2022,Aravind Sankar-Jiawei Han 0001,future_branching,bridge_emergence,0.3588341356204043,1.0,0.5,0.0
+2020-2022,Hongning Wang-Lin Gong,future_branching,bridge_emergence,0.3486389255726979,1.0,0.5,0.0
+2020-2022,Hamid Karimi-Jiliang Tang,future_branching,bridge_emergence,0.3453998245625923,1.0,0.5,0.0
+2020-2022,Adit Krishnan-Jiawei Han 0001,future_branching,bridge_emergence,0.32769251896044416,1.0,0.5,0.0
+2021-2023,Jun Xu 0001-Qingyao Ai,future_branching,bridge_emergence,0.47701332305379185,1.0,0.5,0.0
+2021-2023,Xiangliang Zhang 0001-Xiaochuan Gou,future_branching,bridge_emergence,0.39257384917007965,1.0,0.5,0.0
+2021-2023,Xin Xin 0003-Yue Ding 0001,future_branching,bridge_emergence,0.3855828111320863,1.0,0.5,0.0
+2021-2023,Jun Xu 0001-Liang Pang 0001,future_branching,bridge_emergence,0.37101181922188015,1.0,0.5,0.0
+2021-2023,Liang Pang 0001-Qingyao Ai,future_branching,bridge_emergence,0.3695764601898335,1.0,0.5,0.0

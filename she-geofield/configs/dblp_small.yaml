@@ -1,0 +1,21 @@
+# Small deterministic smoke config for the first DBLP pipeline.
+input_file: tests/fixtures/dblp_sample.xml
+output_dir: out/dblp_small
+start_year: 2020
+end_year: 2023
+window_width: 2
+window_stride: 1
+min_team_size: 2
+max_team_size: 4
+max_simplex_size: 3
+weight_mode: contained
+field_location: edges
+field_mode: support_count
+prediction_horizon: 1
+top_k: 3
+internal_steps: 2
+dt: 0.5
+eta: 0.1
+lam: 0.3
+mu: 0.2
+publication_types: article,inproceedings

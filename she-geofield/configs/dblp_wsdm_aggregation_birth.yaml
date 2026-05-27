@@ -1,0 +1,23 @@
+# WSDM aggregation birth experiment, 2018--2024.
+experiment_family: aggregation
+event_type: birth
+input_file: data/dblp_wsdm_2018_2024.csv
+output_dir: out/dblp_wsdm_aggregation_birth
+start_year: 2018
+end_year: 2024
+window_width: 3
+window_stride: 1
+min_team_size: 2
+max_team_size: 6
+max_simplex_size: 3
+weight_mode: contained
+field_mode: support_count
+prediction_horizon: 1
+top_k: 8
+internal_steps: 3
+dt: 0.5
+eta: 0.1
+lam: 0.3
+mu: 0.2
+unit_types: edges,triangles,neighborhoods
+publication_types: article,inproceedings

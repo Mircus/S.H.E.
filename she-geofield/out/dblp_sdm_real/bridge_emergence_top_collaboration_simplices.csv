@@ -1,0 +1,21 @@
+window,simplex,target_mode,candidate_regime,score,support_count,persistence,future_support
+2018-2020,Vipin Kumar 0001-Xiaowei Jia,future_branching,bridge_emergence,0.37500000006018025,4.0,0.5,0.0
+2018-2020,Guruprasad Nayak-Xiaowei Jia,future_branching,bridge_emergence,0.3749947850380889,4.0,0.5,0.0
+2018-2020,Guruprasad Nayak-Vipin Kumar 0001,future_branching,bridge_emergence,0.3749947849912122,4.0,0.5,0.0
+2018-2020,Huan Liu 0001-Jundong Li,future_branching,bridge_emergence,0.3727084740687079,4.0,0.5,0.0
+2018-2020,Jessica Lin 0001-Xiaosheng Li,future_branching,bridge_emergence,0.37176690455494665,2.0,0.5,0.0
+2019-2021,Jilles Vreeken-Mario Boley,future_branching,bridge_emergence,0.3911578577331972,1.0,0.5,0.0
+2019-2021,Anuj Karpatne-Guruprasad Nayak,future_branching,bridge_emergence,0.3673221699725796,2.0,0.5,0.0
+2019-2021,Anuj Karpatne-Xiaowei Jia,future_branching,bridge_emergence,0.3666356533515512,2.0,0.5,0.0
+2019-2021,Anuj Karpatne-Vipin Kumar 0001,future_branching,bridge_emergence,0.3666356370253555,2.0,0.5,0.0
+2019-2021,Christian Beecks-Fabian Berns,future_branching,bridge_emergence,0.35590043083765444,2.0,0.5,0.0
+2020-2022,Chuxu Zhang-Yanfang Ye 0001,future_branching,bridge_emergence,0.3286435743933088,2.0,0.5,0.0
+2020-2022,Constance M. Moore-Xiangnan Kong,future_branching,bridge_emergence,0.3143809094541209,2.0,0.5,0.0
+2020-2022,John Boaz Lee-Xiangnan Kong,future_branching,bridge_emergence,0.314380875341713,2.0,0.5,0.0
+2020-2022,Ken Ueno-Shigeru Maya,future_branching,bridge_emergence,0.3133948535656388,2.0,0.5,0.0
+2020-2022,Ronghang Zhu-Sheng Li 0001,future_branching,bridge_emergence,0.31207780545611236,1.0,0.5,2.0
+2021-2023,Jilles Vreeken-Mario Boley,future_branching,bridge_emergence,0.4426946605530456,1.0,0.5,0.0
+2021-2023,Jilles Vreeken-Kailash Budhathoki,future_branching,bridge_emergence,0.36598069950148704,1.0,0.5,0.0
+2021-2023,Christian Beecks-Fabian Berns,future_branching,bridge_emergence,0.35590043083765444,2.0,0.5,0.0
+2021-2023,Kailash Budhathoki-Mario Boley,future_branching,bridge_emergence,0.35415322939633387,1.0,0.5,0.0
+2021-2023,Mario Boley-Simon Teshuva,future_branching,bridge_emergence,0.35068334361901976,1.0,0.5,0.0

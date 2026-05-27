@@ -1,0 +1,15 @@
+# SDM static geometry, exact-facet weights, 2018--2024.
+venue: SDM
+input_file: ../she-geofield/data/dblp_sdm_2018_2024.csv
+output_dir: out/dblp_sdm_geometry_exact
+start_year: 2018
+end_year: 2024
+window_width: 3
+window_stride: 1
+min_team_size: 2
+max_team_size: 6
+max_simplex_size: 3
+weight_mode: contained
+weight_semantics: exact-facet
+report_window: latest
+publication_types: article,inproceedings

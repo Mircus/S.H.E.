@@ -1,0 +1,16 @@
+# WSDM static geometry, recency-decayed weights, 2018--2024.
+venue: WSDM
+input_file: ../she-geofield/data/dblp_wsdm_2018_2024.csv
+output_dir: out/dblp_wsdm_geometry_decay
+start_year: 2018
+end_year: 2024
+window_width: 3
+window_stride: 1
+min_team_size: 2
+max_team_size: 6
+max_simplex_size: 3
+weight_mode: contained
+weight_semantics: recency-decayed
+decay_lambda: 0.6
+report_window: latest
+publication_types: article,inproceedings

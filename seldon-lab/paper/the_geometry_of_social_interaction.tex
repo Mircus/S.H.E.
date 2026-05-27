@@ -1,0 +1,924 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{comment}
+% ACM-style metadata commands kept lightweight for article/arXiv compilation.
+\excludecomment{CCSXML}
+\newcommand{\ccsdesc}[2][]{}
+\newcommand{\keywords}[1]{\par\medskip\noindent\textbf{Keywords:} #1\par\medskip}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{conjecture}[definition]{Conjecture}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\wt}{\mathrm{wt}}
+\newcommand{\Ric}{\mathrm{Ric}}
+\newcommand{\cof}{\mathrm{cof}}
+\newcommand{\face}{\mathrm{face}}
+
+\title{A Geometry-First Reading of Weighted Social Aggregates\\A DBLP Case Study}
+\author{Mirco A. Mannucci\\HoloMathics\\\texttt{mirco@holomathics.com}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Higher-order social data are already known to admit simplicial representation; the question in this paper is how to interpret the local weighted geometry of social aggregates once that representation is in place. We define a small observable family on weighted simplicial complexes---reinforcement, boundary strain, coface dependence, terminality, local tension, and a primary local geometric balance score $\Ric_{\mathrm{bal}}$---and give each quantity a social reading. We do not propose a canonical discrete curvature for social interaction; we propose and test a first interpretable local geometric balance diagnostic. The framework is evaluated on two venue-level DBLP collaboration slices, SDM and WSDM, using rolling 3-year windows over 2018--2024. Under contained-support and recency-decayed weights, edge-level geometry is consistently more negative than triangle-level geometry, WSDM is more brokered than SDM at the edge level, and recurrent triangles are mostly balanced rather than super-reinforced. The paper is limited to a venue-level pilot, to edges and triangles, and to one case-study balance score rather than a universal curvature theory. Its role is narrower and more foundational: a first article in a series on social modeling with weighted higher-order geometry.
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10003120.10003121.10003124.10010868</concept_id>
+<concept_desc>Human-centered computing~Social network analysis</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10003752.10003809.10010031</concept_id>
+<concept_desc>Mathematics of computing~Graph theory</concept_desc>
+<concept_significance>300</concept_significance>
+</concept>
+<concept>
+<concept_id>10002951.10003260.10003282</concept_id>
+<concept_desc>Mathematics of computing~Discrete mathematics</concept_desc>
+<concept_significance>100</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Human-centered computing~Social network analysis}
+\ccsdesc[300]{Mathematics of computing~Graph theory}
+\ccsdesc[100]{Mathematics of computing~Discrete mathematics}
+
+\noindent\textbf{CCS Concepts:} Human-centered computing~Social network analysis; Mathematics of computing~Graph theory; Mathematics of computing~Discrete mathematics.
+
+\keywords{
+weighted simplicial complexes,
+social network analysis,
+higher-order networks,
+collaboration networks,
+DBLP,
+local geometric diagnostics,
+brokerage,
+multiscale consistency
+}
+
+\section{Introduction}
+
+Graph-based social analysis remains structurally biased toward pairwise interaction. In many settings that is too weak. Research teams, committees, working groups, ideological cells, and collaborative clusters are not mere collections of edges. They are many-body social aggregates whose strength and instability are not exhausted by pairwise projection. Higher-order network science has made this point clear at the representational and dynamical level \cite{BensonGleichLeskovec2016,IacopiniPetriBarratLatora2019,BattistonCencettiIacopiniEtAl2020,BickGrossHarringtonSchaub2023}. That representational point is not new, and neither is the observation that weighted simplicial complexes can encode higher-order data \cite{BacciniGeraciBianconi2022}. The narrower question of this paper is different: once weighted aggregates have been represented, how should their local geometry be read socially?
+
+Weighted simplicial complexes provide the right substrate. Vertices represent agents, edges represent pairwise ties, triangles represent three-body interaction, and so on. But representation alone is not enough. Once one admits higher-order structure, the natural next question is interpretive: when should a simplex be read as a cohesive aggregate, when as a thin scaffold, when as a brokered interface, and when as a structurally fragile grouping? This is the sense in which the paper is geometry-first. It asks for a social reading of weighted aggregate shape before moving to evolution or field coupling.
+
+This paper begins a geometry-first program. The intended progression is:
+\begin{enumerate}[label=(\arabic*)]
+    \item geometry of weighted social aggregates;
+    \item geometric evolution of those aggregates under discrete flows;
+    \item only later, coupled field--geometry dynamics.
+\end{enumerate}
+The present paper addresses only the first step. It does not claim a universal topological invariant. It does not yet claim a Ricci-flow theory. It does not yet introduce scalar or cochain fields. Its narrower goal is to define a static geometric language for weighted social aggregates and to test that language on one real dataset family.
+
+\paragraph{What is new here.}
+The novelty claim is deliberately small. It is not simplicial representation, not higher-order network science in general, not topology, not prediction, and not dynamics. The contribution is a social reading of local weighted higher-order geometry: a way of distinguishing thick aggregates, scaffolded participation, brokerage, and balance on a real collaboration dataset using explicit local observables.
+
+\paragraph{What this paper does not claim.}
+The paper does not claim a universal curvature of social interaction, a full sociology of DBLP, a proof that higher-order methods dominate graph methods, or a field-coupled dynamics of collaboration. It is a first diagnostic note. Its standard is more modest: the geometric vocabulary should be explicit, reproducible, and vulnerable to empirical weakening if the patterns fail under baseline checks or mild weight changes.
+
+The paper makes three concrete moves.
+\begin{enumerate}[label=(\roman*)]
+    \item It defines a family of local observables on weighted simplicial complexes: reinforcement, boundary strain, coface dependence, terminality, local tension, and a primary local geometric balance score.
+    \item It gives each observable a disciplined social interpretation: cohesion, scaffolded participation, frontier exposure, brokerage, and structural fragility.
+    \item It confronts the framework with data by running a first venue-level DBLP case study, using SDM and WSDM as the initial laboratories.
+\end{enumerate}
+
+Two points should be stated early. First, this is not yet a grand psychohistory paper. It is a first geometry note in a planned series on social modeling with weighted higher-order methods. Second, the paper does not try to prove that one classical curvature formalism is uniquely correct. For the present case study, we pick one explicit, interpretable, local geometric balance score and test whether it produces nontrivial and socially legible structure.
+
+\section{Related context}
+
+\subsection*{Higher-order representation and dynamics}
+
+Higher-order network science has already established that many complex systems are not adequately described by pairwise structure alone \cite{BensonGleichLeskovec2016,BattistonCencettiIacopiniEtAl2020,BattistonLucasCencettiEtAl2023,BickGrossHarringtonSchaub2023}. In particular, simplicial representations make it possible to distinguish genuine group interactions from graph projections.
+
+\subsection*{Weighted simplicial and operator-based analysis}
+
+Weighted simplicial complexes and topological signal-processing frameworks have shown that higher-order objects support nontrivial weighted structure and operator-based analysis \cite{BarbarossaSardellitti2020,TorresBianconi2020,BacciniGeraciBianconi2022}. This paper does not compete with that literature at the level of general framework. It borrows the weighted higher-order substrate and asks for a more specific social reading of local geometric observables on that substrate.
+
+\subsection*{Collaboration structure and simplicial closure}
+
+Collaboration data have already been used as a natural domain for higher-order analysis. Classical graph-level studies already showed that scientific collaboration has strong mesoscopic structure \cite{Newman2001}. More recent work on simplicial closure and higher-order link prediction shows that collaboration structures contain signals that are invisible to pairwise summaries alone \cite{BensonASJK18}. The present note differs in emphasis. It is not a prediction paper and not yet a temporal law paper. It asks whether one can read collaboration aggregates statically in terms of thickness, strain, balance, and brokerage.
+
+\subsection*{Discrete curvature on combinatorial structures}
+
+Curvature-inspired diagnostics have also been studied on graphs and related combinatorial objects, including Forman-Ricci style constructions, Ollivier-Ricci comparisons, and associated geometric flows \cite{WeberSaucanJost2017,SreejithMohapatraJostSaucanSamal2016}. Those formalisms motivate the present work but do not settle its main question. The issue here is not which established curvature should be imported whole into social data, but whether a small signed local balance score can already support a credible social reading.
+
+Existing work gives representation, operators, closure phenomena, and curvature formalisms. This note targets a different question: whether local weighted higher-order structure can be read socially in terms of thickness, scaffolded participation, brokerage, and balance on real collaboration data.
+
+\section{Weighted simplicial social complexes}
+
+\subsection{Basic object}
+
+\begin{definition}[Weighted social simplicial complex]
+A weighted social simplicial complex is a pair $(\K,\wt)$ where:
+\begin{enumerate}[label=(\alph*)]
+    \item $\K$ is a finite simplicial complex on a vertex set $V$;
+    \item $\wt:\K\to \R_{>0}$ assigns a strictly positive weight to each simplex.
+\end{enumerate}
+A simplex $\sigma \in \K$ of dimension $k$ represents a $(k+1)$-body social aggregate. Its weight $\wt(\sigma)$ measures the strength, persistence, recurrence, or social reality of that aggregate.
+\end{definition}
+
+We do not impose monotonicity of weights under face inclusion. In real data a triangle can be weaker than its edges, and a larger team can be socially thinner than some of its smaller subgroups. That is not a defect. It is part of the phenomenon.
+
+\subsection{From social events to simplices}
+
+Suppose we observe higher-order events
+\[
+E = \{(A_i,t_i,m_i)\}_{i=1}^N,
+\]
+where each $A_i \subseteq V$ is a finite subset of agents, $t_i$ is a timestamp, and $m_i$ denotes metadata. The event-generated complex is
+\[
+\K = \{\sigma \subseteq A_i \text{ for some } i\}.
+\]
+In DBLP, each paper with author set $A$ generates a simplex on $A$, and all faces are included as simplices as well.
+
+\subsection{Weight semantics}
+
+Different choices of weight encode different social questions. Three natural options are:
+\begin{align*}
+\wt_{\mathrm{raw}}(\sigma) &= \#\{i:\sigma \subseteq A_i\}, \\
+\wt_{\mathrm{facet}}(\sigma) &= \#\{i:A_i=\sigma\}, \\
+\wt_{\lambda,T}(\sigma) &= \sum_{i:\sigma \subseteq A_i} e^{-\lambda(T-t_i)}.
+\end{align*}
+
+For the DBLP case study below we choose contained-support weight, i.e.
+\[
+\wt(\sigma) = \#\{i:\sigma \subseteq A_i\},
+\]
+because it measures repeated reuse of a collaboration unit even when that unit appears inside slightly larger teams. This is the most natural first semantics for a static geometry note. It measures aggregate support, not topical affinity or influence.
+
+Contained-support is a case-study choice, not a law of nature. The robustness section below compares it with exact-facet and recency-decayed semantics. If the main qualitative patterns disappear under those mild alternatives, the proposed geometry should be interpreted more narrowly.
+
+\section{Local geometric observables}
+
+The point of this section is not to overload the paper with alternative curvatures. It is to define the smallest family of local quantities needed for a static geometric reading.
+
+\subsection{Faces, cofaces, and local means}
+
+For a simplex $\sigma \in \K$, let $\face_1(\sigma)$ denote its codimension-$1$ faces and $\cof_1(\sigma)$ its cofaces one dimension higher. Define the local lower and upper means
+\[
+m_-(\sigma)=
+\frac{1}{|\face_1(\sigma)|}
+\sum_{\tau \in \face_1(\sigma)} \wt(\tau),
+\qquad
+m_+(\sigma)=
+\frac{1}{|\cof_1(\sigma)|}
+\sum_{\eta \in \cof_1(\sigma)} \wt(\eta),
+\]
+with the convention that an empty average is treated separately rather than divided by zero.
+
+\subsection{Reinforcement, strain, and dependence}
+
+\begin{definition}[Simplex reinforcement]
+For a non-vertex simplex $\sigma$, define
+\[
+\mathcal{R}(\sigma)=\frac{\wt(\sigma)}{m_-(\sigma)+\eps}.
+\]
+\end{definition}
+
+High reinforcement means the aggregate is stronger than the average of its immediate boundary simplices. Socially, that is a thick or synergistic group. Values below $1$ indicate a socially thin aggregate built from stronger subgroups.
+
+\begin{definition}[Boundary strain]
+For a simplex $\sigma$, define
+\[
+\mathcal{S}(\sigma)=\frac{m_+(\sigma)}{\wt(\sigma)+\eps},
+\]
+with $\mathcal{S}(\sigma)=0$ if $\sigma$ has no one-step cofaces.
+\end{definition}
+
+High boundary strain means the simplex is enrolled in larger aggregates that are stronger than it is. For an edge, this is the social signature of a pair that matters mainly as part of larger teams.
+
+\begin{definition}[Coface dependence and terminality]
+For a simplex $\sigma$, define
+\[
+\mathcal{D}(\sigma)=\frac{\sum_{\eta \in \cof_1(\sigma)} \wt(\eta)}{\wt(\sigma)+\eps},
+\qquad
+\mathcal{T}(\sigma)=\frac{\wt(\sigma)}{\sum_{\eta \in \cof_1(\sigma)} \wt(\eta)+\eps}.
+\]
+\end{definition}
+
+Coface dependence measures how much a simplex depends on larger groups for its social role. Terminality measures the opposite tendency: how substantial it is on its own scale.
+
+\begin{definition}[Local tension]
+Define
+\[
+\Theta(\sigma)=m_+(\sigma)-m_-(\sigma).
+\]
+\end{definition}
+
+Large negative tension indicates bottom-supported but topologically unreinforced structure. Large positive tension indicates a simplex being pulled upward into larger organization.
+
+\subsection{Primary local balance score for the case study}
+
+The case study needs one explicit local balance diagnostic, not a menu. We therefore choose the following balance score.
+
+\begin{definition}[Local balance score]
+For a simplex $\sigma$, define
+\[
+\Ric_{\mathrm{bal}}(\sigma)=
+\begin{cases}
+\log\!\frac{\wt(\sigma)+\eps}{m_-(\sigma)+\eps}
+-\log\!\frac{m_+(\sigma)+\eps}{\wt(\sigma)+\eps}, & \face_1(\sigma)\neq \varnothing,\ \cof_1(\sigma)\neq \varnothing,\\[1em]
+\log\!\frac{\wt(\sigma)+\eps}{m_-(\sigma)+\eps}, & \face_1(\sigma)\neq \varnothing,\ \cof_1(\sigma)=\varnothing,\\[1em]
+-\log\!\frac{m_+(\sigma)+\eps}{\wt(\sigma)+\eps}, & \face_1(\sigma)=\varnothing,\ \cof_1(\sigma)\neq \varnothing,\\[1em]
+0, & \face_1(\sigma)=\cof_1(\sigma)=\varnothing.
+\end{cases}
+\]
+\end{definition}
+
+This is not claimed as the unique curvature of social interaction. It is the case-study choice because it is explicit and interpretable. Positive values indicate that the simplex is locally thick relative to its boundary and not overdominated by the next scale up. Negative values indicate brokerage, scaffolded participation, or structural thinness. Values near zero indicate local balance.
+
+\begin{remark}[Relation to Forman-Ricci and other discrete curvatures]
+\label{rem:forman}
+Forman-type incidence curvatures and other discrete Ricci schemes remain relevant future options \cite{WeberSaucanJost2017,SreejithMohapatraJostSaucanSamal2016,BarbarossaSardellitti2020,BacciniGeraciBianconi2022}. The companion repository (\texttt{she\_geofield.curvature}) implements a formal weighted Forman-Ricci curvature on 1-cells and a triangle curvature functional with field coupling; those quantities are \emph{not} used in the present case study and are the subject of later work in the series. The score $\Ric_{\mathrm{bal}}$ defined here is a case-study-local diagnostic, not a claim that this log-ratio is the canonical discrete curvature of social interaction. A reader inspecting the codebase should treat \texttt{she\_geofield/curvature.py} as future infrastructure and \texttt{seldon\_lab.experiments.dblp\_geometry} as the implementation of the present note. Keeping these two systems clearly separated is essential for reproducibility.
+\end{remark}
+
+\subsection{Why the balance score is geometric}
+
+The point of $\Ric_{\mathrm{bal}}$ is not that it is the curvature of social interaction. The point is that it is a signed local comparison across scales. It compares the simplex weight to the average support just below it and to the average support just above it. It is therefore positive when the simplex is thick relative to its boundary and not overdominated from above, negative when it is thin or scaffolded by stronger adjacent structure, and near zero when the local lower and upper scales are in balance. In that sense it is curvature-like: it is not just a count, but a local signed diagnostic of how a simplex sits geometrically between neighboring scales.
+
+\subsection{Mathematical properties}
+
+The balance score admits several non-trivial properties that ground its use as a geometric diagnostic. We collect the most useful ones here. Throughout this subsection, \emph{high-weight regime} means that all simplex weights and local means are large relative to $\eps$.
+
+\begin{proposition}[Decomposition into reinforcement and boundary strain]
+\label{prop:decomp}
+When $\face_1(\sigma)\neq\varnothing$ and $\cof_1(\sigma)\neq\varnothing$, the balance score satisfies
+\[
+\Ric_{\mathrm{bal}}(\sigma)
+= \log\frac{\wt(\sigma)+\eps}{m_-(\sigma)+\eps}
+- \log\frac{m_+(\sigma)+\eps}{\wt(\sigma)+\eps}.
+\]
+In the high-weight regime this is approximately $\log\mathcal{R}(\sigma)-\log\mathcal{S}(\sigma)$: the balance score is the log-ratio of reinforcement to boundary strain.
+\end{proposition}
+
+\begin{proof}
+The exact formula restates the definition of $\Ric_{\mathrm{bal}}$ directly. For the approximation, note that
+$\log\frac{\wt+\eps}{m_-+\eps}\approx\log\frac{\wt}{m_-}=\log\mathcal{R}$
+when $\wt,m_-\gg\eps$, and similarly
+$\log\frac{m_++\eps}{\wt+\eps}\approx\log\frac{m_+}{\wt}=\log\mathcal{S}$.
+\end{proof}
+
+Proposition~\ref{prop:decomp} shows that $\Ric_{\mathrm{bal}}$ is not an ad-hoc formula. It is the difference of two natural scale-comparison logs and inherits their social readings directly: positive balance means reinforcement exceeds strain; negative balance means strain exceeds reinforcement; zero balance means the simplex sits symmetrically between its two local scales.
+
+\begin{proposition}[Sign via geometric mean]
+\label{prop:sign}
+In the high-weight regime, for a simplex $\sigma$ with both faces and cofaces:
+\begin{enumerate}[label=(\roman*)]
+  \item $\Ric_{\mathrm{bal}}(\sigma)>0$ if and only if $\wt(\sigma)^2>m_-(\sigma)\cdot m_+(\sigma)$;
+  \item $\Ric_{\mathrm{bal}}(\sigma)=0$ if and only if $\wt(\sigma)^2=m_-(\sigma)\cdot m_+(\sigma)$;
+  \item $\Ric_{\mathrm{bal}}(\sigma)<0$ if and only if $\wt(\sigma)^2<m_-(\sigma)\cdot m_+(\sigma)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+In the high-weight regime, $\Ric_{\mathrm{bal}}\approx\log(\wt/m_-)-\log(m_+/\wt)=\log(\wt^2/(m_-\cdot m_+))$, which is positive, zero, or negative according to whether $\wt^2$ exceeds, equals, or falls below $m_-\cdot m_+$.
+\end{proof}
+
+The condition $\wt(\sigma)^2 > m_-(\sigma)\cdot m_+(\sigma)$ says the simplex weight exceeds the \emph{geometric mean} of its boundary support. This is a more precise sign criterion than a simple inequality with $m_-$ or $m_+$ separately, because it accounts for the combined cross-scale comparison that defines $\Ric_{\mathrm{bal}}$.
+
+\begin{proposition}[Approximate scale invariance]
+\label{prop:scale}
+Let $c>0$ and define a uniformly rescaled complex by $\wt_c(\sigma)=c\cdot\wt(\sigma)$ for all $\sigma\in\K$. In the high-weight regime,
+\[
+\Ric_{\mathrm{bal}}^{(\wt_c)}(\sigma)\approx\Ric_{\mathrm{bal}}^{(\wt)}(\sigma).
+\]
+That is, $\Ric_{\mathrm{bal}}$ is approximately invariant under uniform rescaling of all simplex weights. It measures the shape of the local weight distribution, not its overall magnitude.
+\end{proposition}
+
+\begin{proof}
+Under $\wt_c$, the lower and upper local means rescale as $m_-^{(c)}=c\cdot m_-$ and $m_+^{(c)}=c\cdot m_+$. In the high-weight regime:
+\[
+\Ric_{\mathrm{bal}}^{(c)}
+\approx\log\frac{c\wt}{c m_-}-\log\frac{c m_+}{c\wt}
+=\log\frac{\wt}{m_-}-\log\frac{m_+}{\wt}
+\approx\Ric_{\mathrm{bal}}^{(\wt)}.\qedhere
+\]
+\end{proof}
+
+Scale invariance matters for the case study because the absolute collaboration counts vary substantially across venues and time windows. Proposition~\ref{prop:scale} says the balance score is not distorted by this variation; it reads the same relative geometry regardless of the overall weight level.
+
+\begin{lemma}[Near-reciprocity of terminality and coface dependence]
+\label{lem:reciprocal}
+For any simplex $\sigma$ with at least one one-step coface, let $\Sigma=\sum_{\eta\in\cof_1(\sigma)}\wt(\eta)$. Then
+\[
+\mathcal{T}(\sigma)\cdot\mathcal{D}(\sigma)
+=\frac{\wt(\sigma)\cdot\Sigma}{(\Sigma+\eps)(\wt(\sigma)+\eps)}.
+\]
+In the high-weight regime this product is approximately $1$. Terminality and coface dependence are therefore approximately reciprocal: a simplex with high coface dependence necessarily has low terminality and vice versa.
+\end{lemma}
+
+\begin{proof}
+Direct substitution:
+$\mathcal{T}\cdot\mathcal{D}=\frac{\wt}{\Sigma+\eps}\cdot\frac{\Sigma}{\wt+\eps}=\frac{\wt\cdot\Sigma}{(\Sigma+\eps)(\wt+\eps)}$.
+When $\wt,\Sigma\gg\eps$ both correction terms are negligible and the product tends to $1$.
+\end{proof}
+
+\begin{conjecture}[Temporal stability]
+\label{conj:persistence}
+Let $W_t$ and $W_{t+1}$ be consecutive rolling windows and let $\sigma\in W_t$. We conjecture that
+\[
+\Pr\bigl[\sigma\in W_{t+1}\;\big|\;\Ric_{\mathrm{bal}}(\sigma)>0\bigr]
+\;>\;
+\Pr\bigl[\sigma\in W_{t+1}\;\big|\;\Ric_{\mathrm{bal}}(\sigma)<0\bigr].
+\]
+A positively balanced simplex is thicker relative to both its boundary and coboundary; it should therefore be more likely to persist as a recurrent aggregate across temporal windows than a negatively balanced interface simplex.
+\end{conjecture}
+
+The temporal stability conjecture is testable with the DBLP rolling windows already computed for this paper and is the first empirical claim of the next article in the series. It converts the present static vocabulary into a predictive hypothesis: the geometry at time $t$ should anticipate the topology at time $t+1$.
+
+\subsection{What these observables are not}
+
+These observables should not be read as disguised raw counts. Reinforcement is not raw weight, because it is a ratio to lower-scale support. Boundary strain is not just coface count, because it depends on the mean weight of the next scale up rather than only their number. The balance score $\Ric_{\mathrm{bal}}$ is not endpoint degree or overlap in disguise, because it depends on a signed comparison between support below, at, and above the simplex. The empirical baseline section below tests those distinctions directly against endpoint degree, common-neighbor counts, triangle participation, and edge betweenness.
+
+\subsection{Geometric diagnostics beyond curvature}
+
+The local geometry of the paper is not exhausted by $\Ric_{\mathrm{bal}}$. Five supporting diagnostics are useful at the static level.
+
+\begin{definition}[Region volume, cohesion, and conductance]
+Let $A \subseteq \K$ be a finite subcomplex or extracted neighborhood. Define its weighted volume by
+\[
+\mathrm{Vol}(A)=\sum_{\sigma \in A}\wt(\sigma).
+\]
+Let $\partial_\times A$ be the set of incidence crossings $(\tau,\eta)$ with $\tau \in A$, $\eta \notin A$, and $\tau$ incident to $\eta$. Define
+\[
+\mathrm{Bd}(A)=\sum_{(\tau,\eta)\in \partial_\times A}\min\{\wt(\tau),\wt(\eta)\}.
+\]
+Then the cohesion ratio and conductance score are
+\[
+\mathrm{Coh}(A)=\frac{\mathrm{Vol}(A)}{\mathrm{Bd}(A)+\eps},
+\qquad
+\Phi(A)=\frac{\mathrm{Bd}(A)}{\min\{\mathrm{Vol}(A),\mathrm{Vol}(\K \setminus A)\}+\eps}.
+\]
+\end{definition}
+
+High cohesion indicates a thick self-supporting region, while high conductance indicates a region that is porous or difficult to separate cleanly from its surroundings.
+
+\begin{definition}[Local anisotropy]
+For a simplex $\sigma$, define
+\[
+\mathrm{Ani}(\sigma)=\mathrm{CV}\bigl(\{\wt(\tau):\tau\in \face_1(\sigma)\}\bigr)+
+\mathrm{CV}\bigl(\{\wt(\eta):\eta\in \cof_1(\sigma)\}\bigr),
+\]
+where $\mathrm{CV}$ is coefficient of variation.
+\end{definition}
+
+This measures how uneven the support below and above the simplex is. Low anisotropy means evenly distributed local support; high anisotropy means directional or funnel-like structure.
+
+\begin{definition}[Volume growth]
+Let $B_r(\sigma)$ be the simplices within Hasse radius $r$ from $\sigma$. Define
+\[
+G_r(\sigma)=\frac{\mathrm{Vol}(B_{r+1}(\sigma))}{\mathrm{Vol}(B_r(\sigma))+\eps}.
+\]
+\end{definition}
+
+Large volume growth indicates a rapidly branching local environment; smaller growth indicates a more compact one. In collaboration terms, it is a coarse proxy for whether a local structure opens quickly into many adjacent simplices or stays confined to a tight neighborhood.
+
+\begin{definition}[Multiscale consistency]
+For a region $A$ and each dimension $d$, let
+\[
+q_d(A)=\frac{1}{|A_d|}\sum_{\sigma\in A_d}\log\frac{m_-(\sigma)+\eps}{\wt(\sigma)+\eps},
+\]
+whenever $A_d$ contains non-vertex simplices. Define
+\[
+\mathrm{MC}(A)=\frac{1}{1+\mathrm{Var}_d(q_d(A))}.
+\]
+\end{definition}
+
+High multiscale consistency means that the region tells a similar support story across dimensions; low consistency means that apparent cohesion at one scale is not matched at another. In plainer terms, it asks whether the same region still looks coherent when one moves from edges to triangles rather than changing character abruptly across scales. In the present note these are supporting diagnostics rather than replacements for the core observables.
+
+\subsection{Diagnostic summary}
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.14\textwidth} >{\raggedright\arraybackslash}p{0.10\textwidth} >{\raggedright\arraybackslash}p{0.31\textwidth} >{\raggedright\arraybackslash}p{0.31\textwidth}}
+\toprule
+Metric & Level & Structural meaning & Intended social reading \\
+\midrule
+$\mathcal{R}(\sigma)$ reinforcement & simplex & weight of a simplex relative to its codimension-$1$ boundary & high values suggest a thick or synergistic aggregate; low values suggest a thin aggregate built from stronger subgroups \\
+$\mathcal{S}(\sigma)$ boundary strain & simplex & mean one-step coface support relative to simplex weight & high values suggest scaffolded participation inside larger teams rather than a self-standing aggregate \\
+$\mathcal{D}(\sigma)$ coface dependence & simplex & dependence on one-step larger aggregates & high values suggest a social role largely inherited from participation in larger structures \\
+$\mathcal{T}(\sigma)$ terminality & simplex & degree to which a simplex stands on its own scale & high values suggest a self-standing aggregate; low values suggest absorption into larger structures \\
+$\Theta(\sigma)$ local tension & simplex & signed imbalance between support above and below & negative values suggest a bottom-supported but unreinforced frontier; positive values suggest upward pull into larger organization \\
+$\Ric_{\mathrm{bal}}(\sigma)$ local balance score & simplex & signed comparison of support below, at, and above the simplex & negative values suggest broker-like or thin interface structure; near-zero values suggest a balanced local aggregate; positive values suggest a locally thick simplex not overdominated above \\
+$\mathrm{Ani}(\sigma)$ anisotropy & simplex & unevenness of support below and above & high values suggest directional or funnel-like local structure; low values suggest locally even support \\
+$G_r(\sigma)$ volume growth & simplex neighborhood & rate at which the weighted local neighborhood expands with radius & higher values suggest a rapidly branching local environment; lower values suggest a more compact enclave \\
+$\mathrm{Coh}(A)$ cohesion ratio & region & weighted volume relative to exposed boundary & high values suggest a thick, self-supporting, relatively insulated region \\
+$\Phi(A)$ conductance & region & exposed boundary relative to region size & high values suggest a porous or weakly separated region; low values suggest a more bloc-like region \\
+$\mathrm{MC}(A)$ multiscale consistency & region & stability of the local support story across dimensions & high values suggest coherence across scales; low values suggest apparent cohesion at one scale but not another \\
+\bottomrule
+\end{tabular}
+\caption{Static geometric diagnostics used in the paper and their intended interpretations. The rightmost column is a disciplined reading guide, not a claim of automatic sociological truth.}
+\label{tab:dictionary}
+\end{table}
+
+\section{DBLP as a first geometry laboratory}
+
+DBLP is a clean first case because higher-order interaction is native to the data: a paper already comes with a genuine author set \cite{DBLPXML}. More importantly for the present paper, collaboration data make the social interpretation concrete. A repeated edge can be read as a durable pairwise collaboration, a recurrent triangle as a stable small-team aggregate, and a negatively curved edge as a tie that helps assemble larger teams without itself becoming a thick aggregate. The case study uses two venue-level slices:
+\begin{itemize}
+    \item SDM 2018--2024,
+    \item WSDM 2018--2024.
+\end{itemize}
+Both are filtered to team sizes between $2$ and $6$ authors. We use rolling $3$-year windows with stride $1$ year, and we truncate the simplicial complex at dimension $2$ so that the case study focuses on edges and triangles. This is deliberate. The aim is not to maximize dimension at all costs. It is to read the geometry of collaboration aggregates at the first nontrivial scales.
+
+The resulting pipeline is implemented directly in \texttt{seldon-lab}. It loads the filtered DBLP slices, constructs weighted simplicial windows, computes simplex observables, and emits summary tables and figures for the latest window and for all windows. The scope is intentionally modest: this is not a claim about all of DBLP, but a first venue-level case study designed to test whether the geometric vocabulary is socially legible at all.
+
+\paragraph{Scope and limits of the pilot.}
+The empirical scope is narrow by design: two venues only, years 2018--2024, team sizes 2--6, and dimension at most $2$. The objective is not universality. It is legibility.
+
+\paragraph{Why dimension truncation is still useful.}
+The current DBLP story is mostly about edges and triangles. That limitation is real. But it is also the first nontrivial scale where higher-order group structure already appears. A recurring triangle is already more than a graph edge, and a thin edge embedded in triangles is already a higher-order scaffold. Later work can move to larger simplices once the local geometry at this scale is understood.
+
+\subsection{Companion repository and reproducibility}
+
+This paper is meant to be read together with the companion repository
+\texttt{seldon-lab}. The repo is not ancillary decoration; it is the concrete
+implementation of the geometry layer used in the paper. In the current project
+layout, \texttt{SHE} remains the general higher-order substrate,
+\texttt{she-geofield} remains the lower-level DBLP and mechanism toolbox, and
+\texttt{seldon-lab} owns the geometry-first scientific layer.
+
+\paragraph{Note on curvature naming.}
+The codebase contains two distinct curvature systems; see Remark~\ref{rem:forman} in Section~3 for a full explanation of their separation and the reproducibility implications.
+The \texttt{curvature\_balance} observable in \texttt{seldon\_lab.experiments.dblp\_geometry} is the direct code name for $\Ric_{\mathrm{bal}}$ as defined in this paper.
+The formally defined Forman-Ricci system in \texttt{she\_geofield.curvature} is future infrastructure for the field-coupling work.
+
+A minimal project sketch is:
+\begin{verbatim}
+seldon-lab/
+  configs/
+    dblp_sdm_geometry.yaml
+    dblp_wsdm_geometry.yaml
+    dblp_sdm_geometry_exact.yaml
+    dblp_sdm_geometry_decay.yaml
+    dblp_wsdm_geometry_exact.yaml
+    dblp_wsdm_geometry_decay.yaml
+  src/seldon_lab/experiments/
+    dblp_geometry.py
+    dblp_geometry_summary.py
+    dblp_geometry_validation.py
+  artifacts/paper1/
+    sdm/
+    wsdm/
+    cross_venue/
+    validation/
+\end{verbatim}
+
+For the present paper, the key entry points are:
+\begin{itemize}
+    \item \texttt{seldon\_lab.experiments.dblp\_geometry},
+    \item \texttt{seldon\_lab.experiments.dblp\_geometry\_summary},
+    \item \texttt{seldon\_lab.experiments.dblp\_geometry\_validation}.
+\end{itemize}
+The corresponding configs used in this note are:
+\begin{itemize}
+    \item \texttt{seldon-lab/configs/dblp\_sdm\_geometry.yaml},
+    \item \texttt{seldon-lab/configs/dblp\_wsdm\_geometry.yaml}.
+\end{itemize}
+
+The single-venue case-study runs use the geometry entry point on the two geometry
+configs, while the cross-venue summary used for Figure~\ref{fig:crossvenue}
+uses the summary entry point on those same configs. The exact commands are
+recorded in the repository README.
+
+The repo emits the exact paper-facing artifacts used here, including:
+\begin{itemize}
+    \item \texttt{window\_summary.csv} (committed under \texttt{artifacts/paper1/}),
+    \item \texttt{simplex\_observables.csv} (generated locally in \texttt{out/}; not committed due to size, but reproducible by running the geometry entry point),
+    \item \texttt{latest\_dimension\_profile.csv},
+    \item \texttt{top\_brokerage\_edges.csv},
+    \item \texttt{featured\_neighborhoods.png},
+    \item \texttt{featured\_region\_geometry.csv},
+    \item \texttt{group\_geometry\_comparison.csv},
+    \item \texttt{ricbal\_vs\_anisotropy.png},
+    \item \texttt{latest\_geometry\_scatter.png},
+    \item \texttt{cross\_venue\_profile.png},
+    \item \texttt{weight\_sensitivity.csv},
+    \item \texttt{baseline\_correlations.csv},
+    \item \texttt{brokerage\_validation.csv}.
+\end{itemize}
+
+More concretely, the present note uses:
+\begin{itemize}
+    \item Table~\ref{tab:slices}: \texttt{cross\_venue\_slice\_summary.csv},
+    \item Table~\ref{tab:profile}: \texttt{cross\_venue\_latest\_profile.csv},
+    \item Table~\ref{tab:brokerage}: the \texttt{top\_brokerage\_edges.csv} files in the curated SDM and WSDM artifact folders,
+    \item Figure~\ref{fig:cases}: \texttt{featured\_neighborhoods.png} from the cross-venue output folder,
+    \item Figure~\ref{fig:crossvenue}: \texttt{cross\_venue\_profile.png},
+    \item Figure~\ref{fig:scatter}: the SDM and WSDM \texttt{latest\_geometry\_scatter.png} files,
+    \item Table~\ref{tab:beyond}: the SDM and WSDM \texttt{group\_geometry\_comparison.csv} files,
+    \item Figure~\ref{fig:anisotropy}: the SDM and WSDM \texttt{ricbal\_vs\_anisotropy.png} files,
+    \item Table~\ref{tab:weights}: \texttt{weight\_sensitivity.csv},
+    \item Table~\ref{tab:baselines}: \texttt{baseline\_correlations.csv},
+    \item Figure~\ref{fig:weights}: \texttt{weight\_sensitivity\_plot.png},
+    \item Figure~\ref{fig:validation}: \texttt{brokerage\_validation\_plot.png}.
+\end{itemize}
+
+This matters conceptually as well as practically. The point of the paper is not
+just that weighted aggregate geometry can be written down abstractly. It is that
+the geometry layer is already executable, inspectable, and falsifiable in a real
+research repo.
+
+\paragraph{Reproducibility checklist.}
+The present case study is reproducible if the following are fixed and declared:
+\begin{enumerate}[label=(\alph*)]
+    \item dataset slices: SDM and WSDM, years 2018--2024;
+    \item team-size filter: 2--6 authors;
+    \item rolling windows: width 3, stride 1;
+    \item weight semantics: contained-support, exact-facet, or recency-decayed support;
+    \item maximum simplex size: 3;
+    \item primary geometric observable: curvature balance $\Ric_{\mathrm{bal}}$;
+    \item generated output directories under local \texttt{out/}, with curated committed artifacts under \texttt{artifacts/paper1/}.
+\end{enumerate}
+
+\paragraph{Provenance stamp.}
+Each experiment run writes a \texttt{run\_params.json} file alongside its outputs recording the config path and its SHA-256 prefix, the Python and library versions, and a UTC timestamp. This makes it possible to audit whether a committed artifact matches the code and data that produced it.
+
+\paragraph{Team-size note.}
+The geometry configs use \texttt{min\_team\_size: 2}, retaining edges (two-author pairs) in the complex even though the aggregation ontology elsewhere requires three or more members for a bona fide simplex aggregation. This is intentional: the primary signal of interest at the geometry layer is the brokerage signature of thin edges, and edges are explicitly included for that purpose. The config files document this choice directly.
+
+\paragraph{Anisotropy and coefficient of variation.}
+The local anisotropy $\mathrm{Ani}(\sigma)$ uses the coefficient of variation (CV) computed over the \emph{positive} weights of faces and cofaces. Zero-weight simplices are excluded from the CV calculation because a zero edge weight in this context means the pair never co-authored in the window---structural absence, not a weak collaboration. Including zeros would conflate structural absence with low-intensity presence and inflate the apparent dispersion. When all values are zero, CV is defined as $0$ (no variation among present simplices). This choice is documented in the code and is applied consistently.
+
+\section{A first DBLP case study: SDM and WSDM}
+
+\subsection{Slice sizes}
+
+Table~\ref{tab:slices} records the latest windows used in the case study.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lrrrrrr}
+\toprule
+Venue & Window & Papers & Authors & Edges & Triangles & Edge density \\
+\midrule
+SDM & 2022--2024 & 239 & 836 & 1548 & 1500 & 0.00444 \\
+WSDM & 2022--2024 & 363 & 1282 & 2589 & 2622 & 0.00315 \\
+\bottomrule
+\end{tabular}
+\caption{Latest DBLP windows used in the static geometry case study.}
+\label{tab:slices}
+\end{table}
+
+These are already nontrivial higher-order slices. The geometry note is therefore not being tested on a toy example but on venue-level collaboration complexes with thousands of simplices.
+
+\subsection{Cross-venue dimension profile}
+
+The first question is whether the geometry differs systematically by dimension. Table~\ref{tab:profile} and Figure~\ref{fig:crossvenue} answer yes.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lrrrrr}
+\toprule
+Venue & Dim. & Mean $\mathcal{R}$ & Mean $\Ric_{\mathrm{bal}}$ & Neg. balance frac. & Near-zero frac. \\
+\midrule
+SDM & 1 & 0.875 & -0.153 & 0.280 & 0.691 \\
+SDM & 2 & 0.962 & -0.045 & 0.137 & 0.863 \\
+WSDM & 1 & 0.843 & -0.202 & 0.348 & 0.626 \\
+WSDM & 2 & 0.967 & -0.040 & 0.119 & 0.881 \\
+\bottomrule
+\end{tabular}
+\caption{Latest-window geometric profile on the SDM and WSDM slices. Edges are systematically more negative than triangles; WSDM is more brokered than SDM at the edge level.}
+\label{tab:profile}
+\end{table}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.72\textwidth]{../artifacts/paper1/cross_venue/cross_venue_profile.png}
+\caption{Cross-venue latest-window dimension profile. The dominant signal is dimension-specific: edge geometry is more negative than triangle geometry on both slices, and WSDM is more negative than SDM at the edge level.}
+\label{fig:crossvenue}
+\end{figure}
+
+Three empirical points matter.
+\begin{enumerate}[label=(\arabic*)]
+    \item Edges are geometrically thinner than triangles on both venues. Their mean balance score is substantially more negative, and the fraction of negatively balanced edges is much larger.
+    \item WSDM is more brokered than SDM at the edge level: its mean edge balance score is more negative ($-0.202$ versus $-0.153$), and its negative-balance edge fraction is larger ($0.348$ versus $0.280$).
+    \item Triangles are mostly near-neutral rather than strongly thick. Their mean reinforcement is close to $1$, and their near-zero balance fraction is above $0.86$ on both slices.
+\end{enumerate}
+
+This last point is important. The first geometry case study does \emph{not} reveal a world of strongly super-reinforced triangles. It reveals a world in which many triangles are socially real but geometrically balanced rather than strongly over-thickened relative to their edges.
+
+\subsection{Window-wise stability}
+
+The sign pattern is not an accident of one window. Across all rolling windows, mean edge balance remains negative throughout:
+\begin{itemize}
+    \item SDM: from $-0.184$ to $-0.151$,
+    \item WSDM: from $-0.310$ to $-0.202$.
+\end{itemize}
+Triangle balance also remains slightly negative throughout:
+\begin{itemize}
+    \item SDM: from $-0.053$ to $-0.045$,
+    \item WSDM: from $-0.079$ to $-0.040$.
+\end{itemize}
+So the case study already suggests a stable structural difference between edge-level interface geometry and triangle-level aggregate geometry.
+
+\subsection{Brokerage edges and balanced triangles}
+
+The most negative edges in the latest windows make the brokerage story concrete. Table~\ref{tab:brokerage} shows three examples per venue.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.16\textwidth} >{\raggedright\arraybackslash}p{0.54\textwidth} r}
+\toprule
+Venue & Edge & $\Ric_{\mathrm{bal}}$ \\
+\midrule
+SDM & Xiaowei Jia -- Yanhua Li & -1.609 \\
+SDM & Ankush Khandelwal -- Xiaowei Jia & -1.386 \\
+SDM & Carl Yang 0001 -- Liang Zhao 0002 & -1.386 \\
+WSDM & Guandong Xu -- Hongzhi Yin & -1.792 \\
+WSDM & Neil Shah -- Suhang Wang & -1.705 \\
+WSDM & Hongxu Chen 0002 -- Hongzhi Yin & -1.609 \\
+\bottomrule
+\end{tabular}
+\caption{Most negative edge-level balance scores in the latest windows. These are thin or broker-like interfaces rather than thick self-standing aggregates.}
+\label{tab:brokerage}
+\end{table}
+
+At the triangle level the strongest recurrent triads are not highly thickened cliques. They are mostly balanced groups with weight $2$, reinforcement essentially $1$, and balance score close to $0$. Examples include:
+\begin{itemize}
+    \item SDM: \texttt{Chenxi Sun--Derun Cai--Hongyan Li 0002};
+    \item WSDM: \texttt{Adam G. Dunn--Jinman Kim--Matloob Khushi}.
+\end{itemize}
+That is a substantive result, not a disappointment. It means the first geometry layer is already distinguishing between two regimes:
+\begin{enumerate}[label=(\alph*)]
+        \item negatively balanced edge-level scaffolds and interfaces;
+    \item higher-order groups that are mostly balanced, recurrent, and self-consistent rather than spectacularly over-thick.
+\end{enumerate}
+
+\subsection{How to read a local structure}
+
+It is useful to make this concrete in the way a social analyst would actually use the tool.
+
+Consider the SDM edge \texttt{Xiaowei Jia--Yanhua Li} in the latest window. Its edge weight is $1$, while the mean weight of its two endpoint vertices is $5$, its reinforcement is only $0.20$, its local tension is $-4$, and its curvature balance is $-1.609$. Read socially, this is not a thick dyadic collaboration. It is a thin tie between two authors who each sit in stronger surrounding collaboration activity than the tie itself. The edge matters structurally, but mainly as a scaffold or interface inside a richer local neighborhood rather than as a self-standing pair.
+
+Now compare that with the SDM triangle \texttt{Chenxi Sun--Derun Cai--Hongyan Li 0002}. Its triangle weight is $2$, the mean weight of its boundary edges is also $2$, its reinforcement is essentially $1$, and its curvature balance is $0$. This is the opposite local reading. The trio is not merely a by-product of stronger surrounding structure, nor is it an unusually thick enclave. It is a stable small aggregate whose group-level recurrence matches the support of its three pairwise relations. In ordinary social terms, this is what one would want a geometry tool to say about a compact recurring collaboration group: real, balanced, and internally coherent without requiring exaggeration.
+
+The WSDM examples tell the same story with a different venue profile. The edge \texttt{Guandong Xu--Hongzhi Yin} has weight $1$, mean endpoint weight $6$, reinforcement $1/6$, tension $-5$, and curvature balance $-1.792$, making it even more structurally thin than the SDM brokerage examples. Meanwhile the WSDM triangle \texttt{Adam G. Dunn--Jinman Kim--Matloob Khushi} is again balanced: weight $2$, mean edge weight $2$, reinforcement $1$, and curvature balance $0$. These are not isolated curiosities. They instantiate the broader cross-venue pattern already seen in Table~\ref{tab:profile}: WSDM contains a stronger tail of thin interface edges, while both venues contain recurrent triangles that are socially real but mostly balanced rather than over-thick.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.92\textwidth]{../artifacts/paper1/cross_venue/featured_neighborhoods.png}
+\caption{Featured local simplicial neighborhoods from the latest SDM and WSDM windows. Core simplices are highlighted in red, adjacent triangles are shaded, and surrounding edge thickness reflects local support. The brokerage edges sit inside visibly asymmetric neighborhoods and remain thin relative to the nearby activity around their endpoints, whereas the recurrent triangles appear as compact self-standing aggregates with no stronger higher-order shell around them.}
+\label{fig:cases}
+\end{figure}
+
+\subsection{Local geometry maps}
+
+Figure~\ref{fig:scatter} shows the reinforcement--balance relation in the latest SDM and WSDM windows.
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{../artifacts/paper1/sdm/latest_geometry_scatter.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{../artifacts/paper1/wsdm/latest_geometry_scatter.png}
+\end{minipage}
+\caption{Latest-window reinforcement versus local balance score on SDM (left) and WSDM (right). Edge clouds sit lower and more negatively than triangle clouds, and the WSDM edge cloud is visibly shifted further downward.}
+\label{fig:scatter}
+\end{figure}
+
+The figures make the structural story visible. Triangles cluster near the line of balance, while a substantial edge population extends into the negative-balance region. WSDM has the stronger downward edge tail, which is consistent with its more negative mean edge balance.
+
+\subsection{Supporting diagnostics beyond curvature}
+
+The added region-level diagnostics sharpen the local picture without changing the main claim. Table~\ref{tab:beyond} compares the most negative contained-support edges with balanced recurrent triangles on both venues. The cleanest new separation is anisotropy and multiscale consistency. In both venues the brokerage edges have substantially higher anisotropy than the balanced triangles, while the balanced triangles have multiscale consistency essentially equal to $1$.
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\begin{tabular}{llrrrrr}
+\toprule
+Venue & Group & Ani. & $G_1$ & Coh. & Cond. & MC \\
+\midrule
+SDM & brokerage edges & 0.481 & 3.399 & 0.351 & 2.909 & 0.772 \\
+SDM & balanced triangles & 0.000 & 3.750 & 0.296 & 3.487 & 0.999 \\
+WSDM & brokerage edges & 0.536 & 3.518 & 0.345 & 2.930 & 0.641 \\
+WSDM & balanced triangles & 0.000 & 3.037 & 0.381 & 2.700 & 0.994 \\
+\bottomrule
+\end{tabular}
+\caption{Supporting geometric diagnostics for brokerage edges and balanced triangles under contained-support weights. The new measures do not all point in the same direction, but anisotropy and multiscale consistency clearly separate thin broker-like edges from balanced recurrent triangles.}
+\label{tab:beyond}
+\end{table}
+
+The cohesion and conductance scores are more mixed, which is itself informative. A balanced triangle need not live in a strongly insulated local bloc. It may be coherent without being shielded. The volume-growth numbers are likewise modest rather than decisive: they suggest that both kinds of local structure open outward into nontrivial neighborhoods, so the sharper distinction is not raw branching alone but whether that branching is even and cross-scale stable. What is more stable across venues is that balanced triangles are locally even and cross-scale consistent, whereas the brokerage edges are directionally uneven and less consistent. The multiscale-consistency values matter precisely because values near $1$ mean that the surrounding region tells essentially the same support story when one moves from edges to triangles, rather than changing character abruptly across scales.
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{../artifacts/paper1/sdm/ricbal_vs_anisotropy.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{../artifacts/paper1/wsdm/ricbal_vs_anisotropy.png}
+\end{minipage}
+\caption{Curvature balance versus anisotropy on SDM (left) and WSDM (right). Highly negative edges are concentrated in the more anisotropic region of the plot, while the balanced triangles cluster near zero anisotropy and near-zero balance.}
+\label{fig:anisotropy}
+\end{figure}
+
+\subsection{Robustness to weight semantics}
+
+The main pattern should not depend entirely on one weight convention. Table~\ref{tab:weights} therefore compares three semantics: contained-support, exact-facet, and recency-decayed support. The first and third behave similarly. On both venues, edge-level balance remains negative, triangle-level balance remains only slightly negative, and the WSDM edge layer remains more brokered than the SDM edge layer. The exact-facet semantics behave differently because they are much sparser: many edges and triangles then carry zero or near-zero exact support unless they recur as exact teams.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{llrrrr}
+\toprule
+Venue & Semantics & Edge score & Triangle score & Neg. edge frac. & Zero triangle frac. \\
+\midrule
+SDM & contained-support & -0.153 & -0.045 & 0.280 & 0.863 \\
+SDM & exact-facet & -1.803 & 0.683 & 0.110 & 0.957 \\
+SDM & recency-decayed & -0.167 & -0.049 & 0.282 & 0.863 \\
+WSDM & contained-support & -0.202 & -0.040 & 0.348 & 0.881 \\
+WSDM & exact-facet & -1.531 & 0.617 & 0.089 & 0.970 \\
+WSDM & recency-decayed & -0.215 & -0.043 & 0.354 & 0.881 \\
+\bottomrule
+\end{tabular}
+\caption{Sensitivity of the main geometric pattern to weight semantics in the latest windows. The contained-support and recency-decayed semantics preserve the basic edge-versus-triangle split. Exact-facet weights are much sparser and therefore produce a different, more fragile geometry.}
+\label{tab:weights}
+\end{table}
+
+This is the right kind of robustness result for a first note. The main qualitative pattern is not universal across all semantics, but it is stable across two closely related and socially reasonable ones. The exact-facet alternative is informative precisely because it shows where the geometry becomes sparse and should be read more cautiously.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.78\textwidth]{../artifacts/paper1/validation/weight_sensitivity_plot.png}
+\caption{Weight-semantics sensitivity of the latest-window balance score. The contained-support and recency-decayed semantics preserve the edge-versus-triangle split and the WSDM-versus-SDM edge ordering. Exact-facet weights produce a much sparser and less stable picture.}
+\label{fig:weights}
+\end{figure}
+
+\subsection{Baseline and validation checks}
+
+The observables should not be presented as if they float free of obvious local counts. Table~\ref{tab:baselines} therefore reports contained-support correlations between $\Ric_{\mathrm{bal}}$ and several natural edge baselines. The score is related to endpoint strength, degree, and especially edge betweenness, but it is not reducible to common-neighbor count or triangle participation alone. On SDM, for example, the Spearman correlation between edge $\Ric_{\mathrm{bal}}$ and common-neighbor count is only $0.006$, while the correlation with edge betweenness is $-0.861$. WSDM shows the same pattern: $0.080$ for common neighbors and $-0.895$ for betweenness.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrr}
+\toprule
+Venue & Baseline & Pearson with edge $\Ric_{\mathrm{bal}}$ & Spearman with edge $\Ric_{\mathrm{bal}}$ \\
+\midrule
+SDM & endpoint mean strength & -0.680 & -0.771 \\
+SDM & endpoint mean degree & -0.584 & -0.471 \\
+SDM & triangle participation & 0.032 & 0.009 \\
+SDM & common-neighbor count & 0.029 & 0.006 \\
+SDM & edge betweenness & -0.535 & -0.861 \\
+WSDM & endpoint mean strength & -0.746 & -0.814 \\
+WSDM & endpoint mean degree & -0.658 & -0.578 \\
+WSDM & triangle participation & 0.142 & 0.092 \\
+WSDM & common-neighbor count & 0.122 & 0.080 \\
+WSDM & edge betweenness & -0.468 & -0.895 \\
+\bottomrule
+\end{tabular}
+\caption{Contained-support baseline correlations for the edge-level balance score. The score is related to strength and degree, but it is not a restatement of overlap or triangle participation. Its strongest external relation is to edge betweenness, which supports the brokerage reading.}
+\label{tab:baselines}
+\end{table}
+
+The brokerage interpretation also receives a direct external hook. Figure~\ref{fig:validation} compares mean edge betweenness across balance-score groups. On both venues, the most negative edges have dramatically higher betweenness than near-zero edges. In SDM the mean edge betweenness is $14.4 \pm 1.5$ (SE, $n = 154$) for the most negative edges against $1.0$ for near-zero edges; in WSDM the same comparison is $41.8 \pm 4.8$ (SE, $n = 258$) against $1.0$. The difference is highly significant on both venues (Mann--Whitney $U$ test, SDM: $p < 10^{-50}$; WSDM: $p < 10^{-80}$). That is not a proof that the social reading is correct, but it is exactly the sort of external check the paper needs: the most negatively balanced edges are not only thin by the internal geometry, they also sit in structurally cross-cutting positions by a familiar graph baseline.
+
+The high Spearman correlation between $\Ric_{\mathrm{bal}}$ and edge betweenness ($-0.861$ for SDM, $-0.895$ for WSDM) deserves a direct comment. A strong correlation with betweenness is expected if the brokerage reading is correct: both measures should identify cross-cutting interface edges. What $\Ric_{\mathrm{bal}}$ adds beyond betweenness is a local \emph{scale-comparison} rather than a global path-counting quantity. Betweenness depends on the global graph structure and all shortest paths; $\Ric_{\mathrm{bal}}$ depends only on the immediate boundary and coboundary neighborhood of each simplex and can therefore be computed locally. More importantly, $\Ric_{\mathrm{bal}}$ is naturally extended to triangles and higher-dimensional simplices, where betweenness lacks a direct analogue at the scale of the simplex itself. The present note does not claim that $\Ric_{\mathrm{bal}}$ outperforms betweenness for edge ranking; it claims that the same local geometric vocabulary that identifies broker-like edges also, without modification, characterizes balanced triangles and higher-order aggregates.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.72\textwidth]{../artifacts/paper1/validation/brokerage_validation_plot.png}
+\caption{Brokerage validation under contained-support weights. The most negative edges have much higher mean edge betweenness than near-zero edges on both venue slices. This is an external check on the brokerage interpretation rather than a claim of perfect equivalence.}
+\label{fig:validation}
+\end{figure}
+
+\section{Why this matters socially}
+
+The case study already supports a disciplined social dictionary, and this is where the social relevance has to be made explicit.
+
+\begin{itemize}
+    \item \textbf{Negative edge balance} marks thin or broker-like collaboration links that are weak relative to the authors they connect and the larger teams they help assemble. Socially, these are ties that matter less as self-standing partnerships than as conduits across a broader collaboration environment.
+    \item \textbf{Near-neutral triangle balance} marks triads that are recurrent and internally coherent, but not dramatically stronger than the edges that compose them. Socially, these are small groups that exist as recognizable aggregates without yet becoming unusually thick or insulated micro-clusters.
+    \item \textbf{Cross-venue differences} matter. The WSDM slice is more brokered at the edge level than the SDM slice in the present case study. That is a substantive social difference: one venue looks more dependent on thin interface ties, while the other looks less so.
+\end{itemize}
+
+Each of these readings is falsifiable. The brokerage interpretation weakens if highly negative edges fail to occupy structurally cross-cutting positions under external graph baselines such as edge betweenness. The balanced-triangle interpretation weakens if near-neutral recurrent triangles fail to recur or fail to remain locally coherent under mild weight changes. The cross-venue comparison weakens if the SDM/WSDM ordering disappears under contained-support versus recency-decayed semantics. Those are exactly the kinds of checks the present note begins to run.
+
+What this gives a social analyst is not another generic centrality score but a local diagnostic language. One can point to a specific collaboration tie and ask whether it is a self-standing partnership or a thin connector embedded in stronger surroundings. One can point to a specific triad and ask whether it is merely observed once, structurally fragile, or recurrent and balanced as a genuine small group. The examples above show that the observables are already concrete enough to support that kind of reading.
+
+This is already enough to justify the geometry-first layer. The paper does not need to claim a full law of collaboration dynamics at stage one. It only needs to show that local aggregate geometry helps distinguish cohesive groups from brokered interfaces and structurally thin formations in an interpretable way.
+
+\section{Discussion and next steps}
+
+The main result of the paper is not a theorem but a stabilized empirical reading. A first static geometry pipeline on weighted simplicial collaboration complexes has been defined and run on real DBLP slices. The resulting observables are not vacuous. They separate edge-level interface structure from triangle-level aggregate structure, and they yield venue-level differences that are stable across windows.
+
+The paper also clarifies what the next step should be. Since strongly positive triangle balance is rare on the present slices, the next technical move is not to force a triumphalist ``higher-order wins'' narrative. It is to understand when higher-dimensional aggregates become genuinely thick rather than merely balanced. That is a sharper and more honest question. A first testable prediction is provided by Conjecture~\ref{conj:persistence}: whether positively balanced simplices persist into the next window at higher rates than negatively balanced ones. The rolling DBLP windows computed for this paper make that conjecture directly testable in the sequel.
+
+The limitations should be stated directly. This note is restricted to two venue-level slices from the same data-mining community---SDM and WSDM are not independent observations of distinct social fields; they are two correlated slices of overlapping communities with similar publication norms, team sizes, and career incentives. The ``cross-venue'' comparison is therefore a within-subdiscipline comparison, not a cross-domain one. Whether the same geometric patterns survive in biology, physics, or humanities venues is an open question that this note does not answer. Future work should test the vocabulary on at least one out-of-domain venue before making broad social claims.
+
+Beyond the venue scope, this note is restricted to edges and triangles and to one case-study local geometric balance score rather than a settled discrete social curvature. Its contribution is not to solve social geometry in general. It is to show that a reproducible geometry-first diagnostic layer can already yield nontrivial and socially legible structure on real higher-order collaboration data at a constrained pilot scale.
+
+Later work can now proceed in the intended order:
+\begin{enumerate}[label=(\arabic*)]
+    \item validation on out-of-domain venues (a physics or biology venue would already extend the evidence base from within-subdiscipline to cross-domain);
+    \item richer static geometry on neighborhoods and larger simplices;
+    \item geometric evolution of these observables across windows;
+    \item only then, coupled field--geometry dynamics.
+\end{enumerate}
+
+\section{Conclusion}
+
+This paper has one job: show that weighted collaboration aggregates can be read geometrically in a way that is socially interpretable and empirically checkable. The DBLP case study shows that this job can already be done. On SDM and WSDM, static weighted simplicial geometry yields a concrete and reproducible picture: collaboration edges are often thin and broker-like, venue slices differ in the severity of that brokerage geometry, and recurrent triangles are usually balanced rather than strongly thickened. That is enough for stage one. Geometry is not yet the whole Seldon program, but it is now more than a metaphor.
+
+\begin{thebibliography}{99}
+
+\bibitem{DBLPXML}
+dblp team.
+\newblock How can I download the whole dblp dataset?
+\newblock dblp FAQ.
+
+\bibitem{BensonGleichLeskovec2016}
+A. R. Benson, D. F. Gleich, and J. Leskovec.
+\newblock Higher-order organization of complex networks.
+\newblock {\em Science}, 353(6295):163--166, 2016.
+
+\bibitem{BensonASJK18}
+Austin R. Benson, Rediet Abebe, Michael T. Schaub, Ali Jadbabaie, and Jon M. Kleinberg.
+\newblock Simplicial closure and higher-order link prediction.
+\newblock {\em Proceedings of the National Academy of Sciences}, 115(48):E11221--E11230, 2018.
+
+\bibitem{IacopiniPetriBarratLatora2019}
+I. Iacopini, G. Petri, A. Barrat, and V. Latora.
+\newblock Simplicial models of social contagion.
+\newblock {\em Nature Communications}, 10:2485, 2019.
+
+\bibitem{BattistonCencettiIacopiniEtAl2020}
+F. Battiston, G. Cencetti, I. Iacopini, V. Latora, M. Lucas, A. Patania, J.-G. Young, and G. Petri.
+\newblock Networks beyond pairwise interactions: structure and dynamics.
+\newblock {\em Physics Reports}, 874:1--92, 2020.
+
+\bibitem{BarbarossaSardellitti2020}
+S. Barbarossa and S. Sardellitti.
+\newblock Topological signal processing over simplicial complexes.
+\newblock {\em IEEE Transactions on Signal Processing}, 68:2992--3007, 2020.
+
+\bibitem{TorresBianconi2020}
+J. J. Torres and G. Bianconi.
+\newblock Simplicial complexes: higher-order spectral dimension and dynamics.
+\newblock {\em Journal of Physics: Complexity}, 1(1):015002, 2020.
+
+\bibitem{Newman2001}
+M. E. J. Newman.
+\newblock The structure of scientific collaboration networks.
+\newblock {\em Proceedings of the National Academy of Sciences}, 98(2):404--409, 2001.
+
+\bibitem{WeberSaucanJost2017}
+Melanie Weber, Emil Saucan, and J\"urgen Jost.
+\newblock Characterizing complex networks with Forman-Ricci curvature and associated geometric flows.
+\newblock {\em Journal of Complex Networks}, 5(4):527--550, 2017.
+
+\bibitem{SreejithMohapatraJostSaucanSamal2016}
+R. P. Sreejith, Abhijit Mohapatra, J\"urgen Jost, Emil Saucan, and Areejit Samal.
+\newblock Forman curvature for complex networks.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment}, 2016(6):063206, 2016.
+
+\bibitem{BacciniGeraciBianconi2022}
+F. Baccini, F. Geraci, and G. Bianconi.
+\newblock Weighted simplicial complexes and their representation power of higher-order network data and topology.
+\newblock {\em Physical Review E}, 106:034319, 2022.
+
+\bibitem{BattistonLucasCencettiEtAl2023}
+F. Battiston, M. Lucas, G. Cencetti, I. Iacopini, A. Patania, J.-G. Young, and G. Petri.
+\newblock Dynamics on networks with higher-order interactions.
+\newblock {\em Chaos}, 33(4):040401, 2023.
+
+\bibitem{BickGrossHarringtonSchaub2023}
+C. Bick, E. Gross, H. A. Harrington, and M. T. Schaub.
+\newblock What are higher-order networks?
+\newblock {\em SIAM Review}, 65(3):686--731, 2023.
+
+\end{thebibliography}
+
+\end{document}

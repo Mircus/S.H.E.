@@ -180,6 +180,23 @@ This is a **Research Preview**.  The API may change between releases.
 - Tested with TopoNetX 0.2.x on Python 3.11.
 - Not OSI open-source — see License section below.
 
+## Paper artifacts and companion `.tex` files
+
+The repo root contains two `.tex` files that are **not** the current submission:
+
+- `coupled_geometry_field.tex` — an earlier draft exploring geometry-field
+  coupling; superseded by the focused geometry-first approach in
+  `seldon-lab/paper/`.
+- `evolving_higher_order_collaboration_carriers.tex` — an earlier conceptual
+  note on collaboration carrier evolution; archived and not under active
+  development.
+
+The **current paper under active development and arXiv preparation** is:
+```
+seldon-lab/paper/the_geometry_of_social_interaction.tex
+```
+Its companion code and artifacts live entirely under `seldon-lab/`.
+
 ## Contributing
 
 Issues and PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).

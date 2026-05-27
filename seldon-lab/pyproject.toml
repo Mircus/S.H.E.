@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seldon-lab"
+version = "0.1.0"
+description = "A psychohistory lab for temporal aggregation dynamics."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  {name = "Mirco A. Mannucci", email = "mirco@holomathics.com"},
+]
+license = {file = "LICENSE"}
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "matplotlib>=3.8",
+  # she-geofield is a required local sibling package (not on PyPI).
+  # Uncomment the line below when installing from the monorepo root
+  # so that pip resolves it correctly:
+  # "she-geofield @ file:../she-geofield",
+  # Alternatively, for in-tree development:
+  #   export PYTHONPATH=src:../she-geofield/src
+]
+# Expected workspace layout:
+#   SHE/
+#     she-geofield/   <- install with: pip install -e she-geofield
+#     seldon-lab/     <- this package
+# Critic Issue R1: she-geofield is declared here as a comment rather than
+# a live dependency because the path-dependency syntax only works when both
+# packages are installed from the same monorepo root. In a fresh clone,
+# run: pip install -e she-geofield && pip install -e seldon-lab
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+]
+
+[project.urls]
+Repository = "https://github.com/holomathics/SHE"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

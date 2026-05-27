@@ -1,0 +1,3 @@
+input_config: ../../she-geofield/configs/dblp_sdm_aggregation_birth.yaml
+venue: SDM
+event_type: birth

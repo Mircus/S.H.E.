@@ -1,0 +1,41 @@
+window,simplex,target_mode,candidate_regime,score,support_count,persistence,future_support
+2018-2020,Huan Liu 0001-Suhang Wang,future_support,all,0.41380389829612474,3.0,0.5,2.0
+2018-2020,Huan Liu 0001-Vineeth Rakesh,future_support,all,0.3829924224321814,1.0,0.5,1.0
+2018-2020,Kai Shu-Suhang Wang,future_support,all,0.3776845630002251,3.0,0.5,2.0
+2018-2020,Min Zhang 0006-Shaoping Ma,future_support,all,0.37499925686849456,6.0,0.5,4.0
+2018-2020,Shaoping Ma-Yiqun Liu 0001,future_support,all,0.37499923180760747,6.0,0.5,4.0
+2018-2020,Min Zhang 0006-Yiqun Liu 0001,future_support,all,0.3749984873128618,6.0,0.5,4.0
+2018-2020,Huan Liu 0001-Kai Shu,future_support,all,0.3667988678858098,4.0,0.5,3.0
+2018-2020,Dawei Yin 0001-Zhaochun Ren,future_support,all,0.36226444367805766,5.0,0.5,3.0
+2018-2020,James Caverlee-Jianling Wang,future_support,all,0.3486949593667181,4.0,0.5,5.0
+2018-2020,Ghazaleh Beigi-Huan Liu 0001,future_support,all,0.3472186863439024,3.0,0.5,2.0
+2019-2021,Kai Shu-Suhang Wang,future_support,all,0.5988516062946081,2.0,1.0,1.0
+2019-2021,James Caverlee-Jianling Wang,future_support,all,0.5500269818215295,5.0,1.0,4.0
+2019-2021,James Caverlee-Ziwei Zhu 0001,future_support,all,0.5417889415555314,4.0,1.0,5.0
+2019-2021,James Caverlee-Yin Zhang 0011,future_support,all,0.5416796005393306,4.0,1.0,4.0
+2019-2021,Xiangnan He 0001-Zhaochun Ren,future_support,all,0.5371772614810336,1.0,1.0,1.0
+2019-2021,Hongning Wang-Weihao Song,future_support,all,0.5298584459208179,1.0,1.0,1.0
+2019-2021,Shaoping Ma-Yiqun Liu 0001,future_support,all,0.5296488803408004,4.0,1.0,3.0
+2019-2021,Min Zhang 0006-Yiqun Liu 0001,future_support,all,0.5296467809328185,4.0,1.0,3.0
+2019-2021,Min Zhang 0006-Shaoping Ma,future_support,all,0.5296467809328033,4.0,1.0,3.0
+2019-2021,Hongning Wang-Lu Lin 0001,future_support,all,0.5240848282002591,2.0,1.0,2.0
+2020-2022,Huan Liu 0001-Ruocheng Guo,future_support,all,0.5508909157709415,6.0,1.0,4.0
+2020-2022,Jiawei Han 0001-Yu Meng 0001,future_support,all,0.5411550679161075,2.0,1.0,4.0
+2020-2022,James Caverlee-Ziwei Zhu 0001,future_support,all,0.5406050722521997,5.0,1.0,2.0
+2020-2022,Liqiang Nie-Xiangnan He 0001,future_support,all,0.5371236267786664,1.0,1.0,1.0
+2020-2022,Huan Liu 0001-Lu Cheng 0001,future_support,all,0.5261223352073336,3.0,1.0,3.0
+2020-2022,Donald Metzler-Xuanhui Wang,future_support,all,0.524509375017048,2.0,1.0,1.0
+2020-2022,James Caverlee-Yin Zhang 0011,future_support,all,0.5231857846890795,4.0,1.0,1.0
+2020-2022,Lu Cheng 0001-Ruocheng Guo,future_support,all,0.5230618783034597,3.0,1.0,3.0
+2020-2022,Harrie Oosterhuis-Maarten de Rijke,future_support,all,0.5210021205649522,2.0,1.0,2.0
+2020-2022,James Caverlee-Jianling Wang,future_support,all,0.5154312595859925,4.0,1.0,1.0
+2021-2023,Kaize Ding-Ruocheng Guo,future_support,all,0.6496243951790104,1.0,1.0,1.0
+2021-2023,Huan Liu 0001-Ruocheng Guo,future_support,all,0.6172027169537514,4.0,1.0,3.0
+2021-2023,Lu Cheng 0001-Ruocheng Guo,future_support,all,0.5995096389766653,3.0,1.0,2.0
+2021-2023,Huan Liu 0001-Lu Cheng 0001,future_support,all,0.5986523454217202,3.0,1.0,2.0
+2021-2023,Jin Huang 0010-Maarten de Rijke,future_support,all,0.5600502918530189,1.0,1.0,1.0
+2021-2023,Fuli Feng-Xiangnan He 0001,future_support,all,0.55148385350821,2.0,1.0,1.0
+2021-2023,Jiawei Han 0001-Yu Meng 0001,future_support,all,0.5500077363727436,4.0,1.0,3.0
+2021-2023,Harrie Oosterhuis-Maarten de Rijke,future_support,all,0.549348904474343,2.0,1.0,1.0
+2021-2023,Donald Metzler-Michael Bendersky,future_support,all,0.5350895791317467,1.0,1.0,1.0
+2021-2023,Donald Metzler-Marc Najork,future_support,all,0.5350894826301841,1.0,1.0,1.0
